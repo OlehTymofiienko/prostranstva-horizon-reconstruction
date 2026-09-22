@@ -1,0 +1,18 @@
+{
+  "input_sha256": "6e98880e9eff70fc0979db184d143a35818d34878fbd4e2e9eb578aee120a60e",
+  "hdf5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "max_imaginary_parts": {
+    "I20": 4.4533835370141277e-17,
+    "I40": 1.2609585544353052e-17,
+    "L30": 1.0649214870255e-17
+  },
+  "version": "BH-YITIAN-A3-2026-09-15-v1",
+  "program_sha256": "18e4de54bd58d2294f2b02e19f368afbe6c98e3b3bf215eea3a222d26a9111d2",
+  "context_sha256": "da73b5d8ffc8db8bd51ac785902d3b3ae10feebf9e66697dfb8f09c2bfc7fd1e",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "h5py": "3.16.0",
+  "matplotlib": "3.10.8",
+  "m0_spectrum_recomputed": true
+}

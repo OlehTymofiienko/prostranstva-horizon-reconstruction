@@ -1,0 +1,6 @@
+# Versions used for these results; Python 3.12.14.
+numpy==2.3.5
+scipy==1.17.0
+h5py==3.16.0
+matplotlib==3.10.8
+# ffmpeg in PATH is needed only with --video.

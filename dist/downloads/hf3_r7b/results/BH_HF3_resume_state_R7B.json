@@ -1,0 +1,264 @@
+{
+  "source_summary_sha256": "2067c2c70ca98f4eeaa5641f1fc32a1ef9ec8b72aeeca81fd2ce73f8a3cf1daf",
+  "stored_classification_preserved": "BH_HF3_R6B_FIVE_RADIUS_OUTGOING_PROPAGATION_SUPPORTED_INVERSE_RADIUS_SCALING_SUPPORTED_RINGDOWN_AGE_COLLAPSE_SUPPORTED_KERR220_ASYMPTOTIC_CLOSURE_SUPPORTED_R15_R30_R40_THIRD_PERIOD_PENDING",
+  "remnant_from_R6B": {
+    "late_window_M": [
+      90.0,
+      95.0
+    ],
+    "Mf": 0.977461203278627,
+    "Jf": 0.648087073319352,
+    "chi": 0.6783194994253878
+  },
+  "old_approximate_reference": {
+    "omega_R_rad_per_M": 0.5381085416552966,
+    "alpha_per_M": 0.08411794144638013,
+    "period_M": 11.67642737625319,
+    "Q": 3.1985360816176582
+  },
+  "numerical_Kerr220_reference": {
+    "mass_M": 0.977461203278627,
+    "chi": 0.6783194994253878,
+    "omega": 0.5353401318639867,
+    "alpha": 0.08345059699511974
+  },
+  "existing_fits_compared_without_refitting": [
+    {
+      "radius_M": 15.0,
+      "unchanged_fit_start_M": 65.60285475250637,
+      "unchanged_fit_end_M": 77.27928212875958,
+      "omega_from_existing_fit": 0.5342573533775116,
+      "alpha_from_existing_fit": 0.08283326529846569,
+      "relative_omega_difference_numerical_Kerr": 0.0020225991328260617,
+      "relative_alpha_difference_numerical_Kerr": 0.007397570765013877
+    },
+    {
+      "radius_M": 30.0,
+      "unchanged_fit_start_M": 81.60285475250637,
+      "unchanged_fit_end_M": 93.27928212875958,
+      "omega_from_existing_fit": 0.5342172874098462,
+      "alpha_from_existing_fit": 0.08335161181977986,
+      "relative_omega_difference_numerical_Kerr": 0.002097441210377516,
+      "relative_alpha_difference_numerical_Kerr": 0.001186152992358654
+    }
+  ],
+  "reference_omega_relative_shift": -0.00514470516077291,
+  "reference_alpha_relative_shift": -0.007933437739745216,
+  "period_M": 11.73680980221365,
+  "r40_three_period_end_M": 104.21042940664094,
+  "checkpoint_state_from_prior_verified_dialog": {
+    "t_M": 95,
+    "iteration": 48640,
+    "exit_status": 0
+  },
+  "planned_final_time_M": 105,
+  "expected_iteration_if_step_unchanged": 53760,
+  "no_new_evolution_run": false,
+  "next_step": "HF4-A1: аудит возможности геометрической реконструкции из моментов, углового базиса и меры; новый расчёт эволюции для этого шага не запланирован.",
+  "QC0_completion_pending": null,
+  "HF4_gate": "Установить соответствие коэффициентов угловому базису/мере; различать скалярную карту на вспомогательной сфере и физическую метрику горизонта.",
+  "corrections": [
+    "В старом текстовом пересказе Jf=0.648087073319352 было ошибочно названо безразмерным спином; правильный chi=Jf/Mf^2.",
+    "Правильное Mf в файле 0.977461203278627; число 0.977641203 в пересказе было опечаткой.",
+    "Ориентир R6B — приближённая формула BCW, а не точное численное значение квазинормальной частоты.",
+    "В старом сравнении BIC свободные частота и затухание брались из отдельных регрессий фазы и лог-модуля, а не из минимума того же комплексного RSS. Для строгого сравнения моделей это надо исправить.",
+    "Коррелированные остатки и отсутствие модели численной ошибки не позволяют трактовать старые BIC как калиброванную статистическую проверку ОТО.",
+    "R6A/R6B не пересчитывались: прочитаны готовый итог и исходный код; архив исходных временных рядов здесь не анализировался."
+  ],
+  "last_completed_Yitian_stage": "BH-YITIAN-A4",
+  "A3_status": "BH_YITIAN_A3_LATE_M0_DESCRIPTION_EARLY_PREDICTION_NOT_CLOSED",
+  "A3_early_closure_reached": false,
+  "A4_status": "BH_YITIAN_A4_LATE_M4_MIXING_SUPPORTED_EARLY_CLOSURE_NOT_REACHED_QUADRATIC_IDENTIFICATION_NOT_ESTABLISHED",
+  "A4_early_closure_reached": false,
+  "A4_quadratic_identification_established": false,
+  "existing_preparation_script": "hf3_continuation/prior/Пространства/prepare_qc0_t95_recovery.py",
+  "next_after_QC0": "HF4-A1 → проверяемые карты геометрических величин → научная визуализация.",
+  "open_research": "Ранняя динамика m=0/m=4; нелинейные связи не идентифицированы. Это не основание приписывать остаткам новую физику.",
+  "A4_source_HDF5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "parent_resume_state_sha256": "f0d2893cb3cd29dabd9391b253810955dc72060eaef880093fccadea2823fcfa",
+  "stage": "BH-HF3-R7B",
+  "state": "BH_HF3_R7B_THIRD_PERIOD_R15_R30_R40_KERR220_COMPATIBILITY_SUPPORTED_HF4_READY",
+  "prepared_date_UTC": "2026-09-15",
+  "last_verified_QC0": {
+    "time_M": 105,
+    "iteration": 53760,
+    "exit_status": 0,
+    "seam95_exact": true,
+    "input_archive_sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b"
+  },
+  "R7": {
+    "program": "prepare_qc0_t105_recovery.py",
+    "program_sha256": "8f90428e15af98defb1aed7f31a78b69008749ac5c0f142807c6ef1c7a241c39",
+    "source_parameter_sha256_LF": "37deeb1e34a49f4fdc09dd2874a3b7f97f97d9fc0841e6c3d316d38e1f68b0d4",
+    "prepared_parameter_sha256": "fa9b64029bf44e3337966513a62a72a12d72215fe34450d7b016efdefbbaef8f",
+    "changed_parameters": {
+      "Cactus::cctk_final_time": "105",
+      "IO::out_dir": "\"/home/alex/simulations/qc0_lite_t105_recover\"",
+      "IO::checkpoint_dir": "\"/home/alex/simulations/qc0_lite_t105_recover\"",
+      "IO::recover_dir": "\"/home/alex/simulations/qc0_lite_t95_recover\""
+    },
+    "checkpoint_files_on_user_computer_not_read_here": true,
+    "mpi_processes": 2,
+    "omp_threads_per_process": 2,
+    "target_time_M": 105,
+    "target_iteration": 53760,
+    "local_checks_passed": 10,
+    "checks_are_synthetic_not_evolution": true,
+    "user_command": "source ~/gw_env/bin/activate\npython /mnt/c/Users/Admin/Downloads/prepare_qc0_t105_recovery.py --run",
+    "return_bundle": "C:\\Users\\Admin\\BH_HF3_R7A_output.zip",
+    "diagnostic_bundle": "C:\\Users\\Admin\\BH_HF3_R7_diagnostic.zip",
+    "state": "COMPLETED_T105_IT53760_EXIT0"
+  },
+  "HF3_scientific_completion_not_yet_declared": false,
+  "last_completed_stage": "BH-HF3-R7B",
+  "no_new_evolution_run_here": true,
+  "new_evolution_completed_by_user": true,
+  "HF3_completion_scope": "Выполнен запланированный контроль позднего кольцевания на трёх радиусах. Полная динамика и численная сходимость не объявлены доказанными.",
+  "R7B_summary_sha256": "acef1a5f54213b34d62c95d260844c75e1186859218b825b4af64d6157a35af6",
+  "R7B": {
+    "classification": "BH_HF3_R7B_THIRD_PERIOD_R15_R30_R40_KERR220_COMPATIBILITY_SUPPORTED_HF4_READY",
+    "reference": {
+      "Mf": 0.977461203278627,
+      "Jf": 0.648087073319352,
+      "chi": 0.6783194994253878,
+      "omega": 0.5353401318639867,
+      "alpha": 0.08345059699511974
+    },
+    "third_period_cases": [
+      {
+        "samples_complex": 47,
+        "first_sample_M": 65.75,
+        "last_sample_M": 77.25,
+        "omega": 0.5353219494313304,
+        "alpha": 0.08218815219097099,
+        "signed_phase_slope": -0.5342573533775127,
+        "omega_logphase": 0.5342573533775127,
+        "alpha_logamplitude": 0.08283326529846606,
+        "relative_omega_difference": 3.396426229618221e-05,
+        "relative_alpha_difference": 0.015128050003316074,
+        "fixed_nrmse": 0.023874708321352935,
+        "free_nrmse": 0.023551453174968352,
+        "fixed_rss": 2.8836180516010664e-08,
+        "free_rss": 2.8060603357480006e-08,
+        "signal_energy": 5.058963972571007e-05,
+        "fixed_amplitude_re_im": [
+          -0.0005069349469253534,
+          0.0014654737023784591
+        ],
+        "free_amplitude_re_im": [
+          -0.0005043086832779392,
+          0.0014582213396961718
+        ],
+        "nominal_delta_BIC_fixed_minus_free": -6.523746326472887,
+        "nominal_BIC_n_real": 94,
+        "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+        "all_optimizers_successful": true,
+        "optimizer_solution_spread": [
+          2.8050894940179205e-11,
+          5.00199881514618e-11
+        ],
+        "at_parameter_boundary": false,
+        "radius_M": 15,
+        "period": 3,
+        "requested_window_M": [
+          65.7236196044273,
+          77.46042940664094
+        ],
+        "peak_M": 42.25,
+        "case_kind": "primary",
+        "minus2_conjugacy_relative_difference": 5.634229575219282e-16
+      },
+      {
+        "samples_complex": 47,
+        "first_sample_M": 81.75,
+        "last_sample_M": 93.25,
+        "omega": 0.5357144703400063,
+        "alpha": 0.08285013649242758,
+        "signed_phase_slope": -0.5342172874098456,
+        "omega_logphase": 0.5342172874098456,
+        "alpha_logamplitude": 0.08335161181977987,
+        "relative_omega_difference": 0.0006992535282499546,
+        "relative_alpha_difference": 0.007195400923582063,
+        "fixed_nrmse": 0.02594397402705576,
+        "free_nrmse": 0.02585035631152115,
+        "fixed_rss": 8.920969648358414e-09,
+        "free_rss": 8.856703936634027e-09,
+        "signal_energy": 1.3253758715713897e-05,
+        "fixed_amplitude_re_im": [
+          -0.0003817998793977964,
+          0.000695797046716906
+        ],
+        "free_amplitude_re_im": [
+          -0.00038192226300621146,
+          0.000693586870020484
+        ],
+        "nominal_delta_BIC_fixed_minus_free": -8.40697271952455,
+        "nominal_BIC_n_real": 94,
+        "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+        "all_optimizers_successful": true,
+        "optimizer_solution_spread": [
+          5.613487452649224e-11,
+          7.975804738880043e-11
+        ],
+        "at_parameter_boundary": false,
+        "radius_M": 30,
+        "period": 3,
+        "requested_window_M": [
+          81.7236196044273,
+          93.46042940664094
+        ],
+        "peak_M": 58.25,
+        "case_kind": "primary",
+        "minus2_conjugacy_relative_difference": 4.612687264270541e-16
+      },
+      {
+        "samples_complex": 47,
+        "first_sample_M": 92.5,
+        "last_sample_M": 104.0,
+        "omega": 0.5359139091981882,
+        "alpha": 0.08233198918369211,
+        "signed_phase_slope": -0.5344804844685668,
+        "omega_logphase": 0.5344804844685668,
+        "alpha_logamplitude": 0.0831680003316607,
+        "relative_omega_difference": 0.00107179959067083,
+        "relative_alpha_difference": 0.013404431504463021,
+        "fixed_nrmse": 0.02660824692267391,
+        "free_nrmse": 0.026318570330291575,
+        "fixed_rss": 5.126113335758126e-09,
+        "free_rss": 5.015107742734342e-09,
+        "signal_energy": 7.240285300821815e-06,
+        "fixed_amplitude_re_im": [
+          -0.00023109665552283233,
+          0.0005391546049064702
+        ],
+        "free_amplitude_re_im": [
+          -0.00023129573731738506,
+          0.0005362558382990866
+        ],
+        "nominal_delta_BIC_fixed_minus_free": -7.028663318951308,
+        "nominal_BIC_n_real": 94,
+        "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+        "all_optimizers_successful": true,
+        "optimizer_solution_spread": [
+          7.41233741052838e-11,
+          1.0756226465069574e-10
+        ],
+        "at_parameter_boundary": false,
+        "radius_M": 40,
+        "period": 3,
+        "requested_window_M": [
+          92.4736196044273,
+          104.21042940664094
+        ],
+        "peak_M": 69.0,
+        "case_kind": "primary",
+        "minus2_conjugacy_relative_difference": 7.202588524267776e-16
+      }
+    ],
+    "remaining_relative_single_mode_residual": 0.02660824692267391,
+    "numeric_targets_pass": true,
+    "calibrated_statistical_Kerr_acceptance": false,
+    "resolution_convergence_test_available": false,
+    "new_physics_established": false
+  }
+}

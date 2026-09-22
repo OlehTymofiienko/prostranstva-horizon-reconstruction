@@ -1,0 +1,120 @@
+{
+  "date_UTC": "2026-09-20",
+  "files": [
+    {
+      "path": "BH_HF4_B2.py",
+      "bytes": 11560,
+      "sha256": "7bbd622d99e72dff07706af64e838d5027d88366126f532108cfcb3f20437d7e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1396,
+      "sha256": "2a2f70da9b096d5ccd1d5e99b60bf16ce6c268f9a2971457664e78e9bbc82309"
+    },
+    {
+      "path": "build_B2_view.py",
+      "bytes": 6114,
+      "sha256": "a1a1e24afe0d96535066bae88995cd3f95063b2119abecb6fab2bed06941b6e9"
+    },
+    {
+      "path": "check_B2_view.cjs",
+      "bytes": 3893,
+      "sha256": "b5e0b97c2b4eb9ec740036978280bea1bfe3299f05c1f4fc53ffae9f257c8a77"
+    },
+    {
+      "path": "provenance/BH_HF4_B1_birth_field_hotspots.csv",
+      "bytes": 1641,
+      "sha256": "78c40bb4fb2cddabf86fd09f0f0926e463d357229769bdfe4de215ca7701ccbe"
+    },
+    {
+      "path": "provenance/BH_HF4_B1_metrics.csv",
+      "bytes": 8214,
+      "sha256": "18e91d2f06ab1e2ee9cb57a3d90ff054c6f438b029f5f560dd02c1426ba15fe8"
+    },
+    {
+      "path": "provenance/BH_HF4_B1_report.txt",
+      "bytes": 4492,
+      "sha256": "576deeef8fe377a54d2419d972cd00ee2616f530e5bac6ab59d22e79c5866f56"
+    },
+    {
+      "path": "provenance/BH_HF4_birth_geometry_report.txt",
+      "bytes": 1405,
+      "sha256": "92aec9c7d478c3137734e9ba75da7011acb5acbc876479608f962e7fbfb7cd47"
+    },
+    {
+      "path": "provenance/BH_HF4_early_geometry_search.txt",
+      "bytes": 9868,
+      "sha256": "26d80954ec495d86ef5987d160d5d424da0ef549a2e0942afab347c9eab54ce0"
+    },
+    {
+      "path": "results/BH_HF4_B2_analysis_definition.json",
+      "bytes": 994,
+      "sha256": "db953bf26dcdb8d3ddd8270575f646087e4bf890bc9f4ce4bd4add5b127dc0b3"
+    },
+    {
+      "path": "results/BH_HF4_B2_controller.js",
+      "bytes": 5575,
+      "sha256": "0df1d869f26b1f1759beb2b49f73434f522e82f328c9a748bce666c44873186e"
+    },
+    {
+      "path": "results/BH_HF4_B2_fields_3D.html",
+      "bytes": 9781231,
+      "sha256": "c7f71f133df8c861f7965cf3f186a3b83b8081a825398fe09015341bd43d42b7"
+    },
+    {
+      "path": "results/BH_HF4_B2_fields_and_masks.npz",
+      "bytes": 1085347,
+      "sha256": "10b448a8e9f70556670d14d015a90cd2c6557bde7a61a4ac5e1fea73db4fdfa4"
+    },
+    {
+      "path": "results/BH_HF4_B2_localization.csv",
+      "bytes": 21358,
+      "sha256": "8db597b071de1cc094122c3bf8ccaecb9a92f499b1991a2650647208cbd12253"
+    },
+    {
+      "path": "results/BH_HF4_B2_overview.png",
+      "bytes": 477690,
+      "sha256": "a3b8cccdd88ab8a1ecadeaa0f6336a7f180a47b52f964d8143a8874786ce0791"
+    },
+    {
+      "path": "results/BH_HF4_B2_report.md",
+      "bytes": 16654,
+      "sha256": "27602bbd08a531a9825e77e9db238310bb179d287aa47fdd38a7f58723af2c46"
+    },
+    {
+      "path": "results/BH_HF4_B2_summary.json",
+      "bytes": 12444,
+      "sha256": "5f3e8e625c9bcc0576783f8d593db131f588ff64e082886e610cb5b782bb9feb"
+    },
+    {
+      "path": "results/BH_HF4_B2_temporal_pairs.csv",
+      "bytes": 3019,
+      "sha256": "64712c523f8463798fa03b77f4c9c9cbf8dc0366b2f7946fa551a1a29bc62eef"
+    },
+    {
+      "path": "results/BH_HF4_B2_view_data.json",
+      "bytes": 4931370,
+      "sha256": "3e6885248dd53c9103f3867b9472d106b65b6e8a91c197cd3b2eb3bcd9b35dd3"
+    },
+    {
+      "path": "results/BH_HF4_B2_viewer_checks.json",
+      "bytes": 196,
+      "sha256": "84bc474c103d1cf5bb0125a575d15d5f921d16523fa4066118c79cfd70734af8"
+    },
+    {
+      "path": "results/BH_HF4_resume_state_B2.json",
+      "bytes": 10646,
+      "sha256": "30d4217a11b3b07507e104e6140372e4f4d28e172805ffa5706e903d5daa34f7"
+    },
+    {
+      "path": "vendor/plotly-3.3.1.min.js",
+      "bytes": 4838938,
+      "sha256": "e2b0f77ee8156ff9d525852fe4acb7bfe7d85e8a2e1da0523f6d16209b848968"
+    },
+    {
+      "path": "viewer_template.html",
+      "bytes": 10941,
+      "sha256": "ae0f00bb980121fcaa39c7d9f068c5679eaff8d5d2d99abf9f8b00d48d780d10"
+    }
+  ]
+}

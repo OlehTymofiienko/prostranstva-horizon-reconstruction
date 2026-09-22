@@ -1,0 +1,339 @@
+{
+  "project": "Пространства / HF3–HF4",
+  "date_UTC": "2026-09-20",
+  "stage": "BH-HF4-B2",
+  "last_completed_stage": "BH-HF4-B2",
+  "parent_confirmed_stage": "BH-HF4-B1",
+  "classification": "BH_HF4_B2_QC0_SURFACE_FIELD_LOCALIZATION_AND_TWO_SHORT_TIME_BLOCKS_CHARACTERIZED",
+  "resume_note": "B1 восстановлен по фактическим отчёту и данным; B2 выполнен. Старый A3 next_task о получении ZIP устарел. Не возвращаться к нему и не повторять подтверждённые этапы.",
+  "new_evolution_run": false,
+  "previous_scientific_results_recomputed": false,
+  "previous_results": {
+    "last_verified_QC0": {
+      "time_M": 105,
+      "iteration": 53760,
+      "exit_status": 0,
+      "seam95_exact": true,
+      "input_archive_sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b"
+    },
+    "HF3_completed_scope": "Выполнен запланированный контроль позднего кольцевания на трёх радиусах. Полная динамика и численная сходимость не объявлены доказанными.",
+    "QC0_remnant_and_QNM_reference": {
+      "Mf": 0.977461203278627,
+      "Jf": 0.648087073319352,
+      "chi": 0.6783194994253878,
+      "omega": 0.5353401318639867,
+      "alpha": 0.08345059699511974
+    },
+    "last_completed_Yitian_dynamics_stage": "BH-YITIAN-A4",
+    "Yitian_A3_status": "BH_YITIAN_A3_LATE_M0_DESCRIPTION_EARLY_PREDICTION_NOT_CLOSED",
+    "Yitian_A4_status": "BH_YITIAN_A4_LATE_M4_MIXING_SUPPORTED_EARLY_CLOSURE_NOT_REACHED_QUADRATIC_IDENTIFICATION_NOT_ESTABLISHED",
+    "HF4_A1_status": "BH_HF4_A1_SCALAR_MAPS_RECONSTRUCTED_LATE_AXISYMMETRIC_CONTROL_PASSED_FINITE_MULTIPOLES_DO_NOT_FIX_FULL_GEOMETRY",
+    "HF4_A2_status": "COMPLETED_WITH_STATED_NUMERICAL_AND_GEOMETRIC_LIMITS"
+  },
+  "simulations_must_remain_distinct": {
+    "current_3D_scene": "QC0",
+    "Yitian_multipoles": "SXS:BBH:0389",
+    "original_HF1_structure": "SXS:BBH:0305/Lev6"
+  },
+  "completed_B1_reused": {
+    "birth_iteration": 9536,
+    "birth_time_M": 18.625,
+    "preceding_selected_no_common_iteration": 9504,
+    "initial_span_ratio": 2.6123348577,
+    "final_available_span_ratio": 1.568002413,
+    "B1_metrics_sha256": "18e91d2f06ab1e2ee9cb57a3d90ff054c6f438b029f5f560dd02c1426ba15fe8"
+  },
+  "B2_input": {
+    "VTK_files": 44,
+    "snapshots_all_surfaces": 16,
+    "snapshots_common": 12,
+    "angular_grid": [
+      35,
+      72
+    ],
+    "points_per_surface": 2520,
+    "selected_fields": [
+      "repsi2",
+      "impsi2",
+      "abs_npsigma"
+    ],
+    "common_time_blocks_M": [
+      [
+        18.625,
+        18.9375
+      ],
+      [
+        20.25,
+        20.5625
+      ]
+    ],
+    "gap_M": 1.3125,
+    "within_block_step_M": 0.0625
+  },
+  "B2_method": {
+    "stage": "BH-HF4-B2",
+    "date_UTC": "2026-09-20",
+    "purpose": "Descriptive localization on QC0 common apparent horizon; not a new detection test",
+    "fields": [
+      "repsi2",
+      "impsi2",
+      "abs_npsigma"
+    ],
+    "threshold_quantiles": [
+      0.9,
+      0.95,
+      0.98
+    ],
+    "primary_display_quantile": 0.95,
+    "deviation": "absolute deviation from weighted median of the current snapshot",
+    "weights": "Euclidean coordinate triangle area, lumped to vertices; not proper horizon area",
+    "region_definition": "abs(normalized coordinate)>=0.65 along each local axis; diagnostic regions can overlap",
+    "local_axes": "u from coordinate area centroids AH1 to AH2, w=simulation z, v=w cross u; u projected to xy",
+    "time_comparison": "same stored angular-grid indices, average normalized coordinate-area weights",
+    "maximum_contiguous_gap_M": 0.0625001,
+    "HF1_mask_reused": false,
+    "Yitian_field_reused": false,
+    "B1_metrics_recomputed": false,
+    "confirmatory_or_preregistered": false
+  },
+  "B2_results": {
+    "repsi2": {
+      "long_axis_fraction_range": [
+        0.9518728438342534,
+        1.0
+      ],
+      "polar_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "mask_Dice_range": [
+        0.8378155040301408,
+        1.0
+      ],
+      "field_correlation_range": [
+        0.9914683136168132,
+        0.9996572323665848
+      ],
+      "selected_area_range": [
+        0.050003964525661845,
+        0.05141424957459969
+      ]
+    },
+    "impsi2": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.25358555184970033
+      ],
+      "polar_fraction_range": [
+        0.7464144481502998,
+        1.0
+      ],
+      "mask_Dice_range": [
+        0.9022084492363477,
+        0.9889177367754047
+      ],
+      "field_correlation_range": [
+        0.998168696835774,
+        0.9999070982907525
+      ],
+      "selected_area_range": [
+        0.05000586907220064,
+        0.050521360067436266
+      ]
+    },
+    "abs_npsigma": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "polar_fraction_range": [
+        1.0,
+        1.0
+      ],
+      "mask_Dice_range": [
+        0.959237745920985,
+        0.9969670050320952
+      ],
+      "field_correlation_range": [
+        0.9996649641919921,
+        0.9999316982483326
+      ],
+      "selected_area_range": [
+        0.05001611542710763,
+        0.050171457597559234
+      ]
+    }
+  },
+  "B2_limits": {
+    "physical_area_weights": false,
+    "coordinate_and_tetrad_independence_established": false,
+    "continuous_tracking_across_gap": false,
+    "new_physics_established": false,
+    "HF1_structure_identified_in_QC0": false,
+    "event_horizon_reconstructed": false,
+    "numerical_resolution_convergence_tested": false,
+    "confirmatory_significance_tested": false
+  },
+  "verification": {
+    "controller_states_tested": 192,
+    "render_calls": 197,
+    "source_masks_match": true,
+    "gap_playback_stops": true,
+    "camera_control_dispatch": true,
+    "browser_WebGL_render_tested": false,
+    "static_figure_visually_inspected": true,
+    "viewer_full_precision_mask_indices_exact": true,
+    "maximum_visualization_absolute_roundoff": 4.99974747714127e-09,
+    "full_source_core_duplicates_byte_identical": true
+  },
+  "returned_A3_inventory": {
+    "received": true,
+    "manifest_entries_verified": 190,
+    "stored_checkpoint_times_M": [
+      30,
+      50,
+      70,
+      95,
+      105
+    ],
+    "MPI_parts": 2,
+    "common_slot": 2,
+    "old_individual_slots_not_current": true,
+    "physical_metric_reconstruction_not_yet_certified": true,
+    "library_file_id": "libfile_414afe6c284081919725d43140b19043"
+  },
+  "next_stage": "BH-HF4-B3",
+  "next_task": "Проверить физические веса площади и зависимость локализации от тетрады/параметризации по уже сохранённым поверхностям. Не повторять B2 и не запускать эволюцию.",
+  "next_actions": [
+    "Прочитать эту запись и готовые отчёты B1/B2, использовать готовые CSV/NPZ и контрольные суммы.",
+    "Из полного уже полученного birth_package использовать сохранённые координаты и касательные комплексные компоненты m; проверить угловую сетку и нормировку перед реконструкцией q_AB.",
+    "Проверить положительность внутренней метрики, касательность тетрады и собственную площадь относительно независимой QLM-площади там, где она доступна. Непроверенный поздний пробный расчёт A3 не считать завершённым физическим результатом.",
+    "При успешных проверках сравнить маски с физическими весами. В первом сравнении сохранить поля, кадры и координатные оси B2, чтобы выделить влияние весов. Отдельно оценить зависимость от тетрады и соответствия угловых точек.",
+    "Для полной серии AH3 до 22M добрать готовые кадры итераций 9728–10336 и 10560–11264 с шагом 32 (43 файла). Отдельно установить доступность AH1/AH2 для фильма; не считать их пропуски заполненными.",
+    "Локализацию оригинальной HF1-структуры делать на её собственных поверхностях SXS:BBH:0305; не выдавать маску B2 за эту структуру."
+  ],
+  "user_local_action_required_now": false,
+  "source_locations": {
+    "full_package": {
+      "filename": "BH_HF4_birth_package.tar.gz",
+      "library_file_id": "libfile_7b3f1606e36c8191880fd6f91111068a",
+      "sha256": "392f9ac5887a8d250318f61ac98c84e162f91014d021cb8d8bc4df6654053349",
+      "local_extracted": "hf4_latest/full"
+    },
+    "core_package": {
+      "filename": "BH_HF4_birth_core.tar.gz",
+      "library_file_id": "libfile_e96a9f543ce8819199787ff551f41e6c",
+      "sha256": "291c6a22a9c73a731ac1b91fc038f478be830addeab377af60f2e1ff0d6f83a4"
+    },
+    "B1_report": {
+      "filename": "BH_HF4_B1_report.txt",
+      "library_file_id": "libfile_40dec6df561c819196eb4ea9b8033cb6"
+    },
+    "B1_metrics": {
+      "filename": "BH_HF4_B1_metrics.csv",
+      "library_file_id": "libfile_f1e1d168a13881918eaee4ed1312d23f"
+    },
+    "B1_viewer": {
+      "filename": "BH_HF4_birth_3D_interactive.html",
+      "library_file_id": "libfile_54fa202944cc8191878e62c3166ee60b"
+    },
+    "original_user_output_directory": "/home/alex/EinsteinToolkit_2026_05/Cactus/qc0-horizon-multipoles-lite-t22-mpi2",
+    "duplicate_inputs_received_with_3D_note": {
+      "full_package": "libfile_1b6b7a0a6e588191a12d5a909e1fb3c0",
+      "B1_report": "libfile_7aebe771ef0481918fe93da9961e2269",
+      "B1_metrics": "libfile_3552f819ef6c8191820a8ee2f55fd779",
+      "B1_hotspots": "libfile_7c106ba02594819187c5c09fa6baa38d"
+    }
+  },
+  "deliverables": {
+    "report": "results/BH_HF4_B2_report.md",
+    "viewer": "results/BH_HF4_B2_fields_3D.html",
+    "overview": "results/BH_HF4_B2_overview.png",
+    "resume_state": "results/BH_HF4_resume_state_B2.json",
+    "results_archive": "BH_HF4_B2_results.zip"
+  },
+  "hashes": {
+    "program": "7bbd622d99e72dff07706af64e838d5027d88366126f532108cfcb3f20437d7e",
+    "B2_summary": "5f3e8e625c9bcc0576783f8d593db131f588ff64e082886e610cb5b782bb9feb",
+    "B2_report": "27602bbd08a531a9825e77e9db238310bb179d287aa47fdd38a7f58723af2c46",
+    "B2_fields_and_masks": "10b448a8e9f70556670d14d015a90cd2c6557bde7a61a4ac5e1fea73db4fdfa4",
+    "B2_viewer": "c7f71f133df8c861f7965cf3f186a3b83b8081a825398fe09015341bd43d42b7"
+  },
+  "context_addendum_3D": {
+    "source_filename": "3Д.txt",
+    "source_library_file_id": "libfile_a7ccff12e1208191982b6a3e31e2f634",
+    "source_sha256": "ffdfd492dfbd63e334c2ce0558605b206ffee55314d27625126f74649612cd3d",
+    "fully_read": true,
+    "date_UTC": "2026-09-20",
+    "source_describes_checkpoint": "HF4-B1",
+    "source_instruction_to_run_B2_already_fulfilled": true,
+    "all_four_attached_data_files_byte_identical_to_B2_inputs": true,
+    "source_inventory_common_frames_count": 55,
+    "source_inventory_common_iteration_range": [
+      9536,
+      11264
+    ],
+    "actual_received_common_frames_count": 12,
+    "missing_common_iterations_for_full_source_inventory": [
+      9728,
+      9760,
+      9792,
+      9824,
+      9856,
+      9888,
+      9920,
+      9952,
+      9984,
+      10016,
+      10048,
+      10080,
+      10112,
+      10144,
+      10176,
+      10208,
+      10240,
+      10272,
+      10304,
+      10336,
+      10560,
+      10592,
+      10624,
+      10656,
+      10688,
+      10720,
+      10752,
+      10784,
+      10816,
+      10848,
+      10880,
+      10912,
+      10944,
+      10976,
+      11008,
+      11040,
+      11072,
+      11104,
+      11136,
+      11168,
+      11200,
+      11232,
+      11264
+    ],
+    "source_inventory_individual_surface_missing_iterations": [
+      192,
+      8608,
+      10656,
+      10752
+    ],
+    "reported_early_run_0_22_exit_zero_log_independently_checked_in_this_addendum": false,
+    "B3_completed": false,
+    "scientific_results_recomputed": false,
+    "integration_note": "results/BH_HF4_3D_route_update.md",
+    "decisions": [
+      "Use saved B1 and completed B2; do not return to old B2-start instruction.",
+      "Check physical area weighting and conventions before stronger localization claims.",
+      "Fill the received sampling gaps from existing local output where available, not new evolution.",
+      "Keep QC0, Yitian SXS:BBH:0389 and HF1 SXS:BBH:0305 separate."
+    ]
+  }
+}

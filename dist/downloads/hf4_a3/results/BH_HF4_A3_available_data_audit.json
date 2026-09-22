@@ -1,0 +1,111 @@
+{
+  "date_utc": "2026-09-16",
+  "task": "HF4-A3 geometry inventory; no A1/A2/R7B physics recomputed",
+  "parameters_path": "/workspace/scratch/b0e54008867a/hf3_r7b/input/provenance/qc0-horizon-multipoles-lite-t105-recover.par",
+  "parameters_sha256": "fa9b64029bf44e3337966513a62a72a12d72215fe34450d7b016efdefbbaef8f",
+  "parameters": {
+    "IOHDF5::out_every": [
+      "0"
+    ],
+    "IOHDF5::out_vars": [
+      "\"\""
+    ],
+    "AHFinderDirect::output_h_every": [
+      "0"
+    ],
+    "IOASCII::out0D_every": [
+      "32"
+    ],
+    "IOASCII::out1D_every": [
+      "0"
+    ],
+    "IOASCII::out2D_every": [
+      "0"
+    ],
+    "SphericalSurface::maxntheta": [
+      "39"
+    ],
+    "SphericalSurface::maxnphi": [
+      "76"
+    ],
+    "IO::checkpoint_on_terminate": [
+      "yes"
+    ],
+    "QuasiLocalMeasures::output_vtk_every": []
+  },
+  "Yitian_HDF5_path": "/workspace/scratch/b0e54008867a/hf4_a1/input/Moments_500M_L30.h5",
+  "Yitian_HDF5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "Yitian_datasets": [
+    {
+      "name": "geo_mass/Adaptive",
+      "shape": [
+        5001,
+        81
+      ],
+      "dtype": "complex128"
+    },
+    {
+      "name": "geo_spin/Adaptive",
+      "shape": [
+        5001,
+        81
+      ],
+      "dtype": "complex128"
+    },
+    {
+      "name": "time_adaptive",
+      "shape": [
+        5001
+      ],
+      "dtype": "float64"
+    }
+  ],
+  "QC0_archive_sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b",
+  "QC0_archive_members": 647,
+  "QC0_archive_full_geometry_candidates": [],
+  "QC0_existing_radius_series": {
+    "path": "/workspace/scratch/b0e54008867a/hf3_r7b/input/t95_t105/sphericalsurface-sf_radius..asc",
+    "rows": 161,
+    "columns": [
+      18
+    ],
+    "column_format": "1:it 2:tl 3:rl 4:c 5:ml 6:ix 7:iy 8:iz 9:time 10:x 11:y 12:z 13..18:sf_radius[0..5]",
+    "distinct_ijk": [
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "distinct_xyz": [
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "first_time": 95.0,
+    "last_time": 105.0,
+    "interpretation": "One angular grid sample per surface, not a full surface mesh"
+  },
+  "reference_source_commit": "edd7fe658cb6748cd9ac8efcea314214b87bc043",
+  "reference_is_not_user_local_binary_verification": true,
+  "QLM_surface_and_tetrad_storage_declared": true,
+  "QLM_twometric_explicit_checkpoint_no": true,
+  "actual_local_checkpoints_examined": false,
+  "source_checksums": {
+    "reference/A3_additional_source_fetch.json": "55efedf44d9e5825bb55ac5069402e230f871988d0e5f61c989ddfb49a9119ba",
+    "reference/AHFinderDirect_interface.ccl": "78d4156e8c813ab6de99bec266e892de938b70d7320f5e3510934cf030e67279",
+    "reference/AHFinderDirect_param.ccl": "bcee2789339c69fddbc5c3312a847c3e48bcc30cc54fbdbd3283c9d3e269e5ca",
+    "reference/AHFinderDirect_schedule.ccl": "b5bd4fc929ee9a6a4922164f6fffb589f874e2373a15e6885472f538d8db2748",
+    "reference/AHFinderDirect_source.json": "4e1b7d8d5897c1edbb3214d0971db57fe89c441b01ce1b4e42b1e2811c2928cf",
+    "reference/QuasiLocalMeasures_interface.ccl": "3889856e72d4faf6230452e57c600d7681deea9df520effe62294c2607ba0f68",
+    "reference/QuasiLocalMeasures_param.ccl": "0d9c6b9f3b610fdfd05177a61412d20ef1db947fdbfa0383ea26b9d36594cae8",
+    "reference/QuasiLocalMeasures_schedule.ccl": "d0c7405b8f63f845d9fec347b76e3e41fb74dcaf1b01f22da24b4b1f971c0740",
+    "reference/QuasiLocalMeasures_source.json": "39fbb499bd3177c6cb4006186991d4c80bf0532436ed0a31dcb6e688583a3993",
+    "reference/QuasiLocalMeasures_src_qlm_coordinates.F90": "d42d42a286970f9fd7757e4d52b2ac22b0641b0710112a4896724f0f428741c5",
+    "reference/QuasiLocalMeasures_src_qlm_tetrad.F90": "9d0c8c0fbc7f888061be127c312549a68cc75c7c1708a52c57eff4ebba7288c7",
+    "reference/QuasiLocalMeasures_src_qlm_tetrad1.F90": "21dc1b770d2f37d2408b5d4d7629380cf71add0b213971d673d67fda228055e9",
+    "reference/QuasiLocalMeasures_src_qlm_twometric.F90": "e4c225eaec7851c534b4e0d421d78ed63a1a734d15224c225c28efc8c552f36d"
+  }
+}

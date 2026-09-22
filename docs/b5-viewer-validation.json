@@ -1,0 +1,8 @@
+{
+  "states_checked": 660,
+  "canvas_draw_dispatches": 1995,
+  "fields_degrees_times_and_metric_readouts": true,
+  "playback_restarts_at_first_frame": true,
+  "scrubbing_pauses_playback": true,
+  "browser_canvas_render_tested": false
+}

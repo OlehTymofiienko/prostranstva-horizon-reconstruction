@@ -1,0 +1,24 @@
+{
+  "stage": "BH-HF4-B5",
+  "status": "COMPLETE_DESCRIPTIVE_COORDINATE_HARMONIC_DECOMPOSITION",
+  "saved_UTC": "2026-09-22T05:49:21.547761+00:00",
+  "completed": [
+    "HF4-B4 saved geometry reused",
+    "HF4-B5 all 660 field fits",
+    "residual localization and conditioning checks"
+  ],
+  "input_sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
+  "previous_results_recomputed": false,
+  "resume_action": "Package and publish reconstruction research release 1.0; do not rerun B4 or B5.",
+  "scientific_scope": "Available-data reconstruction and descriptive analysis, not complete all-time geometry or evidence of new physics",
+  "publication_status": "IN_PREPARATION_NOT_YET_PUBLISHED",
+  "unresolved": [
+    "QC0 continuous geometry 0..105M absent",
+    "resolution/gauge/tetrad robustness of localized residuals untested",
+    "initial RePsi2 residual dominated by two nodes; origin not determined",
+    "Yitian early nonlinear closure not established"
+  ],
+  "report": "results/BH_HF4_B5_report.md",
+  "input": "input/BH_HF4_B4_fields_geometry_masks.npz",
+  "results": "results/BH_HF4_B5_fits_residuals.npz"
+}

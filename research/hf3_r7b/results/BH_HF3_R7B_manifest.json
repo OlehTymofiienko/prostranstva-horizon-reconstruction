@@ -1,0 +1,161 @@
+{
+  "stage": "BH-HF3-R7B",
+  "classification": "BH_HF3_R7B_THIRD_PERIOD_R15_R30_R40_KERR220_COMPATIBILITY_SUPPORTED_HF4_READY",
+  "files": [
+    {
+      "path": "BH_HF3_R7B.py",
+      "bytes": 17739,
+      "sha256": "efa37488259deb9c73623c57357cee78baab24b807e8f9add6d71a0cd724b643"
+    },
+    {
+      "path": "BH_HF3_R7B_finish.py",
+      "bytes": 25807,
+      "sha256": "18bd6fea301170c504bdd45779b03b74d5d7d075e3c9b0decbcc443902e6ce5c"
+    },
+    {
+      "path": "prepare_qc0_t105_recovery.py",
+      "bytes": 29576,
+      "sha256": "8f90428e15af98defb1aed7f31a78b69008749ac5c0f142807c6ef1c7a241c39"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 23,
+      "sha256": "e13491531df6eeb59d6420ef04d4b5651adec77439da3bccd7409e90f0988035"
+    },
+    {
+      "path": "README_RU.txt",
+      "bytes": 1159,
+      "sha256": "3876563afb0505782dcc694659ea4b2f13de797bffce723c2a0b26dbd93935c9"
+    },
+    {
+      "path": "inputs/BH_HF3_R6A_audit_bundle.zip",
+      "bytes": 5801241,
+      "sha256": "995ce6499d15fc2763962cc1eac565152df633f533996d524accd3f7dd510686"
+    },
+    {
+      "path": "inputs/BH_HF3_R7A_output.zip",
+      "bytes": 4362104,
+      "sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b"
+    },
+    {
+      "path": "inputs/BH_HF3_resume_state_R7_prepared.json",
+      "bytes": 7239,
+      "sha256": "f0d2893cb3cd29dabd9391b253810955dc72060eaef880093fccadea2823fcfa"
+    },
+    {
+      "path": "results/BH_HF3_R7B_cases.json",
+      "bytes": 10663,
+      "sha256": "803aca37e4657c87fadd553dbb302933e1b1ac5582fec2b88116e2f0663b293d"
+    },
+    {
+      "path": "results/BH_HF3_R7B_fit_checks.json",
+      "bytes": 437,
+      "sha256": "f6a5d752813ea4bac8e19c0f37676868927fbce8239cf1656d088dbd4e678e20"
+    },
+    {
+      "path": "results/BH_HF3_R7B_holdout.json",
+      "bytes": 1593,
+      "sha256": "addb893bb3d8f3d2793ef866032ec31e12a869d6b5d18030aac28a4c5a7753d4"
+    },
+    {
+      "path": "results/BH_HF3_R7B_horizon.json",
+      "bytes": 2025,
+      "sha256": "178692caadd3850fca1f59083bdd9fa4e7fdac72c89cf8c2d527565295e57b41"
+    },
+    {
+      "path": "results/BH_HF3_R7B_horizon.tsv",
+      "bytes": 37349,
+      "sha256": "857130ede6991faf17168bcb560da470d2642ab86523142e0f8f99ebad025b5d"
+    },
+    {
+      "path": "results/BH_HF3_R7B_input_audit.json",
+      "bytes": 38307,
+      "sha256": "4b109992d21a56f04cda06be98737b6107d0730264b0b3fb69ffb50f22e43f97"
+    },
+    {
+      "path": "results/BH_HF3_R7B_overview.pdf",
+      "bytes": 37822,
+      "sha256": "091b26744fca72f725ae3ad317bdb076fd0a5b0f82a876c3bf7e6299be6937d5"
+    },
+    {
+      "path": "results/BH_HF3_R7B_overview.png",
+      "bytes": 371071,
+      "sha256": "50fa7f94212637692f42c8f8527f981c9095b46f937064c2267338cc8823e8e9"
+    },
+    {
+      "path": "results/BH_HF3_R7B_phase_logamp_diagnostics.json",
+      "bytes": 306,
+      "sha256": "015eb84af0235dfda4050d5a5b673fdc15b190c8265a2a7bdf7a15ca3e0ecbbe"
+    },
+    {
+      "path": "results/BH_HF3_R7B_protocol.json",
+      "bytes": 2200,
+      "sha256": "6029b7940c9fc4ca35a7d4d2f2651616d1f7071dbb6e38ca7accc8c817f0efb5"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r15_period3.tsv",
+      "bytes": 6847,
+      "sha256": "90806467577b7366f2ace46cdba3eeda626413ccfbe76490d50a4595f55dabab"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r30_period3.tsv",
+      "bytes": 6880,
+      "sha256": "8e4b0e5c31d4cb3b3b98aad40a1288b3e38402f744580d50f4ccd875d1ce500a"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r40_holdout.tsv",
+      "bytes": 2315,
+      "sha256": "d5ae0e773b3141e14b549ce92f9d1f1090c0971e052fa3b22f76faf78970a104"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r40_period1.tsv",
+      "bytes": 6720,
+      "sha256": "edd14346b653d9d5a187e9b89b24cbf7132a37acd20b6bfe4be9c976bd5ee097"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r40_period2.tsv",
+      "bytes": 6840,
+      "sha256": "e431ba4775d0de80ebcc24844c741116ac939dd716791d7ffe65c011029656ad"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r40_period3.tsv",
+      "bytes": 6912,
+      "sha256": "756ff14a6d8dc8f956b59a71a83d55533b1527ad000ec040ce4e5d229af3dfc1"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r50_period2.tsv",
+      "bytes": 6877,
+      "sha256": "f9cc58232ad52124c2f5da28ac66676178470aa031d967b5d7c80d4b603be974"
+    },
+    {
+      "path": "results/BH_HF3_R7B_r60_period1.tsv",
+      "bytes": 6816,
+      "sha256": "72a13f6e909b2bd7ff459c11d5a8e2f10d0418bfbc7124aa929440f2b59ad613"
+    },
+    {
+      "path": "results/BH_HF3_R7B_report.md",
+      "bytes": 16497,
+      "sha256": "389c7f07b14476e8b6ac9ba04206a4fe05e1e69e9685089a53ab1f749ecf1367"
+    },
+    {
+      "path": "results/BH_HF3_R7B_sensitivity.json",
+      "bytes": 9373,
+      "sha256": "ede020f2c2a6546136f2a9cfa33cc64110a8344a1ab3650365c268914a41caf1"
+    },
+    {
+      "path": "results/BH_HF3_R7B_summary.json",
+      "bytes": 19182,
+      "sha256": "acef1a5f54213b34d62c95d260844c75e1186859218b825b4af64d6157a35af6"
+    },
+    {
+      "path": "results/BH_HF3_R7B_third_period_shape.json",
+      "bytes": 818,
+      "sha256": "19cdc231238215207cf4434324908f6e9df7c4529088c54ecc02bda59a5171a0"
+    },
+    {
+      "path": "results/BH_HF3_resume_state_R7B.json",
+      "bytes": 12994,
+      "sha256": "4d793bdfcd95256df292cb9d40e0ab25724132e34c341c3e4524868a56bdfc1a"
+    }
+  ]
+}

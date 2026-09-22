@@ -1,0 +1,1242 @@
+[
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_end_M": 50,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.1735801121190891,
+    "validation_relative_L2": 0.8983031213888376,
+    "validation_absolute_rms": 0.002757368134302816,
+    "scaled_condition_number": 5.292771433676874,
+    "coupling_K": {
+      "real": -0.17431121738327238,
+      "imag": -0.17815957902178978
+    },
+    "K_absolute": 0.24924934524058392,
+    "K_phase_rad": -2.345276681482576,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.042907814246281754,
+        "imag": 0.12825294350279356
+      },
+      "540": {
+        "real": 0.01379480050153708,
+        "imag": 0.023509323401974546
+      },
+      "P": {
+        "real": -0.17431121738327238,
+        "imag": -0.17815957902178978
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 5,
+    "train_end_M": 35,
+    "validation_end_M": 55,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.028880943036358117,
+    "validation_relative_L2": 0.2490908827338162,
+    "validation_absolute_rms": 0.00047213293645522977,
+    "scaled_condition_number": 7.4949260615561455,
+    "coupling_K": {
+      "real": 0.11273349636713367,
+      "imag": -0.13410340794134015
+    },
+    "K_absolute": 0.17519293714256873,
+    "K_phase_rad": -0.8717578575603535,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.011576753554112727,
+        "imag": 0.05859340524091857
+      },
+      "540": {
+        "real": 0.0001227201951499191,
+        "imag": 0.003922090832086733
+      },
+      "P": {
+        "real": 0.11273349636713367,
+        "imag": -0.13410340794134015
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 10,
+    "train_end_M": 40,
+    "validation_end_M": 60,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.010964064774130892,
+    "validation_relative_L2": 0.10143005015109596,
+    "validation_absolute_rms": 0.00012055882992516025,
+    "scaled_condition_number": 7.325456457552344,
+    "coupling_K": {
+      "real": 0.25436149432108235,
+      "imag": -0.15464721921229527
+    },
+    "K_absolute": 0.29768361090820855,
+    "K_phase_rad": -0.5462679821637978,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.019574997315267267,
+        "imag": 0.028531182417518196
+      },
+      "540": {
+        "real": -2.4915288528272893e-05,
+        "imag": 0.0005529035158817025
+      },
+      "P": {
+        "real": 0.25436149432108235,
+        "imag": -0.15464721921229527
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 15,
+    "train_end_M": 45,
+    "validation_end_M": 65,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.004140463230718838,
+    "validation_relative_L2": 0.05508471282553388,
+    "validation_absolute_rms": 4.1756236680771646e-05,
+    "scaled_condition_number": 7.1711948868649475,
+    "coupling_K": {
+      "real": 0.31863586626227397,
+      "imag": -0.20183869724873904
+    },
+    "K_absolute": 0.3771838742255266,
+    "K_phase_rad": -0.5646499862895068,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0176804926669314,
+        "imag": 0.012054342164908473
+      },
+      "540": {
+        "real": -0.00012576241639340646,
+        "imag": -9.526630221228096e-05
+      },
+      "P": {
+        "real": 0.31863586626227397,
+        "imag": -0.20183869724873904
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_end_M": 70,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0026292083294777303,
+    "validation_relative_L2": 0.04249180013378748,
+    "validation_absolute_rms": 2.0704218675455423e-05,
+    "scaled_condition_number": 7.122588994219164,
+    "coupling_K": {
+      "real": 0.3416368572813457,
+      "imag": -0.24468743071096272
+    },
+    "K_absolute": 0.42022337036510327,
+    "K_phase_rad": -0.6215296686282684,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.013115716802593227,
+        "imag": 0.003263923286089612
+      },
+      "540": {
+        "real": -0.00015608913005237565,
+        "imag": -0.0001111279027135103
+      },
+      "P": {
+        "real": 0.3416368572813457,
+        "imag": -0.24468743071096272
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 30,
+    "train_end_M": 60,
+    "validation_end_M": 80,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0021113650430587367,
+    "validation_relative_L2": 0.03148294826973866,
+    "validation_absolute_rms": 6.2654258689399105e-06,
+    "scaled_condition_number": 7.006759650177785,
+    "coupling_K": {
+      "real": 0.27446935402100897,
+      "imag": -0.31657832198973485
+    },
+    "K_absolute": 0.41899315060099274,
+    "K_phase_rad": -0.8565226096245255,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.004934338946641185,
+        "imag": -0.0024490020994993437
+      },
+      "540": {
+        "real": -0.00010201723189142317,
+        "imag": 1.1652427443506337e-05
+      },
+      "P": {
+        "real": 0.27446935402100897,
+        "imag": -0.31657832198973485
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 40,
+    "train_end_M": 70,
+    "validation_end_M": 90,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0016624232467762341,
+    "validation_relative_L2": 0.025368195010233425,
+    "validation_absolute_rms": 2.0619290159272372e-06,
+    "scaled_condition_number": 7.018547180231385,
+    "coupling_K": {
+      "real": 0.11580914704516389,
+      "imag": -0.2371403684164179
+    },
+    "K_absolute": 0.2639077734209487,
+    "K_phase_rad": -1.1165064669969185,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0009054467288878508,
+        "imag": -0.002079966012516658
+      },
+      "540": {
+        "real": -1.2780064830121373e-05,
+        "imag": 2.76729061755037e-05
+      },
+      "P": {
+        "real": 0.11580914704516389,
+        "imag": -0.2371403684164179
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_end_M": 100,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0014115955820702155,
+    "validation_relative_L2": 0.02158657736592801,
+    "validation_absolute_rms": 7.329233766516604e-07,
+    "scaled_condition_number": 7.074746780193213,
+    "coupling_K": {
+      "real": 0.03967530467572047,
+      "imag": 0.07268045522779223
+    },
+    "K_absolute": 0.0828044586554997,
+    "K_phase_rad": 1.0711164891794647,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00026265434856160484,
+        "imag": -0.0008962616979026053
+      },
+      "540": {
+        "real": 1.0353589496337294e-05,
+        "imag": 1.2982810596869216e-06
+      },
+      "P": {
+        "real": 0.03967530467572047,
+        "imag": 0.07268045522779223
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 60,
+    "train_end_M": 90,
+    "validation_end_M": 110,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0013370656960679296,
+    "validation_relative_L2": 0.01872087959120239,
+    "validation_absolute_rms": 2.5988055769786486e-07,
+    "scaled_condition_number": 7.002370036195519,
+    "coupling_K": {
+      "real": 0.3473077692873482,
+      "imag": 0.5970317395966881
+    },
+    "K_absolute": 0.6907022402549462,
+    "K_phase_rad": 1.043923368422859,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0003187384847307299,
+        "imag": -0.00021437673841797467
+      },
+      "540": {
+        "real": 2.3707009207683554e-06,
+        "imag": -5.493005643451451e-06
+      },
+      "P": {
+        "real": 0.3473077692873482,
+        "imag": 0.5970317395966881
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I44",
+    "model": "F2P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_end_M": 120,
+    "real_parameter_count": 6,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0009620744173139384,
+    "validation_relative_L2": 0.015772302273600425,
+    "validation_absolute_rms": 8.91286201072977e-08,
+    "scaled_condition_number": 7.068409533610072,
+    "coupling_K": {
+      "real": 1.5532136016814522,
+      "imag": 0.8408663855147123
+    },
+    "K_absolute": 1.7662187777104075,
+    "K_phase_rad": 0.49619491817867795,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.000157161772134409,
+        "imag": 1.587371507567717e-05
+      },
+      "540": {
+        "real": -1.3171720553059593e-06,
+        "imag": -1.4110179949863861e-06
+      },
+      "P": {
+        "real": 1.5532136016814522,
+        "imag": 0.8408663855147123
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_end_M": 50,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.11078468626414943,
+    "validation_relative_L2": 0.4327992393292981,
+    "validation_absolute_rms": 0.0004779894470992875,
+    "scaled_condition_number": 8.335743840999825,
+    "coupling_K": {
+      "real": 0.010154440951929545,
+      "imag": 0.002330359151263974
+    },
+    "K_absolute": 0.010418408938993685,
+    "K_phase_rad": 0.22558550092667035,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00908075868438451,
+        "imag": 0.03355194377050901
+      },
+      "540": {
+        "real": -0.0035473977225290916,
+        "imag": -0.00980192770861473
+      },
+      "640": {
+        "real": 0.001997142964933917,
+        "imag": -0.003198858615410684
+      },
+      "740": {
+        "real": 0.0003920652604107091,
+        "imag": -0.0022551604788973285
+      },
+      "P": {
+        "real": 0.010154440951929545,
+        "imag": 0.002330359151263974
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 5,
+    "train_end_M": 35,
+    "validation_end_M": 55,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.026513812946808466,
+    "validation_relative_L2": 0.37691850294893864,
+    "validation_absolute_rms": 0.00030461022227277156,
+    "scaled_condition_number": 11.472348711514533,
+    "coupling_K": {
+      "real": 0.06955251492465866,
+      "imag": -0.057313138823658225
+    },
+    "K_absolute": 0.09012407122497733,
+    "K_phase_rad": -0.6892207193036775,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.008706843975376861,
+        "imag": 0.020765288470792002
+      },
+      "540": {
+        "real": -0.008543588493774141,
+        "imag": -0.0013649475628961071
+      },
+      "640": {
+        "real": -0.001665827099797224,
+        "imag": 0.0003596548658127631
+      },
+      "740": {
+        "real": -0.0005103971860970582,
+        "imag": 0.0005397435607711987
+      },
+      "P": {
+        "real": 0.06955251492465866,
+        "imag": -0.057313138823658225
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 10,
+    "train_end_M": 40,
+    "validation_end_M": 60,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.00933037262914394,
+    "validation_relative_L2": 0.14811989100887477,
+    "validation_absolute_rms": 7.657622226827976e-05,
+    "scaled_condition_number": 10.312180984354134,
+    "coupling_K": {
+      "real": 0.14398835142440633,
+      "imag": -0.027437131558967397
+    },
+    "K_absolute": 0.14657913062268593,
+    "K_phase_rad": -0.18829374298089177,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.00829327780505451,
+        "imag": 0.008817929312043222
+      },
+      "540": {
+        "real": -0.0044641036747612994,
+        "imag": 0.0014390167516566631
+      },
+      "640": {
+        "real": -0.0003963067252282898,
+        "imag": 0.00025356704966417436
+      },
+      "740": {
+        "real": -0.00010531186420646344,
+        "imag": 0.0001958190565940301
+      },
+      "P": {
+        "real": 0.14398835142440633,
+        "imag": -0.027437131558967397
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 15,
+    "train_end_M": 45,
+    "validation_end_M": 65,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.004644118497602842,
+    "validation_relative_L2": 0.07573429155319139,
+    "validation_absolute_rms": 2.1872849838635875e-05,
+    "scaled_condition_number": 9.897088144681664,
+    "coupling_K": {
+      "real": 0.18151050779203778,
+      "imag": -0.050598088156544374
+    },
+    "K_absolute": 0.18843097135030867,
+    "K_phase_rad": -0.2718596012056313,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.006639833961285721,
+        "imag": 0.003058503557697225
+      },
+      "540": {
+        "real": -0.0015848409406353497,
+        "imag": 0.0021751332547968686
+      },
+      "640": {
+        "real": -6.355554945766652e-05,
+        "imag": 9.42461083110444e-05
+      },
+      "740": {
+        "real": 4.832102756812248e-06,
+        "imag": 6.169500659072982e-05
+      },
+      "P": {
+        "real": 0.18151050779203778,
+        "imag": -0.050598088156544374
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_end_M": 70,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.002925929527694507,
+    "validation_relative_L2": 0.05182398303865234,
+    "validation_absolute_rms": 7.727465547209855e-06,
+    "scaled_condition_number": 9.790662813720747,
+    "coupling_K": {
+      "real": 0.17474962843355832,
+      "imag": -0.07646072656909059
+    },
+    "K_absolute": 0.19074505326518937,
+    "K_phase_rad": -0.4124477330709375,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.004670370269365936,
+        "imag": 0.00027722361011778984
+      },
+      "540": {
+        "real": 7.616502016612939e-05,
+        "imag": 0.001626513711377953
+      },
+      "640": {
+        "real": -1.2409138977093193e-05,
+        "imag": 4.35644937200337e-05
+      },
+      "740": {
+        "real": 1.4707505947135678e-05,
+        "imag": 1.3354852937105328e-05
+      },
+      "P": {
+        "real": 0.17474962843355832,
+        "imag": -0.07646072656909059
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 30,
+    "train_end_M": 60,
+    "validation_end_M": 80,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0008157314147395587,
+    "validation_relative_L2": 0.03900396691790496,
+    "validation_absolute_rms": 2.725275781985491e-06,
+    "scaled_condition_number": 9.65775486119787,
+    "coupling_K": {
+      "real": 0.15764984982616786,
+      "imag": -0.05104966636860745
+    },
+    "K_absolute": 0.1657092139458739,
+    "K_phase_rad": -0.3131613429991099,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0015943042022760797,
+        "imag": -0.001143930994464504
+      },
+      "540": {
+        "real": 0.0006287051338834858,
+        "imag": 9.035030438255512e-05
+      },
+      "640": {
+        "real": 1.7846639817786407e-05,
+        "imag": -3.5273655753314152e-06
+      },
+      "740": {
+        "real": 1.2395104838697027e-06,
+        "imag": -2.6848339739683437e-06
+      },
+      "P": {
+        "real": 0.15764984982616786,
+        "imag": -0.05104966636860745
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 40,
+    "train_end_M": 70,
+    "validation_end_M": 90,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0017171450605449022,
+    "validation_relative_L2": 0.035928738872490755,
+    "validation_absolute_rms": 1.2539010207765844e-06,
+    "scaled_condition_number": 9.648571209267969,
+    "coupling_K": {
+      "real": 0.11483127388810944,
+      "imag": -0.08417540564317455
+    },
+    "K_absolute": 0.14237879188263605,
+    "K_phase_rad": -0.6325551601826505,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.00020289582780500217,
+        "imag": -0.000767664911462948
+      },
+      "540": {
+        "real": 8.307675471753048e-05,
+        "imag": -0.0002471006998853202
+      },
+      "640": {
+        "real": -5.882775359433385e-06,
+        "imag": -2.7214542358405974e-06
+      },
+      "740": {
+        "real": -1.6371682975580216e-06,
+        "imag": -3.273810603930507e-07
+      },
+      "P": {
+        "real": 0.11483127388810944,
+        "imag": -0.08417540564317455
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_end_M": 100,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.001615102162473956,
+    "validation_relative_L2": 0.01988618067906035,
+    "validation_absolute_rms": 2.0892069803757892e-07,
+    "scaled_condition_number": 9.72359155945662,
+    "coupling_K": {
+      "real": 0.05945431299198944,
+      "imag": 0.08848925902229388
+    },
+    "K_absolute": 0.10660752457338113,
+    "K_phase_rad": 0.9791920064562278,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0001414724489344901,
+        "imag": -0.00029499072874679687
+      },
+      "540": {
+        "real": -9.06384177222832e-05,
+        "imag": -5.20588673815249e-05
+      },
+      "640": {
+        "real": 2.413103729380926e-07,
+        "imag": -1.425355197859466e-06
+      },
+      "740": {
+        "real": -4.7256222598550416e-07,
+        "imag": 1.595952776503804e-07
+      },
+      "P": {
+        "real": 0.05945431299198944,
+        "imag": 0.08848925902229388
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 60,
+    "train_end_M": 90,
+    "validation_end_M": 110,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0005251121970229551,
+    "validation_relative_L2": 0.02171219409963098,
+    "validation_absolute_rms": 1.0609256503639623e-07,
+    "scaled_condition_number": 9.65308080720546,
+    "coupling_K": {
+      "real": 0.20628497899359327,
+      "imag": 0.17824867689472837
+    },
+    "K_absolute": 0.27262810451805675,
+    "K_phase_rad": 0.712617067143279,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00012259385725562743,
+        "imag": -5.693888182640295e-05
+      },
+      "540": {
+        "real": -2.5921138679464686e-05,
+        "imag": 3.2347189891767574e-05
+      },
+      "640": {
+        "real": -3.2719091211921696e-07,
+        "imag": 6.033014081436963e-07
+      },
+      "740": {
+        "real": 6.896408639825671e-09,
+        "imag": 1.224877973131987e-09
+      },
+      "P": {
+        "real": 0.20628497899359327,
+        "imag": 0.17824867689472837
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "L54",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_end_M": 120,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0009775457387838896,
+    "validation_relative_L2": 0.019711077159570788,
+    "validation_absolute_rms": 4.736162946648514e-08,
+    "scaled_condition_number": 9.708523984467126,
+    "coupling_K": {
+      "real": 0.5308143890717046,
+      "imag": 0.4769073261494802
+    },
+    "K_absolute": 0.7135856734692855,
+    "K_phase_rad": 0.731955104738005,
+    "coefficients_at_start": {
+      "440": {
+        "real": 5.3426451415776836e-05,
+        "imag": 1.4054427229811254e-05
+      },
+      "540": {
+        "real": 1.1479875582618441e-05,
+        "imag": 1.2605109063662417e-05
+      },
+      "640": {
+        "real": 2.129421271727959e-07,
+        "imag": -2.7757958615180764e-07
+      },
+      "740": {
+        "real": 2.378723297707015e-08,
+        "imag": -5.424130158638073e-08
+      },
+      "P": {
+        "real": 0.5308143890717046,
+        "imag": 0.4769073261494802
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_end_M": 50,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.18075302271962068,
+    "validation_relative_L2": 0.9410347304317219,
+    "validation_absolute_rms": 0.000292871872699497,
+    "scaled_condition_number": 8.335743840999825,
+    "coupling_K": {
+      "real": -0.03052998903089957,
+      "imag": -0.0259203277419717
+    },
+    "K_absolute": 0.040049264918074035,
+    "K_phase_rad": -2.4376724407499712,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0018958091239402602,
+        "imag": -0.005305272958911423
+      },
+      "540": {
+        "real": 0.00101514397048444,
+        "imag": 0.00883087787328275
+      },
+      "640": {
+        "real": -0.0008918460026155243,
+        "imag": 0.0032742429393383156
+      },
+      "740": {
+        "real": 0.0010297527980788958,
+        "imag": 0.0021857000698666854
+      },
+      "P": {
+        "real": -0.03052998903089957,
+        "imag": -0.0259203277419717
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 5,
+    "train_end_M": 35,
+    "validation_end_M": 55,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.03025162996600783,
+    "validation_relative_L2": 0.5356728875104111,
+    "validation_absolute_rms": 0.00013052697625729975,
+    "scaled_condition_number": 11.472348711514533,
+    "coupling_K": {
+      "real": -0.02573964750360372,
+      "imag": 0.008716858128969086
+    },
+    "K_absolute": 0.027175596943771953,
+    "K_phase_rad": 2.815060346439701,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0029935152437540807,
+        "imag": -0.006306263605802376
+      },
+      "540": {
+        "real": 0.0035143668013603094,
+        "imag": 0.0012186192010157047
+      },
+      "640": {
+        "real": 0.00015440520453682802,
+        "imag": 0.00034345245551534203
+      },
+      "740": {
+        "real": 0.0001989921644589588,
+        "imag": -0.00013591800184151846
+      },
+      "P": {
+        "real": -0.02573964750360372,
+        "imag": 0.008716858128969086
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 10,
+    "train_end_M": 40,
+    "validation_end_M": 60,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.011645455652070367,
+    "validation_relative_L2": 0.23402956097938415,
+    "validation_absolute_rms": 3.923409973743842e-05,
+    "scaled_condition_number": 10.312180984354134,
+    "coupling_K": {
+      "real": -0.05412554498374199,
+      "imag": -0.008949455821279609
+    },
+    "K_absolute": 0.05486043546385786,
+    "K_phase_rad": -2.977728981621591,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.002453784090440778,
+        "imag": -0.002517076431063701
+      },
+      "540": {
+        "real": 0.00200215865862329,
+        "imag": -0.0003088145740695175
+      },
+      "640": {
+        "real": 0.00045713568162497945,
+        "imag": 0.000216798550024993
+      },
+      "740": {
+        "real": 8.433853807311137e-05,
+        "imag": -7.507331839023936e-05
+      },
+      "P": {
+        "real": -0.05412554498374199,
+        "imag": -0.008949455821279609
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 15,
+    "train_end_M": 45,
+    "validation_end_M": 65,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.008104560131039351,
+    "validation_relative_L2": 0.13860175128473387,
+    "validation_absolute_rms": 1.2524971770806113e-05,
+    "scaled_condition_number": 9.897088144681664,
+    "coupling_K": {
+      "real": -0.07303696408905154,
+      "imag": -0.0009353270389334933
+    },
+    "K_absolute": 0.07304295284293458,
+    "K_phase_rad": -3.1287871389481587,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0018650142281375541,
+        "imag": -0.0007875053612157184
+      },
+      "540": {
+        "real": 0.0008210476119708277,
+        "imag": -0.0008026832260787158
+      },
+      "640": {
+        "real": 0.00019715536740644903,
+        "imag": -0.00022663083261383927
+      },
+      "740": {
+        "real": -1.5588241494815654e-06,
+        "imag": -3.797709991906094e-05
+      },
+      "P": {
+        "real": -0.07303696408905154,
+        "imag": -0.0009353270389334933
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_end_M": 70,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.005429317826865761,
+    "validation_relative_L2": 0.08780825742250777,
+    "validation_absolute_rms": 3.504326560971845e-06,
+    "scaled_condition_number": 9.790662813720747,
+    "coupling_K": {
+      "real": -0.06886340751255075,
+      "imag": 0.014969088452683183
+    },
+    "K_absolute": 0.07047157230645479,
+    "K_phase_rad": 2.9275488525765416,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0012988852024277125,
+        "imag": 1.3094503037580961e-05
+      },
+      "540": {
+        "real": 9.997744259072764e-05,
+        "imag": -0.0006786373261324608
+      },
+      "640": {
+        "real": -0.00011586797107263065,
+        "imag": -0.00010401760303239576
+      },
+      "740": {
+        "real": -8.706071576167669e-06,
+        "imag": -8.386349478180308e-06
+      },
+      "P": {
+        "real": -0.06886340751255075,
+        "imag": 0.014969088452683183
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 30,
+    "train_end_M": 60,
+    "validation_end_M": 80,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0005082305861913808,
+    "validation_relative_L2": 0.042630498048610146,
+    "validation_absolute_rms": 8.244916156597766e-07,
+    "scaled_condition_number": 9.65775486119787,
+    "coupling_K": {
+      "real": -0.05844176174522268,
+      "imag": 0.0037347946051897573
+    },
+    "K_absolute": 0.05856097853202529,
+    "K_phase_rad": 3.0777731758260902,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00042643918132388475,
+        "imag": 0.000353623041471685
+      },
+      "540": {
+        "real": -0.0002530760043537397,
+        "imag": -9.069086434749867e-05
+      },
+      "640": {
+        "real": 4.911075248346907e-05,
+        "imag": 1.623351020924415e-05
+      },
+      "740": {
+        "real": 9.339689560583722e-07,
+        "imag": 4.740251768563556e-08
+      },
+      "P": {
+        "real": -0.05844176174522268,
+        "imag": 0.0037347946051897573
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 40,
+    "train_end_M": 70,
+    "validation_end_M": 90,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0019019526198552936,
+    "validation_relative_L2": 0.044649363964238895,
+    "validation_absolute_rms": 4.995106534917987e-07,
+    "scaled_condition_number": 9.648571209267969,
+    "coupling_K": {
+      "real": -0.056113235307858715,
+      "imag": 0.01805551805004191
+    },
+    "K_absolute": 0.058946559770443864,
+    "K_phase_rad": 2.8302855555415496,
+    "coefficients_at_start": {
+      "440": {
+        "real": 4.4189784765967406e-05,
+        "imag": 0.00021974084919921977
+      },
+      "540": {
+        "real": -5.3167779163332955e-05,
+        "imag": 9.403707349929002e-05
+      },
+      "640": {
+        "real": -2.215771844404205e-05,
+        "imag": 2.0184293975364876e-06
+      },
+      "740": {
+        "real": 6.490283770217148e-07,
+        "imag": 9.791171672997885e-07
+      },
+      "P": {
+        "real": -0.056113235307858715,
+        "imag": 0.01805551805004191
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_end_M": 100,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0021521407754310114,
+    "validation_relative_L2": 0.020464725388828143,
+    "validation_absolute_rms": 5.7966093706238056e-08,
+    "scaled_condition_number": 9.72359155945662,
+    "coupling_K": {
+      "real": -0.02399998339083114,
+      "imag": -0.0397585794707182
+    },
+    "K_absolute": 0.046440756284642754,
+    "K_phase_rad": -2.113890110460426,
+    "coefficients_at_start": {
+      "440": {
+        "real": -4.533712022986319e-05,
+        "imag": 8.001918501929067e-05
+      },
+      "540": {
+        "real": 3.2667439395034596e-05,
+        "imag": 2.814749091987765e-05
+      },
+      "640": {
+        "real": 8.771566335877315e-06,
+        "imag": -2.891551666982495e-06
+      },
+      "740": {
+        "real": 2.0553985880221123e-07,
+        "imag": 6.869775644424734e-08
+      },
+      "P": {
+        "real": -0.02399998339083114,
+        "imag": -0.0397585794707182
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 60,
+    "train_end_M": 90,
+    "validation_end_M": 110,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0006010356009793267,
+    "validation_relative_L2": 0.021918912778885972,
+    "validation_absolute_rms": 2.9754647849330297e-08,
+    "scaled_condition_number": 9.65308080720546,
+    "coupling_K": {
+      "real": -0.067633732593601,
+      "imag": -0.06211531148798915
+    },
+    "K_absolute": 0.09182937278339999,
+    "K_phase_rad": -2.398700369719523,
+    "coefficients_at_start": {
+      "440": {
+        "real": -3.549845025077828e-05,
+        "imag": 1.3697656108368056e-05
+      },
+      "540": {
+        "real": 1.3182564199538162e-05,
+        "imag": -1.1140008347466112e-05
+      },
+      "640": {
+        "real": -2.720554177934666e-06,
+        "imag": 2.2686144510008765e-06
+      },
+      "740": {
+        "real": -4.877552930215091e-08,
+        "imag": 8.207884634318758e-08
+      },
+      "P": {
+        "real": -0.067633732593601,
+        "imag": -0.06211531148798915
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  },
+  {
+    "moment": "I64",
+    "model": "F4P",
+    "parent_model_A2": "F2_O3",
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_end_M": 120,
+    "real_parameter_count": 10,
+    "parent_parameters_fitted_in_A2": 10,
+    "fit_relative_L2": 0.0009986491206359141,
+    "validation_relative_L2": 0.02320029973569684,
+    "validation_absolute_rms": 1.7768321293297354e-08,
+    "scaled_condition_number": 9.708523984467126,
+    "coupling_K": {
+      "real": -0.13432885991909807,
+      "imag": -0.1522697515264187
+    },
+    "K_absolute": 0.20305250512387668,
+    "K_phase_rad": -2.293676700632641,
+    "coefficients_at_start": {
+      "440": {
+        "real": -1.4747491298108922e-05,
+        "imag": -4.924993807966339e-06
+      },
+      "540": {
+        "real": -3.6739083108422654e-06,
+        "imag": -5.99969068178599e-06
+      },
+      "640": {
+        "real": 6.56792366261214e-07,
+        "imag": -1.2470751297848393e-06
+      },
+      "740": {
+        "real": -4.7539863717108086e-08,
+        "imag": 1.2153347981436649e-08
+      },
+      "P": {
+        "real": -0.13432885991909807,
+        "imag": -0.1522697515264187
+      }
+    },
+    "validation_parent_data_used": false,
+    "note": "Квадрат продолжения модели I22 из A2; один новый комплексный коэффициент. Это эмпирический шаблон, не выведенное уравнение связи моментов."
+  }
+]

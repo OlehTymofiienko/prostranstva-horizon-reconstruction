@@ -1,0 +1,29 @@
+[
+  {
+    "reference_radius_M": 15,
+    "compared_radius_M": 30,
+    "samples": 47,
+    "coherence": 0.9999638152711573,
+    "norm_amplitude_ratio": 1.0236906399790953,
+    "constant_phase_applied_rad": -0.16871888972424895,
+    "phase_only_nrmse": 0.02520576043430712
+  },
+  {
+    "reference_radius_M": 15,
+    "compared_radius_M": 40,
+    "samples": 47,
+    "coherence": 0.9999691491318894,
+    "norm_amplitude_ratio": 1.008824867061321,
+    "constant_phase_applied_rad": -0.07189957798373867,
+    "phase_only_nrmse": 0.011837420516764985
+  },
+  {
+    "reference_radius_M": 30,
+    "compared_radius_M": 40,
+    "samples": 47,
+    "coherence": 0.999985124596724,
+    "norm_amplitude_ratio": 0.9854782564798307,
+    "constant_phase_applied_rad": 0.09679569504043214,
+    "phase_only_nrmse": 0.015498380813343515
+  }
+]

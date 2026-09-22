@@ -1,0 +1,72 @@
+{
+  "stage": "BH-HF1",
+  "classification": "BH_HF1_TRANSIENT_LOCALIZED_MORPHOLOGY_CANDIDATE",
+  "simulation": "SXS:BBH:0305",
+  "lev": 6,
+  "horizon": "C",
+  "common_horizon_scalar_birth_time_M": 3685.496267868691,
+  "frozen_offsets_M": [
+    0.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0
+  ],
+  "fields": [
+    "Rstar",
+    "Estar",
+    "Bstar"
+  ],
+  "field_summary": {
+    "Rstar": {
+      "positive_snapshot_count": 3,
+      "early_positive_at_or_before_10M": true,
+      "HF1_morphology_candidate": true,
+      "positive_offsets_M": [
+        0.0,
+        2.0,
+        5.0
+      ]
+    },
+    "Estar": {
+      "positive_snapshot_count": 2,
+      "early_positive_at_or_before_10M": true,
+      "HF1_morphology_candidate": true,
+      "positive_offsets_M": [
+        2.0,
+        5.0
+      ]
+    },
+    "Bstar": {
+      "positive_snapshot_count": 2,
+      "early_positive_at_or_before_10M": true,
+      "HF1_morphology_candidate": true,
+      "positive_offsets_M": [
+        2.0,
+        5.0
+      ]
+    }
+  },
+  "candidate_fields": [
+    "Rstar",
+    "Estar",
+    "Bstar"
+  ],
+  "methodological_status": "exploratory coordinate/gauge-dependent morphology screen; not intrinsic/covariant",
+  "interpretation_if_candidate": "At least one stored horizon scalar has spatially localized high-gradient morphology in the early common-horizon window by the frozen point-cloud screen. This licenses only a denser temporal persistence audit (HF1R), not a domain-wall or new-physics claim.",
+  "interpretation_if_negative": "No stored field passes the frozen spatial-localization screen. This specific transient-front route should stop unless a different physically motivated observable is preregistered independently.",
+  "forbidden_claims": [
+    "not a physical phase measurement",
+    "not a domain wall detection",
+    "not an intrinsic horizon-distance or intrinsic-gradient measurement",
+    "not gauge invariant",
+    "not slicing invariant",
+    "not numerical-resolution robust yet",
+    "not QNM-subtracted",
+    "does not establish new physics",
+    "does not establish AARFI or APK"
+  ],
+  "next_if_candidate": "BH-HF1R dense temporal tracking with frozen component matching; then BH-HF2 QNM/multipole closure; then resolution/frame/slicing controls.",
+  "next_if_negative": "Stop this morphology route."
+}

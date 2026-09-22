@@ -1,0 +1,1091 @@
+{
+  "status": "GW-X-A3-0 HorizonsDump structural audit",
+  "file": {
+    "path": "/mnt/c/Users/Admin/HorizonsDump.h5",
+    "size_bytes": 726310695,
+    "sha256": null
+  },
+  "scientific_interpretation_performed": false,
+  "datasets": [
+    {
+      "path": "AhA.dir/CoordsMeasurementFrame.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        16066728,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 16066728,
+      "chunks": [
+        16066728,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "Coordinates of a mesh on the apparent horizon"
+        ]
+      },
+      "small_sample": 6.54006981348225
+    },
+    {
+      "path": "AhA.dir/CoordsMeasurementFrame.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhA.dir/DimlessRicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5355576,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5355576,
+      "chunks": [
+        5355576,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar (dimensionless)"
+        ]
+      },
+      "small_sample": 0.4603635543672232
+    },
+    {
+      "path": "AhA.dir/DimlessRicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhA.dir/RicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5355576,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5355576,
+      "chunks": [
+        5355576,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar"
+        ]
+      },
+      "small_sample": 1.5229960638906852
+    },
+    {
+      "path": "AhA.dir/RicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhA.dir/SpinFunction.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5355576,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5355576,
+      "chunks": [
+        5355576,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "SpinFunction"
+        ]
+      },
+      "small_sample": 0.4142218683913658
+    },
+    {
+      "path": "AhA.dir/SpinFunction.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhA.dir/WeylB_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5355576,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5355576,
+      "chunks": [
+        5355576,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylB-NN"
+        ]
+      },
+      "small_sample": 0.41423601172740004
+    },
+    {
+      "path": "AhA.dir/WeylB_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhA.dir/WeylE_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5355576,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5355576,
+      "chunks": [
+        5355576,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylE-NN"
+        ]
+      },
+      "small_sample": -0.7614894107554893
+    },
+    {
+      "path": "AhA.dir/WeylE_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/CoordsMeasurementFrame.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        16231254,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 16231254,
+      "chunks": [
+        16231254,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "Coordinates of a mesh on the apparent horizon"
+        ]
+      },
+      "small_sample": -7.7608309549218575
+    },
+    {
+      "path": "AhB.dir/CoordsMeasurementFrame.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/DimlessRicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5410418,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5410418,
+      "chunks": [
+        5410418,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar (dimensionless)"
+        ]
+      },
+      "small_sample": 0.4246450211694495
+    },
+    {
+      "path": "AhB.dir/DimlessRicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/RicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5410418,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5410418,
+      "chunks": [
+        5410418,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar"
+        ]
+      },
+      "small_sample": 2.095106457645965
+    },
+    {
+      "path": "AhB.dir/RicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/SpinFunction.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5410418,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5410418,
+      "chunks": [
+        5410418,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "SpinFunction"
+        ]
+      },
+      "small_sample": -0.8480105614611285
+    },
+    {
+      "path": "AhB.dir/SpinFunction.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/WeylB_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5410418,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5410418,
+      "chunks": [
+        5410418,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylB-NN"
+        ]
+      },
+      "small_sample": -0.8480850255139372
+    },
+    {
+      "path": "AhB.dir/WeylB_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhB.dir/WeylE_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5410418,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5410418,
+      "chunks": [
+        5410418,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylE-NN"
+        ]
+      },
+      "small_sample": -1.047497899028162
+    },
+    {
+      "path": "AhB.dir/WeylE_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        7376,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 29504,
+      "chunks": [
+        7376,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 0.0
+    },
+    {
+      "path": "AhC.dir/CoordsMeasurementFrame.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        17757366,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 17757366,
+      "chunks": [
+        17757366,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "Coordinates of a mesh on the apparent horizon"
+        ]
+      },
+      "small_sample": 0.11460053044086588
+    },
+    {
+      "path": "AhC.dir/CoordsMeasurementFrame.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    },
+    {
+      "path": "AhC.dir/DimlessRicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5919122,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5919122,
+      "chunks": [
+        5919122,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar (dimensionless)"
+        ]
+      },
+      "small_sample": -0.4131899687510478
+    },
+    {
+      "path": "AhC.dir/DimlessRicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    },
+    {
+      "path": "AhC.dir/RicciScalar.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5919122,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5919122,
+      "chunks": [
+        5919122,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "2-D Ricci Scalar"
+        ]
+      },
+      "small_sample": -0.5254216965499999
+    },
+    {
+      "path": "AhC.dir/RicciScalar.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    },
+    {
+      "path": "AhC.dir/SpinFunction.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5919122,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5919122,
+      "chunks": [
+        5919122,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "SpinFunction"
+        ]
+      },
+      "small_sample": 0.5063221820628012
+    },
+    {
+      "path": "AhC.dir/SpinFunction.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    },
+    {
+      "path": "AhC.dir/WeylB_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5919122,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5919122,
+      "chunks": [
+        5919122,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylB-NN"
+        ]
+      },
+      "small_sample": 0.30803845621280895
+    },
+    {
+      "path": "AhC.dir/WeylB_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    },
+    {
+      "path": "AhC.dir/WeylE_NN.tdm/data.dat",
+      "basename": "data.dat",
+      "shape": [
+        5919122,
+        1
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 5919122,
+      "chunks": [
+        5919122,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "WeylE-NN"
+        ]
+      },
+      "small_sample": 0.11064943328192424
+    },
+    {
+      "path": "AhC.dir/WeylE_NN.tdm/index.dat",
+      "basename": "index.dat",
+      "shape": [
+        5464,
+        4
+      ],
+      "dtype": "float64",
+      "ndim": 2,
+      "size": 21856,
+      "chunks": [
+        5464,
+        1
+      ],
+      "compression": "gzip",
+      "compression_opts": 1,
+      "attributes": {
+        "Legend": [
+          "time",
+          "index one past this filestep",
+          "Extents[0]",
+          "Extents[1]"
+        ]
+      },
+      "small_sample": 3685.496267868691
+    }
+  ],
+  "groups": [
+    {
+      "path": "AhA.dir",
+      "attributes": {},
+      "n_children": 6
+    },
+    {
+      "path": "AhA.dir/CoordsMeasurementFrame.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=a; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhA.dir/DimlessRicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhA.dir/RicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhA.dir/SpinFunction.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhA.dir/WeylB_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhA.dir/WeylE_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir",
+      "attributes": {},
+      "n_children": 6
+    },
+    {
+      "path": "AhB.dir/CoordsMeasurementFrame.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=a; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir/DimlessRicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir/RicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir/SpinFunction.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir/WeylB_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhB.dir/WeylE_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir",
+      "attributes": {},
+      "n_children": 6
+    },
+    {
+      "path": "AhC.dir/CoordsMeasurementFrame.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=a; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir/DimlessRicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir/RicciScalar.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir/SpinFunction.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir/WeylB_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    },
+    {
+      "path": "AhC.dir/WeylE_NN.tdm",
+      "attributes": {
+        "TensorSpec": [
+          "TensorDim=3; TensorSymm=; DataMeshDim=2;"
+        ]
+      },
+      "n_children": 2
+    }
+  ],
+  "target_field_occurrences": {},
+  "root_attributes": {},
+  "operational_checks": {
+    "expected_horizon_groups_found": {
+      "AhA.dir": true,
+      "AhB.dir": true,
+      "AhC.dir": true
+    },
+    "target_fields_found": {
+      "CoordsMeasurementFrame.tdm": false,
+      "DimlessRicciScalar.tdm": false,
+      "RicciScalar.tdm": false,
+      "SpinFunction.tdm": false,
+      "WeylB_NN.tdm": false,
+      "WeylE_NN.tdm": false
+    },
+    "n_groups": 21,
+    "n_datasets": 36
+  }
+}

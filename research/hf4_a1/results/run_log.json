@@ -1,0 +1,92 @@
+{
+  "classification": "BH_HF4_A1_SCALAR_MAPS_RECONSTRUCTED_LATE_AXISYMMETRIC_CONTROL_PASSED_FINITE_MULTIPOLES_DO_NOT_FIX_FULL_GEOMETRY",
+  "checks": {
+    "quadrature": "32 Gauss-Legendre nodes in cos(theta), 64 uniform azimuths",
+    "basis_Gram_max_abs_error": 6.439293542825908e-15,
+    "mass_reality_pair_max_abs_residual": 7.135126638675181e-14,
+    "spin_reality_pair_max_abs_residual": 4.266962774885571e-15,
+    "K_max_imaginary_part_snapshots": 6.121631458759592e-14,
+    "B_max_imaginary_part_snapshots": 3.0965382114593e-15,
+    "mass_roundtrip_max_abs_error": 3.574787115958613e-14,
+    "spin_roundtrip_max_abs_error": 4.024558608629206e-15,
+    "K_area_mean_max_abs_difference_from_one": 1.5545209564038487e-10,
+    "B_area_mean_max_abs": 3.615391105349212e-18,
+    "sphere_monopole_K_error": 1.1102230246251565e-16,
+    "roundtrip_is_numerical_consistency_not_physical_accuracy": true,
+    "higher_ell_error_bound_available": false,
+    "new_evolution_run": false
+  },
+  "late_geometry": {
+    "window_M": [
+      400,
+      500
+    ],
+    "sample_count": 1001,
+    "chi_from_L10": 0.6864409708098721,
+    "chi_email": 0.68644,
+    "axisymmetric_approximation_only": true,
+    "late_mean_mass_nonaxisymmetric_L2_fraction": 4.423303720215032e-06,
+    "K_legendre_l0_regularization": -3.352873534367973e-14,
+    "K_legendre_l1_regularization": 9.45213857722283e-14,
+    "poles": {
+      "f_minus1": 0.0,
+      "f_plus1": 2.220446049250313e-16,
+      "fp_minus1": 2.0,
+      "fp_plus1": -2.0000000000000004
+    },
+    "min_f_divided_by_1_minus_x2": 1.0000000000000002,
+    "max_absolute_f_difference_Kerr_fitted_spin": 1.2671958238286152e-07,
+    "max_relative_f_difference_including_pole_limits": 2.3026598827691203e-07,
+    "max_absolute_K_difference_Kerr_fitted_spin": 2.5405189765181913e-05,
+    "max_profile_displacement_over_R": 3.510200647927064e-07,
+    "equatorial_rho_over_R": 1.0760822772048422,
+    "polar_z_over_R": 0.839068988618924,
+    "Euclidean_rotation_embedding_condition_pass": true,
+    "counterexample": {
+      "label": "Mathematical alternative, not a measured mode or a simulated history",
+      "compared_set": "Axisymmetric control: same I_l0 for l<=8 and all m!=0 identically zero, not a replacement of all measured early-time coefficients",
+      "added_K": "0.2 P_10(x)",
+      "same_area": true,
+      "max_abs_change_I_l0_l_le_8": 1.1915750744715583e-15,
+      "poles": {
+        "f_minus1": 0.0,
+        "f_plus1": -8.881784197001252e-16,
+        "fp_minus1": 2.0,
+        "fp_plus1": -2.000000000000001
+      },
+      "min_f_divided_by_1_minus_x2": 1.000000000000002,
+      "min_K_on_grid": 0.44336564804992984,
+      "max_K_change": 0.20000000000000007,
+      "max_f_change": 0.0009114583333338366,
+      "max_profile_displacement_over_R": 0.0024830812689421444,
+      "Euclidean_rotation_embedding_condition_pass": true,
+      "higher_modes_constrained_by_data": false,
+      "same_spin_moments_possible": "Keep the same curl two-form; both metrics have the same area form."
+    },
+    "absolute_radius_at_late_time_only_under_Kerr_and_email_mass": 1.7686755381906865,
+    "absolute_radius_time_series_present": false,
+    "Kerr_comparison_is_internal_consistency_not_resolution_error": true
+  },
+  "snapshot_t0": {
+    "time_M": 0.0,
+    "K_min_sampled": -0.2605470834399613,
+    "K_max_sampled": 2.69023324000765,
+    "B_min_sampled": -0.5504452612310148,
+    "B_max_sampled": 0.5504447961326684,
+    "K_negative_area_fraction_quadrature": 0.1829388426866144,
+    "K_L6_min_sampled": -0.2333204481137624,
+    "K_L2": 4.739679798975592,
+    "K_nonaxisymmetric_L2": 2.6909109316962523,
+    "K_nonaxisymmetric_fraction": 0.567741080795764,
+    "K_relative_difference_L8_L2": 0.11142967769799784,
+    "K_relative_difference_L8_L4": 0.05200638882962281,
+    "K_relative_difference_L8_L6": 0.020157728135916462,
+    "B_L2": 1.0923117328555776,
+    "B_nonaxisymmetric_L2": 0.11256915846863716,
+    "B_nonaxisymmetric_fraction": 0.10305589062414726,
+    "B_relative_difference_L8_L2": 0.11389415169730298,
+    "B_relative_difference_L8_L4": 0.076108479575866,
+    "B_relative_difference_L8_L6": 0.027366806925160345
+  },
+  "QC0_M0_mass_difference": 0.00023565177828621664
+}

@@ -1,0 +1,25 @@
+{
+  "collector": {
+    "surface_payload_exact": true,
+    "complex_and_compound_payload_preserved": true,
+    "inputs_byte_identical": true,
+    "no_bulk_dataset_getitem": true,
+    "logical_gigabyte_metadata_only": true,
+    "external_dataset_skipped": true,
+    "truncated_checkpoint_reported": true,
+    "MPI_parts_recorded": true,
+    "no_raw_checkpoint_in_zip": true,
+    "unrelated_project_not_collected": true,
+    "large_surface_array_bound": true,
+    "previous_output_preserved": true,
+    "stdlib_fallback_honest": true,
+    "output_inside_simulation_rejected": true
+  },
+  "conditional_metric_identity": {
+    "cases": 400,
+    "synthetic_only": true,
+    "max_relative_metric_error": 7.468134580090549e-14,
+    "max_phase_rotation_error": 5.60809327640205e-14,
+    "max_tangent_projection_residual": 3.6523422903992844e-15
+  }
+}

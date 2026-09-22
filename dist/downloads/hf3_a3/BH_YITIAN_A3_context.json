@@ -1,0 +1,335 @@
+{
+  "A1_backgrounds": {
+    "I20": {
+      "kind": "I",
+      "ell": 2,
+      "m": 0,
+      "late_mean": -0.4900709771723109,
+      "kerr_reported_chi": -0.49006911074408716,
+      "relative_difference_reported_chi": 3.8085000315923092e-06,
+      "kerr_L10_inferred_chi": -0.49007097719244397,
+      "absolute_difference_inferred_chi": 2.0133061884308745e-11,
+      "relative_difference_inferred_chi": 4.108193062084306e-11,
+      "used_to_infer_chi": false
+    },
+    "L30": {
+      "kind": "L",
+      "ell": 3,
+      "m": 0,
+      "late_mean": -0.15994983906265242,
+      "kerr_reported_chi": -0.15994893591313059,
+      "relative_difference_reported_chi": 5.646486590735476e-06,
+      "kerr_L10_inferred_chi": -0.15994983908086824,
+      "absolute_difference_inferred_chi": 1.8215817743083562e-11,
+      "relative_difference_inferred_chi": 1.138845643594172e-10,
+      "used_to_infer_chi": false
+    },
+    "I40": {
+      "kind": "I",
+      "ell": 4,
+      "m": 0,
+      "late_mean": 0.04654589936976602,
+      "kerr_reported_chi": 0.04654555152501308,
+      "relative_difference_reported_chi": 7.47321154314923e-06,
+      "kerr_L10_inferred_chi": 0.04654589937350288,
+      "absolute_difference_inferred_chi": 3.736864984116295e-12,
+      "relative_difference_inferred_chi": 8.02834413861079e-11,
+      "used_to_infer_chi": false
+    }
+  },
+  "A2_spectrum": {
+    "method": "qnm, решение радиального и углового уравнений Керра",
+    "qnm_version": "0.4.4",
+    "s": -2,
+    "a_max": 0.7,
+    "l_max": 20,
+    "root_tol": 1.4901161193847656e-08,
+    "cf_tol": 1e-10,
+    "mass_M": 0.95162,
+    "chi": 0.68644,
+    "frequency_units": "M^-1; M — исходная полная масса ADM",
+    "central": {
+      "220": {
+        "omega": 0.5534713308536412,
+        "alpha": 0.0854218311627243,
+        "cf_error_indicator": 1.3472894910096233e-16,
+        "cf_terms": 301
+      },
+      "221": {
+        "omega": 0.5410244062418348,
+        "alpha": 0.2583126149827897,
+        "cf_error_indicator": 4.819909745438293e-16,
+        "cf_terms": 301
+      },
+      "222": {
+        "omega": 0.5180150730970362,
+        "alpha": 0.4362457209324056,
+        "cf_error_indicator": 4.1191555942998253e-16,
+        "cf_terms": 301
+      },
+      "223": {
+        "omega": 0.48743642132098186,
+        "alpha": 0.6186695118163582,
+        "cf_error_indicator": 6.2685830808342686e-15,
+        "cf_terms": 301
+      },
+      "320": {
+        "omega": 0.7920301269762067,
+        "alpha": 0.08900435307607162,
+        "cf_error_indicator": 5.35015268926554e-16,
+        "cf_terms": 301
+      },
+      "420": {
+        "omega": 1.0171677294138026,
+        "alpha": 0.09142569207875144,
+        "cf_error_indicator": 8.326672684688674e-17,
+        "cf_terms": 301
+      }
+    },
+    "rounding_variations": {
+      "mass_minus_half_last_digit": {
+        "220": {
+          "omega": 0.553474238916938,
+          "alpha": 0.08542227998830589,
+          "cf_error_indicator": 1.3472894910096233e-16,
+          "cf_terms": 301
+        },
+        "221": {
+          "omega": 0.5410272489061804,
+          "alpha": 0.25831397221557284,
+          "cf_error_indicator": 4.819909745438293e-16,
+          "cf_terms": 301
+        },
+        "222": {
+          "omega": 0.518017794865152,
+          "alpha": 0.43624801306588884,
+          "cf_error_indicator": 4.1191555942998253e-16,
+          "cf_terms": 301
+        },
+        "223": {
+          "omega": 0.48743898242195927,
+          "alpha": 0.6186727624456139,
+          "cf_error_indicator": 6.2685830808342686e-15,
+          "cf_terms": 301
+        },
+        "320": {
+          "omega": 0.7920342884812638,
+          "alpha": 0.08900482072503194,
+          "cf_error_indicator": 5.35015268926554e-16,
+          "cf_terms": 301
+        },
+        "420": {
+          "omega": 1.017173073842639,
+          "alpha": 0.0914261724499734,
+          "cf_error_indicator": 8.326672684688674e-17,
+          "cf_terms": 301
+        }
+      },
+      "mass_plus_half_last_digit": {
+        "220": {
+          "omega": 0.5534684228209031,
+          "alpha": 0.08542138234185913,
+          "cf_error_indicator": 1.3472894910096233e-16,
+          "cf_terms": 301
+        },
+        "221": {
+          "omega": 0.5410215636073609,
+          "alpha": 0.25831125776426883,
+          "cf_error_indicator": 4.819909745438293e-16,
+          "cf_terms": 301
+        },
+        "222": {
+          "omega": 0.5180123513575217,
+          "alpha": 0.43624342882300887,
+          "cf_error_indicator": 4.1191555942998253e-16,
+          "cf_terms": 301
+        },
+        "223": {
+          "omega": 0.48743386024691737,
+          "alpha": 0.6186662612212613,
+          "cf_error_indicator": 6.2685830808342686e-15,
+          "cf_terms": 301
+        },
+        "320": {
+          "omega": 0.7920259655148801,
+          "alpha": 0.0890038854320255,
+          "cf_error_indicator": 5.35015268926554e-16,
+          "cf_terms": 301
+        },
+        "420": {
+          "omega": 1.0171623850411275,
+          "alpha": 0.09142521171257738,
+          "cf_error_indicator": 8.326672684688674e-17,
+          "cf_terms": 301
+        }
+      },
+      "chi_minus_half_last_digit": {
+        "220": {
+          "omega": 0.5534690903976118,
+          "alpha": 0.08542201660330745,
+          "cf_error_indicator": 1.2412670766236366e-16,
+          "cf_terms": 301
+        },
+        "221": {
+          "omega": 0.5410220105777714,
+          "alpha": 0.2583132059106788,
+          "cf_error_indicator": 2.7755575615628914e-16,
+          "cf_terms": 301
+        },
+        "222": {
+          "omega": 0.5180124325548817,
+          "alpha": 0.43624680454758036,
+          "cf_error_indicator": 3.433175098891678e-16,
+          "cf_terms": 301
+        },
+        "223": {
+          "omega": 0.4874335794627987,
+          "alpha": 0.618671193087161,
+          "cf_error_indicator": 6.14602710580223e-15,
+          "cf_terms": 301
+        },
+        "320": {
+          "omega": 0.7920280470290603,
+          "alpha": 0.08900454368903557,
+          "cf_error_indicator": 2.2301825219878386e-16,
+          "cf_terms": 301
+        },
+        "420": {
+          "omega": 1.0171656576488592,
+          "alpha": 0.09142586373183642,
+          "cf_error_indicator": 1.3877787807814457e-17,
+          "cf_terms": 301
+        }
+      },
+      "chi_plus_half_last_digit": {
+        "220": {
+          "omega": 0.5534735713440844,
+          "alpha": 0.08542164571726096,
+          "cf_error_indicator": 5.129621610332541e-16,
+          "cf_terms": 301
+        },
+        "221": {
+          "omega": 0.5410268019416208,
+          "alpha": 0.2583120240405162,
+          "cf_error_indicator": 8.326672684688674e-17,
+          "cf_terms": 301
+        },
+        "222": {
+          "omega": 0.5180177136775754,
+          "alpha": 0.43624463729460095,
+          "cf_error_indicator": 2.3714374201337736e-16,
+          "cf_terms": 301
+        },
+        "223": {
+          "omega": 0.48743926322005615,
+          "alpha": 0.6186678305183199,
+          "cf_error_indicator": 5.7152228177742574e-15,
+          "cf_terms": 301
+        },
+        "320": {
+          "omega": 0.7920322069498994,
+          "alpha": 0.08900416245847245,
+          "cf_error_indicator": 5.028663855320258e-16,
+          "cf_terms": 301
+        },
+        "420": {
+          "omega": 1.0171698012024482,
+          "alpha": 0.09142552042160518,
+          "cf_error_indicator": 1.942890293094024e-16,
+          "cf_terms": 301
+        }
+      }
+    },
+    "rounded_paper_table_checks": {
+      "220": true,
+      "221": true,
+      "222": true,
+      "320": true,
+      "420": true
+    },
+    "QC0_220": {
+      "mass_M": 0.977461203278627,
+      "chi": 0.6783194994253878,
+      "omega": 0.5353401318639867,
+      "alpha": 0.08345059699511974
+    },
+    "sources": [
+      "https://arxiv.org/pdf/2208.02965",
+      "https://qnm.readthedocs.io/en/latest/README.html"
+    ],
+    "precision_note": "Округление Mf и chi ограничивает физическую точность; cf_error_indicator не является полной погрешностью частоты."
+  },
+  "resume_state_A2": {
+    "source_summary_sha256": "2067c2c70ca98f4eeaa5641f1fc32a1ef9ec8b72aeeca81fd2ce73f8a3cf1daf",
+    "stored_classification_preserved": "BH_HF3_R6B_FIVE_RADIUS_OUTGOING_PROPAGATION_SUPPORTED_INVERSE_RADIUS_SCALING_SUPPORTED_RINGDOWN_AGE_COLLAPSE_SUPPORTED_KERR220_ASYMPTOTIC_CLOSURE_SUPPORTED_R15_R30_R40_THIRD_PERIOD_PENDING",
+    "remnant_from_R6B": {
+      "late_window_M": [
+        90.0,
+        95.0
+      ],
+      "Mf": 0.977461203278627,
+      "Jf": 0.648087073319352,
+      "chi": 0.6783194994253878
+    },
+    "old_approximate_reference": {
+      "omega_R_rad_per_M": 0.5381085416552966,
+      "alpha_per_M": 0.08411794144638013,
+      "period_M": 11.67642737625319,
+      "Q": 3.1985360816176582
+    },
+    "numerical_Kerr220_reference": {
+      "mass_M": 0.977461203278627,
+      "chi": 0.6783194994253878,
+      "omega": 0.5353401318639867,
+      "alpha": 0.08345059699511974
+    },
+    "existing_fits_compared_without_refitting": [
+      {
+        "radius_M": 15.0,
+        "unchanged_fit_start_M": 65.60285475250637,
+        "unchanged_fit_end_M": 77.27928212875958,
+        "omega_from_existing_fit": 0.5342573533775116,
+        "alpha_from_existing_fit": 0.08283326529846569,
+        "relative_omega_difference_numerical_Kerr": 0.0020225991328260617,
+        "relative_alpha_difference_numerical_Kerr": 0.007397570765013877
+      },
+      {
+        "radius_M": 30.0,
+        "unchanged_fit_start_M": 81.60285475250637,
+        "unchanged_fit_end_M": 93.27928212875958,
+        "omega_from_existing_fit": 0.5342172874098462,
+        "alpha_from_existing_fit": 0.08335161181977986,
+        "relative_omega_difference_numerical_Kerr": 0.002097441210377516,
+        "relative_alpha_difference_numerical_Kerr": 0.001186152992358654
+      }
+    ],
+    "reference_omega_relative_shift": -0.00514470516077291,
+    "reference_alpha_relative_shift": -0.007933437739745216,
+    "period_M": 11.73680980221365,
+    "r40_three_period_end_M": 104.21042940664094,
+    "checkpoint_state_from_prior_verified_dialog": {
+      "t_M": 95,
+      "iteration": 48640,
+      "exit_status": 0
+    },
+    "planned_final_time_M": 105,
+    "expected_iteration_if_step_unchanged": 53760,
+    "no_new_evolution_run": true,
+    "next_step": "BH-YITIAN-A3: осесимметричные I20, I40, L30; затем отдельный контроль m=4. Работать с уже предоставленными рядами.",
+    "QC0_completion_pending": "Восстановление 95→105M из it=48640, аудит шва 95M и третий период r40 с численным спектральным ориентиром.",
+    "HF4_gate": "Установить соответствие коэффициентов угловому базису/мере; различать скалярную карту на вспомогательной сфере и физическую метрику горизонта.",
+    "corrections": [
+      "В старом текстовом пересказе Jf=0.648087073319352 было ошибочно названо безразмерным спином; правильный chi=Jf/Mf^2.",
+      "Правильное Mf в файле 0.977461203278627; число 0.977641203 в пересказе было опечаткой.",
+      "Ориентир R6B — приближённая формула BCW, а не точное численное значение квазинормальной частоты.",
+      "В старом сравнении BIC свободные частота и затухание брались из отдельных регрессий фазы и лог-модуля, а не из минимума того же комплексного RSS. Для строгого сравнения моделей это надо исправить.",
+      "Коррелированные остатки и отсутствие модели численной ошибки не позволяют трактовать старые BIC как калиброванную статистическую проверку ОТО.",
+      "R6A/R6B не пересчитывались: прочитаны готовый итог и исходный код; архив исходных временных рядов здесь не анализировался."
+    ]
+  },
+  "source_sha256": {
+    "BH_YITIAN_A1_summary.json": "e4db04ae1a46a5e69a082c1f283a9a13063d277b46ac199adc4bae524809b5ac",
+    "BH_YITIAN_A2_spectrum.json": "487e882e153ee43c3a2baaa002d694938202928790392f9cd0da119a7d83083b",
+    "BH_HF3_resume_state.json": "079614e8f1148ee5b9425bb1af554f302859c55faf3e83a9125bde6ffb0790bf"
+  }
+}

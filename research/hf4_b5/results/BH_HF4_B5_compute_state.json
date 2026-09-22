@@ -1,0 +1,13 @@
+{
+  "stage": "BH-HF4-B5",
+  "computed_UTC": "2026-09-22T05:45:31.711334+00:00",
+  "numerical_status": "COMPLETE",
+  "input_sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
+  "program_sha256": "299dd8534c8ca8f7d585518288aef65026767c5a86ea010d27a180d7177777dd",
+  "outputs": [
+    "BH_HF4_B5_metrics.csv",
+    "BH_HF4_B5_fits_residuals.npz",
+    "BH_HF4_B5_summary.json"
+  ],
+  "previous_stages_recomputed": false
+}

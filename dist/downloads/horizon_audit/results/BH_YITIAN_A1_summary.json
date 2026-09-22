@@ -1,0 +1,329 @@
+{
+  "status": "BH_YITIAN_A1_INPUT_VERIFIED_LATE_MOMENTS_KERR_CONSISTENT_DESCRIPTIVE_RINGDOWN",
+  "scope": "Первичный разбор предоставленного набора; не воспроизведение эволюции SpEC, не новая проверка QC0 и не обнаружение GW150914.",
+  "checks": {
+    "expected_shapes": true,
+    "finite_values": true,
+    "strictly_increasing_time": true,
+    "expected_time_grid": true
+  },
+  "samples": 5001,
+  "time_min_M": 0.0,
+  "time_max_M": 500.0,
+  "time_step_M": 0.09999999999999787,
+  "moments_per_kind": 81,
+  "total_complex_samples": 810162,
+  "late_samples": 1001,
+  "phase_I22_at_zero": {
+    "real": 0.9351068202339613,
+    "imag": 5.551115123125783e-17
+  },
+  "I00_max_abs_error_sqrt_pi": 2.7553159753779255e-10,
+  "parity": {
+    "I": {
+      "forbidden_peak_abs": 8.0567580328627e-07,
+      "allowed_peak_abs": 1.7724538509887848,
+      "global_peak_ratio": 4.5455389590923005e-07,
+      "reality_max_abs_residual": 7.135126638675181e-14,
+      "normalization_note": "Отношение глобальных максимумов, не поточечная относительная ошибка и не метрика HF3-R2."
+    },
+    "L": {
+      "forbidden_peak_abs": 7.209986639724112e-07,
+      "allowed_peak_abs": 1.2201122005657636,
+      "global_peak_ratio": 5.909281651622577e-07,
+      "reality_max_abs_residual": 4.266962774885571e-15,
+      "normalization_note": "Отношение глобальных максимумов, не поточечная относительная ошибка и не метрика HF3-R2."
+    }
+  },
+  "rotation_Omega_M_inverse": 0.20878380853617037,
+  "I22_offset": {
+    "real": -4.1910826648370195e-06,
+    "imag": -3.8318473233640905e-06
+  },
+  "I22_offset_abs": 5.678752311297784e-06,
+  "rotation_modulus_relative_max_error": 2.3745266843829666e-16,
+  "reported_mass_M": 0.95162,
+  "reported_chi": 0.68644,
+  "chi_inferred_from_L10": 0.6864409708098721,
+  "chi_absolute_difference_from_reported": 9.708098720473401e-07,
+  "mass_independently_measured": false,
+  "kerr_axisymmetric_comparison": [
+    {
+      "kind": "I",
+      "ell": 0,
+      "m": 0,
+      "late_mean": 1.7724538509055754,
+      "kerr_reported_chi": 1.772453850905516,
+      "relative_difference_reported_chi": 3.3448492599508425e-14,
+      "kerr_L10_inferred_chi": 1.7724538509055154,
+      "absolute_difference_inferred_chi": 5.995204332975845e-14,
+      "relative_difference_inferred_chi": 3.3824318359053474e-14,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "L",
+      "ell": 1,
+      "m": 0,
+      "late_mean": 1.2201122005636287,
+      "kerr_reported_chi": 1.2201098276324636,
+      "relative_difference_reported_chi": 1.944850464586638e-06,
+      "kerr_L10_inferred_chi": 1.220112200563629,
+      "absolute_difference_inferred_chi": 2.220446049250313e-16,
+      "relative_difference_inferred_chi": 1.8198703760396639e-16,
+      "used_to_infer_chi": true
+    },
+    {
+      "kind": "I",
+      "ell": 2,
+      "m": 0,
+      "late_mean": -0.4900709771723109,
+      "kerr_reported_chi": -0.49006911074408716,
+      "relative_difference_reported_chi": 3.8085000315923092e-06,
+      "kerr_L10_inferred_chi": -0.49007097719244397,
+      "absolute_difference_inferred_chi": 2.0133061884308745e-11,
+      "relative_difference_inferred_chi": 4.108193062084306e-11,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "L",
+      "ell": 3,
+      "m": 0,
+      "late_mean": -0.15994983906265242,
+      "kerr_reported_chi": -0.15994893591313059,
+      "relative_difference_reported_chi": 5.646486590735476e-06,
+      "kerr_L10_inferred_chi": -0.15994983908086824,
+      "absolute_difference_inferred_chi": 1.8215817743083562e-11,
+      "relative_difference_inferred_chi": 1.138845643594172e-10,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "I",
+      "ell": 4,
+      "m": 0,
+      "late_mean": 0.04654589936976602,
+      "kerr_reported_chi": 0.04654555152501308,
+      "relative_difference_reported_chi": 7.47321154314923e-06,
+      "kerr_L10_inferred_chi": 0.04654589937350288,
+      "absolute_difference_inferred_chi": 3.736864984116295e-12,
+      "relative_difference_inferred_chi": 8.02834413861079e-11,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "L",
+      "ell": 5,
+      "m": 0,
+      "late_mean": 0.012584755469903551,
+      "kerr_reported_chi": 0.01258463850356714,
+      "relative_difference_reported_chi": 9.294373960637394e-06,
+      "kerr_L10_inferred_chi": 0.012584755464544909,
+      "absolute_difference_inferred_chi": 5.358642349295728e-12,
+      "relative_difference_inferred_chi": 4.2580424898939486e-10,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "I",
+      "ell": 6,
+      "m": 0,
+      "late_mean": -0.0032322980723936364,
+      "kerr_reported_chi": -0.0032322621642674625,
+      "relative_difference_reported_chi": 1.1109286422011512e-05,
+      "kerr_L10_inferred_chi": -0.0032322980779879774,
+      "absolute_difference_inferred_chi": 5.594340962700173e-12,
+      "relative_difference_inferred_chi": 1.7307627043426967e-09,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "L",
+      "ell": 7,
+      "m": 0,
+      "late_mean": -0.0007992793061609573,
+      "kerr_reported_chi": -0.0007992689848173477,
+      "relative_difference_reported_chi": 1.2913479448982987e-05,
+      "kerr_L10_inferred_chi": -0.0007992793159930463,
+      "absolute_difference_inferred_chi": 9.832088919067838e-12,
+      "relative_difference_inferred_chi": 1.230119273992745e-08,
+      "used_to_infer_chi": false
+    },
+    {
+      "kind": "I",
+      "ell": 8,
+      "m": 0,
+      "late_mean": 0.00019195414464359193,
+      "kerr_reported_chi": 0.00019195130926251758,
+      "relative_difference_reported_chi": 1.4771355742479799e-05,
+      "kerr_L10_inferred_chi": 0.00019195413842807463,
+      "absolute_difference_inferred_chi": 6.215517304401091e-12,
+      "relative_difference_inferred_chi": 3.238022037607723e-08,
+      "used_to_infer_chi": false
+    }
+  ],
+  "kerr_quadrature_256_512_max_abs_difference": 2.3749194284747854e-14,
+  "QNM_reference": {
+    "omega": 0.5535,
+    "alpha": 0.08541898009737763,
+    "tau": 11.707,
+    "source": "https://arxiv.org/pdf/2208.02965",
+    "precision": "Округлённая таблица II; не точный независимый расчёт частот."
+  },
+  "phase_envelope_fits_I22": [
+    {
+      "start_M": 10,
+      "end_M": 30,
+      "n": 201,
+      "omega_signed_M_inverse": 0.5553263821538356,
+      "alpha_M_inverse": 0.08656769336246652,
+      "phase_residual_rms_rad": 0.00517384842881332,
+      "log_amplitude_residual_rms": 0.008401705770167679,
+      "complex_relative_L2_residual": 0.014412016295366113,
+      "omega_before_rotation": 0.13775876508149493,
+      "rotation_shift_identity_error": -1.1102230246251565e-16,
+      "relative_omega_difference_from_rounded_table": 0.0032996967548971465,
+      "relative_alpha_difference_from_rounded_table": 0.013447986194395647,
+      "minimum_corrected_amplitude_over_abs_offset": 6556.176186243851
+    },
+    {
+      "start_M": 20,
+      "end_M": 50,
+      "n": 301,
+      "omega_signed_M_inverse": 0.5527871373002267,
+      "alpha_M_inverse": 0.08525080129290005,
+      "phase_residual_rms_rad": 0.004402863428410493,
+      "log_amplitude_residual_rms": 0.0027072246791152777,
+      "complex_relative_L2_residual": 0.006054656677529833,
+      "omega_before_rotation": 0.13521952022788575,
+      "rotation_shift_identity_error": 1.6653345369377348e-16,
+      "relative_omega_difference_from_rounded_table": 0.0012879181567720527,
+      "relative_alpha_difference_from_rounded_table": 0.0019688692640189454,
+      "minimum_corrected_amplitude_over_abs_offset": 1197.8933571520533
+    },
+    {
+      "start_M": 30,
+      "end_M": 60,
+      "n": 301,
+      "omega_signed_M_inverse": 0.5527076868558317,
+      "alpha_M_inverse": 0.08481887067103092,
+      "phase_residual_rms_rad": 0.003693102564118672,
+      "log_amplitude_residual_rms": 0.00274104396709771,
+      "complex_relative_L2_residual": 0.004616190598315947,
+      "omega_before_rotation": 0.13514006978349064,
+      "rotation_shift_identity_error": 3.3306690738754696e-16,
+      "relative_omega_difference_from_rounded_table": 0.001431460061731305,
+      "relative_alpha_difference_from_rounded_table": 0.007025481054240928,
+      "minimum_corrected_amplitude_over_abs_offset": 509.7340109836618
+    },
+    {
+      "start_M": 40,
+      "end_M": 80,
+      "n": 401,
+      "omega_signed_M_inverse": 0.5529421419408402,
+      "alpha_M_inverse": 0.08508005089200928,
+      "phase_residual_rms_rad": 0.0028417627535243734,
+      "log_amplitude_residual_rms": 0.003325264523734441,
+      "complex_relative_L2_residual": 0.0044779379629729405,
+      "omega_before_rotation": 0.13537452486849927,
+      "rotation_shift_identity_error": 2.220446049250313e-16,
+      "relative_omega_difference_from_rounded_table": 0.00100787363895168,
+      "relative_alpha_difference_from_rounded_table": 0.003967844207247263,
+      "minimum_corrected_amplitude_over_abs_offset": 93.20362892326818
+    },
+    {
+      "start_M": 50,
+      "end_M": 100,
+      "n": 501,
+      "omega_signed_M_inverse": 0.5530014120077708,
+      "alpha_M_inverse": 0.08527227769391917,
+      "phase_residual_rms_rad": 0.0029980296498478016,
+      "log_amplitude_residual_rms": 0.002918424818724049,
+      "complex_relative_L2_residual": 0.0033191638847539363,
+      "omega_before_rotation": 0.13543379493542967,
+      "rotation_shift_identity_error": 3.3306690738754696e-16,
+      "relative_omega_difference_from_rounded_table": 0.000900791313873962,
+      "relative_alpha_difference_from_rounded_table": 0.0017174450372881872,
+      "minimum_corrected_amplitude_over_abs_offset": 16.87763494607276
+    },
+    {
+      "start_M": 70,
+      "end_M": 120,
+      "n": 501,
+      "omega_signed_M_inverse": 0.5532158333671849,
+      "alpha_M_inverse": 0.08529896363658127,
+      "phase_residual_rms_rad": 0.0027223152524864175,
+      "log_amplitude_residual_rms": 0.0027917050088466858,
+      "complex_relative_L2_residual": 0.0034794157770706912,
+      "omega_before_rotation": 0.13564821629484383,
+      "rotation_shift_identity_error": 3.885780586188048e-16,
+      "relative_omega_difference_from_rounded_table": 0.0005133995172810347,
+      "relative_alpha_difference_from_rounded_table": 0.0014050327065429863,
+      "minimum_corrected_amplitude_over_abs_offset": 3.052324421365945
+    }
+  ],
+  "baseline_sensitivity": [
+    {
+      "baseline_start_M": 350,
+      "baseline_end_M": 500,
+      "offset": {
+        "real": -4.1910826093319974e-06,
+        "imag": -3.831847324133882e-06
+      },
+      "offset_delta_from_400": 5.5510359905650917e-14,
+      "fit": {
+        "start_M": 40,
+        "end_M": 80,
+        "n": 401,
+        "omega_signed_M_inverse": 0.5529421419390541,
+        "alpha_M_inverse": 0.08508005089064886,
+        "phase_residual_rms_rad": 0.0028417627646578473,
+        "log_amplitude_residual_rms": 0.00332526451552842,
+        "complex_relative_L2_residual": 0.004477937960588363
+      }
+    },
+    {
+      "baseline_start_M": 400,
+      "baseline_end_M": 500,
+      "offset": {
+        "real": -4.191082664837018e-06,
+        "imag": -3.831847323364092e-06
+      },
+      "offset_delta_from_400": 2.395770963567772e-21,
+      "fit": {
+        "start_M": 40,
+        "end_M": 80,
+        "n": 401,
+        "omega_signed_M_inverse": 0.5529421419408402,
+        "alpha_M_inverse": 0.08508005089200928,
+        "phase_residual_rms_rad": 0.0028417627535243734,
+        "log_amplitude_residual_rms": 0.003325264523734441,
+        "complex_relative_L2_residual": 0.0044779379629729405
+      }
+    },
+    {
+      "baseline_start_M": 450,
+      "baseline_end_M": 500,
+      "offset": {
+        "real": -4.191082721436756e-06,
+        "imag": -3.831847298112395e-06
+      },
+      "offset_delta_from_400": 6.197724039030328e-14,
+      "fit": {
+        "start_M": 40,
+        "end_M": 80,
+        "n": 401,
+        "omega_signed_M_inverse": 0.5529421419420729,
+        "alpha_M_inverse": 0.08508005089419204,
+        "phase_residual_rms_rad": 0.0028417627437900914,
+        "log_amplitude_residual_rms": 0.0033252645301285683,
+        "complex_relative_L2_residual": 0.004477937971146539
+      }
+    }
+  ],
+  "limitations": [
+    "Один файл мультиполей: независимая проверка сходимости сетки недоступна.",
+    "Целевая ошибка AMR 5e-8 не является погрешностью каждого момента.",
+    "HDF5 не содержит атрибутов с идентификатором симуляции, площадью, массой и спином.",
+    "SXS:BBH:0389 указан в статье; принадлежность архива связывается с письмом, параметрами и скриптами, а не с метаданными HDF5.",
+    "В архиве отсутствуют Psi4, h, поверхностная сетка, q_AB, X^a и A(t).",
+    "Одноэкспоненциальные оценки описательны; остаток может включать смешение мод, калибровочные и численные эффекты.",
+    "Данные t>150M после вычитания уровня не следует считать доказательством надёжного физического сигнала.",
+    "Позднее согласие не доказывает точный Керр в ранней динамике."
+  ]
+}

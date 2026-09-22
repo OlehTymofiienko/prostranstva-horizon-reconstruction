@@ -1,0 +1,1038 @@
+{
+  "version": "BH-YITIAN-A3-2026-09-15-v1",
+  "status": "BH_YITIAN_A3_LATE_M0_DESCRIPTION_EARLY_PREDICTION_NOT_CLOSED",
+  "native_models": {
+    "I20": "F1",
+    "I40": "F3",
+    "L30": "F2"
+  },
+  "models": {
+    "F1": [
+      "200"
+    ],
+    "F2": [
+      "200",
+      "300"
+    ],
+    "F3": [
+      "200",
+      "300",
+      "400"
+    ],
+    "F1O1": [
+      "200",
+      "201"
+    ],
+    "F1O2": [
+      "200",
+      "201",
+      "202"
+    ],
+    "F1O3": [
+      "200",
+      "201",
+      "202",
+      "203"
+    ],
+    "F3O1": [
+      "200",
+      "300",
+      "400",
+      "201"
+    ],
+    "F3O2": [
+      "200",
+      "300",
+      "400",
+      "201",
+      "202"
+    ],
+    "F3O3": [
+      "200",
+      "300",
+      "400",
+      "201",
+      "202",
+      "203"
+    ],
+    "D": [
+      "D"
+    ],
+    "F1D": [
+      "200",
+      "D"
+    ],
+    "F2D": [
+      "200",
+      "300",
+      "D"
+    ],
+    "F3D": [
+      "200",
+      "300",
+      "400",
+      "D"
+    ]
+  },
+  "start_times_M": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70
+  ],
+  "main_fit_count": 390,
+  "control_count": 558,
+  "baseline": {
+    "I20": {
+      "late_mean": -0.4900709771723118,
+      "late_fluctuation_rms": 1.1090433945053294e-12,
+      "rounded_Kerr_background_shift": 1.8664282246394492e-06,
+      "L10_inferred_Kerr_background_shift": -2.0132173705889045e-11
+    },
+    "I40": {
+      "late_mean": 0.04654589936976601,
+      "late_fluctuation_rms": 1.9164677810796364e-13,
+      "rounded_Kerr_background_shift": -3.478447529320361e-07,
+      "L10_inferred_Kerr_background_shift": 3.736871923010199e-12
+    },
+    "L30": {
+      "late_mean": -0.1599498390626524,
+      "late_fluctuation_rms": 5.482133413237755e-13,
+      "rounded_Kerr_background_shift": 9.031495218081442e-07,
+      "L10_inferred_Kerr_background_shift": -1.8215845498659178e-11
+    }
+  },
+  "representative_cases": [
+    {
+      "model": "F1",
+      "components": [
+        "200"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 2,
+      "fit_relative_L2": 0.5571114479787851,
+      "validation_relative_L2": 8.559300395032652,
+      "validation_absolute_rms": 0.004067418072966478,
+      "validation_signal_rms": 0.00047520450098082596,
+      "scaled_condition_number": 1.230224664617214,
+      "coefficients_at_start": {
+        "200_cos": -0.1460365724549203,
+        "200_sin": -0.04723001168757301
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.004849831559839231,
+      "validation_relative_L2": 1.0781360381845424,
+      "validation_absolute_rms": 0.0005123350980149302,
+      "validation_signal_rms": 0.00047520450098082596,
+      "scaled_condition_number": 1731.7256244457992,
+      "coefficients_at_start": {
+        "200_cos": -0.028611151402000292,
+        "200_sin": 0.014613909457294431,
+        "300_cos": 0.004166070505956332,
+        "300_sin": -0.005682588534166801,
+        "400_cos": 0.0026407257163440197,
+        "400_sin": -0.0006340482029914402,
+        "201_cos": 0.3179294660466678,
+        "201_sin": -0.17308569217394082,
+        "202_cos": -1.8896379596447508,
+        "202_sin": -0.01959734199654522,
+        "203_cos": 1.272717110332856,
+        "203_sin": 0.9092458739051051
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F1D",
+      "components": [
+        "200",
+        "D"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 3,
+      "fit_relative_L2": 0.3360937710158528,
+      "validation_relative_L2": 5.829615522553166,
+      "validation_absolute_rms": 0.002770259535304954,
+      "validation_signal_rms": 0.00047520450098082596,
+      "scaled_condition_number": 2.271790435524187,
+      "coefficients_at_start": {
+        "200_cos": -0.11478993983946621,
+        "200_sin": 0.021207510506502155,
+        "D": -0.11588895755794083
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3",
+      "components": [
+        "200",
+        "300",
+        "400"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 6,
+      "fit_relative_L2": 0.40164613731909937,
+      "validation_relative_L2": 5.211302440394912,
+      "validation_absolute_rms": 0.0008437241946509708,
+      "validation_signal_rms": 0.00016190274970627756,
+      "scaled_condition_number": 3.633921219715212,
+      "coefficients_at_start": {
+        "200_cos": -0.015383243423357609,
+        "200_sin": -0.03573284986595726,
+        "300_cos": -0.03893525130115715,
+        "300_sin": -0.017018791441426134,
+        "400_cos": -0.025484529307887006,
+        "400_sin": 0.013149517662218363
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.009050652560626923,
+      "validation_relative_L2": 2.0540573251557417,
+      "validation_absolute_rms": 0.00033255752899703604,
+      "validation_signal_rms": 0.00016190274970627756,
+      "scaled_condition_number": 1731.7256244457992,
+      "coefficients_at_start": {
+        "200_cos": -0.0028737023621973794,
+        "200_sin": -0.00013530756845159627,
+        "300_cos": 0.0017184987742580068,
+        "300_sin": -0.004279339643302985,
+        "400_cos": 0.0019224798105533275,
+        "400_sin": -0.0004047878984191294,
+        "201_cos": 0.2673006328521432,
+        "201_sin": -0.07625146210421606,
+        "202_cos": -1.2311202135260908,
+        "202_sin": -0.033079196874994436,
+        "203_cos": 0.8321785045532637,
+        "203_sin": 0.6527965686846893
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3D",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "D"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 7,
+      "fit_relative_L2": 0.2858552631513341,
+      "validation_relative_L2": 3.7949954384070783,
+      "validation_absolute_rms": 0.0006144201966008862,
+      "validation_signal_rms": 0.00016190274970627756,
+      "scaled_condition_number": 4.599639083524584,
+      "coefficients_at_start": {
+        "200_cos": -0.021982581849989406,
+        "200_sin": -0.014149152902970202,
+        "300_cos": -0.030256467349589304,
+        "300_sin": -0.0014663289361360634,
+        "400_cos": -0.01399173960994023,
+        "400_sin": 0.013521713240762763,
+        "D": -0.031398200946856476
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F2",
+      "components": [
+        "200",
+        "300"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 4,
+      "fit_relative_L2": 0.520372606988303,
+      "validation_relative_L2": 2.867538511324638,
+      "validation_absolute_rms": 0.0010048803376885157,
+      "validation_signal_rms": 0.00035043307482008983,
+      "scaled_condition_number": 2.453030530594201,
+      "coefficients_at_start": {
+        "200_cos": 0.02009131290315241,
+        "200_sin": 0.03304248229328125,
+        "300_cos": 0.04417590060704008,
+        "300_sin": -0.006953315246509308
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.004725204018270147,
+      "validation_relative_L2": 0.4258516234279334,
+      "validation_absolute_rms": 0.00014923249381497774,
+      "validation_signal_rms": 0.00035043307482008983,
+      "scaled_condition_number": 1731.7256244457992,
+      "coefficients_at_start": {
+        "200_cos": -0.008626830128082122,
+        "200_sin": 0.005309664606830749,
+        "300_cos": 0.00044540575360699035,
+        "300_sin": 0.0017118280768147554,
+        "400_cos": -0.0007733315946716038,
+        "400_sin": 0.0003332386106655681,
+        "201_cos": -0.1722200919890433,
+        "201_sin": -0.006140133875903518,
+        "202_cos": 0.8073663004289803,
+        "202_sin": 0.10453594380595378,
+        "203_cos": -0.5019109285121005,
+        "203_sin": -0.4187685749960012
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F2D",
+      "components": [
+        "200",
+        "300",
+        "D"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 5,
+      "fit_relative_L2": 0.3480774094819325,
+      "validation_relative_L2": 2.1034037086214674,
+      "validation_absolute_rms": 0.0007371022292002012,
+      "validation_signal_rms": 0.00035043307482008983,
+      "scaled_condition_number": 3.476989440528533,
+      "coefficients_at_start": {
+        "200_cos": 0.02165931705031281,
+        "200_sin": 0.005908390259896753,
+        "300_cos": 0.028442135484763303,
+        "300_sin": -0.015279718880541202,
+        "D": 0.037880988275885145
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F1",
+      "components": [
+        "200"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 2,
+      "fit_relative_L2": 0.16838460533196328,
+      "validation_relative_L2": 0.09779314150247938,
+      "validation_absolute_rms": 9.727497148275467e-06,
+      "validation_signal_rms": 9.94701366458183e-05,
+      "scaled_condition_number": 1.2302246646172141,
+      "coefficients_at_start": {
+        "200_cos": 0.0031401738475958104,
+        "200_sin": 0.002190444737974395
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.008261309859979936,
+      "validation_relative_L2": 0.17708503696424518,
+      "validation_absolute_rms": 1.761467282476325e-05,
+      "validation_signal_rms": 9.94701366458183e-05,
+      "scaled_condition_number": 1731.725624445742,
+      "coefficients_at_start": {
+        "200_cos": 0.0025212033568028803,
+        "200_sin": 0.0018593253671315693,
+        "300_cos": 0.00011459174257020532,
+        "300_sin": -0.00018624902720192307,
+        "400_cos": 9.304035858106929e-05,
+        "400_sin": -2.8862364283183475e-05,
+        "201_cos": 0.01320076356743147,
+        "201_sin": -0.0077558173494098135,
+        "202_cos": -0.06699609205607808,
+        "202_sin": 0.012646591252203764,
+        "203_cos": 0.05473885343914264,
+        "203_sin": 0.027462019863624194
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F1D",
+      "components": [
+        "200",
+        "D"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 3,
+      "fit_relative_L2": 0.021987959394715845,
+      "validation_relative_L2": 0.05183965521586417,
+      "validation_absolute_rms": 5.156497587994116e-06,
+      "validation_signal_rms": 9.94701366458183e-05,
+      "scaled_condition_number": 2.271790435524188,
+      "coefficients_at_start": {
+        "200_cos": 0.002888449044057765,
+        "200_sin": 0.0016391078294201687,
+        "D": 0.0009336086045660241
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3",
+      "components": [
+        "200",
+        "300",
+        "400"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 6,
+      "fit_relative_L2": 0.4181481010597831,
+      "validation_relative_L2": 0.30334414505273916,
+      "validation_absolute_rms": 8.060229421930515e-06,
+      "validation_signal_rms": 2.65712378280094e-05,
+      "scaled_condition_number": 3.633921219715211,
+      "coefficients_at_start": {
+        "200_cos": -0.0007674865636993232,
+        "200_sin": -0.0003458354292933107,
+        "300_cos": 5.724530035788456e-05,
+        "300_sin": 0.0003048086472813451,
+        "400_cos": 0.00021698896856545008,
+        "400_sin": 4.1783588726945784e-06
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.028361162297832275,
+      "validation_relative_L2": 0.4704807060003157,
+      "validation_absolute_rms": 1.2501254732624157e-05,
+      "validation_signal_rms": 2.65712378280094e-05,
+      "scaled_condition_number": 1731.725624445742,
+      "coefficients_at_start": {
+        "200_cos": -0.0010245113174085906,
+        "200_sin": -0.0007137741569852897,
+        "300_cos": -3.142970718626429e-05,
+        "300_sin": -0.00010687343316711916,
+        "400_cos": 5.763557376515483e-05,
+        "400_sin": -1.674304995296719e-06,
+        "201_cos": 0.008292120217988138,
+        "201_sin": -0.0029016006978474862,
+        "202_cos": -0.038492578350889,
+        "202_sin": 0.0036961592026330393,
+        "203_cos": 0.03102994577804326,
+        "203_sin": 0.01733462925563725
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3D",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "D"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 7,
+      "fit_relative_L2": 0.03491070025177475,
+      "validation_relative_L2": 0.06439069992210306,
+      "validation_absolute_rms": 1.7109406015421869e-06,
+      "validation_signal_rms": 2.65712378280094e-05,
+      "scaled_condition_number": 4.599639083524583,
+      "coefficients_at_start": {
+        "200_cos": -0.0006531673278180695,
+        "200_sin": -0.0007197262020931744,
+        "300_cos": -9.309582258223787e-05,
+        "300_sin": 3.5395940319437795e-05,
+        "400_cos": 1.7901294699360455e-05,
+        "400_sin": -2.269122887881575e-06,
+        "D": 0.0005439057839200202
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F2",
+      "components": [
+        "200",
+        "300"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 4,
+      "fit_relative_L2": 0.07875414412807202,
+      "validation_relative_L2": 0.10280153145389864,
+      "validation_absolute_rms": 6.62005202299978e-06,
+      "validation_signal_rms": 6.439643387966981e-05,
+      "scaled_condition_number": 2.4530305305941993,
+      "coefficients_at_start": {
+        "200_cos": 0.0017023240451254085,
+        "200_sin": 0.001368983763036442,
+        "300_cos": 3.4374284711590126e-05,
+        "300_sin": -0.0001433208375064314
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.004864773136704842,
+      "validation_relative_L2": 0.10532882979294453,
+      "validation_absolute_rms": 6.782801023384347e-06,
+      "validation_signal_rms": 6.439643387966981e-05,
+      "scaled_condition_number": 1731.725624445742,
+      "coefficients_at_start": {
+        "200_cos": 0.0019318284317217777,
+        "200_sin": 0.001619404657946022,
+        "300_cos": 0.00013060572304834036,
+        "300_sin": -3.283771657684099e-05,
+        "400_cos": -3.0015220802935404e-05,
+        "400_sin": 9.191008583454687e-06,
+        "201_cos": -0.003999316574270266,
+        "201_sin": 0.0006319848253760039,
+        "202_cos": 0.01732031056437071,
+        "202_sin": -0.00019706357261344105,
+        "203_cos": -0.013836133435771005,
+        "203_sin": -0.008458786383886141
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F2D",
+      "components": [
+        "200",
+        "300",
+        "D"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 5,
+      "fit_relative_L2": 0.020524471287039187,
+      "validation_relative_L2": 0.049213302709236205,
+      "validation_absolute_rms": 3.1691611939155044e-06,
+      "validation_signal_rms": 6.439643387966981e-05,
+      "scaled_condition_number": 3.47698944052853,
+      "coefficients_at_start": {
+        "200_cos": 0.0016913434697009505,
+        "200_sin": 0.001559001081987002,
+        "300_cos": 0.00014455626028145302,
+        "300_sin": -8.501186983976524e-05,
+        "D": -0.00026527675304281615
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F1",
+      "components": [
+        "200"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 2,
+      "fit_relative_L2": 0.005890249512270013,
+      "validation_relative_L2": 0.025939425589700527,
+      "validation_absolute_rms": 2.4185801343325057e-08,
+      "validation_signal_rms": 9.323954094391448e-07,
+      "scaled_condition_number": 1.2302246646172144,
+      "coefficients_at_start": {
+        "200_cos": 1.335164243014876e-05,
+        "200_sin": -3.8494245169703164e-05
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.0002471693590928084,
+      "validation_relative_L2": 0.012774973101179907,
+      "validation_absolute_rms": 1.1911326275248703e-08,
+      "validation_signal_rms": 9.323954094391448e-07,
+      "scaled_condition_number": 1731.7256244458065,
+      "coefficients_at_start": {
+        "200_cos": 1.3759747049622719e-05,
+        "200_sin": -3.845246094448794e-05,
+        "300_cos": 2.718320761554259e-07,
+        "300_sin": 2.5557967980057e-07,
+        "400_cos": 2.204828134231045e-08,
+        "400_sin": 7.239768529927615e-09,
+        "201_cos": -2.1119922331273014e-06,
+        "201_sin": -4.433996090555415e-07,
+        "202_cos": -2.3872276132932575e-06,
+        "202_sin": 7.370792513089419e-07,
+        "203_cos": 3.674858059738549e-06,
+        "203_sin": 2.678408742596237e-06
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F1D",
+      "components": [
+        "200",
+        "D"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 3,
+      "fit_relative_L2": 0.005020159877316797,
+      "validation_relative_L2": 0.027345813984333583,
+      "validation_absolute_rms": 2.5497111426369405e-08,
+      "validation_signal_rms": 9.323954094391448e-07,
+      "scaled_condition_number": 2.2717904355241876,
+      "coefficients_at_start": {
+        "200_cos": 1.3311214001264428e-05,
+        "200_sin": -3.858279299925951e-05,
+        "D": 1.4994282861677572e-07
+      },
+      "moment": "I20"
+    },
+    {
+      "model": "F3",
+      "components": [
+        "200",
+        "300",
+        "400"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 6,
+      "fit_relative_L2": 0.009841935850510762,
+      "validation_relative_L2": 0.031425518709387035,
+      "validation_absolute_rms": 8.165412777438925e-09,
+      "validation_signal_rms": 2.598338265455538e-07,
+      "scaled_condition_number": 3.63392121971521,
+      "coefficients_at_start": {
+        "200_cos": -7.312570467868496e-06,
+        "200_sin": 1.0016910940248611e-05,
+        "300_cos": 3.8265824694225567e-08,
+        "300_sin": 1.5079857745793306e-06,
+        "400_cos": 6.40558876007589e-08,
+        "400_sin": 1.2912001782767606e-07
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 0.00043482986905128695,
+      "validation_relative_L2": 0.010607441626734413,
+      "validation_absolute_rms": 2.756172147732996e-09,
+      "validation_signal_rms": 2.598338265455538e-07,
+      "scaled_condition_number": 1731.7256244458065,
+      "coefficients_at_start": {
+        "200_cos": -7.528821206429515e-06,
+        "200_sin": 9.845531538021163e-06,
+        "300_cos": -5.287843489009032e-08,
+        "300_sin": 1.322040797258265e-06,
+        "400_cos": -2.2412616398837547e-08,
+        "400_sin": 1.2035718499972734e-07,
+        "201_cos": 2.977080159586836e-06,
+        "201_sin": -6.941105126443753e-07,
+        "202_cos": -1.0442746436319024e-05,
+        "202_sin": 1.028809324528176e-06,
+        "203_cos": 7.982869327163448e-06,
+        "203_sin": 4.2918076752351034e-06
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F3D",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "D"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 7,
+      "fit_relative_L2": 0.004599297533878288,
+      "validation_relative_L2": 0.02917197943874425,
+      "validation_absolute_rms": 7.579867045477134e-09,
+      "validation_signal_rms": 2.598338265455538e-07,
+      "scaled_condition_number": 4.599639083524584,
+      "coefficients_at_start": {
+        "200_cos": -7.2803103244471506e-06,
+        "200_sin": 9.911401400568241e-06,
+        "300_cos": -4.159460523844874e-09,
+        "300_sin": 1.4319592642626247e-06,
+        "400_cos": 7.874643361048952e-09,
+        "400_sin": 1.273005804888998e-07,
+        "D": 1.5348666794087603e-07
+      },
+      "moment": "I40"
+    },
+    {
+      "model": "F2",
+      "components": [
+        "200",
+        "300"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 4,
+      "fit_relative_L2": 0.0060999252291479645,
+      "validation_relative_L2": 0.03029611091039966,
+      "validation_absolute_rms": 1.861364771108298e-08,
+      "validation_signal_rms": 6.143906644035134e-07,
+      "scaled_condition_number": 2.453030530594199,
+      "coefficients_at_start": {
+        "200_cos": 1.4900361523222288e-05,
+        "200_sin": -2.4302705734577178e-05,
+        "300_cos": -6.470133068578866e-07,
+        "300_sin": -2.1592604740342703e-06
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F3O3",
+      "components": [
+        "200",
+        "300",
+        "400",
+        "201",
+        "202",
+        "203"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 12,
+      "fit_relative_L2": 9.96216435022118e-05,
+      "validation_relative_L2": 0.008916359740849186,
+      "validation_absolute_rms": 5.478128185241069e-09,
+      "validation_signal_rms": 6.143906644035134e-07,
+      "scaled_condition_number": 1731.7256244458065,
+      "coefficients_at_start": {
+        "200_cos": 1.537672745823746e-05,
+        "200_sin": -2.408022822552284e-05,
+        "300_cos": -4.547165190111953e-07,
+        "300_sin": -2.0072084113421617e-06,
+        "400_cos": -2.9803670743463052e-09,
+        "400_sin": 3.442424163585374e-08,
+        "201_cos": -4.051534546014951e-06,
+        "201_sin": 5.308490891634449e-07,
+        "202_cos": 1.064943562838394e-05,
+        "202_sin": -8.168340855136426e-07,
+        "203_cos": -7.451599804937636e-06,
+        "203_sin": -3.7229848696069646e-06
+      },
+      "moment": "L30"
+    },
+    {
+      "model": "F2D",
+      "components": [
+        "200",
+        "300",
+        "D"
+      ],
+      "start_M": 70,
+      "train_end_M": 100,
+      "validation_start_M": 100.10000000000001,
+      "validation_end_M": 120,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "training_stride": 1,
+      "training_weighting": "uniform",
+      "baseline_shift": 0.0,
+      "real_parameter_count": 5,
+      "fit_relative_L2": 0.004634034798656551,
+      "validation_relative_L2": 0.028927926558830103,
+      "validation_absolute_rms": 1.777304801829567e-08,
+      "validation_signal_rms": 6.143906644035134e-07,
+      "scaled_condition_number": 3.476989440528531,
+      "coefficients_at_start": {
+        "200_cos": 1.4894197030818771e-05,
+        "200_sin": -2.419603005739937e-05,
+        "300_cos": -5.85157172261172e-07,
+        "300_sin": -2.1265258336039517e-06,
+        "D": -1.4892630538452063e-07
+      },
+      "moment": "L30"
+    }
+  ],
+  "nested_comparisons": 330,
+  "expanded_model_worse_count": 107,
+  "maximum_scaled_condition_number": 1731.7256244458135,
+  "synthetic_prediction_relative_L2": 1.7629674119542315e-16,
+  "metric": "||delta-predicted_delta||_2/||delta||_2; canonical delta=Z-mean(Z[t>=400]); одинаковая нормировка во всех контролях фона",
+  "validation_note": "Отложенный интервал не используется для подгонки коэффициентов. Конечные Mf, chi и поздний фон известны из всей симуляции; это не полностью слепое предсказание.",
+  "D_note": "Экспонента с lambda=2*alpha220 — диагностическая гипотеза; её успех не идентифицирует физическую нелинейную моду.",
+  "limits": [
+    "Один уровень численного разрешения; нет оценки ошибки ранних моментов по двум сеткам.",
+    "Ошибка относится к малому возмущению, а не к полному моменту или всей геометрии.",
+    "Узлы пересечения нуля не исключаются; поточечная относительная ошибка не используется.",
+    "Проверки прореживания не заменяют сходимость пространственной сетки.",
+    "Окна перекрываются и не являются независимыми опытами.",
+    "Хорошее описание короткого участка не доказывает физическое присутствие каждой подогнанной моды.",
+    "Неполнота выбранных моделей не доказывает отклонение от ОТО или гиперформу."
+  ]
+}

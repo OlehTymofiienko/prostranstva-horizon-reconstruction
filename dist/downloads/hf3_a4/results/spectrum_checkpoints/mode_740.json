@@ -1,0 +1,36 @@
+{
+  "version": "BH-YITIAN-A4-2026-09-15-v1",
+  "qnm_version": "0.4.4",
+  "values": {
+    "central": {
+      "omega": 1.817063865552219,
+      "alpha": 0.09248200965921778,
+      "cf_indicator": 2.3714374201337736e-16,
+      "cf_terms": 301
+    },
+    "mass_minus_half_last_digit": {
+      "omega": 1.8170734128159,
+      "alpha": 0.09248249558057074,
+      "cf_indicator": 2.3714374201337736e-16,
+      "cf_terms": 301
+    },
+    "mass_plus_half_last_digit": {
+      "omega": 1.8170543183888639,
+      "alpha": 0.09248152374297106,
+      "cf_indicator": 2.3714374201337736e-16,
+      "cf_terms": 301
+    },
+    "chi_minus_half_last_digit": {
+      "omega": 1.8170597450278836,
+      "alpha": 0.0924821971602042,
+      "cf_indicator": 4.613190423717512e-16,
+      "cf_terms": 301
+    },
+    "chi_plus_half_last_digit": {
+      "omega": 1.8170679861238748,
+      "alpha": 0.09248182215365823,
+      "cf_indicator": 0.0,
+      "cf_terms": 301
+    }
+  }
+}

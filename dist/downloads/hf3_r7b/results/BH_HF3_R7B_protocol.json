@@ -1,0 +1,97 @@
+{
+  "stage": "BH-HF3-R7B",
+  "written_before_scientific_fits_this_turn": true,
+  "reference_policy": "Frozen numerical Kerr220 from completed A2/A4; no tuning to new wave data",
+  "reference": {
+    "Mf": 0.977461203278627,
+    "Jf": 0.648087073319352,
+    "chi": 0.6783194994253878,
+    "omega": 0.5353401318639867,
+    "alpha": 0.08345059699511974
+  },
+  "period_M": 11.73680980221365,
+  "peaks_M": {
+    "15": 42.25,
+    "30": 58.25,
+    "40": 69.0,
+    "50": 79.25,
+    "60": 89.75
+  },
+  "primary_cases": [
+    [
+      15,
+      3
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      40,
+      3
+    ],
+    [
+      50,
+      2
+    ],
+    [
+      60,
+      1
+    ]
+  ],
+  "age_control_cases": [
+    [
+      40,
+      1
+    ],
+    [
+      40,
+      2
+    ]
+  ],
+  "fit_model": "C exp[(-alpha - i omega)(t-t0)]; same unweighted complex RSS for both models; C analytic projection; free omega and alpha bounded positive",
+  "fit_limits": {
+    "omega": [
+      0.2,
+      0.9
+    ],
+    "alpha": [
+      0.001,
+      0.25
+    ]
+  },
+  "previous_numerical_goals": {
+    "third_period_omega_relative_difference_max": 0.01,
+    "third_period_alpha_relative_difference_max": 0.05,
+    "old_nominal_delta_BIC_max": 10
+  },
+  "BIC_policy": "Report N_real=2*N and k=2 vs 4 diagnostic only; correlated residuals and no error model preclude calibrated model odds or GR test. No new residual threshold added after viewing results.",
+  "sensitivity_r40_third": {
+    "window_shift_M": [
+      -0.5,
+      -0.25,
+      0,
+      0.25,
+      0.5
+    ],
+    "sample_subsets": [
+      "all",
+      "even",
+      "odd"
+    ]
+  },
+  "holdout_r40": "Train first 2/3 of third period, predict remaining 1/3 with no refitting",
+  "additional_checks": [
+    "original log and parameter hashes",
+    "125 seam comparisons and QLM slot2",
+    "same-age complex shape r15/r30/r40 third period",
+    "m=-2 versus conjugate m=2 on primary windows",
+    "horizon late100–105 versus frozen90–95"
+  ],
+  "exclusions": [
+    "no repetition of five-radius travel-time or 1/r audits",
+    "no new simulation",
+    "no searches for overtones/nonlinear modes",
+    "no physical inference of additional dimensions from residuals"
+  ]
+}

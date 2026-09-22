@@ -1,0 +1,26 @@
+{
+  "stage": "BH-HF4-B2",
+  "date_UTC": "2026-09-20",
+  "purpose": "Descriptive localization on QC0 common apparent horizon; not a new detection test",
+  "fields": [
+    "repsi2",
+    "impsi2",
+    "abs_npsigma"
+  ],
+  "threshold_quantiles": [
+    0.9,
+    0.95,
+    0.98
+  ],
+  "primary_display_quantile": 0.95,
+  "deviation": "absolute deviation from weighted median of the current snapshot",
+  "weights": "Euclidean coordinate triangle area, lumped to vertices; not proper horizon area",
+  "region_definition": "abs(normalized coordinate)>=0.65 along each local axis; diagnostic regions can overlap",
+  "local_axes": "u from coordinate area centroids AH1 to AH2, w=simulation z, v=w cross u; u projected to xy",
+  "time_comparison": "same stored angular-grid indices, average normalized coordinate-area weights",
+  "maximum_contiguous_gap_M": 0.0625001,
+  "HF1_mask_reused": false,
+  "Yitian_field_reused": false,
+  "B1_metrics_recomputed": false,
+  "confirmatory_or_preregistered": false
+}

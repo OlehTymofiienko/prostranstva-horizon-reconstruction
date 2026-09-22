@@ -1,0 +1,24 @@
+{
+  "source_data": "Yitian original archive, source HDF5 matches prior A1-A4",
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/2208.02965",
+      "used": "Equations 27,30–33; normalized area transport and geometric multipole definitions"
+    },
+    {
+      "url": "https://arxiv.org/pdf/gr-qc/0401114",
+      "used": "Equations 2.4–2.7; axisymmetric metric reconstruction"
+    },
+    {
+      "url": "https://einsteintoolkit.org/thornguide/EinsteinAnalysis/QuasiLocalMeasures/documentation.html",
+      "used": "Available surface output and postprocessing, not proof of current local binary version"
+    },
+    {
+      "url": "https://bitbucket.org/einsteintoolkit/einsteinanalysis/src/edd7fe658cb6748cd9ac8efcea314214b87bc043/QuasiLocalMeasures/src/qlm_multipoles.F90",
+      "used": "QLM mass/spin normalization and Legendre integrals",
+      "sha256_downloaded_file": "71b40981905ac28f17bb20279d795eb63f346899d4f5f6c50fa058e1f34194b8",
+      "user_binary_revision_known": false
+    }
+  ],
+  "retrieved_date_UTC": "2026-09-16"
+}

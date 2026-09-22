@@ -1,0 +1,9 @@
+{
+  "display_mask_indices_match_saved_B3": true,
+  "surface_coordinates_and_field_values_reused_from_B2": true,
+  "new_evolution_or_missing_frame_interpolation": false,
+  "browser_WebGL_render_tested": false,
+  "independent_saved_mask_comparisons": 36,
+  "all_nonmask_view_data_exactly_unchanged_from_B2": true,
+  "static_figure_visually_inspected": true
+}

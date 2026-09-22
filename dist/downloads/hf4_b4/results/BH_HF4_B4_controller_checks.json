@@ -1,0 +1,10 @@
+{
+  "controller_states_checked": 573,
+  "render_calls": 583,
+  "all_common_fields_and_marker_indices_verified": true,
+  "missing_frames_clear_and_pause": true,
+  "former_B3_gap_traversed_with_real_frames": true,
+  "missing_individuals_do_not_hide_common": true,
+  "camera_control_dispatch": true,
+  "browser_WebGL_render_tested": false
+}

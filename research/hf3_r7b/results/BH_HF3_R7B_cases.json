@@ -1,0 +1,303 @@
+[
+  {
+    "samples_complex": 47,
+    "first_sample_M": 65.75,
+    "last_sample_M": 77.25,
+    "omega": 0.5353219494313304,
+    "alpha": 0.08218815219097099,
+    "signed_phase_slope": -0.5342573533775127,
+    "omega_logphase": 0.5342573533775127,
+    "alpha_logamplitude": 0.08283326529846606,
+    "relative_omega_difference": 3.396426229618221e-05,
+    "relative_alpha_difference": 0.015128050003316074,
+    "fixed_nrmse": 0.023874708321352935,
+    "free_nrmse": 0.023551453174968352,
+    "fixed_rss": 2.8836180516010664e-08,
+    "free_rss": 2.8060603357480006e-08,
+    "signal_energy": 5.058963972571007e-05,
+    "fixed_amplitude_re_im": [
+      -0.0005069349469253534,
+      0.0014654737023784591
+    ],
+    "free_amplitude_re_im": [
+      -0.0005043086832779392,
+      0.0014582213396961718
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -6.523746326472887,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      2.8050894940179205e-11,
+      5.00199881514618e-11
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 15,
+    "period": 3,
+    "requested_window_M": [
+      65.7236196044273,
+      77.46042940664094
+    ],
+    "peak_M": 42.25,
+    "case_kind": "primary",
+    "minus2_conjugacy_relative_difference": 5.634229575219282e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 81.75,
+    "last_sample_M": 93.25,
+    "omega": 0.5357144703400063,
+    "alpha": 0.08285013649242758,
+    "signed_phase_slope": -0.5342172874098456,
+    "omega_logphase": 0.5342172874098456,
+    "alpha_logamplitude": 0.08335161181977987,
+    "relative_omega_difference": 0.0006992535282499546,
+    "relative_alpha_difference": 0.007195400923582063,
+    "fixed_nrmse": 0.02594397402705576,
+    "free_nrmse": 0.02585035631152115,
+    "fixed_rss": 8.920969648358414e-09,
+    "free_rss": 8.856703936634027e-09,
+    "signal_energy": 1.3253758715713897e-05,
+    "fixed_amplitude_re_im": [
+      -0.0003817998793977964,
+      0.000695797046716906
+    ],
+    "free_amplitude_re_im": [
+      -0.00038192226300621146,
+      0.000693586870020484
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -8.40697271952455,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      5.613487452649224e-11,
+      7.975804738880043e-11
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 30,
+    "period": 3,
+    "requested_window_M": [
+      81.7236196044273,
+      93.46042940664094
+    ],
+    "peak_M": 58.25,
+    "case_kind": "primary",
+    "minus2_conjugacy_relative_difference": 4.612687264270541e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 92.5,
+    "last_sample_M": 104.0,
+    "omega": 0.5359139091981882,
+    "alpha": 0.08233198918369211,
+    "signed_phase_slope": -0.5344804844685668,
+    "omega_logphase": 0.5344804844685668,
+    "alpha_logamplitude": 0.0831680003316607,
+    "relative_omega_difference": 0.00107179959067083,
+    "relative_alpha_difference": 0.013404431504463021,
+    "fixed_nrmse": 0.02660824692267391,
+    "free_nrmse": 0.026318570330291575,
+    "fixed_rss": 5.126113335758126e-09,
+    "free_rss": 5.015107742734342e-09,
+    "signal_energy": 7.240285300821815e-06,
+    "fixed_amplitude_re_im": [
+      -0.00023109665552283233,
+      0.0005391546049064702
+    ],
+    "free_amplitude_re_im": [
+      -0.00023129573731738506,
+      0.0005362558382990866
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -7.028663318951308,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      7.41233741052838e-11,
+      1.0756226465069574e-10
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 40,
+    "period": 3,
+    "requested_window_M": [
+      92.4736196044273,
+      104.21042940664094
+    ],
+    "peak_M": 69.0,
+    "case_kind": "primary",
+    "minus2_conjugacy_relative_difference": 7.202588524267776e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 91.0,
+    "last_sample_M": 102.5,
+    "omega": 0.526038030919585,
+    "alpha": 0.06863657283073202,
+    "signed_phase_slope": -0.528045214947794,
+    "omega_logphase": 0.528045214947794,
+    "alpha_logamplitude": 0.07043913131618577,
+    "relative_omega_difference": 0.017376057558048053,
+    "relative_alpha_difference": 0.1775184923512777,
+    "fixed_nrmse": 0.06674813281728538,
+    "free_nrmse": 0.03712357322212067,
+    "fixed_rss": 1.2984605723503005e-07,
+    "free_rss": 4.016521227702362e-08,
+    "signal_energy": 2.9144091649229117e-05,
+    "fixed_amplitude_re_im": [
+      -0.0005057137412070739,
+      0.0010602489081141817
+    ],
+    "free_amplitude_re_im": [
+      -0.00043837908638409527,
+      0.0010168884262235836
+    ],
+    "nominal_delta_BIC_fixed_minus_free": 101.20815241345234,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      2.7949154102202556e-10,
+      3.139714876976285e-11
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 50,
+    "period": 2,
+    "requested_window_M": [
+      90.98680980221366,
+      102.7236196044273
+    ],
+    "peak_M": 79.25,
+    "case_kind": "primary",
+    "minus2_conjugacy_relative_difference": 6.105310914165523e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 89.75,
+    "last_sample_M": 101.25,
+    "omega": 0.4943005783742941,
+    "alpha": 0.026086923479096583,
+    "signed_phase_slope": -0.4948446641431126,
+    "omega_logphase": 0.4948446641431126,
+    "alpha_logamplitude": 0.02753265297286314,
+    "relative_omega_difference": 0.07666070792562862,
+    "relative_alpha_difference": 0.6873968021987648,
+    "fixed_nrmse": 0.23307475784258017,
+    "free_nrmse": 0.048428076389295964,
+    "fixed_rss": 3.3181871898796215e-06,
+    "free_rss": 1.4325336642328777e-07,
+    "signal_energy": 6.108159920782006e-05,
+    "fixed_amplitude_re_im": [
+      -0.00016920472089219246,
+      0.001648790849098441
+    ],
+    "free_amplitude_re_im": [
+      0.0001096582767432093,
+      0.001308071636269922
+    ],
+    "nominal_delta_BIC_fixed_minus_free": 286.313959253855,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      1.7739198998611982e-11,
+      3.5366997525043686e-11
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 60,
+    "period": 1,
+    "requested_window_M": [
+      89.75,
+      101.48680980221366
+    ],
+    "peak_M": 89.75,
+    "case_kind": "primary",
+    "minus2_conjugacy_relative_difference": 5.634947167758574e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 69.0,
+    "last_sample_M": 80.5,
+    "omega": 0.49526595668019585,
+    "alpha": 0.02702691457978329,
+    "signed_phase_slope": -0.4958236598430604,
+    "omega_logphase": 0.4958236598430604,
+    "alpha_logamplitude": 0.0285267584613723,
+    "relative_omega_difference": 0.07485740896027648,
+    "relative_alpha_difference": 0.6761327593454622,
+    "fixed_nrmse": 0.22878307474098405,
+    "free_nrmse": 0.04801184361671908,
+    "fixed_rss": 7.251554919655705e-06,
+    "free_rss": 3.1935970711830575e-07,
+    "signal_energy": 0.00013854260699360096,
+    "fixed_amplitude_re_im": [
+      -0.0002020166631401239,
+      0.0024906214855448957
+    ],
+    "free_amplitude_re_im": [
+      0.00019871014032274772,
+      0.001976575564607289
+    ],
+    "nominal_delta_BIC_fixed_minus_free": 284.4428037621218,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      1.6872236940912444e-10,
+      2.1582816436827024e-10
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 40,
+    "period": 1,
+    "requested_window_M": [
+      69.0,
+      80.73680980221366
+    ],
+    "peak_M": 69.0,
+    "case_kind": "age_control",
+    "minus2_conjugacy_relative_difference": 6.994180340674023e-16
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 80.75,
+    "last_sample_M": 92.25,
+    "omega": 0.526149621732855,
+    "alpha": 0.06972763419242549,
+    "signed_phase_slope": -0.5280534058861599,
+    "omega_logphase": 0.5280534058861599,
+    "alpha_logamplitude": 0.07132134299208749,
+    "relative_omega_difference": 0.017167609121945482,
+    "relative_alpha_difference": 0.16444415374879562,
+    "fixed_nrmse": 0.06350969817044046,
+    "free_nrmse": 0.03605359200640303,
+    "fixed_rss": 1.7930612799588995e-07,
+    "free_rss": 5.778460041470578e-08,
+    "signal_energy": 4.4454428850645776e-05,
+    "fixed_amplitude_re_im": [
+      -0.0004897331960580538,
+      0.0013659502291616683
+    ],
+    "free_amplitude_re_im": [
+      -0.00041493033320709396,
+      0.0013098569046996853
+    ],
+    "nominal_delta_BIC_fixed_minus_free": 97.35640155870486,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      7.258257328501827e-10,
+      9.790818156218961e-11
+    ],
+    "at_parameter_boundary": false,
+    "radius_M": 40,
+    "period": 2,
+    "requested_window_M": [
+      80.73680980221366,
+      92.4736196044273
+    ],
+    "peak_M": 69.0,
+    "case_kind": "age_control",
+    "minus2_conjugacy_relative_difference": 6.739667075689722e-16
+  }
+]

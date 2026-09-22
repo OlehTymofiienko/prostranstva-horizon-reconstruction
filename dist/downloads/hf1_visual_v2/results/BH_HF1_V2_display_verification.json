@@ -1,0 +1,13 @@
+{
+  "all_viewer_masks_match_source": true,
+  "all_viewer_meshes_match_saved_mesh": true,
+  "max_viewer_coordinate_rounding_error_M": 4.999998304278108e-09,
+  "javascript_and_python_subdivision_match": true,
+  "subdivision_coordinate_area_relative_error_max": 2.216135547115146e-16,
+  "video_frame_count": 1200,
+  "video_frame_times_match_source": true,
+  "fixed_camera_during_evolution": true,
+  "fixed_time_during_orbit": true,
+  "native_times_interpolated": false,
+  "native_geometry_smoothed_or_exaggerated": false
+}

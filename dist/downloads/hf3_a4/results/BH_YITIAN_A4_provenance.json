@@ -1,0 +1,32 @@
+{
+  "input_name": "common_horizon_moments_data_and_scripts.zip",
+  "input_sha256": "6e98880e9eff70fc0979db184d143a35818d34878fbd4e2e9eb578aee120a60e",
+  "hdf5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "m4_reality_relation_relative_L2": {
+    "I44": 6.663215285962656e-14,
+    "L54": 5.3101495575839467e-14,
+    "I64": 8.8751239632839e-14
+  },
+  "author_I44_notebook": {
+    "name": "common_horizon_moments_data_and_scripts/plots/I44.ipynb",
+    "sha256": "bc84a5ed85c85a42341588772b0511b2caad35efc290e7ef740ec4e5172c3c68",
+    "code": [
+      "l,m = 4,4",
+      "import h5py as h5\nimport numpy as np\nimport matplotlib.pyplot as plt",
+      "lm_id = l*(l+1)+m\n\nmomentfile = '../data/Moments_500M_L30.h5'\n\nh5file = h5.File(momentfile,'r')\nIlm = h5file['geo_mass/Adaptive'][()][:,lm_id].conj()\nt = h5file['time_adaptive'][()]\ncorrection = np.mean(Ilm[t>=400])\nIlm_bar = Ilm - correction\nh5file.close()\n\nrot_freq = 0.20878380853617037\nIlm_tilde = Ilm_bar*np.exp(-m*1j*rot_freq*t)",
+      "# plot real, imag and abs\nplt.plot(t,np.abs(Ilm),label='|$I_{'+str(l)+str(m)+'}$|')\nplt.plot(t,np.real(Ilm),label='Re($I_{'+str(l)+str(m)+'}$)')\nplt.plot(t,np.imag(Ilm),label='Im($I_{'+str(l)+str(m)+'}$)')\n\nplt.grid()\nplt.title(r'$I_{'+str(l)+str(m)+'}$')\nplt.xlabel('$t/M$')\nplt.xlim(-5,80)\nplt.legend()\nplt.show()",
+      "# Plot before and after floor correction\nplt.semilogy(t,np.abs(np.real(Ilm)), label='|Re($I_{'+str(l)+str(m)+'}$)|')\nplt.semilogy(t,np.abs(np.real(Ilm_bar)),'--', label=r'|Re($\\bar{I}_{'+str(l)+str(m)+'}$)|')\n\nplt.grid()\nplt.title(r'$I_{'+str(l)+str(m)+'}$ Error-floor Correction')\nplt.xlabel('$t/M$')\nplt.xlim(xmax=400)\nplt.legend()\nplt.show()",
+      "# Plot before and after rotation\nplt.semilogy(t,np.abs(np.real(Ilm_bar)), label=r'|Re($\\bar{I}_{'+str(l)+str(m)+'}$)|')\nplt.semilogy(t,np.abs(np.real(Ilm_tilde)),'--', label=r'|Re($\\tilde{I}_{'+str(l)+str(m)+'}$)|')\n\nplt.grid()\nplt.title(r'$I_{'+str(l)+str(m)+'}$ Rotation')\nplt.xlabel('$t/M$')\nplt.xlim(-5,140)\nplt.ylim(ymin=1e-7)\nplt.legend()\nplt.show()"
+    ]
+  },
+  "version": "BH-YITIAN-A4-2026-09-15-v1",
+  "program_sha256": "6b54a53c9b4c3e3c186c944f9473919502f297adf67d314c4f53c56dc525992e",
+  "context_sha256": "029ef94a017ac17107560587bb0390d7edd67e11c87083b473631eddb34789d6",
+  "spectrum_sha256": "d0c2355fd35af3426b754daa262ec2680917a1fb0be58fb6138338fa3daf8e36",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "h5py": "3.16.0",
+  "no_new_evolution": true,
+  "rendered_from_saved_results": true
+}

@@ -1,0 +1,307 @@
+{
+  "stage": "BH-HF4-A2",
+  "date_UTC": "2026-09-16",
+  "classification": "BH_HF4_A2_TIME_ATLAS_VALIDATED_FRAME_COVARIANCE_PASSED_EARLY_SPIN_PERTURBATIONS_REQUIRE_HIGHER_ANGULAR_MODES",
+  "source_HDF5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "parent_state_sha256": "32b0bbc3377952174c4d4bb40fc344d04f046b8aba7a359fc3f979bf516470d1",
+  "definitions": {
+    "index": "k=l(l+1)+m",
+    "complex_conjugation_of_raw_HDF5": true,
+    "harmonics": "orthonormal complex Y_lm, Condon-Shortley, exp(+im phi)",
+    "frame": "original author-transported angles, no added time-dependent phase rotation",
+    "area_form": "dA/R(t)^2 = sin(theta) dtheta dphi",
+    "K_definition": "R^2 K_G = 2 sum I_lm Y_lm",
+    "B_definition": "-R^2 curl(omega)/2 = sum L_lm Y_lm",
+    "background_subtracted_for_maps": false,
+    "synthesis_cutoff": 8,
+    "early_Psi2_identity_assumed": false
+  },
+  "background_window_M": [
+    400,
+    500
+  ],
+  "analysis_window_M": [
+    0,
+    150
+  ],
+  "sample_step_M": 0.1,
+  "atlas_frame_step_M": 0.5,
+  "atlas_frames": 301,
+  "atlas_grid": [
+    49,
+    97
+  ],
+  "phase_rotation_omega": 0.20878380853617037,
+  "rotation_rule": "c_lm -> c_lm exp(-im Omega t); both signal and original background transform at time t",
+  "frame_audit": {
+    "K": {
+      "max_relative_norm_change": 3.3306690738754696e-16,
+      "max_abs_covariant_background_subtraction_error": 2.482534153247273e-16,
+      "coordinate_shift_identity_max_abs_error": 3.3769686680779735e-16,
+      "wrong_order_example": {
+        "80": 0.011028130508069814,
+        "120": 0.3093099637221887,
+        "150": 3.8233538909965175
+      },
+      "wrong_order_is_not_used": true
+    },
+    "B": {
+      "max_relative_norm_change": 3.3306690738754696e-16,
+      "max_abs_covariant_background_subtraction_error": 3.1031676915590914e-17,
+      "coordinate_shift_identity_max_abs_error": 2.7827955493769055e-17,
+      "wrong_order_example": {
+        "80": 0.015257716713213656,
+        "120": 0.34449053812714,
+        "150": 4.252440113541645
+      },
+      "wrong_order_is_not_used": true
+    }
+  },
+  "baseline_sensitivity": {
+    "K": {
+      "300_400": {
+        "L2_shift": 5.122153713321337e-09,
+        "fraction_of_delta_at_150M": 0.0012523195978917747
+      },
+      "400_450": {
+        "L2_shift": 5.441675374822824e-09,
+        "fraction_of_delta_at_150M": 0.0013304397131879222
+      },
+      "450_500": {
+        "L2_shift": 5.429038725101859e-09,
+        "fraction_of_delta_at_150M": 0.001327350168245899
+      },
+      "RMS_time_variation_400_500": 9.65296956585929e-09,
+      "is_not_total_error_bound": true
+    },
+    "B": {
+      "300_400": {
+        "L2_shift": 1.9994568380660662e-09,
+        "fraction_of_delta_at_150M": 0.0017454725018629066
+      },
+      "400_450": {
+        "L2_shift": 2.1243727537335717e-09,
+        "fraction_of_delta_at_150M": 0.0018545207652170426
+      },
+      "450_500": {
+        "L2_shift": 2.1194387998071204e-09,
+        "fraction_of_delta_at_150M": 0.0018502135550086897
+      },
+      "RMS_time_variation_400_500": 3.8201169949019954e-09,
+      "is_not_total_error_bound": true
+    }
+  },
+  "snapshots": [
+    {
+      "t_M": 0.0,
+      "K_delta_L2": 2.7789623373579317,
+      "K_fraction_of_max": 1.0,
+      "K_delta_L4_vs_L8": 0.08809389885909347,
+      "K_full_L4_vs_L8": 0.05200638882962281,
+      "K_delta_L6_vs_L8": 0.03441438995777257,
+      "K_full_L6_vs_L8": 0.020157728135916465,
+      "B_delta_L2": 0.21677633781404304,
+      "B_fraction_of_max": 0.9468713033846085,
+      "B_delta_L4_vs_L8": 0.3618599198479794,
+      "B_full_L4_vs_L8": 0.076108479575866,
+      "B_delta_L6_vs_L8": 0.13934442852530665,
+      "B_full_L6_vs_L8": 0.027366806925160345
+    },
+    {
+      "t_M": 5.0,
+      "K_delta_L2": 1.1172896097006946,
+      "K_fraction_of_max": 0.4020528075104989,
+      "K_delta_L4_vs_L8": 0.03535507016699208,
+      "K_full_L4_vs_L8": 0.010549179738308722,
+      "K_delta_L6_vs_L8": 0.005503487506676158,
+      "K_full_L6_vs_L8": 0.001611614980458942,
+      "B_delta_L2": 0.2284706415115169,
+      "B_fraction_of_max": 0.9979516043799193,
+      "B_delta_L4_vs_L8": 0.17135625434995977,
+      "B_full_L4_vs_L8": 0.034278738001977886,
+      "B_delta_L6_vs_L8": 0.026803814829738946,
+      "B_full_L6_vs_L8": 0.005150519554114329
+    },
+    {
+      "t_M": 10.0,
+      "K_delta_L2": 0.6338562810611944,
+      "K_fraction_of_max": 0.22809099372819366,
+      "K_delta_L4_vs_L8": 0.05072393157153522,
+      "K_full_L4_vs_L8": 0.008934352823759224,
+      "K_delta_L6_vs_L8": 0.008530243571272264,
+      "K_full_L6_vs_L8": 0.0014634694590900325,
+      "B_delta_L2": 0.18030198971940833,
+      "B_fraction_of_max": 0.7875526532554735,
+      "B_delta_L4_vs_L8": 0.20058892892204194,
+      "B_full_L4_vs_L8": 0.03159598443701133,
+      "B_delta_L6_vs_L8": 0.03316501942990725,
+      "B_full_L6_vs_L8": 0.004970735702196107
+    },
+    {
+      "t_M": 20.0,
+      "K_delta_L2": 0.2556815608940407,
+      "K_fraction_of_max": 0.09200612669588289,
+      "K_delta_L4_vs_L8": 0.047325101170789426,
+      "K_full_L4_vs_L8": 0.003761769673720155,
+      "K_delta_L6_vs_L8": 0.008620925818098882,
+      "K_full_L6_vs_L8": 0.0006096983313961345,
+      "B_delta_L2": 0.06463232376571638,
+      "B_fraction_of_max": 0.2823116824554795,
+      "B_delta_L4_vs_L8": 0.18935397803647827,
+      "B_full_L4_vs_L8": 0.01439526062652947,
+      "B_delta_L6_vs_L8": 0.029798706996412967,
+      "B_full_L6_vs_L8": 0.0017183510079176825
+    },
+    {
+      "t_M": 40.0,
+      "K_delta_L2": 0.04643016216588484,
+      "K_fraction_of_max": 0.0167077335096336,
+      "K_delta_L4_vs_L8": 0.044242946579780965,
+      "K_full_L4_vs_L8": 0.001845831510592259,
+      "K_delta_L6_vs_L8": 0.007887066323797404,
+      "K_full_L6_vs_L8": 0.0001445453826177539,
+      "B_delta_L2": 0.013422565530506322,
+      "B_fraction_of_max": 0.05862928697290921,
+      "B_delta_L4_vs_L8": 0.17739809248175464,
+      "B_full_L4_vs_L8": 0.010415594538877092,
+      "B_delta_L6_vs_L8": 0.025324585600082883,
+      "B_full_L6_vs_L8": 0.0007064024886200345
+    },
+    {
+      "t_M": 80.0,
+      "K_delta_L2": 0.0015290427431537458,
+      "K_fraction_of_max": 0.0005502207506012717,
+      "K_delta_L4_vs_L8": 0.03192166528725994,
+      "K_full_L4_vs_L8": 0.0017601828236362168,
+      "K_delta_L6_vs_L8": 0.0060586638075644204,
+      "K_full_L6_vs_L8": 0.00010437449456751207,
+      "B_delta_L2": 0.00034424512582334677,
+      "B_fraction_of_max": 0.0015036504180256296,
+      "B_delta_L4_vs_L8": 0.15471115513051745,
+      "B_full_L4_vs_L8": 0.010246681208225153,
+      "B_delta_L6_vs_L8": 0.02332603705824334,
+      "B_full_L6_vs_L8": 0.0006494943536904462
+    },
+    {
+      "t_M": 120.0,
+      "K_delta_L2": 5.059448061228026e-05,
+      "K_fraction_of_max": 1.8206249121167442e-05,
+      "K_delta_L4_vs_L8": 0.031009459038300543,
+      "K_full_L4_vs_L8": 0.001760219392938214,
+      "K_delta_L6_vs_L8": 0.004725726101863416,
+      "K_full_L6_vs_L8": 0.000104349802696474,
+      "B_delta_L2": 1.4150603007001305e-05,
+      "B_fraction_of_max": 6.180932867502984e-05,
+      "B_delta_L4_vs_L8": 0.14058724477695023,
+      "B_full_L4_vs_L8": 0.01024702968045927,
+      "B_delta_L6_vs_L8": 0.013443031387187198,
+      "B_full_L6_vs_L8": 0.0006494999968265536
+    },
+    {
+      "t_M": 150.0,
+      "K_delta_L2": 4.090132999550801e-06,
+      "K_fraction_of_max": 1.4718202346849546e-06,
+      "K_delta_L4_vs_L8": 0.03174527619534519,
+      "K_full_L4_vs_L8": 0.0017602111144678155,
+      "K_delta_L6_vs_L8": 0.004157013368758235,
+      "K_full_L6_vs_L8": 0.00010434913085971687,
+      "B_delta_L2": 1.1455103623414792e-06,
+      "B_fraction_of_max": 5.003548361266699e-06,
+      "B_delta_L4_vs_L8": 0.12694227593405874,
+      "B_full_L4_vs_L8": 0.010246990824296165,
+      "B_delta_L6_vs_L8": 0.012322455893389728,
+      "B_full_L6_vs_L8": 0.0006494962727859378
+    }
+  ],
+  "cutoff_summary": {
+    "K_delta_L4_vs_L8": {
+      "max_0_150": 0.08809389885909347,
+      "max_5_120": 0.05598228710161778
+    },
+    "K_full_L4_vs_L8": {
+      "max_0_150": 0.05200638882962281,
+      "max_5_120": 0.010549179738308722
+    },
+    "K_delta_L6_vs_L8": {
+      "max_0_150": 0.03441438995777257,
+      "max_5_120": 0.009616676265175388
+    },
+    "K_full_L6_vs_L8": {
+      "max_0_150": 0.020157728135916465,
+      "max_5_120": 0.0016256247031554234
+    },
+    "B_delta_L4_vs_L8": {
+      "max_0_150": 0.3618599198479794,
+      "max_5_120": 0.21227808927778513
+    },
+    "B_full_L4_vs_L8": {
+      "max_0_150": 0.076108479575866,
+      "max_5_120": 0.03479979061341247
+    },
+    "B_delta_L6_vs_L8": {
+      "max_0_150": 0.13934442852530665,
+      "max_5_120": 0.03549780868444032
+    },
+    "B_full_L6_vs_L8": {
+      "max_0_150": 0.027366806925160345,
+      "max_5_120": 0.005358073684507412
+    }
+  },
+  "real_basis_packing_max_abs_errors": [
+    6.417089082333405e-14,
+    3.1086244689504383e-15,
+    6.250555628639631e-14,
+    2.9837243786801082e-15
+  ],
+  "fixed_color_limits": [
+    [
+      -0.3,
+      3.1
+    ],
+    [
+      -0.61,
+      0.61
+    ],
+    [
+      -1.66,
+      1.66
+    ],
+    [
+      -0.17,
+      0.17
+    ]
+  ],
+  "color_scale_order": [
+    "K",
+    "B",
+    "delta_K",
+    "delta_B"
+  ],
+  "asinh_linear_width": 1e-05,
+  "delta_norm_maxima": {
+    "K": {
+      "value": 2.7789623373579317,
+      "time_M": 0.0
+    },
+    "B": {
+      "value": 0.22893960038621103,
+      "time_M": 4.6000000000000005
+    }
+  },
+  "limits": [
+    "No numerical resolution comparison supplied",
+    "Differences between l<=4,6,8 do not bound l>8",
+    "Late baseline variation is not the total numerical error",
+    "Maps do not specify a radial shape or coordinate embedding",
+    "SpEC and QC0 are not combined"
+  ],
+  "new_evolution_run": false,
+  "new_physics_established": false,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "h5py": "3.16.0",
+    "matplotlib": "3.10.8"
+  }
+}

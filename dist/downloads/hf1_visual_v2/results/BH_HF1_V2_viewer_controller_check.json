@@ -1,0 +1,10 @@
+{
+  "javascript_syntax": true,
+  "field_switch_preserves_node_counts": true,
+  "opposite_view_preserves_time": true,
+  "play_uses_simulation_time": true,
+  "orbit_stops_time_playback": true,
+  "late_frames_are_explicitly_separate": true,
+  "browser_webgl_render_tested": false,
+  "viewer_snapshot_count": 235
+}

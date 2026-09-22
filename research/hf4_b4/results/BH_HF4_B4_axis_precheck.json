@@ -1,0 +1,50 @@
+[
+  {
+    "iteration": 9536,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00016486455326330434
+  },
+  {
+    "iteration": 9568,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00017533359678576443
+  },
+  {
+    "iteration": 9600,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00018734447547100484
+  },
+  {
+    "iteration": 9632,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00020038051107773818
+  },
+  {
+    "iteration": 9664,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00021364480712965554
+  },
+  {
+    "iteration": 9696,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00022595664340378785
+  },
+  {
+    "iteration": 10368,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00048023078997561314
+  },
+  {
+    "iteration": 10400,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.0004826094776712041
+  },
+  {
+    "iteration": 10432,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.0004840467409753807
+  },
+  {
+    "iteration": 10464,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.0004838705177629148
+  },
+  {
+    "iteration": 10496,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.0004811618615307592
+  },
+  {
+    "iteration": 10528,
+    "gp_axis_vs_frozen_QLM_angle_degrees": 0.00047762741130470937
+  }
+]

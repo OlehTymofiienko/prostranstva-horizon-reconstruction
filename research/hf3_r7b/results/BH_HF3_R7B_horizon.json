@@ -1,0 +1,77 @@
+[
+  {
+    "window_M": [
+      90,
+      95
+    ],
+    "samples": 81,
+    "Mf": {
+      "mean": 0.9774607174828345,
+      "median": 0.977461203278627,
+      "relative_range": 5.303582863434002e-06,
+      "relative_mean_change_from_frozen": -4.969975184732078e-07
+    },
+    "Jf": {
+      "mean": 0.6480858715593448,
+      "median": 0.648087073319352,
+      "relative_range": 4.065327097107478e-05,
+      "relative_mean_change_from_frozen": -1.8543187429997943e-06
+    },
+    "chi": {
+      "mean": 0.6783189158814247,
+      "median": 0.6783194994253878,
+      "relative_range": 5.117910501123698e-05,
+      "relative_mean_change_from_frozen": -8.602789152156731e-07
+    }
+  },
+  {
+    "window_M": [
+      95,
+      100
+    ],
+    "samples": 81,
+    "Mf": {
+      "mean": 0.9774559134754076,
+      "median": 0.977456589104424,
+      "relative_range": 5.263409802071429e-06,
+      "relative_mean_change_from_frozen": -5.411778187802696e-06
+    },
+    "Jf": {
+      "mean": 0.6481196155545701,
+      "median": 0.648123889395328,
+      "relative_range": 5.754608385061654e-05,
+      "relative_mean_change_from_frozen": 5.0212751585121396e-05
+    },
+    "chi": {
+      "mean": 0.6783609020059702,
+      "median": 0.6783641815945831,
+      "relative_range": 6.807295743696282e-05,
+      "relative_mean_change_from_frozen": 6.103699011661412e-05
+    }
+  },
+  {
+    "window_M": [
+      100,
+      105
+    ],
+    "samples": 81,
+    "Mf": {
+      "mean": 0.977449122902568,
+      "median": 0.977449082471113,
+      "relative_range": 7.1205823145321655e-06,
+      "relative_mean_change_from_frozen": -1.2358931503753112e-05
+    },
+    "Jf": {
+      "mean": 0.6481486193013345,
+      "median": 0.648149425036387,
+      "relative_range": 3.9957839649410497e-05,
+      "relative_mean_change_from_frozen": 9.496560649990826e-05
+    },
+    "chi": {
+      "mean": 0.6784006850019584,
+      "median": 0.678401584425176,
+      "relative_range": 5.419899547590117e-05,
+      "relative_mean_change_from_frozen": 0.00011968633754344538
+    }
+  }
+]

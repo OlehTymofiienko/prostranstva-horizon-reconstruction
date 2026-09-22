@@ -1,0 +1,15 @@
+{
+  "html_pages": 24,
+  "local_references_checked": 378,
+  "javascript_syntax_checks": 39,
+  "errors": [],
+  "largest_static_asset": [
+    20593301,
+    "downloads/hf4_b5/results/BH_HF4_B5_fits_residuals.npz"
+  ],
+  "static_bytes": 168358984,
+  "B5_input_sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
+  "previous_scientific_analysis_recomputed": false,
+  "browser_WebGL_render_verified_this_release": false,
+  "browser_limitation": "Static preview is not supported by the available Sites preview; native publishing services return an access error."
+}

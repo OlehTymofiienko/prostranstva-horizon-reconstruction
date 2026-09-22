@@ -1,0 +1,21 @@
+{
+  "stage": "BH-HF1-VISUAL-V2",
+  "status": "ALL_FROZEN_MASK_METRICS_MATCHED",
+  "input_archive_sha256": "b47bdb37aa796d281ba292c3908ed334c856360ec1e6e324c0a7406a175b0bb2",
+  "snapshots": 1566,
+  "dense_snapshots": 1564,
+  "mask_comparisons": 4698,
+  "all_matched": true,
+  "max_centroid_component_difference": 3.3306690738754696e-16,
+  "max_gradient_q95_difference": 1.7763568394002505e-15,
+  "all_component_and_active_node_counts_match": true,
+  "all_meshes_closed_two_manifold": true,
+  "max_mesh_angular_edge_deg": 11.748823723102515,
+  "surface_positions": "unmodified CoordsMeasurementFrame native Cartesian nodes",
+  "surface_connectivity": "convex hull of normalized original HF1R directions; radial triangulation, no convex hull of Cartesian positions",
+  "frame_handling": "no frame transformation assumed; scalar/node association is by shared snapshot and point index; prior center used only to recover frozen directions and mesh connectivity",
+  "statistical_classifications": "copied unchanged from saved tables",
+  "null_tests_repeated": false,
+  "evolution_run": false,
+  "source_code_sha256": "dce4cf5c0c35397723be196ce3cedc15da7554ec0e952827634ae532a8bc1cb1"
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "path": "BH_HF4_B5.py",
+    "bytes": 15517,
+    "sha256": "299dd8534c8ca8f7d585518288aef65026767c5a86ea010d27a180d7177777dd"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1361,
+    "sha256": "2cc97afe844351c28355e3ca353406d5b56c0f19ca264557996ef2b356ae6c60"
+  },
+  {
+    "path": "finish_B5.py",
+    "bytes": 18969,
+    "sha256": "28ba5d940f21c05d85666401e9cb421497f552b0289198771453ee1ec461ff6e"
+  },
+  {
+    "path": "input/BH_HF4_B4_fields_geometry_masks.npz",
+    "bytes": 8486488,
+    "sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8"
+  },
+  {
+    "path": "input/BH_HF4_B4_geometry.csv",
+    "bytes": 13527,
+    "sha256": "802cec99f3fbd937fc980a7a2783254acc05105a4a95749f350948eca31e3096"
+  },
+  {
+    "path": "input/BH_HF4_B5_protocol.json",
+    "bytes": 2922,
+    "sha256": "2140113cbd0284e39ed23b30225343160ce150060d6b7c381f2bcb3d96d85569"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 49,
+    "sha256": "be1bf91d660793e26b83502316f6f017f2ac1d6b3290847adf6af8809b8bffe2"
+  },
+  {
+    "path": "results/BH_HF4_B5_checks.json",
+    "bytes": 948,
+    "sha256": "e0b014d765114828007b0ee835649cea45ae36623102249bced12653bf980bb3"
+  },
+  {
+    "path": "results/BH_HF4_B5_coefficients.csv",
+    "bytes": 1485601,
+    "sha256": "e1ce4620071b163ed646e80b0f0a2fa4c173870b5d205aba6cd0427f3cb31c9c"
+  },
+  {
+    "path": "results/BH_HF4_B5_compute_state.json",
+    "bytes": 442,
+    "sha256": "73361908a95de98215b0c3a6943876985fc1b10bbeb01a3d69b2b8a2254f2cc2"
+  },
+  {
+    "path": "results/BH_HF4_B5_definition.json",
+    "bytes": 1403,
+    "sha256": "0deacc093da098b915f7a0e2abce877e229181f3e43cc2133c2078898eba5ec0"
+  },
+  {
+    "path": "results/BH_HF4_B5_design_checks.csv",
+    "bytes": 22402,
+    "sha256": "eca7d9a018b65bf743275eab541fdc9b60bf226e0ad6fa5e19b481731f703aba"
+  },
+  {
+    "path": "results/BH_HF4_B5_fits_residuals.npz",
+    "bytes": 20593301,
+    "sha256": "a657106c828d91c85ba3aca583d951eb37cceb5981d6b13084a4c0a7d397365c"
+  },
+  {
+    "path": "results/BH_HF4_B5_maps_it11264.png",
+    "bytes": 212484,
+    "sha256": "022acd7e74131e9caa13bbae0ff8abb80fa879aaaafc17bff90810cfeb28a74b"
+  },
+  {
+    "path": "results/BH_HF4_B5_maps_it9536.png",
+    "bytes": 230463,
+    "sha256": "0be2d8fd3e4fdbd795e9a9f84079b5874b8af4230120cac3fa1d4c62ca36b242"
+  },
+  {
+    "path": "results/BH_HF4_B5_metrics.csv",
+    "bytes": 239921,
+    "sha256": "f953958d801cae55658bdaef94753e2bbdf496a0f83c147a8a5a9d758b5d906a"
+  },
+  {
+    "path": "results/BH_HF4_B5_overview.png",
+    "bytes": 468047,
+    "sha256": "2ef1df82e0f7149b835cc656a8c240995a71093661da4dec400c68bcc932e94f"
+  },
+  {
+    "path": "results/BH_HF4_B5_report.md",
+    "bytes": 14972,
+    "sha256": "3e1835fb9dec4cf4fffe7983d6cd20e1f913670d4033e1f8ef9023338982a2bb"
+  },
+  {
+    "path": "results/BH_HF4_B5_residual_node_concentration.csv",
+    "bytes": 27874,
+    "sha256": "4f6b72ec83e0c783aebd465ba0f114e27d48ee3352f7edbe7e47691369f4dbf6"
+  },
+  {
+    "path": "results/BH_HF4_B5_singular_values.csv",
+    "bytes": 343930,
+    "sha256": "a99b589545261e282c45498fff070b3106eecfbe1bf9282ea83b6f82b63b52b6"
+  },
+  {
+    "path": "results/BH_HF4_B5_summary.json",
+    "bytes": 17480,
+    "sha256": "f36a82aa268375d27c006b77c93e4e3a27a016bd5531b21148b5336c734a25db"
+  },
+  {
+    "path": "results/BH_HF4_resume_state_B5.json",
+    "bytes": 1143,
+    "sha256": "19902e5c4fd9fdd0a48c2ce8a1268105fbe91260f9673128ccca2a3a302095e8"
+  }
+]

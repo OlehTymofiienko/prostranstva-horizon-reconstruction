@@ -1,0 +1,2702 @@
+[
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.22361573323837997,
+    "validation_relative_L2": 0.41524698842735663
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.22361573323840395,
+    "validation_relative_L2": 0.4152469884272627
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.2236157332383863,
+    "validation_relative_L2": 0.41524698842834595
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.22361573323840395,
+    "validation_relative_L2": 0.4152469884272627
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.2251121085062006,
+    "validation_relative_L2": 0.4199665686612241
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.22798718824764344,
+    "validation_relative_L2": 0.42941365884269234
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.22360948574904396,
+    "validation_relative_L2": 0.4151825121283764
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.22362198141259004,
+    "validation_relative_L2": 0.4153114817561212
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.22361836784363157,
+    "validation_relative_L2": 0.41527792360386595
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.22361309908860352,
+    "validation_relative_L2": 0.41521606567352315
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0036446640720559672,
+    "validation_relative_L2": 0.019390963235712093
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.003644664072452139,
+    "validation_relative_L2": 0.019390963244674302
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.003644664072620295,
+    "validation_relative_L2": 0.019390963257021925
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.003644664072452139,
+    "validation_relative_L2": 0.019390963244674302
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0036527178095406097,
+    "validation_relative_L2": 0.019373979573253163
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0036684638445339205,
+    "validation_relative_L2": 0.019340215967617865
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.003643770674678795,
+    "validation_relative_L2": 0.019467291100489705
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0036456258027865967,
+    "validation_relative_L2": 0.01931472959695119
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0036458420122177184,
+    "validation_relative_L2": 0.01934116872000302
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0036435258558875703,
+    "validation_relative_L2": 0.01944086179605195
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0033738768868450397,
+    "validation_relative_L2": 0.013593519211566289
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.003373876882488688,
+    "validation_relative_L2": 0.013593519195168123
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0033738768806014017,
+    "validation_relative_L2": 0.013593519109551151
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.003373876882488688,
+    "validation_relative_L2": 0.013593519195168123
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0033634239034777244,
+    "validation_relative_L2": 0.01359321048221985
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0033429609547733856,
+    "validation_relative_L2": 0.013592967735172818
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.003381722707037735,
+    "validation_relative_L2": 0.01367522224152006
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.003366087051677833,
+    "validation_relative_L2": 0.01351189163950322
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0033674415764120696,
+    "validation_relative_L2": 0.013537032717670682
+  },
+  {
+    "moment": "I22",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0033803432823566394,
+    "validation_relative_L2": 0.01365010318113148
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.16711302246402565,
+    "validation_relative_L2": 0.3361421049772369
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.16711302246403684,
+    "validation_relative_L2": 0.33614210497756414
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.16711302246400464,
+    "validation_relative_L2": 0.3361421049790828
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.16711302246403684,
+    "validation_relative_L2": 0.33614210497756414
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.16847023385405294,
+    "validation_relative_L2": 0.3387600519402921
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.17103784835466032,
+    "validation_relative_L2": 0.34398940497540176
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.16710687988017692,
+    "validation_relative_L2": 0.33607976508792803
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.16711916537076638,
+    "validation_relative_L2": 0.3362044597829299
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.16711634421672533,
+    "validation_relative_L2": 0.33617222974173816
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.16710970095869265,
+    "validation_relative_L2": 0.33611199157015365
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.002556687097286083,
+    "validation_relative_L2": 0.020712102400688534
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0025566870977032385,
+    "validation_relative_L2": 0.020712102409387013
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0025566870976713165,
+    "validation_relative_L2": 0.02071210242149446
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0025566870977032385,
+    "validation_relative_L2": 0.020712102409387013
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0025534228934578794,
+    "validation_relative_L2": 0.02071286252004248
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0025467727584329025,
+    "validation_relative_L2": 0.02071422247622207
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.002564801438046666,
+    "validation_relative_L2": 0.020786672286071006
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0025486066483647613,
+    "validation_relative_L2": 0.02063758459816231
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0025519641821855465,
+    "validation_relative_L2": 0.02066244393661424
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.002561436088273154,
+    "validation_relative_L2": 0.020761830492673886
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0025194635796323256,
+    "validation_relative_L2": 0.014360128345738224
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.002519463570336355,
+    "validation_relative_L2": 0.014360128338908396
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.002519463564363184,
+    "validation_relative_L2": 0.014360128265284773
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.002519463570336355,
+    "validation_relative_L2": 0.014360128338908396
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0025248844111838763,
+    "validation_relative_L2": 0.014374373661245048
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0025350230321819138,
+    "validation_relative_L2": 0.01440242896197067
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0025311461017364974,
+    "validation_relative_L2": 0.014437132774415619
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00250778780726316,
+    "validation_relative_L2": 0.014283176271676822
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.002511498091545195,
+    "validation_relative_L2": 0.014307763631296806
+  },
+  {
+    "moment": "I22",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0025274394129707303,
+    "validation_relative_L2": 0.014412575244482457
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.1469544581777911,
+    "validation_relative_L2": 0.2937098878685947
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.14695445817779842,
+    "validation_relative_L2": 0.2937098878691515
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.14695445817776248,
+    "validation_relative_L2": 0.29370988787090374
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.14695445817779842,
+    "validation_relative_L2": 0.2937098878691515
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.14824430109423709,
+    "validation_relative_L2": 0.2954657086683898
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.15063437876692917,
+    "validation_relative_L2": 0.2990077822756116
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.14694857383082333,
+    "validation_relative_L2": 0.2936483970964102
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.1469603427349406,
+    "validation_relative_L2": 0.29377139349771936
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.14695786553006024,
+    "validation_relative_L2": 0.29373975249899825
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.1469510510065916,
+    "validation_relative_L2": 0.2936800349220997
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0025488770372482593,
+    "validation_relative_L2": 0.020636963601762877
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0025488770376736756,
+    "validation_relative_L2": 0.020636963610494923
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.002548877037654988,
+    "validation_relative_L2": 0.02063696362266757
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0025488770376736756,
+    "validation_relative_L2": 0.020636963610494923
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.002546647355883557,
+    "validation_relative_L2": 0.02064232893733532
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0025417744079204354,
+    "validation_relative_L2": 0.02065283022564566
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0025566710274805755,
+    "validation_relative_L2": 0.02070995178133981
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00254111022989245,
+    "validation_relative_L2": 0.020564024471598732
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.002544367340128518,
+    "validation_relative_L2": 0.020588330104876165
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.002553408480717703,
+    "validation_relative_L2": 0.020685663346431914
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.002304996652500023,
+    "validation_relative_L2": 0.013960884537919608
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0023049966428284863,
+    "validation_relative_L2": 0.013960884530554916
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0023049966363551336,
+    "validation_relative_L2": 0.01396088445562471
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0023049966428284863,
+    "validation_relative_L2": 0.013960884530554916
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0023101901390589195,
+    "validation_relative_L2": 0.013971338007305115
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.002319603684530589,
+    "validation_relative_L2": 0.013991950588998107
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0023158263197596814,
+    "validation_relative_L2": 0.01403613323989299
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.002294172847181127,
+    "validation_relative_L2": 0.013885687123107584
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.002297591178666533,
+    "validation_relative_L2": 0.013909707518252141
+  },
+  {
+    "moment": "I22",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0023124113913459334,
+    "validation_relative_L2": 0.01401214219767441
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0012091166378203784,
+    "validation_relative_L2": 0.02097469514566375
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0012091166377995845,
+    "validation_relative_L2": 0.020974695144975086
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0012091166377863683,
+    "validation_relative_L2": 0.02097469514325739
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0012091166377995845,
+    "validation_relative_L2": 0.020974695144975086
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0012388588249628192,
+    "validation_relative_L2": 0.0211382644442823
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0012815679438385422,
+    "validation_relative_L2": 0.021407518360740285
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0012096909944329963,
+    "validation_relative_L2": 0.02101194547507077
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0012085430524828378,
+    "validation_relative_L2": 0.020937462323604657
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0012086718564774503,
+    "validation_relative_L2": 0.020950118442147867
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0012095618121734176,
+    "validation_relative_L2": 0.020999291133401835
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0004581988608225715,
+    "validation_relative_L2": 0.01056274604643951
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0004581988612742869,
+    "validation_relative_L2": 0.01056274605525863
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.000458198861646403,
+    "validation_relative_L2": 0.010562746069054359
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0004581988612742869,
+    "validation_relative_L2": 0.01056274605525863
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.00046215272116943674,
+    "validation_relative_L2": 0.010586137676943136
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.00046852923059485953,
+    "validation_relative_L2": 0.010621143707771837
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.00045964548408691845,
+    "validation_relative_L2": 0.010601765096428803
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00045675325991631174,
+    "validation_relative_L2": 0.010523754569583352
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.00045725273446322294,
+    "validation_relative_L2": 0.010536880471695254
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0004591461779399283,
+    "validation_relative_L2": 0.010588648009233505
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0002746769474567175,
+    "validation_relative_L2": 0.006490023475673619
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0002746769415343545,
+    "validation_relative_L2": 0.006490023506845907
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.00027467693439941316,
+    "validation_relative_L2": 0.006490023460901849
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0002746769415343545,
+    "validation_relative_L2": 0.006490023506845907
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.00027636993414143055,
+    "validation_relative_L2": 0.006500178811695836
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0002791151051397672,
+    "validation_relative_L2": 0.006514738192426264
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0002761674336792164,
+    "validation_relative_L2": 0.006529911824832518
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0002731874283665278,
+    "validation_relative_L2": 0.006450166648646043
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.00027366298072256873,
+    "validation_relative_L2": 0.006462931065590258
+  },
+  {
+    "moment": "I22",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.00027569233595475963,
+    "validation_relative_L2": 0.0065171643581633295
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0008320725197479647,
+    "validation_relative_L2": 0.01855329831166098
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0008320725197490619,
+    "validation_relative_L2": 0.018553298310718395
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0008320725197541471,
+    "validation_relative_L2": 0.01855329830879625
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0008320725197490619,
+    "validation_relative_L2": 0.018553298310718395
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0008551128417333382,
+    "validation_relative_L2": 0.018700592271244234
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0008869209343122647,
+    "validation_relative_L2": 0.018938806058676164
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0008321484438614705,
+    "validation_relative_L2": 0.018592171573516777
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0008319974247802798,
+    "validation_relative_L2": 0.01851443885205393
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0008319881525555381,
+    "validation_relative_L2": 0.018526826118764567
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0008321573417734083,
+    "validation_relative_L2": 0.01857978760109492
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0003326342092886683,
+    "validation_relative_L2": 0.010616666549460953
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0003326342096732342,
+    "validation_relative_L2": 0.010616666559314175
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.00033263420997565655,
+    "validation_relative_L2": 0.010616666573941957
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0003326342096732342,
+    "validation_relative_L2": 0.010616666559314175
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0003362029924012476,
+    "validation_relative_L2": 0.010631209207087624
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0003421320060390777,
+    "validation_relative_L2": 0.010649163150734388
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.00033373128217188957,
+    "validation_relative_L2": 0.01065584566474096
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00033153781686582473,
+    "validation_relative_L2": 0.010577513106833279
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0003319068091581081,
+    "validation_relative_L2": 0.010590545015523973
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0003333624280320041,
+    "validation_relative_L2": 0.010642822830347277
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.00019972536671052844,
+    "validation_relative_L2": 0.006432198158373148
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.00019972536147967921,
+    "validation_relative_L2": 0.006432198177078361
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.00019972535522740063,
+    "validation_relative_L2": 0.006432198115807083
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.00019972536147967921,
+    "validation_relative_L2": 0.006432198177078361
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.00020157165646718543,
+    "validation_relative_L2": 0.006437308902579999
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.00020463521002118457,
+    "validation_relative_L2": 0.006442368483992292
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0002008216172937089,
+    "validation_relative_L2": 0.006472256308555768
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00019863003866114903,
+    "validation_relative_L2": 0.00639216930386725
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.00019898639922228306,
+    "validation_relative_L2": 0.0064048694485165005
+  },
+  {
+    "moment": "I22",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0002004655466303325,
+    "validation_relative_L2": 0.006459573575572671
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.4473352364784627,
+    "validation_relative_L2": 0.3954650378586657
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.4473352364783452,
+    "validation_relative_L2": 0.3954650378598985
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.4473352364782251,
+    "validation_relative_L2": 0.395465037860983
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.4473352364783452,
+    "validation_relative_L2": 0.3954650378598985
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.4532233032650931,
+    "validation_relative_L2": 0.399608167690263
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.4650292075549001,
+    "validation_relative_L2": 0.4080175581400801
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.44732875116541276,
+    "validation_relative_L2": 0.39541795149701664
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.44734172205875505,
+    "validation_relative_L2": 0.39551213127556983
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.44734157537893987,
+    "validation_relative_L2": 0.3955080625987983
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.4473288975956324,
+    "validation_relative_L2": 0.3954220144118429
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.13192774298057058,
+    "validation_relative_L2": 0.15243728595463052
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.13192774298040083,
+    "validation_relative_L2": 0.152437285958742
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.13192774298014875,
+    "validation_relative_L2": 0.15243728596329056
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.13192774298040083,
+    "validation_relative_L2": 0.152437285958742
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.13184189811272248,
+    "validation_relative_L2": 0.15301666177238965
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.13165895988945814,
+    "validation_relative_L2": 0.15417209584514727
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.13193741773576464,
+    "validation_relative_L2": 0.15249678124893037
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.13191806964197247,
+    "validation_relative_L2": 0.15237781683811877
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.131920995276536,
+    "validation_relative_L2": 0.15239353288222562
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.13193449163570842,
+    "validation_relative_L2": 0.15248105670354573
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.1179734787568693,
+    "validation_relative_L2": 0.12768259108210261
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.11797347875347973,
+    "validation_relative_L2": 0.1276825910903134
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.11797347875068945,
+    "validation_relative_L2": 0.12768259108408506
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.11797347875347973,
+    "validation_relative_L2": 0.1276825910903134
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.11804177292535185,
+    "validation_relative_L2": 0.1282535662714678
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.11816493930489741,
+    "validation_relative_L2": 0.12939391710120204
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.11797765436174251,
+    "validation_relative_L2": 0.1277216365682216
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.11796930529321356,
+    "validation_relative_L2": 0.12764358957237093
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.11797200498496117,
+    "validation_relative_L2": 0.12766075360818632
+  },
+  {
+    "moment": "L32",
+    "model": "F220",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.11797495380266848,
+    "validation_relative_L2": 0.1277044581377712
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.1759505226130917,
+    "validation_relative_L2": 0.28089776691803287
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.17595052261301458,
+    "validation_relative_L2": 0.28089776691910934
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.17595052261295693,
+    "validation_relative_L2": 0.28089776691991303
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.17595052261301458,
+    "validation_relative_L2": 0.28089776691910934
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.17977515225788165,
+    "validation_relative_L2": 0.28260938200038205
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.1873625668021636,
+    "validation_relative_L2": 0.28605825947396046
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.17595408148088915,
+    "validation_relative_L2": 0.28085031242519665
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.17594696405673518,
+    "validation_relative_L2": 0.2809452377975564
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.1759489713433892,
+    "validation_relative_L2": 0.28093110787396314
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.17595207408523855,
+    "validation_relative_L2": 0.2808644325860643
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.002992712607642416,
+    "validation_relative_L2": 0.018318534157491472
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0029927126077501412,
+    "validation_relative_L2": 0.018318534169820128
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.002992712607439001,
+    "validation_relative_L2": 0.01831853418516441
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0029927126077501412,
+    "validation_relative_L2": 0.018318534169820128
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0029930374910265858,
+    "validation_relative_L2": 0.018307500705074534
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.002994095948967898,
+    "validation_relative_L2": 0.01828522472320308
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0029996808068189114,
+    "validation_relative_L2": 0.018392086075507196
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0029857971487986935,
+    "validation_relative_L2": 0.018245047274243524
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.002988687440542583,
+    "validation_relative_L2": 0.018268881841183127
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.002996770027267033,
+    "validation_relative_L2": 0.01836827380395819
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0026383517385945403,
+    "validation_relative_L2": 0.013330086844459263
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.002638351732409878,
+    "validation_relative_L2": 0.013330086778302074
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0026383517304090316,
+    "validation_relative_L2": 0.01333008664902937
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.002638351732409878,
+    "validation_relative_L2": 0.013330086778302074
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.002639677138375802,
+    "validation_relative_L2": 0.013343894022516069
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.002641976063296223,
+    "validation_relative_L2": 0.013371275860148054
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0026499496067884506,
+    "validation_relative_L2": 0.013407707650261586
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0026267637830461516,
+    "validation_relative_L2": 0.013252503757403004
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0026303847171291746,
+    "validation_relative_L2": 0.01327533459731031
+  },
+  {
+    "moment": "L32",
+    "model": "F2",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0026463309828929677,
+    "validation_relative_L2": 0.013384906155495268
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.12939905159830065,
+    "validation_relative_L2": 0.25920350209830084
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.12939905159822665,
+    "validation_relative_L2": 0.25920350209938325
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.1293990515981712,
+    "validation_relative_L2": 0.259203502100233
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.12939905159822665,
+    "validation_relative_L2": 0.25920350209938325
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.13264692246732537,
+    "validation_relative_L2": 0.2597108184225395
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.1390167473937334,
+    "validation_relative_L2": 0.2607182351249521
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.12940297513014914,
+    "validation_relative_L2": 0.2591481746915436
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.12939512848650717,
+    "validation_relative_L2": 0.2592588455540047
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.12939711348660402,
+    "validation_relative_L2": 0.25923964929654747
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.12940099002650837,
+    "validation_relative_L2": 0.2591673617463687
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0027918435582132478,
+    "validation_relative_L2": 0.01870814234634232
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0027918435583372935,
+    "validation_relative_L2": 0.018708142358477897
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.002791843557977464,
+    "validation_relative_L2": 0.018708142373706625
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0027918435583372935,
+    "validation_relative_L2": 0.018708142358477897
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0027886656890203265,
+    "validation_relative_L2": 0.018712350866479023
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0027819454454467815,
+    "validation_relative_L2": 0.018720396804923545
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.002800295332591531,
+    "validation_relative_L2": 0.01877848568922763
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.002783423987433969,
+    "validation_relative_L2": 0.01863786273671337
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0027873273562944723,
+    "validation_relative_L2": 0.018660649559843433
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0027963849384402507,
+    "validation_relative_L2": 0.018755718784476176
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.002348655662437485,
+    "validation_relative_L2": 0.012990332099967986
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0023486556549081766,
+    "validation_relative_L2": 0.01299033203486455
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0023486556514860147,
+    "validation_relative_L2": 0.012990331906343008
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0023486556549081766,
+    "validation_relative_L2": 0.01299033203486455
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0023582836287641884,
+    "validation_relative_L2": 0.013005661607248288
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0023762516954941443,
+    "validation_relative_L2": 0.013035976742944431
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0023591269812754815,
+    "validation_relative_L2": 0.013065646834221482
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0023381933887111697,
+    "validation_relative_L2": 0.012915059715814688
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.002341759512599,
+    "validation_relative_L2": 0.012937402888809143
+  },
+  {
+    "moment": "L32",
+    "model": "F3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.002355565399002881,
+    "validation_relative_L2": 0.013043331454025451
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.009113154926239389,
+    "validation_relative_L2": 0.07983573684293371
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.009113154926308492,
+    "validation_relative_L2": 0.07983573684139532
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.009113154926404705,
+    "validation_relative_L2": 0.07983573684028451
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.009113154926308492,
+    "validation_relative_L2": 0.07983573684139532
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.009209729431481354,
+    "validation_relative_L2": 0.08035627194011463
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.009371973586426899,
+    "validation_relative_L2": 0.0811685810032194
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.009113481684869066,
+    "validation_relative_L2": 0.07986536903478014
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.009112828823780799,
+    "validation_relative_L2": 0.07980613190828192
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.009112682092033584,
+    "validation_relative_L2": 0.07980798393090573
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.00911362813312659,
+    "validation_relative_L2": 0.07986350034701524
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0009105522796296835,
+    "validation_relative_L2": 0.009602584521316734
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0009105522799632816,
+    "validation_relative_L2": 0.009602584530968624
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0009105522803522623,
+    "validation_relative_L2": 0.009602584543281842
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0009105522799632816,
+    "validation_relative_L2": 0.009602584530968624
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0009131766442881257,
+    "validation_relative_L2": 0.009591245541794358
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.000915811207296129,
+    "validation_relative_L2": 0.009574406648529526
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0009104543523995745,
+    "validation_relative_L2": 0.00964593301627511
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0009106516393966006,
+    "validation_relative_L2": 0.009559295302393703
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0009107679935391137,
+    "validation_relative_L2": 0.009572335675076192
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.000910337600486588,
+    "validation_relative_L2": 0.009632878300258914
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0005031004350640214,
+    "validation_relative_L2": 0.008716863688825986
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0005031004360169447,
+    "validation_relative_L2": 0.00871686360969689
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0005031004368719241,
+    "validation_relative_L2": 0.008716863483804254
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0005031004360169447,
+    "validation_relative_L2": 0.00871686360969689
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0005042716371443546,
+    "validation_relative_L2": 0.008690293174594368
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0005056541029854735,
+    "validation_relative_L2": 0.008645753112724698
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0005026615607515295,
+    "validation_relative_L2": 0.00876692842879281
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0005035439049648807,
+    "validation_relative_L2": 0.008666825167474104
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.0005034438218774317,
+    "validation_relative_L2": 0.008681734060577269
+  },
+  {
+    "moment": "L32",
+    "model": "F2_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.0005027597988055522,
+    "validation_relative_L2": 0.008752013885809304
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.005346951792890708,
+    "validation_relative_L2": 0.07315595710782709
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0053469517929681555,
+    "validation_relative_L2": 0.07315595710673474
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0053469517930613605,
+    "validation_relative_L2": 0.07315595710623993
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0053469517929681555,
+    "validation_relative_L2": 0.07315595710673474
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.005409977438836448,
+    "validation_relative_L2": 0.0735293115517114
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.0055174270005066825,
+    "validation_relative_L2": 0.07407145276340561
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.005346647598069404,
+    "validation_relative_L2": 0.0731756961591939
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.005347256599909204,
+    "validation_relative_L2": 0.07313625343572437
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.005346955953457222,
+    "validation_relative_L2": 0.07313417731274718
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 0,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.005346947998007375,
+    "validation_relative_L2": 0.0731777519008248
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.0002775032915561509,
+    "validation_relative_L2": 0.01144108095981161
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.00027750329192215986,
+    "validation_relative_L2": 0.01144108097281359
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0002775032921994588,
+    "validation_relative_L2": 0.011441080988077083
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.00027750329192215986,
+    "validation_relative_L2": 0.01144108097281359
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.0002790290835408444,
+    "validation_relative_L2": 0.01142951184185249
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.00028122606622391506,
+    "validation_relative_L2": 0.011408814202453469
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.0002781126251129289,
+    "validation_relative_L2": 0.011488620093461722
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.0002768961250815656,
+    "validation_relative_L2": 0.011393556814913238
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.00027712174438396134,
+    "validation_relative_L2": 0.011407913012840635
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 20,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.00027788672629487,
+    "validation_relative_L2": 0.011474270370294831
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 350,
+    "fit_relative_L2": 0.00019158306484273684,
+    "validation_relative_L2": 0.008531254180776108
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 400,
+    "fit_relative_L2": 0.0001915830591598784,
+    "validation_relative_L2": 0.008531254108387834
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "baseline",
+    "value": 450,
+    "fit_relative_L2": 0.0001915830539890545,
+    "validation_relative_L2": 0.008531253969337693
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 1,
+    "fit_relative_L2": 0.0001915830591598784,
+    "validation_relative_L2": 0.008531254108387834
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 2,
+    "fit_relative_L2": 0.00019327879833159526,
+    "validation_relative_L2": 0.008533862282350018
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "training_stride",
+    "value": 4,
+    "fit_relative_L2": 0.00019627006097731,
+    "validation_relative_L2": 0.008535090738644354
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_minus_half_last_digit",
+    "fit_relative_L2": 0.00019274149853431056,
+    "validation_relative_L2": 0.008580936359511564
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "mass_plus_half_last_digit",
+    "fit_relative_L2": 0.00019042531541623733,
+    "validation_relative_L2": 0.00848158941296706
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_minus_half_last_digit",
+    "fit_relative_L2": 0.00019073265732433972,
+    "validation_relative_L2": 0.008497952455370364
+  },
+  {
+    "moment": "L32",
+    "model": "F3_O3",
+    "start_M": 50,
+    "control": "reported_parameter_rounding",
+    "value": "chi_plus_half_last_digit",
+    "fit_relative_L2": 0.00019243421674154808,
+    "validation_relative_L2": 0.008564585919875778
+  }
+]

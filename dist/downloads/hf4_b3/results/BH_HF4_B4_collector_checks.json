@@ -1,0 +1,10 @@
+{
+  "synthetic_fixtures_only": true,
+  "complete_55_series_counted": true,
+  "checksums_and_zip_integrity": true,
+  "source_files_unchanged": true,
+  "existing_output_preserved": true,
+  "missing_common_frame_reported": true,
+  "output_inside_source_rejected": true,
+  "actual_user_computer_run": false
+}

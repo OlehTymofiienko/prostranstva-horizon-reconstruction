@@ -1,0 +1,68 @@
+{
+  "source_summary_sha256": "2067c2c70ca98f4eeaa5641f1fc32a1ef9ec8b72aeeca81fd2ce73f8a3cf1daf",
+  "stored_classification_preserved": "BH_HF3_R6B_FIVE_RADIUS_OUTGOING_PROPAGATION_SUPPORTED_INVERSE_RADIUS_SCALING_SUPPORTED_RINGDOWN_AGE_COLLAPSE_SUPPORTED_KERR220_ASYMPTOTIC_CLOSURE_SUPPORTED_R15_R30_R40_THIRD_PERIOD_PENDING",
+  "remnant_from_R6B": {
+    "late_window_M": [
+      90.0,
+      95.0
+    ],
+    "Mf": 0.977461203278627,
+    "Jf": 0.648087073319352,
+    "chi": 0.6783194994253878
+  },
+  "old_approximate_reference": {
+    "omega_R_rad_per_M": 0.5381085416552966,
+    "alpha_per_M": 0.08411794144638013,
+    "period_M": 11.67642737625319,
+    "Q": 3.1985360816176582
+  },
+  "numerical_Kerr220_reference": {
+    "mass_M": 0.977461203278627,
+    "chi": 0.6783194994253878,
+    "omega": 0.5353401318639867,
+    "alpha": 0.08345059699511974
+  },
+  "existing_fits_compared_without_refitting": [
+    {
+      "radius_M": 15.0,
+      "unchanged_fit_start_M": 65.60285475250637,
+      "unchanged_fit_end_M": 77.27928212875958,
+      "omega_from_existing_fit": 0.5342573533775116,
+      "alpha_from_existing_fit": 0.08283326529846569,
+      "relative_omega_difference_numerical_Kerr": 0.0020225991328260617,
+      "relative_alpha_difference_numerical_Kerr": 0.007397570765013877
+    },
+    {
+      "radius_M": 30.0,
+      "unchanged_fit_start_M": 81.60285475250637,
+      "unchanged_fit_end_M": 93.27928212875958,
+      "omega_from_existing_fit": 0.5342172874098462,
+      "alpha_from_existing_fit": 0.08335161181977986,
+      "relative_omega_difference_numerical_Kerr": 0.002097441210377516,
+      "relative_alpha_difference_numerical_Kerr": 0.001186152992358654
+    }
+  ],
+  "reference_omega_relative_shift": -0.00514470516077291,
+  "reference_alpha_relative_shift": -0.007933437739745216,
+  "period_M": 11.73680980221365,
+  "r40_three_period_end_M": 104.21042940664094,
+  "checkpoint_state_from_prior_verified_dialog": {
+    "t_M": 95,
+    "iteration": 48640,
+    "exit_status": 0
+  },
+  "planned_final_time_M": 105,
+  "expected_iteration_if_step_unchanged": 53760,
+  "no_new_evolution_run": true,
+  "next_step": "BH-YITIAN-A3: осесимметричные I20, I40, L30; затем отдельный контроль m=4. Работать с уже предоставленными рядами.",
+  "QC0_completion_pending": "Восстановление 95→105M из it=48640, аудит шва 95M и третий период r40 с численным спектральным ориентиром.",
+  "HF4_gate": "Установить соответствие коэффициентов угловому базису/мере; различать скалярную карту на вспомогательной сфере и физическую метрику горизонта.",
+  "corrections": [
+    "В старом текстовом пересказе Jf=0.648087073319352 было ошибочно названо безразмерным спином; правильный chi=Jf/Mf^2.",
+    "Правильное Mf в файле 0.977461203278627; число 0.977641203 в пересказе было опечаткой.",
+    "Ориентир R6B — приближённая формула BCW, а не точное численное значение квазинормальной частоты.",
+    "В старом сравнении BIC свободные частота и затухание брались из отдельных регрессий фазы и лог-модуля, а не из минимума того же комплексного RSS. Для строгого сравнения моделей это надо исправить.",
+    "Коррелированные остатки и отсутствие модели численной ошибки не позволяют трактовать старые BIC как калиброванную статистическую проверку ОТО.",
+    "R6A/R6B не пересчитывались: прочитаны готовый итог и исходный код; архив исходных временных рядов здесь не анализировался."
+  ]
+}

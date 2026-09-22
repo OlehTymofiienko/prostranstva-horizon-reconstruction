@@ -1,0 +1,226 @@
+{
+  "stage": "BH-HF4-B4",
+  "created_UTC": "2026-09-21T06:06:45.064007+00:00",
+  "raw_source_archive_reference": {
+    "library_file_id": "libfile_874fa5100b688191a18f7e80ada8b7ed",
+    "sha256": "34d86aa53bc74f0e1b872761518a145b7612aafbb2f7e735e6993961140936fc",
+    "filename": "BH_HF4_B4_collection(1).zip"
+  },
+  "files": [
+    {
+      "path": "hf4_b2/results/BH_HF4_B2_fields_and_masks.npz",
+      "bytes": 1085347,
+      "sha256": "10b448a8e9f70556670d14d015a90cd2c6557bde7a61a4ac5e1fea73db4fdfa4"
+    },
+    {
+      "path": "hf4_b2/results/BH_HF4_B2_view_data.json",
+      "bytes": 4931370,
+      "sha256": "3e6885248dd53c9103f3867b9472d106b65b6e8a91c197cd3b2eb3bcd9b35dd3"
+    },
+    {
+      "path": "hf4_b2/vendor/plotly-3.3.1.min.js",
+      "bytes": 4838938,
+      "sha256": "e2b0f77ee8156ff9d525852fe4acb7bfe7d85e8a2e1da0523f6d16209b848968"
+    },
+    {
+      "path": "hf4_b3/BH_HF4_B3.py",
+      "bytes": 18072,
+      "sha256": "f297ab75c906e9c5aa76d447548e054a671bff7fb7a1ed6d87fc11958f04fcbd"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_geometry.csv",
+      "bytes": 4390,
+      "sha256": "bc8b922e2819e67192c37bda9b01fbd9fa04090f689486b8bffc6953bc7930ee"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_intrinsic_geometry_and_masks.npz",
+      "bytes": 908231,
+      "sha256": "dde62f017bec55b2bcb62dee37503d1ac3842366bd6c28ee60d258b5f21c1598"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_localization.csv",
+      "bytes": 40286,
+      "sha256": "695370703d22c4b042bde4e3c6686c39b1636ee9298f89db1b4a052e9dfaf290"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_summary.json",
+      "bytes": 5611,
+      "sha256": "a2089efdf3875832a8a4ca5dade8c6fda343757db3787d1fbf8109f7f9fc8357"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_temporal_pairs.csv",
+      "bytes": 1765,
+      "sha256": "3db6a84c1ddb07751f4181da5ca77425db55e1de8f15feaa5bf7309e949a8d72"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_resume_state_B3.json",
+      "bytes": 19125,
+      "sha256": "ea20ac6c3ad33b4bc130aac1668cc6c0dfc04aaf7cb881b3dbb6882066df6489"
+    },
+    {
+      "path": "hf4_b4/BH_HF4_B4.py",
+      "bytes": 16259,
+      "sha256": "a8195823c25fe7b145b3592c884e6b5e6d56292212db8e9d12c376026f611d10"
+    },
+    {
+      "path": "hf4_b4/README.md",
+      "bytes": 3121,
+      "sha256": "6826553b654b403435560a4736c45852c1a2123a5a99e40a5747475371106b24"
+    },
+    {
+      "path": "hf4_b4/build_B4_view.py",
+      "bytes": 6730,
+      "sha256": "c473a8357c3ace5905c4f26b984cbbb03b28c236f777fa2a8dedec76385a0145"
+    },
+    {
+      "path": "hf4_b4/check_B4_view.cjs",
+      "bytes": 4673,
+      "sha256": "731b5c290708a3fccc80a903312485130943dadf176a859b17d87ccc2dfa855e"
+    },
+    {
+      "path": "hf4_b4/provenance/BH_HF4_B4_collection_manifest.json",
+      "bytes": 248729,
+      "sha256": "403537d3e74d735d195f4921085f9ea549ccbeb365bc051df6b5621863a25b62"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/BH_diagnostics.ah1.gp",
+      "bytes": 177651,
+      "sha256": "cd34742c202ffd08f7b5711420735579238fe007153f915027eb2d0fe62db12f"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/BH_diagnostics.ah2.gp",
+      "bytes": 178176,
+      "sha256": "d4232434180b9d62f6ff1f0f641f3148dee747c8d1afd9cd7b304bfe0cbcef56"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/BH_diagnostics.ah3.gp",
+      "bytes": 29120,
+      "sha256": "42eff264abc588ec5945f5f37d2ae8e271f7c01a6b02fe8714bf981ca2a0c52e"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/quasilocalmeasures-qlm_grid_int..asc",
+      "bytes": 268528,
+      "sha256": "b90e19ea1f21928e1e32e272bd2f0eb443e18ac8c89c8759cb62d899ec015dad"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/quasilocalmeasures-qlm_grid_real..asc",
+      "bytes": 616520,
+      "sha256": "40d4f92fafafb426c1db4861fe0fe5357523cdb546e06b032486b778dc8e627f"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/quasilocalmeasures-qlm_scalars..asc",
+      "bytes": 2813159,
+      "sha256": "b537b80bfcabeb5e0281b2152e9552c91844502b46315fee7afc2527c9c15ac9"
+    },
+    {
+      "path": "hf4_b4/provenance/diagnostics/quasilocalmeasures-qlm_state..asc",
+      "bytes": 373918,
+      "sha256": "7f603725bcfd4641fa9dce8943fbb24fc88f3cbdfe40debde93406520f97928c"
+    },
+    {
+      "path": "hf4_b4/provenance/parameters/qc0-horizon-early-geometry-t22.par",
+      "bytes": 15320,
+      "sha256": "2273d6962e852820c78216debb7c7b4a96d23e64402b9306decae2d824cdc385"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_area_comparison.csv",
+      "bytes": 7452,
+      "sha256": "bb62b01a5b723076dca9f812f095f004e2f9288612649c1cb31212472bb74ac5"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_axis_checks.json",
+      "bytes": 1445,
+      "sha256": "403821e3b722e86fc956123fa3e2b2cbe9f1b7cfc5e1527162af1694218c0a57"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_axis_precheck.json",
+      "bytes": 1181,
+      "sha256": "c40a4f3509a1ba1b6ef6a0411be4124e7f8e5c3ffeacc8ae2ea0b963ec61095e"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_controller.js",
+      "bytes": 5654,
+      "sha256": "8f4e0d89ef81b2686c712fd9454971b63dbfc63cc89ddbd45d7903b8bcd2d32a"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_controller_checks.json",
+      "bytes": 338,
+      "sha256": "466c23543ea6615ceb3f67fcb23190d5aff1b89c8dc2edc627e125afbc23f9ec"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_definition.json",
+      "bytes": 1399,
+      "sha256": "72d65cfbe6b1901cd1f527c207d7d0b580784957feb39151bf0a1e0cbddf1f2b"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_fields_3D.html",
+      "bytes": 28974426,
+      "sha256": "1951e2e551cd960ade7cb2feb9b0a443e0c27dc2a3d299792bddb861cba91f3b"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_fields_geometry_masks.npz",
+      "bytes": 8486488,
+      "sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_geometry.csv",
+      "bytes": 13527,
+      "sha256": "802cec99f3fbd937fc980a7a2783254acc05105a4a95749f350948eca31e3096"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_input_audit.json",
+      "bytes": 885,
+      "sha256": "d88985e63ee87c5aa38ff375749816482da53528bf427d007130dfd43ee2ef10"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_localization.csv",
+      "bytes": 69927,
+      "sha256": "43172957781578c6dc8fcd7af4031f58140198c829c9a059f09b156f67ed8bdc"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_overview.png",
+      "bytes": 339857,
+      "sha256": "0501e368290c888831179f24dc2080674cc6eab72b3accffe30c97223b8e860d"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_report.md",
+      "bytes": 15667,
+      "sha256": "73a14aef4eb41aa8bc2a73ac5390e56a3e2a9a8d8bd85eeb0bc3cafdb9a30a8c"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_summary.json",
+      "bytes": 5389,
+      "sha256": "9015ab23a578fdbffaafafde10e60993165c9320111c41c21ed04511633ac093"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_temporal_pairs.csv",
+      "bytes": 9639,
+      "sha256": "c3b52727928c738a4b6e17a76cd167b35520c2e3794046556d97a22622bc8b6e"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_view_checks.json",
+      "bytes": 487,
+      "sha256": "64b46d8c2fcdaeaf24d9988f211d1fa0e0a871770fadf83b949f16f19bd7a9f9"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B4_view_data.json",
+      "bytes": 24123083,
+      "sha256": "37494eeb002e1690ad85a4aed37167ac1caf52b4f30b66087b1aef85257b4da3"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_B5_protocol.json",
+      "bytes": 2922,
+      "sha256": "2140113cbd0284e39ed23b30225343160ce150060d6b7c381f2bcb3d96d85569"
+    },
+    {
+      "path": "hf4_b4/results/BH_HF4_resume_state_B4.json",
+      "bytes": 14111,
+      "sha256": "fbd42964775e4c31c7a8515babc7cf514fd0f1338bd2e21832106e3802e09521"
+    },
+    {
+      "path": "hf4_b4/viewer_template.html",
+      "bytes": 12423,
+      "sha256": "cf937806b3fc30a1be35abcbb99663ac74fcdcfd410c62a68450b2b5171b0dd0"
+    }
+  ]
+}

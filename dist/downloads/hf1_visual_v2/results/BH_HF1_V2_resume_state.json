@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "saved_UTC": "2026-09-21T11:30:22.795667+00:00",
+  "latest_visual_stage": "BH-HF1-VISUAL-V2",
+  "status": "COMPLETE_NATIVE_COORDINATE_SURFACE_MASK_MOVIE",
+  "source_simulation": "SXS:BBH:0305",
+  "source_resolution": "Lev6",
+  "source_horizon": "C",
+  "input_archive": "BH_HF1_visual_data.zip",
+  "input_library_file_id": "libfile_cef30c8b900c8191959096b4bc36c2b2",
+  "input_archive_sha256": "b47bdb37aa796d281ba292c3908ed334c856360ec1e6e324c0a7406a175b0bb2",
+  "source_snapshots": 1566,
+  "dense_snapshots": 1564,
+  "viewer_snapshots": 235,
+  "mask_comparisons": 4698,
+  "all_frozen_metrics_match": true,
+  "max_centroid_component_difference": 3.3306690738754696e-16,
+  "video": "BH_HF1_V2_surface_evolution.mp4",
+  "interactive_viewer": "BH_HF1_V2_surface_3D.html",
+  "full_reconstructed_masks_and_meshes": "BH_HF1_V2_masks_mesh.npz",
+  "completed": [
+    "archive_and_reference_integrity",
+    "missing_deterministic_masks_recovered_and_matched",
+    "native_coordinate_surface_triangulation",
+    "approximate_mask_boundaries_on_native_surface",
+    "fixed_camera_evolution_movie",
+    "fixed_time_camera_orbit",
+    "independent_field_selection_in_offline_3D_viewer",
+    "data_and_controller_verification"
+  ],
+  "statistical_tests_repeated": false,
+  "new_evolution_run": false,
+  "geometry_representation": "native Cartesian nodes; radial triangulation; no smoothing or exaggeration; mask boundary at piecewise-linear level 0.5",
+  "visual_claim_scope": "coordinate morphology of horizon scalars; not invariant object or new physics",
+  "time_handling": "stored frames only; no temporal interpolation; camera orbit has fixed time",
+  "remaining_limits": [
+    "native coordinate-frame dependence",
+    "inter-node boundary depends on mesh and interpolation",
+    "no event-horizon or interior reconstruction",
+    "no additional numerical-resolution or gauge-robustness test",
+    "browser WebGL execution not independently tested in this runtime"
+  ],
+  "last_scientific_HF4_checkpoint": "BH_HF4_resume_state_B4.json",
+  "HF4_B5": "pending separate QC0 task; not started here",
+  "next_local_user_action_required": false,
+  "resume_instruction": "Read this state and BH_HF1_V2_report.md. The original HF1 structure is now visualized on the native coordinate horizon. Use saved masks and meshes; do not rerun HF1 nulls, HF1R temporal statistics, HF3 ringdown tests, or HF4 B4. Keep SXS:BBH:0305, Yitian SXS:BBH:0389, and QC0 distinct. Follow the next specific user request.",
+  "hashes": {
+    "BH_HF1_V2_surface_evolution.mp4": "ef4b21e0c4ef8f02e70a7bd2eceedbd9ce34c0f55fbc18c4d3ce18ecc75f0fe4",
+    "BH_HF1_V2_surface_3D.html": "3f55da49202c9d7267f0732fd0ff2744116369568612bd8df84bc94682977f90",
+    "BH_HF1_V2_masks_mesh.npz": "7b75aa7365de5da97bc3eb471a1982c5ca910995fc4df4359d1b4f80c10c7399",
+    "BH_HF1_V2_report.md": "b5f4bb9264905126358bb670e529e7c9c72caf8a9187e87eacfeda275f715653"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "controller_states_tested": 192,
+  "render_calls": 197,
+  "source_masks_match": true,
+  "gap_playback_stops": true,
+  "camera_control_dispatch": true,
+  "browser_WebGL_render_tested": false
+}

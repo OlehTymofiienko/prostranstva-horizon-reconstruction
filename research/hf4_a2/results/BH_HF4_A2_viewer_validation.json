@@ -1,0 +1,56 @@
+{
+  "method": "Node VM with real canvas and minimal DOM; full browser layout unavailable",
+  "numeric": {
+    "maxAbsError": 7.216449660063518e-16,
+    "tests": [
+      {
+        "frame": 0,
+        "field": 0,
+        "cutoff": 8,
+        "rotate": false,
+        "row": 24,
+        "col": 48,
+        "expected": 2.6623515381633722,
+        "actual": 2.662351538163372,
+        "absError": 4.440892098500626e-16
+      },
+      {
+        "frame": 20,
+        "field": 3,
+        "cutoff": 6,
+        "rotate": false,
+        "row": 15,
+        "col": 31,
+        "expected": -0.08458083548958957,
+        "actual": -0.08458083548959029,
+        "absError": 7.216449660063518e-16
+      },
+      {
+        "frame": 160,
+        "field": 2,
+        "cutoff": 8,
+        "rotate": true,
+        "row": 26,
+        "col": 61,
+        "expected": 0.00017985176484853566,
+        "actual": 0.00017985176484858334,
+        "absError": 4.767779053505006e-17
+      },
+      {
+        "frame": 300,
+        "field": 3,
+        "cutoff": 4,
+        "rotate": true,
+        "row": 9,
+        "col": 13,
+        "expected": 1.828279764620549e-7,
+        "actual": 1.8282797647483393e-7,
+        "absError": 1.2779027256548019e-17
+      }
+    ]
+  },
+  "control_modes_checked": 16,
+  "previous_next_play_checked": true,
+  "frames": 301,
+  "all_pass": true
+}

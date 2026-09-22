@@ -1,0 +1,37 @@
+{
+  "archive_file": "BH_HF4_B4_collection(1).zip",
+  "archive_library_file_id": "libfile_874fa5100b688191a18f7e80ada8b7ed",
+  "archive_sha256": "34d86aa53bc74f0e1b872761518a145b7612aafbb2f7e735e6993961140936fc",
+  "all_816_manifest_files_hash_verified": true,
+  "manifest_file_count": 816,
+  "zip_members": 818,
+  "previous_12_VTK_byte_identical": true,
+  "new_common_frames": 43,
+  "common_VTK": 55,
+  "common_shapes": 55,
+  "source_directory": "/home/alex/simulations/qc0_early_geometry_t22",
+  "counts_by_kind": {
+    "diagnostic": 7,
+    "parameter": 1,
+    "AH1_shape": 349,
+    "AH2_shape": 349,
+    "AH3_shape": 55,
+    "AH3_VTK": 55
+  },
+  "individual_missing_iterations": {
+    "1": [
+      192,
+      8608,
+      10656,
+      10752
+    ],
+    "2": [
+      192,
+      8608,
+      10656,
+      10752
+    ]
+  },
+  "common_missing_iterations": [],
+  "new_evolution_run": false
+}

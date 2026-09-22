@@ -1,0 +1,209 @@
+{
+  "stage": "BH-HF4-B4",
+  "classification": "BH_HF4_B4_COMPLETE_AH3_SERIES_EARLY_AREA_AGREEMENT_CONFIRMED_LOCALIZATION_EXTENDED",
+  "common_frame_count": 55,
+  "old_B3_frames_reused": 12,
+  "new_frames_computed": 43,
+  "old_contiguous_pair_results_reused": 30,
+  "new_contiguous_pair_results": 132,
+  "same_run_id": "run-qc0-horizon-early-geometry-t22-DESKTOP-GDJ2LUD.localdomain-alex-2026.09.16-10.57.31-1065",
+  "QLM_common_slot": 2,
+  "QLM_early_validity_checks_passed": true,
+  "first_valid_history_counter_sentinel": {
+    "iteration": 9536,
+    "qlm_iteration": -1,
+    "qlm_time": 18.625,
+    "have_valid_data": 1,
+    "calc_error": 0,
+    "interpretation": "Recorded explicitly; same-time area corroborated. Not used as a dynamical time derivative."
+  },
+  "first_common_time_M": 18.625,
+  "preceding_valid_sample_without_common_time_M": 18.5625,
+  "last_common_time_M": 22,
+  "common_step_M": 0.0625,
+  "common_time_span_M": 3.375,
+  "physical_area_first_last": [
+    37.30527648018054,
+    41.01767578040752
+  ],
+  "relative_area_increase": 0.09951405405611458,
+  "area_monotonically_increasing_at_all_sampled_frames": true,
+  "max_abs_relative_area_difference_QLM": 6.036373904955443e-08,
+  "AHFinderDirect_vs_QLM_relative_range": [
+    2.741514571624748e-05,
+    0.00016131986239997786
+  ],
+  "max_abs_relative_area_difference_AHFinderDirect_QLM": 0.00016131986239997786,
+  "max_tangent_residual_new_frames": 7.441155501331868e-15,
+  "max_axis_overlap_difference_degrees": 0.0004840467409753807,
+  "axis_overlap_differing_region_memberships": 0,
+  "long_axis_unavailable_iterations": [
+    10656,
+    10752
+  ],
+  "fields": {
+    "repsi2": {
+      "primary_mask_long_axis_fraction_range": [
+        0.9452996417144,
+        1.0
+      ],
+      "primary_mask_polar_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "selected_area_fraction_range": [
+        0.050001293934579846,
+        0.051568715037414725
+      ],
+      "adjacent_mask_Dice_range": [
+        0.8382236891030116,
+        1.0
+      ],
+      "long_axis_frames": 53,
+      "polar_frames": 55,
+      "quantile_sensitivity": {
+        "0.9": {
+          "long_axis_fraction_range": [
+            0.954498963849189,
+            1.0
+          ],
+          "polar_fraction_range": [
+            0.0,
+            0.017502781742422775
+          ]
+        },
+        "0.95": {
+          "long_axis_fraction_range": [
+            0.9452996417144,
+            1.0
+          ],
+          "polar_fraction_range": [
+            0.0,
+            0.0
+          ]
+        },
+        "0.98": {
+          "long_axis_fraction_range": [
+            0.868077157741039,
+            1.0
+          ],
+          "polar_fraction_range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "impsi2": {
+      "primary_mask_long_axis_fraction_range": [
+        0.0,
+        0.4323392433441319
+      ],
+      "primary_mask_polar_fraction_range": [
+        0.7302509650818183,
+        1.0
+      ],
+      "selected_area_fraction_range": [
+        0.05000122984968006,
+        0.050654683537421114
+      ],
+      "adjacent_mask_Dice_range": [
+        0.815004636300403,
+        0.9971102562392468
+      ],
+      "long_axis_frames": 53,
+      "polar_frames": 55,
+      "quantile_sensitivity": {
+        "0.9": {
+          "long_axis_fraction_range": [
+            0.03935824074157066,
+            0.4474120604866547
+          ],
+          "polar_fraction_range": [
+            0.7310013631179809,
+            1.0
+          ]
+        },
+        "0.95": {
+          "long_axis_fraction_range": [
+            0.0,
+            0.4323392433441319
+          ],
+          "polar_fraction_range": [
+            0.7302509650818183,
+            1.0
+          ]
+        },
+        "0.98": {
+          "long_axis_fraction_range": [
+            0.0,
+            0.5961055897085119
+          ],
+          "polar_fraction_range": [
+            0.6911414570153335,
+            1.0
+          ]
+        }
+      }
+    },
+    "abs_npsigma": {
+      "primary_mask_long_axis_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "primary_mask_polar_fraction_range": [
+        1.0,
+        1.0
+      ],
+      "selected_area_fraction_range": [
+        0.05000040519445437,
+        0.0501748998847224
+      ],
+      "adjacent_mask_Dice_range": [
+        0.9588497192239376,
+        0.9984804003409097
+      ],
+      "long_axis_frames": 53,
+      "polar_frames": 55,
+      "quantile_sensitivity": {
+        "0.9": {
+          "long_axis_fraction_range": [
+            0.0,
+            0.07014129933314066
+          ],
+          "polar_fraction_range": [
+            0.9130974186819847,
+            1.0
+          ]
+        },
+        "0.95": {
+          "long_axis_fraction_range": [
+            0.0,
+            0.0
+          ],
+          "polar_fraction_range": [
+            1.0,
+            1.0
+          ]
+        },
+        "0.98": {
+          "long_axis_fraction_range": [
+            0.0,
+            0.0
+          ],
+          "polar_fraction_range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "new_evolution_run": false,
+  "previous_results_recomputed": false,
+  "simulation_convergence_established": false,
+  "all_tetrad_or_slicing_independence_established": false,
+  "material_transport_established": false,
+  "HF1_identification_established": false,
+  "new_physics_established": false
+}

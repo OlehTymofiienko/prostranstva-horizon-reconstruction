@@ -1,0 +1,4 @@
+field,n_snapshots,duration_M,median_centroid_step_deg,median_dilated_dice,temporal_coherence_pass
+Rstar,1433,9.343502446286493,0.0020999931448351192,1.0,True
+Estar,1525,9.594358254175859,0.002154573937652717,1.0,True
+Bstar,1347,8.17621701428834,0.0014345982275965103,1.0,True

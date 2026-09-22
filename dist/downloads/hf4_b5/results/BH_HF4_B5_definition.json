@@ -1,0 +1,21 @@
+{
+  "stage": "BH-HF4-B5",
+  "registered_protocol_sha256": "2140113cbd0284e39ed23b30225343160ce150060d6b7c381f2bcb3d96d85569",
+  "basis": "Y_l0; sqrt(2) Re Y_lm, sqrt(2) Im Y_lm, m>0; unit-sphere normalization with Condon-Shortley phase",
+  "coordinates": "Original QLM theta/phi, fixed simulation axes; no alignment or fitted rotation",
+  "measure": "Unmodified saved B4 physical_weights; normalized already",
+  "fit": "SVD least squares of sqrt(w) X and sqrt(w) F; three fields solved together per time and L",
+  "residual_mask": "Top tail at weighted q=0.95 of abs(residual-weighted_median(residual)); include all ties",
+  "original_mask": "Read saved B4 mask verbatim; never rebuilt",
+  "residual_energy": "sum(w*residual**2); a squared numerical field norm, NOT physical energy",
+  "concentration": "sum_inside_original_mask(w*residual**2)/sum_all(w*residual**2)",
+  "dice": "2*weighted_area(intersection)/(weighted_area(original)+weighted_area(residual))",
+  "degeneracy": "R2 undefined if weighted variance <= 1e-24 * max(weighted raw mean square, float tiny)",
+  "scope": "Descriptive projection on coordinate harmonics; not intrinsic eigenfunctions, Kerr multipoles, QNMs or significance test",
+  "shear": "Ordinary scalar decomposition of |sigma|, not spin-weighted decomposition of complex sigma",
+  "libraries": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

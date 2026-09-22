@@ -1,0 +1,541 @@
+{
+  "version": "BH-YITIAN-A2-2026-09-15-v1",
+  "status": "BH_YITIAN_A2_KNOWN_MODE_MIXING_REPRODUCED_PREDICTION_NOT_EXACT",
+  "scope": "I22 и L32 одного численного расчёта; не вся геометрия и не наблюдения GW150914",
+  "rotation_Omega": 0.20878380853617037,
+  "mass_M": 0.95162,
+  "chi": 0.68644,
+  "training_duration_M": 30,
+  "validation_duration_M": 20,
+  "start_times_M": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70
+  ],
+  "model_sets": {
+    "F220": [
+      "220"
+    ],
+    "F320": [
+      "320"
+    ],
+    "F2": [
+      "220",
+      "320"
+    ],
+    "F3": [
+      "220",
+      "320",
+      "420"
+    ],
+    "F2_O1": [
+      "220",
+      "320",
+      "221"
+    ],
+    "F2_O2": [
+      "220",
+      "320",
+      "221",
+      "222"
+    ],
+    "F2_O3": [
+      "220",
+      "320",
+      "221",
+      "222",
+      "223"
+    ],
+    "F3_O1": [
+      "220",
+      "320",
+      "420",
+      "221"
+    ],
+    "F3_O2": [
+      "220",
+      "320",
+      "420",
+      "221",
+      "222"
+    ],
+    "F3_O3": [
+      "220",
+      "320",
+      "420",
+      "221",
+      "222",
+      "223"
+    ]
+  },
+  "fixed_frequency_fit": true,
+  "validation_is_independent_simulation": false,
+  "validation_note": "Коэффициенты не подгоняются на отложенном участке, но Mf, chi, Omega и поздний уровень заданы по всей симуляции/письму; это не слепой перспективный прогноз.",
+  "metric": "E=||z-z_model||_2/||z||_2; равные веса комплексных отсчётов; не поточечная ошибка и не статистическая значимость",
+  "checks": {
+    "frame_equivalence_max_error": 4.926614671774132e-16,
+    "synthetic_fit_relative_L2": 4.796859509852809e-16,
+    "synthetic_prediction_relative_L2": 4.3340242705770547e-16
+  },
+  "floor_diagnostics": {
+    "I22": {
+      "late_offset": {
+        "real": -4.191082664837018e-06,
+        "imag": -3.831847323364092e-06
+      },
+      "late_offset_abs": 5.678752311297783e-06,
+      "late_fluctuation_rms": 8.278135457909351e-12,
+      "note": "Позднее рассеяние не задаёт погрешность раннего сигнала; второй численной точности нет."
+    },
+    "L32": {
+      "late_offset": {
+        "real": -2.416330026672184e-06,
+        "imag": -2.2073059705449326e-06
+      },
+      "late_offset_abs": 3.2727435654815526e-06,
+      "late_fluctuation_rms": 4.5172305277747556e-12,
+      "note": "Позднее рассеяние не задаёт погрешность раннего сигнала; второй численной точности нет."
+    }
+  },
+  "beat_period_220_320_M": 26.338099492887466,
+  "examples": [
+    {
+      "model": "F220",
+      "modes": [
+        "220"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.22361573323840395,
+      "validation_relative_L2": 0.4152469884272627,
+      "validation_absolute_rms": 0.008176353018805507,
+      "scaled_condition_number": 1.0,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.6568049775955557,
+          "imag": -0.018770110421704643
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.012169835903896026,
+          "imag": 0.11840421466933203
+        }
+      },
+      "moment": "I22"
+    },
+    {
+      "model": "F2",
+      "modes": [
+        "220",
+        "320"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.16711302246403684,
+      "validation_relative_L2": 0.33614210497756414,
+      "validation_absolute_rms": 0.006618751228492953,
+      "scaled_condition_number": 1.9732413559216406,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.6016404837179768,
+          "imag": 0.029718359991110017
+        },
+        "320": {
+          "real": 0.12410588893078565,
+          "imag": 0.02546395200568643
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.002672817473024864,
+          "imag": 0.10908657527798761
+        },
+        "320": {
+          "real": -0.021311207856886852,
+          "imag": -0.0014884722107828567
+        }
+      },
+      "moment": "I22"
+    },
+    {
+      "model": "F2_O3",
+      "modes": [
+        "220",
+        "320",
+        "221",
+        "222",
+        "223"
+      ],
+      "start_M": 0,
+      "train_end_M": 30,
+      "validation_start_M": 30.1,
+      "validation_end_M": 50,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.0012091166377995845,
+      "validation_relative_L2": 0.020974695144975086,
+      "validation_absolute_rms": 0.00041299880973653995,
+      "scaled_condition_number": 121.33616335084427,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.46745384508722476,
+          "imag": -0.10210160166034339
+        },
+        "320": {
+          "real": 0.005496896871429279,
+          "imag": 0.0010353016117144816
+        },
+        "221": {
+          "real": 0.1681016521480134,
+          "imag": 0.06057070840452136
+        },
+        "222": {
+          "real": 0.3680276702165456,
+          "imag": 0.4208850633030513
+        },
+        "223": {
+          "real": -0.07535267429659591,
+          "imag": -0.38186188423645473
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.02469319938523503,
+          "imag": 0.08308317023247296
+        },
+        "320": {
+          "real": -0.000941851956777962,
+          "imag": -5.045879055840441e-05
+        },
+        "221": {
+          "real": -0.0005074085908993889,
+          "imag": 0.0008843060439794149
+        },
+        "222": {
+          "real": -9.053126594508037e-05,
+          "imag": 7.551910350823668e-06
+        },
+        "223": {
+          "real": 8.162608151110366e-07,
+          "imag": 1.4296809782332634e-06
+        }
+      },
+      "moment": "I22"
+    },
+    {
+      "model": "F320",
+      "modes": [
+        "320"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.8659501037865739,
+      "validation_relative_L2": 1.0188906503009985,
+      "validation_absolute_rms": 0.001766706614691625,
+      "scaled_condition_number": 1.0,
+      "coefficients_at_start": {
+        "320": {
+          "real": -0.012478786232861437,
+          "imag": 0.017443034047845436
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "320": {
+          "real": -0.012478786232861437,
+          "imag": 0.017443034047845436
+        }
+      },
+      "moment": "L32"
+    },
+    {
+      "model": "F220",
+      "modes": [
+        "220"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.13192774298040083,
+      "validation_relative_L2": 0.152437285958742,
+      "validation_absolute_rms": 0.0002643188072727811,
+      "scaled_condition_number": 1.0,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.00774068831670701,
+          "imag": 0.04094996610186442
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.00774068831670701,
+          "imag": 0.04094996610186442
+        }
+      },
+      "moment": "L32"
+    },
+    {
+      "model": "F2",
+      "modes": [
+        "220",
+        "320"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.0029927126077501412,
+      "validation_relative_L2": 0.018318534169820128,
+      "validation_absolute_rms": 3.176344338787978e-05,
+      "scaled_condition_number": 1.9732413559216408,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.006207635514009236,
+          "imag": 0.044715751982541706
+        },
+        "320": {
+          "real": 0.006776467678389389,
+          "imag": -0.0018080120330431434
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.006207635514009236,
+          "imag": 0.044715751982541706
+        },
+        "320": {
+          "real": 0.006776467678389389,
+          "imag": -0.0018080120330431434
+        }
+      },
+      "moment": "L32"
+    },
+    {
+      "model": "F3",
+      "modes": [
+        "220",
+        "320",
+        "420"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.0027918435583372935,
+      "validation_relative_L2": 0.018708142358477897,
+      "validation_absolute_rms": 3.243900495460566e-05,
+      "scaled_condition_number": 2.9639042731989163,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.006198772551619264,
+          "imag": 0.044696184033253816
+        },
+        "320": {
+          "real": 0.006730934578059311,
+          "imag": -0.0018018764035621637
+        },
+        "420": {
+          "real": 3.39387323527357e-05,
+          "imag": 5.4574097323884164e-05
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.006198772551619264,
+          "imag": 0.044696184033253816
+        },
+        "320": {
+          "real": 0.006730934578059311,
+          "imag": -0.0018018764035621637
+        },
+        "420": {
+          "real": 3.39387323527357e-05,
+          "imag": 5.4574097323884164e-05
+        }
+      },
+      "moment": "L32"
+    },
+    {
+      "model": "F220",
+      "modes": [
+        "220"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.003644664072452139,
+      "validation_relative_L2": 0.019390963244674302,
+      "validation_absolute_rms": 6.996255843043303e-05,
+      "scaled_condition_number": 1.0,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.02371237566081507,
+          "imag": 0.08404582489934838
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.02371237566081507,
+          "imag": 0.08404582489934838
+        }
+      },
+      "moment": "I22"
+    },
+    {
+      "model": "F2",
+      "modes": [
+        "220",
+        "320"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.0025566870977032385,
+      "validation_relative_L2": 0.020712102409387013,
+      "validation_absolute_rms": 7.472922601881764e-05,
+      "scaled_condition_number": 1.9732413559216408,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.023743372446648533,
+          "imag": 0.08388241895389278
+        },
+        "320": {
+          "real": -0.0002570894275678081,
+          "imag": 0.00012733673155913546
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.023743372446648533,
+          "imag": 0.08388241895389278
+        },
+        "320": {
+          "real": -0.0002570894275678081,
+          "imag": 0.00012733673155913546
+        }
+      },
+      "moment": "I22"
+    },
+    {
+      "model": "F2_O3",
+      "modes": [
+        "220",
+        "320",
+        "221",
+        "222",
+        "223"
+      ],
+      "start_M": 20,
+      "train_end_M": 50,
+      "validation_start_M": 50.1,
+      "validation_end_M": 70,
+      "training_samples": 301,
+      "validation_samples": 200,
+      "stride": 1,
+      "fit_relative_L2": 0.0004581988612742869,
+      "validation_relative_L2": 0.01056274605525863,
+      "validation_absolute_rms": 3.8110367636317506e-05,
+      "scaled_condition_number": 121.33616335084392,
+      "coefficients_at_start": {
+        "220": {
+          "real": 0.02318298644582561,
+          "imag": 0.08463323349451901
+        },
+        "320": {
+          "real": -0.0005611661548017024,
+          "imag": 0.00021342906372995085
+        },
+        "221": {
+          "real": 0.002621886974834858,
+          "imag": -0.005696973420214469
+        },
+        "222": {
+          "real": -0.002533142222622475,
+          "imag": 0.008870508487721869
+        },
+        "223": {
+          "real": 0.0006182527564288539,
+          "imag": -0.004095082859677099
+        }
+      },
+      "coefficients_at_reference_20M": {
+        "220": {
+          "real": 0.02318298644582561,
+          "imag": 0.08463323349451901
+        },
+        "320": {
+          "real": -0.0005611661548017024,
+          "imag": 0.00021342906372995085
+        },
+        "221": {
+          "real": 0.002621886974834858,
+          "imag": -0.005696973420214469
+        },
+        "222": {
+          "real": -0.002533142222622475,
+          "imag": 0.008870508487721869
+        },
+        "223": {
+          "real": 0.0006182527564288539,
+          "imag": -0.004095082859677099
+        }
+      },
+      "moment": "I22"
+    }
+  ],
+  "expanded_model_worse_on_validation_count": 19,
+  "nested_model_comparison_count": 160,
+  "maximum_scaled_condition_number": 157.56980759207465,
+  "limitations": [
+    "Частоты фиксированы параметрами конечной ЧД; амплитуды каждой модели подгоняются отдельно.",
+    "Это повторение и расширение проверок известного механизма из статьи авторов, не открытие смешения мод.",
+    "Успех нескольких мод не означает физическое измерение каждой обертонной амплитуды.",
+    "Остаток включает возможные нелинейные, координатные и численные эффекты; новой физики он сам по себе не доказывает.",
+    "Один уровень разрешения; AMR 5e-8 не используется как ошибка каждого момента.",
+    "Смена шага анализа не является проверкой сходимости пространственной сетки.",
+    "Отложенные отрезки перекрываются у разных начальных времён и не являются независимыми опытами.",
+    "Данные одной симуляции ОТО не дают независимого свидетельства физики за пределами ОТО.",
+    "Другие моменты, особенно m=0 и старшие гармоники, в A2 ещё не исследованы."
+  ]
+}

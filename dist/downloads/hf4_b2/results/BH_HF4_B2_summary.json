@@ -1,0 +1,432 @@
+{
+  "stage": "BH-HF4-B2",
+  "classification": "QC0_SURFACE_FIELD_LOCALIZATION_AND_TWO_SHORT_TIME_BLOCKS_CHARACTERIZED",
+  "definition": {
+    "stage": "BH-HF4-B2",
+    "date_UTC": "2026-09-20",
+    "purpose": "Descriptive localization on QC0 common apparent horizon; not a new detection test",
+    "fields": [
+      "repsi2",
+      "impsi2",
+      "abs_npsigma"
+    ],
+    "threshold_quantiles": [
+      0.9,
+      0.95,
+      0.98
+    ],
+    "primary_display_quantile": 0.95,
+    "deviation": "absolute deviation from weighted median of the current snapshot",
+    "weights": "Euclidean coordinate triangle area, lumped to vertices; not proper horizon area",
+    "region_definition": "abs(normalized coordinate)>=0.65 along each local axis; diagnostic regions can overlap",
+    "local_axes": "u from coordinate area centroids AH1 to AH2, w=simulation z, v=w cross u; u projected to xy",
+    "time_comparison": "same stored angular-grid indices, average normalized coordinate-area weights",
+    "maximum_contiguous_gap_M": 0.0625001,
+    "HF1_mask_reused": false,
+    "Yitian_field_reused": false,
+    "B1_metrics_recomputed": false,
+    "confirmatory_or_preregistered": false
+  },
+  "input_files": [
+    {
+      "file": "surface01_00009408.vtk",
+      "sha256": "c4bc253ab6625e6d7ea4aca1bb9aeab6c790fdeee9f3d7a5a921eb0183a606c6",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009408.vtk",
+      "sha256": "6b9ff4ebb1eab8a7cc4d533b005cdef3fb15b9fd0fe58db1ac4c2a7c472e78c9",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009440.vtk",
+      "sha256": "570ceccf14640b2c0c9ca5eeb71d292f20db7cc23a6fc0fcd02427cb8cf227d7",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009440.vtk",
+      "sha256": "57087c268b072bbac9d849df92e60807716ed1236e8bc494ed916ce01351bcf5",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009472.vtk",
+      "sha256": "3221e6e7519ae81361ee9d2b32adec4aa5440a7060074d225f6c51bb4577d9fa",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009472.vtk",
+      "sha256": "d7478ebf0164a07896005fab8fc3eaf37eca513c612dc0421b45c13790be292d",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009504.vtk",
+      "sha256": "0dce4f4b62f264299e72c2118e397eb51c648963265f80a3b12f4c41cc6c34a8",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009504.vtk",
+      "sha256": "225c5c45a13f8c67a43512f0004feceaafa50b75972c3dc538b34872df023ae9",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009536.vtk",
+      "sha256": "ba339b5ed1ef947e09293a3ed118c07999c966a37ce905b9f19988a95cda190b",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009536.vtk",
+      "sha256": "a75b35efa6f86db13bf9abbef335363a2ae534c1031f77cb296c0a49291da926",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009536.vtk",
+      "sha256": "d91dfb9cdcd71ecbea2c32876b2ee470024b0a7637a501595a2342b4fc194224",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009568.vtk",
+      "sha256": "3f32f4b5bd01cb83ac8443c6726646e70b8c49aa860f8eaa9da8f477750708c0",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009568.vtk",
+      "sha256": "7ec7ab67ffbfacf4a04f0194f403a365eda96ffb8131bd25b0459ccac499f141",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009568.vtk",
+      "sha256": "15b6325d8ede91cf2b795d15824750709b81c010da3c94bbd944871b376bc136",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009600.vtk",
+      "sha256": "086397a6d87cf108735c06b66b94f67c915d2976dd5a5db770c259d5193d22ac",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009600.vtk",
+      "sha256": "12bfc327cb8ef275da48984659bc6cb9d43d86f0bd2840a8506cff98a1f3d438",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009600.vtk",
+      "sha256": "1c3271eb6e4e1a2b8c3d3050326f1a6ae6e94e5fbd9d8b68815f06abc54f59e9",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009632.vtk",
+      "sha256": "a43c7bbfc0f6d91dcb5826b7db98452d201a1a1394e0c930684a3d19e6f60c26",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009632.vtk",
+      "sha256": "29880fa88d61a97429f7c0f5dc9ec141d33c2dc3517be2e9116dbc2c1177e5d2",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009632.vtk",
+      "sha256": "03bf9029342f31333c3942181330bc7c5f2f91aca444ee454b3191c56fca4630",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009664.vtk",
+      "sha256": "288766dfaa01200c61a81faaa635b26a0d80557e126196fe6bd36572b538306b",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009664.vtk",
+      "sha256": "5979de3c501fea06c452a7e32c95b953caa9b42a61fb27981176a3881d651c34",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009664.vtk",
+      "sha256": "aeeee4706af2a35d307be75f50497622498428dc97a657c89005aa03ee5a6d08",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00009696.vtk",
+      "sha256": "b82e24b901ad0d2156bd351976c1773ac6f68259a30e7074f9d598836224feb5",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00009696.vtk",
+      "sha256": "e58b424afa352be24938e10488ca8015e8f66ade82465cb175caddb578a4f55b",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00009696.vtk",
+      "sha256": "31cc8911b8882646209810d0fb03d0114cb5940866f88644cac9cdd1a4f1eee8",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010368.vtk",
+      "sha256": "ecea5ca7e34024a2f58bf4e6501690e50186de9ee05513b96ec647e630364495",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010368.vtk",
+      "sha256": "ed07d9ea6028c20cdcf2b831f272eab672c231daa5ffc9bd9db2b62e044fbad4",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010368.vtk",
+      "sha256": "747ebd39e64cbcb5cb4b7cf845d4ab81b1d04f303bc6da662bfc83b9e4149bd7",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010400.vtk",
+      "sha256": "9629057a4b099621970e314565a67f691d63dfb817986746a9f404b6c7281696",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010400.vtk",
+      "sha256": "e8edec74dc6f44f1998850ad0eed1a46595609f9aff284121b1287195e90aae3",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010400.vtk",
+      "sha256": "a5a6866104123fb02141bdb79a4dc43e00251f2f24ccb5b834b6e297b11213b9",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010432.vtk",
+      "sha256": "65b59dcc8ac7acbf4aa9067530079f4334b21580608f546bbc86493139b6e64f",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010432.vtk",
+      "sha256": "85173e51e6053b67499fb63163a4d6746e7c685f75da21433666867d4d21f47d",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010432.vtk",
+      "sha256": "ebaa7069c586c0faa1c430834bcdc6e7ac2ee5cf093964c171a5e0be238ff31c",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010464.vtk",
+      "sha256": "24c96f7901ebff298062c78507283e400a5f4debabf2f165f3bb01d09244bece",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010464.vtk",
+      "sha256": "fc33d20ba8242b98cc3e0a0862eb1594993006b3ead64c17880321ac486d05c7",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010464.vtk",
+      "sha256": "8c879d1ff925f4711259a83f164b42a934981b4df0a5565ec5a43811eb2393c3",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010496.vtk",
+      "sha256": "7a77c70d88e2cea2810fe0717cb489fa3a08aabdd51da0d2259834ff11602f4e",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010496.vtk",
+      "sha256": "52681dce45af7b2e01ae74075cd25ee16977fefb1a57e3e07f7a3340340f1ebe",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010496.vtk",
+      "sha256": "536ffebbc7da5abefaa364b6ae21f0ad924fade126a57e04c84502c4c719a124",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface01_00010528.vtk",
+      "sha256": "cd796303d191af1c3fa928b48424650cfaa59445703a578142d023ca5cda5411",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface02_00010528.vtk",
+      "sha256": "d2bdc75837a565dc1831cee2318a0ac0377728a43d73d4e5ce69c5a6acaa7e4e",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    },
+    {
+      "file": "surface03_00010528.vtk",
+      "sha256": "1e492ea36d935537cb199886e74d14af4a04057455b203d29e57bf13507dfafb",
+      "points": 2520,
+      "triangles": 4896,
+      "finite_fields": true
+    }
+  ],
+  "common_iterations": [
+    9536,
+    9568,
+    9600,
+    9632,
+    9664,
+    9696,
+    10368,
+    10400,
+    10432,
+    10464,
+    10496,
+    10528
+  ],
+  "frozen_B1_metrics_sha256": "18e91d2f06ab1e2ee9cb57a3d90ff054c6f438b029f5f560dd02c1426ba15fe8",
+  "all_inputs_finite": true,
+  "same_mesh_connectivity": true,
+  "primary_field_summaries": {
+    "repsi2": {
+      "long_axis_fraction_range": [
+        0.9518728438342534,
+        1.0
+      ],
+      "polar_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "mask_Dice_range": [
+        0.8378155040301408,
+        1.0
+      ],
+      "field_correlation_range": [
+        0.9914683136168132,
+        0.9996572323665848
+      ],
+      "selected_area_range": [
+        0.050003964525661845,
+        0.05141424957459969
+      ]
+    },
+    "impsi2": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.25358555184970033
+      ],
+      "polar_fraction_range": [
+        0.7464144481502998,
+        1.0
+      ],
+      "mask_Dice_range": [
+        0.9022084492363477,
+        0.9889177367754047
+      ],
+      "field_correlation_range": [
+        0.998168696835774,
+        0.9999070982907525
+      ],
+      "selected_area_range": [
+        0.05000586907220064,
+        0.050521360067436266
+      ]
+    },
+    "abs_npsigma": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "polar_fraction_range": [
+        1.0,
+        1.0
+      ],
+      "mask_Dice_range": [
+        0.959237745920985,
+        0.9969670050320952
+      ],
+      "field_correlation_range": [
+        0.9996649641919921,
+        0.9999316982483326
+      ],
+      "selected_area_range": [
+        0.05001611542710763,
+        0.050171457597559234
+      ]
+    }
+  },
+  "gap_between_blocks_M": 1.3125,
+  "physical_metric_reconstructed": false,
+  "HF1_structure_identified_in_QC0": false,
+  "observed_common_time_interval_M": [
+    18.625,
+    20.5625
+  ]
+}

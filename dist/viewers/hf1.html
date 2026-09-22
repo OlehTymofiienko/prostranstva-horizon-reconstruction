@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c1729'/%3E%3Cellipse cx='16' cy='16' rx='11' ry='7' fill='none' stroke='%23f4a63e' stroke-width='2' transform='rotate(-30 16 16)'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23f4a63e'/%3E%3C/svg%3E"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HF1 — выделенные области на горизонте</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071421;color:#e8eff6;font:16px system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 8px}.muted{color:#a5b7c8;line-height:1.5}
+.controls{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:16px 0}button,select{padding:10px 14px;border:1px solid #405772;border-radius:8px;background:#14273b;color:inherit;font:inherit;cursor:pointer}button:hover{background:#243e58}button[aria-pressed="true"]{border-color:#f6a52b;color:#ffd38b}
+#plot{height:62vh;min-height:440px;width:100%;border:1px solid #273c52;border-radius:14px;overflow:hidden}
+.readout{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;margin:10px 0}#clock{font:600 22px system-ui}#status{font-weight:600}
+input[type=range]{width:100%;accent-color:#f6a52b}label{color:#bbc9d8}.note{padding:12px 16px;background:#102236;border-radius:9px;margin:12px 0;line-height:1.5;font-size:14px}#late{color:#ffd38b;display:none}.small{font-size:13px}.err{color:#ffaca7}
+@media(max-width:650px){main{padding:14px}h1{font-size:24px}#plot{height:58vh;min-height:370px}.controls{gap:6px}button,select{font-size:14px;padding:9px}}
+</style>
+<main><p><a style="color:inherit" href="../index.html">← К проекту «Пространства»</a></p>
+<h1>Где находится выделенная область</h1>
+<div class="muted">SXS:BBH:0305 · Lev6 · общий кажущийся горизонт C · исходная находка HF1/HF1R</div>
+<div class="controls">
+<label for="field">Поле</label><select id="field"><option value="0">R* — кривизна</option><option value="1">E* — поле Вейля</option><option value="2">B* — поле Вейля</option></select>
+<button id="play" aria-pressed="false">▶ Изменение во времени</button>
+<button id="orbit" aria-pressed="false">Облёт при остановленном времени</button>
+<button id="opposite">Противоположная сторона</button><button id="reset">Исходный ракурс</button>
+</div>
+<div class="readout"><span id="clock"></span><span id="status"></span></div>
+<div id="plot"></div>
+<div class="controls"><span class="muted">Перейти к:</span>
+<button data-time="0">0 M</button><button data-time="2">2 M</button><button data-time="5">5 M</button><button data-time="10">10 M</button><button data-time="20">20 M</button><button data-time="50">50 M</button>
+</div>
+<label for="time">Выбрать сохранённый снимок</label><input id="time" type="range" min="0" max="0" step="1" value="0">
+<div class="readout small muted"><span id="sampling"></span><span id="mode">Время остановлено. Поверхность можно вращать мышью или пальцем.</span></div>
+<div id="late" class="note">Это отдельный поздний контрольный снимок. Промежуточные состояния до него здесь не анимируются.</div>
+<div class="note">Яркая область и светлые узлы показывают выделенную компоненту, прошедшую сохранённый критерий. Серая область означает, что критерий не выполнен. Граница между узлами проведена по треугольной сетке; это приближение. Поверхность сохраняет исходные координаты и постоянный масштаб.</div>
+<div class="muted small">Показана координатная морфология полей. Изменение выделенной области не является измерением движения вещества; невыполнение критерия не доказывает исчезновения поля. Маски восстановлены и сопоставлены с прежними результатами без повторения статистических проверок.</div>
+<div id="error" class="err"></div>
+</main>
+<script src="../assets/plotly.min.js"></script>
+<script src="hf1-data/init.js"></script>
+<script src="hf1-data/part-00.js"></script>
+<script src="hf1-data/part-01.js"></script>
+<script src="hf1-data/part-02.js"></script>
+<script src="hf1-data/part-03.js"></script>
+<script src="hf1-data/part-04.js"></script>
+<script src="hf1-data/part-05.js"></script>
+<script src="hf1-data/part-06.js"></script>
+<script src="hf1-data/part-07.js"></script>
+<script src="hf1-data/part-08.js"></script>
+<script src="hf1-data/part-09.js"></script>
+<script>
+'use strict';
+const DATA=window.HF_DATA,frames=DATA.frames;
+const $=id=>document.getElementById(id),colors=['#f6a52b','#4ac3ec','#e082ce'],names=['R*','E*','B*'];
+const defCam={eye:{x:2.02,y:-3.23,z:1.69},up:{x:0,y:0,z:1},center:{x:0,y:0,z:0},projection:{type:'orthographic'}};
+let current=0,field=0,busy=false,pending=false,playing=false,orbiting=false,camera=structuredClone(defCam),animation=0;
+let playStart=0,playTime=0,orbitStart=0;
+function stop(){playing=false;orbiting=false;cancelAnimationFrame(animation);$('play').textContent='▶ Изменение во времени';$('play').setAttribute('aria-pressed','false');$('orbit').setAttribute('aria-pressed','false');$('mode').textContent='Время остановлено. Поверхность можно вращать мышью или пальцем.';}
+function nearest(t){let best=0,d=Infinity;frames.forEach((f,j)=>{if(Math.abs(f.t-t)<d){d=Math.abs(f.t-t);best=j;}});return best;}
+function previous(t){let best=0;for(let j=0;j<frames.length;j++){if(frames[j].t<=t&&frames[j].dense)best=j;else if(frames[j].t>t)break;}return best;}
+function split(f,k){
+ const xyz=[];for(let i=0;i<f.xyz.length;i+=3)xyz.push(f.xyz.slice(i,i+3));
+ const mask=new Uint8Array(xyz.length);for(const i of f.masks[k])mask[i]=1;
+ const triangles=[],selected=[],edges=[],midpoints=new Map();
+ function mid(a,b){const key=a<b?a+','+b:b+','+a;if(!midpoints.has(key)){midpoints.set(key,xyz.length);xyz.push(xyz[a].map((x,i)=>(x+xyz[b][i])/2));}return midpoints.get(key);}
+ for(let i=0;i<f.tri.length;i+=3){const t=f.tri.slice(i,i+3),b=t.map(v=>mask[v]),n=b.reduce((a,x)=>a+x,0);
+  if(n===0||n===3){triangles.push(t);selected.push(n===3);continue;}
+  const s=b.findIndex(x=>n===1?x===1:x===0),a=t[s],bb=t[(s+1)%3],c=t[(s+2)%3],ab=mid(a,bb),ac=mid(a,c);
+  triangles.push([a,ab,ac],[bb,c,ac],[bb,ac,ab]);selected.push(n===1,n===2,n===2);edges.push([ab,ac]);
+ }
+ return {xyz,triangles,selected,edges};
+}
+function traces(f,k){
+ const s=split(f,k),bright=f.ok[k],region=bright?colors[k]:'#758598';
+ const coords=i=>s.xyz.map(v=>v[i]),mesh={type:'mesh3d',x:coords(0),y:coords(1),z:coords(2),
+   i:s.triangles.map(t=>t[0]),j:s.triangles.map(t=>t[1]),k:s.triangles.map(t=>t[2]),
+   facecolor:s.selected.map(b=>b?region:'#6e8195'),flatshading:true,hoverinfo:'skip',showscale:false,
+   lighting:{ambient:.40,diffuse:.80,specular:.05,roughness:.9,fresnel:0},lightposition:{x:4,y:-5,z:7}};
+ const line={type:'scatter3d',mode:'lines',x:[],y:[],z:[],line:{color:bright?'#fff0d1':'#b2c0d0',width:3},hoverinfo:'skip',showlegend:false};
+ for(const e of s.edges){for(let d=0;d<3;d++){const a=['x','y','z'][d];line[a].push(s.xyz[e[0]][d],s.xyz[e[1]][d],null);}}
+ const nodes=f.masks[k],dots={type:'scatter3d',mode:'markers',x:nodes.map(i=>f.xyz[3*i]),y:nodes.map(i=>f.xyz[3*i+1]),z:nodes.map(i=>f.xyz[3*i+2]),
+   marker:{color:bright?'#fff0d1':'#b2c0d0',size:2.4,opacity:1},text:nodes.map(i=>'Выделенный узел '+i),
+   hovertemplate:'%{text}<br>x = %{x:.6f} M<br>y = %{y:.6f} M<br>z = %{z:.6f} M<extra></extra>',showlegend:false};
+ return [mesh,line,dots];
+}
+function layout(){const axis=n=>({title:{text:n+' / M'},range:[-2.5,2.5],color:'#9fb0c2',backgroundcolor:'#071421',gridcolor:'#24374a',zerolinecolor:'#385169',showbackground:false});
+ return {paper_bgcolor:'#071421',plot_bgcolor:'#071421',font:{color:'#e8eff6'},margin:{l:0,r:0,t:0,b:0},showlegend:false,
+   uirevision:'HF1-V2-camera',scene:{xaxis:axis('x'),yaxis:axis('y'),zaxis:axis('z'),aspectmode:'cube',camera,dragmode:'orbit'}};}
+async function draw(){if(busy){pending=true;return;}busy=true;
+ try{do{pending=false;const j=current,k=field,f=frames[j];
+  await Plotly.react($('plot'),traces(f,k),layout(),{responsive:true,displaylogo:false,scrollZoom:true,modeBarButtonsToRemove:['toImage'],displayModeBar:false});
+  $('clock').textContent='t − t₀ = '+f.t.toFixed(4)+' M';
+  $('status').textContent=names[k]+': '+(f.ok[k]?'критерий выполнен':'критерий не выполнен')+' · узлов: '+f.masks[k].length+' · p = '+f.p[k].toFixed(3);
+  $('status').style.color=f.ok[k]?colors[k]:'#a9b6c4';$('time').value=j;
+  $('sampling').textContent='Снимок '+(j+1)+' из '+frames.length+' · исходный индекс '+f.id+' · без интерполяции по времени';
+  $('late').style.display=f.dense?'none':'block';
+ }while(pending);}catch(e){$('error').textContent='Не удалось построить сцену: '+e.message;stop();}finally{busy=false;}}
+function tick(now){
+ if(playing){const t=playTime+(now-playStart)/1000*.30;
+  if(t>=DATA.denseEnd){current=previous(DATA.denseEnd);draw();stop();return;}
+  const j=previous(t);if(j!==current){current=j;draw();}
+ }else if(orbiting){const a=-58*Math.PI/180+(now-orbitStart)/12000*2*Math.PI;
+  camera={eye:{x:3.8*Math.cos(a),y:3.8*Math.sin(a),z:1.69},center:{x:0,y:0,z:0},up:{x:0,y:0,z:1},projection:{type:'orthographic'}};
+  Plotly.relayout($('plot'),{'scene.camera':camera});
+ }else return;
+ animation=requestAnimationFrame(tick);
+}
+$('time').max=frames.length-1;
+$('time').addEventListener('input',e=>{stop();current=+e.target.value;draw();});
+$('field').addEventListener('change',e=>{stop();field=+e.target.value;draw();});
+document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{stop();current=nearest(+b.dataset.time);draw();}));
+$('play').addEventListener('click',()=>{const was=playing;stop();if(was)return;if(frames[current].t>=DATA.denseEnd)current=0;
+ playing=true;playTime=frames[current].t;playStart=performance.now();$('play').textContent='Пауза';$('play').setAttribute('aria-pressed','true');$('mode').textContent='Идёт изменение данных во времени (0–12 M).';draw();animation=requestAnimationFrame(tick);});
+$('orbit').addEventListener('click',()=>{const was=orbiting;stop();if(was)return;orbiting=true;orbitStart=performance.now();$('orbit').setAttribute('aria-pressed','true');$('mode').textContent='Время зафиксировано: '+frames[current].t.toFixed(4)+' M. Движется только камера.';animation=requestAnimationFrame(tick);});
+$('opposite').addEventListener('click',()=>{stop();camera={...camera,eye:{x:-camera.eye.x,y:-camera.eye.y,z:-camera.eye.z}};Plotly.relayout($('plot'),{'scene.camera':camera});});
+$('reset').addEventListener('click',()=>{stop();camera=structuredClone(defCam);Plotly.relayout($('plot'),{'scene.camera':camera});});
+current=nearest(2);
+draw().then(()=>{$('plot').on('plotly_relayout',e=>{if(e['scene.camera'])camera=e['scene.camera'];});});
+window.HF1V2={DATA,split,traces,nearest,previous,getState:()=>({current,field,playing,orbiting,camera}),draw};
+</script></html>

@@ -1,0 +1,48 @@
+{
+  "stage": "BH-HF1R",
+  "title": "Dense Temporal Coherence Audit",
+  "status": "FROZEN_BEFORE_LOCAL_EXECUTION",
+  "simulation": "SXS:BBH:0305",
+  "lev": 6,
+  "horizon": "C",
+  "dense_window_M": [
+    0.0,
+    12.0
+  ],
+  "snapshot_rule": {
+    "shuffle_p_max": 0.01,
+    "largest_component_fraction_min": 0.35,
+    "active_threshold_quantile": 0.95,
+    "shuffle_trials": 199
+  },
+  "tracking_rule": {
+    "fixed_grid_points": 4096,
+    "component_grid_dilation": "one 8-NN hop",
+    "pair_centroid_step_max_deg": 25.0,
+    "pair_dilated_dice_min": 0.15,
+    "max_gap_M": "max(0.75, 2.5 * median_native_cadence)",
+    "track_min_snapshots": 4,
+    "track_min_duration_M": 1.0,
+    "track_median_centroid_step_max_deg": 15.0,
+    "track_median_dilated_dice_min": 0.25,
+    "primary_min_fields_pass": 2
+  },
+  "secondary_cross_field_rule": {
+    "status": "secondary; motivated by sparse HF1; not primary",
+    "RE_angle_max_deg": 10.0,
+    "RB_antipodal_deviation_max_deg": 15.0,
+    "min_simultaneous_positive_snapshots": 3,
+    "min_fraction_relation_pass": 0.6
+  },
+  "forbidden_claims": [
+    "not a physical phase measurement",
+    "not a domain wall detection",
+    "not an intrinsic/covariant gradient measurement",
+    "not gauge invariant",
+    "not slicing invariant",
+    "not numerical-resolution robust yet",
+    "not QNM-subtracted",
+    "does not establish new physics",
+    "does not establish AARFI or APK"
+  ]
+}

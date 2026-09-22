@@ -1,0 +1,5 @@
+# Verified versions; Python 3.12.14 used for the archived results.
+numpy==2.3.5
+scipy==1.17.0
+h5py==3.16.0
+matplotlib==3.10.8

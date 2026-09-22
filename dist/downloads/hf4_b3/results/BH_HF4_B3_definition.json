@@ -1,0 +1,19 @@
+{
+  "stage": "BH-HF4-B3",
+  "primary_measure": "dyad metric, FD4 tangents matching QLM, Fejer-I in cos(theta) and periodic phi",
+  "grid": "theta=(i+0.5)*pi/35; phi=j*2*pi/72; no measured polar vertices",
+  "primary_quantile": 0.95,
+  "sensitivity_quantiles": [
+    0.9,
+    0.98
+  ],
+  "deviation": "absolute deviation from median under each stated measure",
+  "frozen_reference": "B2 saved fields, primary masks, coordinate-area weights, coordinate centers and axes",
+  "auxiliary_measure_1": "FD4 physical density with midpoint integration",
+  "auxiliary_measure_2": "saved B2 triangle weights times pointwise physical/Euclidean FD4 density ratio",
+  "spatial_order_2_role": "deliberate mismatch diagnostic, not another simulation resolution",
+  "early_independent_QLM_area_in_received_VTK_package": false,
+  "late_control_role": "validate reconstruction against separately stored QLM scalar; no ringdown recalculation",
+  "statistical_significance_test": false,
+  "new_evolution": false
+}

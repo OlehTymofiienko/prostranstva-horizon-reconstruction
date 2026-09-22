@@ -1,0 +1,546 @@
+{
+  "stage": "BH-HF3-R7B",
+  "version": "BH-HF3-R7B-2026-09-15-V1",
+  "input_audit_pass": true,
+  "reference": {
+    "Mf": 0.977461203278627,
+    "Jf": 0.648087073319352,
+    "chi": 0.6783194994253878,
+    "omega": 0.5353401318639867,
+    "alpha": 0.08345059699511974
+  },
+  "period_M": 11.73680980221365,
+  "primary_cases": [
+    {
+      "samples_complex": 47,
+      "first_sample_M": 65.75,
+      "last_sample_M": 77.25,
+      "omega": 0.5353219494313304,
+      "alpha": 0.08218815219097099,
+      "signed_phase_slope": -0.5342573533775127,
+      "omega_logphase": 0.5342573533775127,
+      "alpha_logamplitude": 0.08283326529846606,
+      "relative_omega_difference": 3.396426229618221e-05,
+      "relative_alpha_difference": 0.015128050003316074,
+      "fixed_nrmse": 0.023874708321352935,
+      "free_nrmse": 0.023551453174968352,
+      "fixed_rss": 2.8836180516010664e-08,
+      "free_rss": 2.8060603357480006e-08,
+      "signal_energy": 5.058963972571007e-05,
+      "fixed_amplitude_re_im": [
+        -0.0005069349469253534,
+        0.0014654737023784591
+      ],
+      "free_amplitude_re_im": [
+        -0.0005043086832779392,
+        0.0014582213396961718
+      ],
+      "nominal_delta_BIC_fixed_minus_free": -6.523746326472887,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        2.8050894940179205e-11,
+        5.00199881514618e-11
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 15,
+      "period": 3,
+      "requested_window_M": [
+        65.7236196044273,
+        77.46042940664094
+      ],
+      "peak_M": 42.25,
+      "case_kind": "primary",
+      "minus2_conjugacy_relative_difference": 5.634229575219282e-16
+    },
+    {
+      "samples_complex": 47,
+      "first_sample_M": 81.75,
+      "last_sample_M": 93.25,
+      "omega": 0.5357144703400063,
+      "alpha": 0.08285013649242758,
+      "signed_phase_slope": -0.5342172874098456,
+      "omega_logphase": 0.5342172874098456,
+      "alpha_logamplitude": 0.08335161181977987,
+      "relative_omega_difference": 0.0006992535282499546,
+      "relative_alpha_difference": 0.007195400923582063,
+      "fixed_nrmse": 0.02594397402705576,
+      "free_nrmse": 0.02585035631152115,
+      "fixed_rss": 8.920969648358414e-09,
+      "free_rss": 8.856703936634027e-09,
+      "signal_energy": 1.3253758715713897e-05,
+      "fixed_amplitude_re_im": [
+        -0.0003817998793977964,
+        0.000695797046716906
+      ],
+      "free_amplitude_re_im": [
+        -0.00038192226300621146,
+        0.000693586870020484
+      ],
+      "nominal_delta_BIC_fixed_minus_free": -8.40697271952455,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        5.613487452649224e-11,
+        7.975804738880043e-11
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 30,
+      "period": 3,
+      "requested_window_M": [
+        81.7236196044273,
+        93.46042940664094
+      ],
+      "peak_M": 58.25,
+      "case_kind": "primary",
+      "minus2_conjugacy_relative_difference": 4.612687264270541e-16
+    },
+    {
+      "samples_complex": 47,
+      "first_sample_M": 92.5,
+      "last_sample_M": 104.0,
+      "omega": 0.5359139091981882,
+      "alpha": 0.08233198918369211,
+      "signed_phase_slope": -0.5344804844685668,
+      "omega_logphase": 0.5344804844685668,
+      "alpha_logamplitude": 0.0831680003316607,
+      "relative_omega_difference": 0.00107179959067083,
+      "relative_alpha_difference": 0.013404431504463021,
+      "fixed_nrmse": 0.02660824692267391,
+      "free_nrmse": 0.026318570330291575,
+      "fixed_rss": 5.126113335758126e-09,
+      "free_rss": 5.015107742734342e-09,
+      "signal_energy": 7.240285300821815e-06,
+      "fixed_amplitude_re_im": [
+        -0.00023109665552283233,
+        0.0005391546049064702
+      ],
+      "free_amplitude_re_im": [
+        -0.00023129573731738506,
+        0.0005362558382990866
+      ],
+      "nominal_delta_BIC_fixed_minus_free": -7.028663318951308,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        7.41233741052838e-11,
+        1.0756226465069574e-10
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 40,
+      "period": 3,
+      "requested_window_M": [
+        92.4736196044273,
+        104.21042940664094
+      ],
+      "peak_M": 69.0,
+      "case_kind": "primary",
+      "minus2_conjugacy_relative_difference": 7.202588524267776e-16
+    },
+    {
+      "samples_complex": 47,
+      "first_sample_M": 91.0,
+      "last_sample_M": 102.5,
+      "omega": 0.526038030919585,
+      "alpha": 0.06863657283073202,
+      "signed_phase_slope": -0.528045214947794,
+      "omega_logphase": 0.528045214947794,
+      "alpha_logamplitude": 0.07043913131618577,
+      "relative_omega_difference": 0.017376057558048053,
+      "relative_alpha_difference": 0.1775184923512777,
+      "fixed_nrmse": 0.06674813281728538,
+      "free_nrmse": 0.03712357322212067,
+      "fixed_rss": 1.2984605723503005e-07,
+      "free_rss": 4.016521227702362e-08,
+      "signal_energy": 2.9144091649229117e-05,
+      "fixed_amplitude_re_im": [
+        -0.0005057137412070739,
+        0.0010602489081141817
+      ],
+      "free_amplitude_re_im": [
+        -0.00043837908638409527,
+        0.0010168884262235836
+      ],
+      "nominal_delta_BIC_fixed_minus_free": 101.20815241345234,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        2.7949154102202556e-10,
+        3.139714876976285e-11
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 50,
+      "period": 2,
+      "requested_window_M": [
+        90.98680980221366,
+        102.7236196044273
+      ],
+      "peak_M": 79.25,
+      "case_kind": "primary",
+      "minus2_conjugacy_relative_difference": 6.105310914165523e-16
+    },
+    {
+      "samples_complex": 47,
+      "first_sample_M": 89.75,
+      "last_sample_M": 101.25,
+      "omega": 0.4943005783742941,
+      "alpha": 0.026086923479096583,
+      "signed_phase_slope": -0.4948446641431126,
+      "omega_logphase": 0.4948446641431126,
+      "alpha_logamplitude": 0.02753265297286314,
+      "relative_omega_difference": 0.07666070792562862,
+      "relative_alpha_difference": 0.6873968021987648,
+      "fixed_nrmse": 0.23307475784258017,
+      "free_nrmse": 0.048428076389295964,
+      "fixed_rss": 3.3181871898796215e-06,
+      "free_rss": 1.4325336642328777e-07,
+      "signal_energy": 6.108159920782006e-05,
+      "fixed_amplitude_re_im": [
+        -0.00016920472089219246,
+        0.001648790849098441
+      ],
+      "free_amplitude_re_im": [
+        0.0001096582767432093,
+        0.001308071636269922
+      ],
+      "nominal_delta_BIC_fixed_minus_free": 286.313959253855,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        1.7739198998611982e-11,
+        3.5366997525043686e-11
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 60,
+      "period": 1,
+      "requested_window_M": [
+        89.75,
+        101.48680980221366
+      ],
+      "peak_M": 89.75,
+      "case_kind": "primary",
+      "minus2_conjugacy_relative_difference": 5.634947167758574e-16
+    }
+  ],
+  "age_control_cases": [
+    {
+      "samples_complex": 47,
+      "first_sample_M": 69.0,
+      "last_sample_M": 80.5,
+      "omega": 0.49526595668019585,
+      "alpha": 0.02702691457978329,
+      "signed_phase_slope": -0.4958236598430604,
+      "omega_logphase": 0.4958236598430604,
+      "alpha_logamplitude": 0.0285267584613723,
+      "relative_omega_difference": 0.07485740896027648,
+      "relative_alpha_difference": 0.6761327593454622,
+      "fixed_nrmse": 0.22878307474098405,
+      "free_nrmse": 0.04801184361671908,
+      "fixed_rss": 7.251554919655705e-06,
+      "free_rss": 3.1935970711830575e-07,
+      "signal_energy": 0.00013854260699360096,
+      "fixed_amplitude_re_im": [
+        -0.0002020166631401239,
+        0.0024906214855448957
+      ],
+      "free_amplitude_re_im": [
+        0.00019871014032274772,
+        0.001976575564607289
+      ],
+      "nominal_delta_BIC_fixed_minus_free": 284.4428037621218,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        1.6872236940912444e-10,
+        2.1582816436827024e-10
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 40,
+      "period": 1,
+      "requested_window_M": [
+        69.0,
+        80.73680980221366
+      ],
+      "peak_M": 69.0,
+      "case_kind": "age_control",
+      "minus2_conjugacy_relative_difference": 6.994180340674023e-16
+    },
+    {
+      "samples_complex": 47,
+      "first_sample_M": 80.75,
+      "last_sample_M": 92.25,
+      "omega": 0.526149621732855,
+      "alpha": 0.06972763419242549,
+      "signed_phase_slope": -0.5280534058861599,
+      "omega_logphase": 0.5280534058861599,
+      "alpha_logamplitude": 0.07132134299208749,
+      "relative_omega_difference": 0.017167609121945482,
+      "relative_alpha_difference": 0.16444415374879562,
+      "fixed_nrmse": 0.06350969817044046,
+      "free_nrmse": 0.03605359200640303,
+      "fixed_rss": 1.7930612799588995e-07,
+      "free_rss": 5.778460041470578e-08,
+      "signal_energy": 4.4454428850645776e-05,
+      "fixed_amplitude_re_im": [
+        -0.0004897331960580538,
+        0.0013659502291616683
+      ],
+      "free_amplitude_re_im": [
+        -0.00041493033320709396,
+        0.0013098569046996853
+      ],
+      "nominal_delta_BIC_fixed_minus_free": 97.35640155870486,
+      "nominal_BIC_n_real": 94,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        7.258257328501827e-10,
+        9.790818156218961e-11
+      ],
+      "at_parameter_boundary": false,
+      "radius_M": 40,
+      "period": 2,
+      "requested_window_M": [
+        80.73680980221366,
+        92.4736196044273
+      ],
+      "peak_M": 69.0,
+      "case_kind": "age_control",
+      "minus2_conjugacy_relative_difference": 6.739667075689722e-16
+    }
+  ],
+  "r40_sensitivity_ranges": {
+    "omega": [
+      0.5355251305942873,
+      0.535969896309499
+    ],
+    "alpha": [
+      0.08171505849500435,
+      0.08272770765496033
+    ],
+    "relative_omega_difference": [
+      0.00034557231802612165,
+      0.0011763819075538695
+    ],
+    "relative_alpha_difference": [
+      0.008662482548826844,
+      0.020797196935773643
+    ],
+    "fixed_nrmse": [
+      0.02561922891182425,
+      0.027422934009545232
+    ],
+    "free_nrmse": [
+      0.02549154208811131,
+      0.026880237535564025
+    ],
+    "nominal_delta_BIC_fixed_minus_free": [
+      -8.147250465217247,
+      -5.328785697508877
+    ]
+  },
+  "holdout": {
+    "training_requested_M": [
+      92.4736196044273,
+      100.29815947256974
+    ],
+    "validation_requested_M": [
+      100.29815947256974,
+      104.21042940664094
+    ],
+    "training_fit": {
+      "samples_complex": 32,
+      "first_sample_M": 92.5,
+      "last_sample_M": 100.25,
+      "omega": 0.5387019049724653,
+      "alpha": 0.07899092016645784,
+      "signed_phase_slope": -0.5364549253266288,
+      "omega_logphase": 0.5364549253266288,
+      "alpha_logamplitude": 0.077173212102545,
+      "relative_omega_difference": 0.006279695670812879,
+      "relative_alpha_difference": 0.05344092180578053,
+      "fixed_nrmse": 0.027353654310365204,
+      "free_nrmse": 0.024368091740899826,
+      "fixed_rss": 4.657498309662939e-09,
+      "free_rss": 3.69628150987902e-09,
+      "signal_energy": 6.224751202247801e-06,
+      "fixed_amplitude_re_im": [
+        -0.00023038429095973944,
+        0.000540256050334248
+      ],
+      "free_amplitude_re_im": [
+        -0.00023272897923899347,
+        0.000530693929360992
+      ],
+      "nominal_delta_BIC_fixed_minus_free": 6.475907023284185,
+      "nominal_BIC_n_real": 64,
+      "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+      "all_optimizers_successful": true,
+      "optimizer_solution_spread": [
+        3.1696145708082213e-10,
+        2.8014456032732227e-10
+      ],
+      "at_parameter_boundary": false
+    },
+    "validation_samples": 15,
+    "fixed_prediction_nrmse": 0.022295133891571495,
+    "free_prediction_nrmse": 0.05509267363538292
+  },
+  "third_period_shapes": [
+    {
+      "reference_radius_M": 15,
+      "compared_radius_M": 30,
+      "samples": 47,
+      "coherence": 0.9999638152711573,
+      "norm_amplitude_ratio": 1.0236906399790953,
+      "constant_phase_applied_rad": -0.16871888972424895,
+      "phase_only_nrmse": 0.02520576043430712
+    },
+    {
+      "reference_radius_M": 15,
+      "compared_radius_M": 40,
+      "samples": 47,
+      "coherence": 0.9999691491318894,
+      "norm_amplitude_ratio": 1.008824867061321,
+      "constant_phase_applied_rad": -0.07189957798373867,
+      "phase_only_nrmse": 0.011837420516764985
+    },
+    {
+      "reference_radius_M": 30,
+      "compared_radius_M": 40,
+      "samples": 47,
+      "coherence": 0.999985124596724,
+      "norm_amplitude_ratio": 0.9854782564798307,
+      "constant_phase_applied_rad": 0.09679569504043214,
+      "phase_only_nrmse": 0.015498380813343515
+    }
+  ],
+  "horizon_windows": [
+    {
+      "window_M": [
+        90,
+        95
+      ],
+      "samples": 81,
+      "Mf": {
+        "mean": 0.9774607174828345,
+        "median": 0.977461203278627,
+        "relative_range": 5.303582863434002e-06,
+        "relative_mean_change_from_frozen": -4.969975184732078e-07
+      },
+      "Jf": {
+        "mean": 0.6480858715593448,
+        "median": 0.648087073319352,
+        "relative_range": 4.065327097107478e-05,
+        "relative_mean_change_from_frozen": -1.8543187429997943e-06
+      },
+      "chi": {
+        "mean": 0.6783189158814247,
+        "median": 0.6783194994253878,
+        "relative_range": 5.117910501123698e-05,
+        "relative_mean_change_from_frozen": -8.602789152156731e-07
+      }
+    },
+    {
+      "window_M": [
+        95,
+        100
+      ],
+      "samples": 81,
+      "Mf": {
+        "mean": 0.9774559134754076,
+        "median": 0.977456589104424,
+        "relative_range": 5.263409802071429e-06,
+        "relative_mean_change_from_frozen": -5.411778187802696e-06
+      },
+      "Jf": {
+        "mean": 0.6481196155545701,
+        "median": 0.648123889395328,
+        "relative_range": 5.754608385061654e-05,
+        "relative_mean_change_from_frozen": 5.0212751585121396e-05
+      },
+      "chi": {
+        "mean": 0.6783609020059702,
+        "median": 0.6783641815945831,
+        "relative_range": 6.807295743696282e-05,
+        "relative_mean_change_from_frozen": 6.103699011661412e-05
+      }
+    },
+    {
+      "window_M": [
+        100,
+        105
+      ],
+      "samples": 81,
+      "Mf": {
+        "mean": 0.977449122902568,
+        "median": 0.977449082471113,
+        "relative_range": 7.1205823145321655e-06,
+        "relative_mean_change_from_frozen": -1.2358931503753112e-05
+      },
+      "Jf": {
+        "mean": 0.6481486193013345,
+        "median": 0.648149425036387,
+        "relative_range": 3.9957839649410497e-05,
+        "relative_mean_change_from_frozen": 9.496560649990826e-05
+      },
+      "chi": {
+        "mean": 0.6784006850019584,
+        "median": 0.678401584425176,
+        "relative_range": 5.419899547590117e-05,
+        "relative_mean_change_from_frozen": 0.00011968633754344538
+      }
+    }
+  ],
+  "provenance": {
+    "new_archive_sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b",
+    "previous_archive_sha256": "995ce6499d15fc2763962cc1eac565152df633f533996d524accd3f7dd510686",
+    "protocol_sha256": "6029b7940c9fc4ca35a7d4d2f2651616d1f7071dbb6e38ca7accc8c817f0efb5",
+    "program_sha256": "efa37488259deb9c73623c57357cee78baab24b807e8f9add6d71a0cd724b643",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "numerical_frequency_damping_goals_all_three_radii": true,
+  "historical_nominal_BIC_gate_all_three_radii": true,
+  "no_new_evolution_run_here": true,
+  "resolution_convergence_test_available": false,
+  "calibrated_statistical_Kerr_acceptance": false,
+  "new_physics_established": false,
+  "classification": "BH_HF3_R7B_THIRD_PERIOD_R15_R30_R40_KERR220_COMPATIBILITY_SUPPORTED_HF4_READY",
+  "project_control_task_completed": true,
+  "control_checks": {
+    "third_period_frequency_and_damping_targets": true,
+    "historical_nominal_BIC_target_diagnostic_only": true,
+    "historical_phase_and_envelope_linearity": true,
+    "r40_small_window_shifts_and_even_odd_subsets": true,
+    "third_period_waveform_agreement": true,
+    "technical_input": true
+  },
+  "scope_of_completion": "Выполнен запланированный контроль позднего кольцевания на трёх радиусах. Полная динамика и численная сходимость не объявлены доказанными.",
+  "next_stage": "HF4-A1: аудит геометрической реконструкции из имеющихся моментов",
+  "phase_logamp_diagnostics": [
+    {
+      "radius_M": 15,
+      "phase_r2": 0.9999087054082828,
+      "logamp_r2": 0.9963493618705997
+    },
+    {
+      "radius_M": 30,
+      "phase_r2": 0.9999150948499105,
+      "logamp_r2": 0.9947554263793654
+    },
+    {
+      "radius_M": 40,
+      "phase_r2": 0.9999024542521253,
+      "logamp_r2": 0.9949491699375171
+    }
+  ],
+  "postprocessing_program_sha256": "18bd6fea301170c504bdd45779b03b74d5d7d075e3c9b0decbcc443902e6ce5c"
+}

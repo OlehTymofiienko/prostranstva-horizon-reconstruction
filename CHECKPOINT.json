@@ -1,0 +1,41 @@
+{
+  "project": "Пространства — реконструкция горизонтов",
+  "release": "1.0",
+  "date_UTC": "2026-09-22",
+  "last_scientific_stage": "HF4-B5",
+  "scientific_status": "COMPLETE_FOR_AVAILABLE_DATA_AND_REGISTERED_B5_SCOPE",
+  "previous_science_recomputed": false,
+  "B5_fits": 660,
+  "B5_input_sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
+  "new_scientific_result": "Coordinate-harmonic representation quantified; first RePsi2 residual dominated by two original nodes; no new-physics claim",
+  "next_action": "Publish and verify the prepared website; do not repeat scientific analysis.",
+  "website": "dist/index.html",
+  "master_report": "docs/PROJECT_REPORT.md",
+  "separate_simulations": [
+    "SXS:BBH:0305 / Lev6",
+    "Einstein Toolkit QC0",
+    "SXS:BBH:0389 / SpEC / Yitian"
+  ],
+  "publication": {
+    "state": "SOURCE_PUBLISHED_SITE_PENDING",
+    "github_repository_url": "https://github.com/OlehTymofiienko/prostranstva-horizon-reconstruction",
+    "github_repository_id": 1381014771,
+    "live_site_url": null,
+    "site_project_id": null,
+    "source_synced_to_remote": true,
+    "resume_note": "Source import verified. Publish the existing static dist with the Pages workflow. Do not rerun science.",
+    "archive_sha256": "2f0bb29f320fce608d4ecc5e0ede5a612fbb9633bbf1d531e07c23324d02d2f1"
+  },
+  "B5_saved_artifacts": {
+    "report_library_file_id": "libfile_2494f1680ee481918d86369554d197ec",
+    "state_library_file_id": "libfile_7930a081b06081919751fd54c2969171",
+    "archive_library_file_id": "libfile_3bc2880e74c08191a6c8129e84b8ae9f"
+  },
+  "limitations": [
+    "No validated continuous QC0 geometry 0..105M",
+    "No resolution/gauge/tetrad robustness conclusion for the local residual",
+    "Yitian early dynamics and unique nonlinear identification remain open",
+    "Apparent horizons, not reconstructed event horizons",
+    "Full browser WebGL rendering not verified in current environment"
+  ]
+}

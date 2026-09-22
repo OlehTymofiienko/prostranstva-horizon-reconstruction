@@ -1,0 +1,17 @@
+{
+  "input_name": "common_horizon_moments_data_and_scripts.zip",
+  "input_sha256": "6e98880e9eff70fc0979db184d143a35818d34878fbd4e2e9eb578aee120a60e",
+  "hdf5_sha256": "9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f",
+  "version": "BH-YITIAN-A2-2026-09-15-v1",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "h5py": "3.16.0",
+  "matplotlib": "3.10.8",
+  "program_sha256": "b7d486c9f1a1a9a607020d36336bf966a892db956b19211eccadfed0f3c9ab69",
+  "qnm_spectrum_was_recomputed": true,
+  "prior_programs": {
+    "BH_HF3_R6B.py": "2bd7638ed8a0f5d07f3daf8e266686355e8c48820f2ff790fa058e91d19ee812",
+    "prepare_qc0_t95_recovery.py": "59556f02439dd10ec3866942ba0f6f35ec4a844b864716136d5a2f650734ee2b"
+  }
+}

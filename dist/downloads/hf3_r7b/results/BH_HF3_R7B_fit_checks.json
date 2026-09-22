@@ -1,0 +1,18 @@
+[
+  {
+    "true_omega": 0.5353401318639867,
+    "true_alpha": 0.08345059699511974,
+    "recovered_omega": 0.5353401318639867,
+    "recovered_alpha": 0.08345059699511974,
+    "relative_residual": 1.49329738109674e-16,
+    "pass": true
+  },
+  {
+    "true_omega": 0.51,
+    "true_alpha": 0.074,
+    "recovered_omega": 0.51,
+    "recovered_alpha": 0.07400000000000005,
+    "relative_residual": 3.6956014225010544e-16,
+    "pass": true
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "stage": "BH-HF4-B3",
+  "classification": "BH_HF4_B3_INTRINSIC_MEASURE_RECOVERED_LATE_AREA_CONTROL_PASSED_LOCALIZATION_SUPPORTED_EARLY_AREA_CONTROL_PENDING",
+  "common_iterations": [
+    9536,
+    9568,
+    9600,
+    9632,
+    9664,
+    9696,
+    10368,
+    10400,
+    10432,
+    10464,
+    10496,
+    10528
+  ],
+  "definition": {
+    "stage": "BH-HF4-B3",
+    "primary_measure": "dyad metric, FD4 tangents matching QLM, Fejer-I in cos(theta) and periodic phi",
+    "grid": "theta=(i+0.5)*pi/35; phi=j*2*pi/72; no measured polar vertices",
+    "primary_quantile": 0.95,
+    "sensitivity_quantiles": [
+      0.9,
+      0.98
+    ],
+    "deviation": "absolute deviation from median under each stated measure",
+    "frozen_reference": "B2 saved fields, primary masks, coordinate-area weights, coordinate centers and axes",
+    "auxiliary_measure_1": "FD4 physical density with midpoint integration",
+    "auxiliary_measure_2": "saved B2 triangle weights times pointwise physical/Euclidean FD4 density ratio",
+    "spatial_order_2_role": "deliberate mismatch diagnostic, not another simulation resolution",
+    "early_independent_QLM_area_in_received_VTK_package": false,
+    "late_control_role": "validate reconstruction against separately stored QLM scalar; no ringdown recalculation",
+    "statistical_significance_test": false,
+    "new_evolution": false
+  },
+  "fields": {
+    "repsi2": {
+      "long_axis_fraction_range": [
+        0.9452996417144,
+        1.0
+      ],
+      "polar_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "B2_B3_Dice_physical_range": [
+        0.9118776318238555,
+        0.9399321965310622
+      ],
+      "fejer_midpoint_mask_Dice_range": [
+        1.0,
+        1.0
+      ],
+      "fejer_matched_support_mask_Dice_range": [
+        0.9837809729169384,
+        1.0
+      ],
+      "adjacent_mask_Dice_range": [
+        0.8382236891030116,
+        1.0
+      ]
+    },
+    "impsi2": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.26974903491818164
+      ],
+      "polar_fraction_range": [
+        0.7302509650818183,
+        1.0
+      ],
+      "B2_B3_Dice_physical_range": [
+        0.9431484672385398,
+        0.961017983879934
+      ],
+      "fejer_midpoint_mask_Dice_range": [
+        0.9978579725654111,
+        1.0
+      ],
+      "fejer_matched_support_mask_Dice_range": [
+        0.9983165595851494,
+        1.0
+      ],
+      "adjacent_mask_Dice_range": [
+        0.9298035335944501,
+        0.9971102562392468
+      ]
+    },
+    "abs_npsigma": {
+      "long_axis_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "polar_fraction_range": [
+        1.0,
+        1.0
+      ],
+      "B2_B3_Dice_physical_range": [
+        0.9348374050409611,
+        0.9463635103925998
+      ],
+      "fejer_midpoint_mask_Dice_range": [
+        0.9964801225291142,
+        1.0
+      ],
+      "fejer_matched_support_mask_Dice_range": [
+        0.9962795757126071,
+        1.0
+      ],
+      "adjacent_mask_Dice_range": [
+        0.9588497192239376,
+        0.9967425743954198
+      ]
+    }
+  },
+  "checks": {
+    "anisotropic_known_metric_relative_error": 9.604005403331802e-16,
+    "local_dyad_phase_metric_relative_error": 7.683204322665443e-16,
+    "fejer_polynomial_moments_up_to_degree": 34,
+    "fejer_moment_error_max": 2.020011799926727e-15,
+    "analytic_round_sphere_area_relative_error": 2.220446049250313e-16,
+    "tests_do_not_establish_simulation_convergence": true
+  },
+  "late_area_control_max_relative_difference": 1.0280718498734132e-09,
+  "max_early_tangent_residual": 6.5933534821571345e-15,
+  "min_early_q_eigenvalue": 0.0014355608494791086,
+  "max_local_phase_density_relative_difference": 1.4432899320127035e-15,
+  "early_independent_area_control_complete": false,
+  "simulation_convergence_established": false,
+  "HF1_identification_established": false,
+  "B2_results_recomputed": false,
+  "frozen_B2_npz_sha256": "10b448a8e9f70556670d14d015a90cd2c6557bde7a61a4ac5e1fea73db4fdfa4",
+  "source_hashes": [
+    {
+      "file": "surface03_00009536.vtk",
+      "sha256": "d91dfb9cdcd71ecbea2c32876b2ee470024b0a7637a501595a2342b4fc194224"
+    },
+    {
+      "file": "surface03_00009568.vtk",
+      "sha256": "15b6325d8ede91cf2b795d15824750709b81c010da3c94bbd944871b376bc136"
+    },
+    {
+      "file": "surface03_00009600.vtk",
+      "sha256": "1c3271eb6e4e1a2b8c3d3050326f1a6ae6e94e5fbd9d8b68815f06abc54f59e9"
+    },
+    {
+      "file": "surface03_00009632.vtk",
+      "sha256": "03bf9029342f31333c3942181330bc7c5f2f91aca444ee454b3191c56fca4630"
+    },
+    {
+      "file": "surface03_00009664.vtk",
+      "sha256": "aeeee4706af2a35d307be75f50497622498428dc97a657c89005aa03ee5a6d08"
+    },
+    {
+      "file": "surface03_00009696.vtk",
+      "sha256": "31cc8911b8882646209810d0fb03d0114cb5940866f88644cac9cdd1a4f1eee8"
+    },
+    {
+      "file": "surface03_00010368.vtk",
+      "sha256": "747ebd39e64cbcb5cb4b7cf845d4ab81b1d04f303bc6da662bfc83b9e4149bd7"
+    },
+    {
+      "file": "surface03_00010400.vtk",
+      "sha256": "a5a6866104123fb02141bdb79a4dc43e00251f2f24ccb5b834b6e297b11213b9"
+    },
+    {
+      "file": "surface03_00010432.vtk",
+      "sha256": "ebaa7069c586c0faa1c430834bcdc6e7ac2ee5cf093964c171a5e0be238ff31c"
+    },
+    {
+      "file": "surface03_00010464.vtk",
+      "sha256": "8c879d1ff925f4711259a83f164b42a934981b4df0a5565ec5a43811eb2393c3"
+    },
+    {
+      "file": "surface03_00010496.vtk",
+      "sha256": "536ffebbc7da5abefaa364b6ae21f0ad924fade126a57e04c84502c4c719a124"
+    },
+    {
+      "file": "surface03_00010528.vtk",
+      "sha256": "1e492ea36d935537cb199886e74d14af4a04057455b203d29e57bf13507dfafb"
+    }
+  ]
+}

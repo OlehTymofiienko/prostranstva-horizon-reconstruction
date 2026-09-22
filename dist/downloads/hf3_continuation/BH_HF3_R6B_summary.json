@@ -1,0 +1,212 @@
+{
+  "stage": "BH-HF3-R6B",
+  "version": "BH-HF3-R6B-2026-09-06",
+  "classification": "BH_HF3_R6B_FIVE_RADIUS_OUTGOING_PROPAGATION_SUPPORTED_INVERSE_RADIUS_SCALING_SUPPORTED_RINGDOWN_AGE_COLLAPSE_SUPPORTED_KERR220_ASYMPTOTIC_CLOSURE_SUPPORTED_R15_R30_R40_THIRD_PERIOD_PENDING",
+  "main_pass": true,
+  "remnant": {
+    "late_window_M": [
+      90.0,
+      95.0
+    ],
+    "Mf": 0.977461203278627,
+    "Jf": 0.648087073319352,
+    "chi": 0.6783194994253878
+  },
+  "kerr_220_reference": {
+    "omega_R_rad_per_M": 0.5381085416552966,
+    "alpha_per_M": 0.08411794144638013,
+    "period_M": 11.67642737625319,
+    "Q": 3.1985360816176582
+  },
+  "five_radius_peak_propagation": {
+    "rows": [
+      {
+        "r1_M": 15.0,
+        "r2_M": 30.0,
+        "observed_peak_delay_increment_M": 16.0,
+        "kerr_rstar_increment_M": 16.494528561640703,
+        "relative_difference": 0.02998136987017422
+      },
+      {
+        "r1_M": 30.0,
+        "r2_M": 40.0,
+        "observed_peak_delay_increment_M": 10.75,
+        "kerr_rstar_increment_M": 10.595935337334375,
+        "relative_difference": 0.01453997761979393
+      },
+      {
+        "r1_M": 40.0,
+        "r2_M": 50.0,
+        "observed_peak_delay_increment_M": 10.25,
+        "kerr_rstar_increment_M": 10.456110486283798,
+        "relative_difference": 0.019711965223987563
+      },
+      {
+        "r1_M": 50.0,
+        "r2_M": 60.0,
+        "observed_peak_delay_increment_M": 10.5,
+        "kerr_rstar_increment_M": 10.369580662588177,
+        "relative_difference": 0.012577108145014514
+      }
+    ],
+    "pass": true
+  },
+  "inverse_radius_peak_scaling": {
+    "r_times_peak_amplitude_relative_spread": 0.05121374511910699,
+    "pass": true
+  },
+  "period0_consistency": {
+    "radii_M": [
+      15.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "frequency_relative_spread": 0.011530006606179111,
+    "damping_relative_spread": 0.17005023407307654,
+    "pass": true
+  },
+  "period1_consistency": {
+    "radii_M": [
+      15.0,
+      30.0,
+      40.0
+    ],
+    "frequency_relative_spread": 0.0010400388794495387,
+    "damping_relative_spread": 0.015680655135266803,
+    "pass": true
+  },
+  "period0_to_period1_convergence": {
+    "rows": [
+      {
+        "radius_M": 15.0,
+        "period0_frequency_error": 0.07095364471407398,
+        "period1_frequency_error": 0.01766532356819831,
+        "frequency_error_decreased": true,
+        "period0_damping_error": 0.6196643073625222,
+        "period1_damping_error": 0.14300096780997268,
+        "damping_error_decreased": true
+      },
+      {
+        "radius_M": 30.0,
+        "period0_frequency_error": 0.07947108733081767,
+        "period1_frequency_error": 0.018546356002789772,
+        "frequency_error_decreased": true,
+        "period0_damping_error": 0.6635121886562031,
+        "period1_damping_error": 0.15629617408836088,
+        "damping_error_decreased": true
+      },
+      {
+        "radius_M": 40.0,
+        "period0_frequency_error": 0.07858058094034749,
+        "period1_frequency_error": 0.01868607351633284,
+        "frequency_error_decreased": true,
+        "period0_damping_error": 0.6608718904568497,
+        "period1_damping_error": 0.15212686181163357,
+        "damping_error_decreased": true
+      }
+    ],
+    "pass": true
+  },
+  "period2_r15_r30": {
+    "rows": [
+      {
+        "start_M": 65.60285475250637,
+        "end_M": 77.27928212875958,
+        "samples": 47,
+        "omega_signed_rad_per_M": -0.5342573533775116,
+        "omega_abs_rad_per_M": 0.5342573533775116,
+        "alpha_per_M": 0.08283326529846569,
+        "phase_r2": 0.9999087054082828,
+        "log_amplitude_r2": 0.9963493618705996,
+        "phase_cycles": 0.9824401463133067,
+        "amplitude_start": 0.0015719896289243052,
+        "amplitude_end": 0.0005979051536628613,
+        "radius_M": 15.0,
+        "m": 2,
+        "period_index": 2,
+        "ringdown_age_start_M": 23.35285475250638,
+        "ringdown_age_end_M": 35.029282128759576,
+        "omega_relative_error_vs_kerr": 0.007156898617402147,
+        "alpha_relative_error_vs_kerr": 0.015272320337669495,
+        "rss_fixed_kerr": 3.35862345214253e-08,
+        "rss_free_single_mode": 2.8819787250107102e-08,
+        "delta_BIC_fixed_kerr_minus_free": 5.300494673690309,
+        "fixed_kerr_not_strongly_disfavored": true
+      },
+      {
+        "start_M": 81.60285475250637,
+        "end_M": 93.27928212875958,
+        "samples": 47,
+        "omega_signed_rad_per_M": -0.5342172874098462,
+        "omega_abs_rad_per_M": 0.5342172874098462,
+        "alpha_per_M": 0.08335161181977986,
+        "phase_r2": 0.9999150948499105,
+        "log_amplitude_r2": 0.9947554263793654,
+        "phase_cycles": 0.9821427685185765,
+        "amplitude_start": 0.0008035234888515154,
+        "amplitude_end": 0.00030445213960316765,
+        "radius_M": 30.0,
+        "m": 2,
+        "period_index": 2,
+        "ringdown_age_start_M": 23.35285475250638,
+        "ringdown_age_end_M": 35.029282128759576,
+        "omega_relative_error_vs_kerr": 0.007231355654530979,
+        "alpha_relative_error_vs_kerr": 0.009110180461189181,
+        "rss_fixed_kerr": 9.779826367683956e-09,
+        "rss_free_single_mode": 9.175776861074817e-09,
+        "delta_BIC_fixed_kerr_minus_free": -3.0936507527453614,
+        "fixed_kerr_not_strongly_disfavored": true
+      }
+    ],
+    "pass": true
+  },
+  "plus_minus_symmetry": {
+    "pass": true
+  },
+  "second_period_complex_shape": {
+    "rows": [
+      {
+        "reference_radius_M": 15.0,
+        "radius_M": 30.0,
+        "period_index": 1,
+        "best_complex_factor_real": 0.9756806276523935,
+        "best_complex_factor_imag": -0.15650291307919278,
+        "complex_coherence": 0.999937571096277,
+        "normalized_rmse": 0.011173804637535723
+      },
+      {
+        "reference_radius_M": 15.0,
+        "radius_M": 40.0,
+        "period_index": 1,
+        "best_complex_factor_real": 0.9969801998385707,
+        "best_complex_factor_imag": -0.0615724579265775,
+        "complex_coherence": 0.9999599280513519,
+        "normalized_rmse": 0.008952222714795975
+      }
+    ],
+    "pass": true
+  },
+  "gates": {
+    "adjacent_peak_delay_kerr_rstar_relative_error_max": 0.05,
+    "r_times_peak_amplitude_relative_spread_max": 0.1,
+    "period0_frequency_relative_spread_max": 0.03,
+    "period0_damping_relative_spread_max": 0.2,
+    "period1_frequency_relative_spread_max": 0.01,
+    "period1_damping_relative_spread_max": 0.05,
+    "period1_frequency_error_vs_kerr_max": 0.03,
+    "period1_damping_error_vs_kerr_max": 0.2,
+    "period1_phase_r2_min": 0.995,
+    "period1_logamp_r2_min": 0.98,
+    "period2_frequency_error_vs_kerr_max": 0.01,
+    "period2_damping_error_vs_kerr_max": 0.05,
+    "period2_phase_r2_min": 0.995,
+    "period2_logamp_r2_min": 0.99,
+    "period2_fixed_kerr_delta_bic_max": 10.0,
+    "plus_minus_frequency_relative_difference_max": 0.005,
+    "complex_shape_coherence_min": 0.995,
+    "complex_shape_nrmse_max": 0.05
+  },
+  "scientific_boundary": "Результат является сильной внутренней многорадиусной проверкой стандартного исходящего кольцевания Kerr/ОТО. Он не является независимым численным воспроизведением, поскольку все радиусы получены в одной симуляции, и не является доказательством новой физики.",
+  "next_question": "Нужен ли ещё расчёт примерно до 105M для третьего полного периода на r=40M, либо текущего многорадиусного замыкания достаточно для завершения HF3 и перехода к HF4."
+}

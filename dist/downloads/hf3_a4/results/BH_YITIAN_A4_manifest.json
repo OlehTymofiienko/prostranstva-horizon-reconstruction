@@ -1,0 +1,74 @@
+{
+  "BH_HF3_resume_state_A4.json": {
+    "bytes": 5140,
+    "sha256": "00329ce02a3cfaf507a1cdc21336022d6bf65671b7ae6ea3b3d0d6f6efd0724a"
+  },
+  "BH_YITIAN_A4.py": {
+    "bytes": 57064,
+    "sha256": "6b54a53c9b4c3e3c186c944f9473919502f297adf67d314c4f53c56dc525992e"
+  },
+  "BH_YITIAN_A4_all_fits.json": {
+    "bytes": 773753,
+    "sha256": "f8d09ffe954c1ccd4666b0ef00739b41c4da335fef247167d9c8d6018bb78e33"
+  },
+  "BH_YITIAN_A4_context.json": {
+    "bytes": 29223,
+    "sha256": "029ef94a017ac17107560587bb0390d7edd67e11c87083b473631eddb34789d6"
+  },
+  "BH_YITIAN_A4_controls.json": {
+    "bytes": 1322936,
+    "sha256": "37553456072ec85099f3df300c7e4bcf1f78c80123f22176464f8103c06a7f56"
+  },
+  "BH_YITIAN_A4_coupling.json": {
+    "bytes": 11133,
+    "sha256": "e28122676e5496816166beb11e93dfb002fa5400c176d094677d97aa7f680002"
+  },
+  "BH_YITIAN_A4_coupling.png": {
+    "bytes": 156530,
+    "sha256": "f76be2153a65e3d4538892e0da01246070da1851f6bb3107c9e9a1802ff69810"
+  },
+  "BH_YITIAN_A4_examples.png": {
+    "bytes": 420549,
+    "sha256": "2171778922413901f6f62ae267abdbb9dcf5146ba0236c817fd995b9e8bc469c"
+  },
+  "BH_YITIAN_A4_negative_controls.json": {
+    "bytes": 53769,
+    "sha256": "b4edf2ff24b57cd879658e084637bd342bc0e1f5e1e3fb71746e364ea64bc896"
+  },
+  "BH_YITIAN_A4_nested_comparisons.json": {
+    "bytes": 41961,
+    "sha256": "eb77552ac8d7774076b60bde7156cf109f975f96a6da0de924c43aceb49b5266"
+  },
+  "BH_YITIAN_A4_parent_square.json": {
+    "bytes": 41461,
+    "sha256": "36f03afb38c17ab1a72ad552ead7b0c4819fd8fe4808666450ca9b4095d4ccdf"
+  },
+  "BH_YITIAN_A4_prediction.png": {
+    "bytes": 233026,
+    "sha256": "44fe6f6e8d063637b44e6b706317e4ab05a10bed8b62d03dc7224d6929aae2eb"
+  },
+  "BH_YITIAN_A4_provenance.json": {
+    "bytes": 2575,
+    "sha256": "0204e4920415b2ac7f079eefafa65deba402a4b69324a060c17c5d9c482b959f"
+  },
+  "BH_YITIAN_A4_report.md": {
+    "bytes": 20678,
+    "sha256": "c42ee58710d0be07c7f9833d4926d5abd7e298efe7e957e2418f5dab6ec87908"
+  },
+  "BH_YITIAN_A4_spectrum.json": {
+    "bytes": 8503,
+    "sha256": "d0c2355fd35af3426b754daa262ec2680917a1fb0be58fb6138338fa3daf8e36"
+  },
+  "BH_YITIAN_A4_summary.json": {
+    "bytes": 8969,
+    "sha256": "e1ce81e4cf347067070a68cebd21545dd0b0babeb67da5a5d6b36d508b758ff6"
+  },
+  "README_RU.txt": {
+    "bytes": 758,
+    "sha256": "5c971979c81845b5384b7b90de8fc2406d22201c2bf45fef50b34ebab7c6b7e5"
+  },
+  "requirements.txt": {
+    "bytes": 85,
+    "sha256": "7a4f227ad044d9406f1e8da5211e0deda4b9b1caf56bb2683620a59f8730bd4e"
+  }
+}

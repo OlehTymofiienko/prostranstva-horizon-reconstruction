@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "saved_UTC": "2026-09-21T06:06:44.990939+00:00",
+  "latest_completed_stage": "BH-HF4-B4",
+  "classification": "BH_HF4_B4_COMPLETE_AH3_SERIES_EARLY_AREA_AGREEMENT_CONFIRMED_LOCALIZATION_EXTENDED",
+  "completion_scope": "Полный полученный ранний ряд AH3 18.625–22M: ранние площади сверены; 43 новых кадра обработаны, 12 прежних сохранены; просмотр 0–22M дополнен.",
+  "previous_state": {
+    "filename": "BH_HF4_resume_state_B3.json",
+    "library_file_id": "libfile_617cc93b82108191a3b2c914e8520d2a",
+    "archive_library_file_id": "libfile_6ba57d8fb6748191816868fa1cc29b9e"
+  },
+  "previous_results": {
+    "last_verified_QC0": {
+      "time_M": 105,
+      "iteration": 53760,
+      "exit_status": 0,
+      "seam95_exact": true,
+      "input_archive_sha256": "d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b"
+    },
+    "HF3_completed_scope": "Выполнен запланированный контроль позднего кольцевания на трёх радиусах. Полная динамика и численная сходимость не объявлены доказанными.",
+    "QC0_remnant_and_QNM_reference": {
+      "Mf": 0.977461203278627,
+      "Jf": 0.648087073319352,
+      "chi": 0.6783194994253878,
+      "omega": 0.5353401318639867,
+      "alpha": 0.08345059699511974
+    },
+    "last_completed_Yitian_dynamics_stage": "BH-YITIAN-A4",
+    "Yitian_A3_status": "BH_YITIAN_A3_LATE_M0_DESCRIPTION_EARLY_PREDICTION_NOT_CLOSED",
+    "Yitian_A4_status": "BH_YITIAN_A4_LATE_M4_MIXING_SUPPORTED_EARLY_CLOSURE_NOT_REACHED_QUADRATIC_IDENTIFICATION_NOT_ESTABLISHED",
+    "HF4_A1_status": "BH_HF4_A1_SCALAR_MAPS_RECONSTRUCTED_LATE_AXISYMMETRIC_CONTROL_PASSED_FINITE_MULTIPOLES_DO_NOT_FIX_FULL_GEOMETRY",
+    "HF4_A2_status": "COMPLETED_WITH_STATED_NUMERICAL_AND_GEOMETRIC_LIMITS"
+  },
+  "simulations_must_remain_distinct": {
+    "current_3D_scene": "QC0",
+    "Yitian_multipoles": "SXS:BBH:0389",
+    "original_HF1_structure": "SXS:BBH:0305/Lev6"
+  },
+  "previous_scientific_results_recomputed": false,
+  "new_evolution_run": false,
+  "source": {
+    "archive_file": "BH_HF4_B4_collection(1).zip",
+    "archive_library_file_id": "libfile_874fa5100b688191a18f7e80ada8b7ed",
+    "archive_sha256": "34d86aa53bc74f0e1b872761518a145b7612aafbb2f7e735e6993961140936fc",
+    "all_816_manifest_files_hash_verified": true,
+    "manifest_file_count": 816,
+    "zip_members": 818,
+    "previous_12_VTK_byte_identical": true,
+    "new_common_frames": 43,
+    "common_VTK": 55,
+    "common_shapes": 55,
+    "source_directory": "/home/alex/simulations/qc0_early_geometry_t22",
+    "counts_by_kind": {
+      "diagnostic": 7,
+      "parameter": 1,
+      "AH1_shape": 349,
+      "AH2_shape": 349,
+      "AH3_shape": 55,
+      "AH3_VTK": 55
+    },
+    "individual_missing_iterations": {
+      "1": [
+        192,
+        8608,
+        10656,
+        10752
+      ],
+      "2": [
+        192,
+        8608,
+        10656,
+        10752
+      ]
+    },
+    "common_missing_iterations": [],
+    "new_evolution_run": false
+  },
+  "B4_definition": {
+    "stage": "BH-HF4-B4",
+    "input_run": "qc0_early_geometry_t22",
+    "common_iterations": [
+      9536,
+      9568,
+      9600,
+      9632,
+      9664,
+      9696,
+      9728,
+      9760,
+      9792,
+      9824,
+      9856,
+      9888,
+      9920,
+      9952,
+      9984,
+      10016,
+      10048,
+      10080,
+      10112,
+      10144,
+      10176,
+      10208,
+      10240,
+      10272,
+      10304,
+      10336,
+      10368,
+      10400,
+      10432,
+      10464,
+      10496,
+      10528,
+      10560,
+      10592,
+      10624,
+      10656,
+      10688,
+      10720,
+      10752,
+      10784,
+      10816,
+      10848,
+      10880,
+      10912,
+      10944,
+      10976,
+      11008,
+      11040,
+      11072,
+      11104,
+      11136,
+      11168,
+      11200,
+      11232,
+      11264
+    ],
+    "frozen_method": "HF4-B3 FD4 dyad metric, Fejer-I physical measure",
+    "primary_quantile": 0.95,
+    "sensitivity_quantiles": [
+      0.9,
+      0.98
+    ],
+    "old_frames_policy": "reuse saved B3 q, physical weights, masks and localization rows",
+    "new_frames_policy": "compute only missing 43 iterations",
+    "area_control": "QLM slot 2 same iteration/time; AHFinderDirect area secondary cross-method control",
+    "axis_extension": "native AH1/AH2 gp triangle-area centroids; overlap control against frozen B2 axes",
+    "missing_individuals_policy": "no invented long axis; leave long-axis fractions empty, retain z-polar fractions",
+    "area_comparison_not_simulation_error_estimate": true,
+    "no_new_evolution": true
+  },
+  "B4_results": {
+    "stage": "BH-HF4-B4",
+    "classification": "BH_HF4_B4_COMPLETE_AH3_SERIES_EARLY_AREA_AGREEMENT_CONFIRMED_LOCALIZATION_EXTENDED",
+    "common_frame_count": 55,
+    "old_B3_frames_reused": 12,
+    "new_frames_computed": 43,
+    "old_contiguous_pair_results_reused": 30,
+    "new_contiguous_pair_results": 132,
+    "same_run_id": "run-qc0-horizon-early-geometry-t22-DESKTOP-GDJ2LUD.localdomain-alex-2026.09.16-10.57.31-1065",
+    "QLM_common_slot": 2,
+    "QLM_early_validity_checks_passed": true,
+    "first_valid_history_counter_sentinel": {
+      "iteration": 9536,
+      "qlm_iteration": -1,
+      "qlm_time": 18.625,
+      "have_valid_data": 1,
+      "calc_error": 0,
+      "interpretation": "Recorded explicitly; same-time area corroborated. Not used as a dynamical time derivative."
+    },
+    "first_common_time_M": 18.625,
+    "preceding_valid_sample_without_common_time_M": 18.5625,
+    "last_common_time_M": 22,
+    "common_step_M": 0.0625,
+    "common_time_span_M": 3.375,
+    "physical_area_first_last": [
+      37.30527648018054,
+      41.01767578040752
+    ],
+    "relative_area_increase": 0.09951405405611458,
+    "area_monotonically_increasing_at_all_sampled_frames": true,
+    "max_abs_relative_area_difference_QLM": 6.036373904955443e-08,
+    "AHFinderDirect_vs_QLM_relative_range": [
+      2.741514571624748e-05,
+      0.00016131986239997786
+    ],
+    "max_abs_relative_area_difference_AHFinderDirect_QLM": 0.00016131986239997786,
+    "max_tangent_residual_new_frames": 7.441155501331868e-15,
+    "max_axis_overlap_difference_degrees": 0.0004840467409753807,
+    "axis_overlap_differing_region_memberships": 0,
+    "long_axis_unavailable_iterations": [
+      10656,
+      10752
+    ],
+    "fields": {
+      "repsi2": {
+        "primary_mask_long_axis_fraction_range": [
+          0.9452996417144,
+          1.0
+        ],
+        "primary_mask_polar_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "selected_area_fraction_range": [
+          0.050001293934579846,
+          0.051568715037414725
+        ],
+        "adjacent_mask_Dice_range": [
+          0.8382236891030116,
+          1.0
+        ],
+        "long_axis_frames": 53,
+        "polar_frames": 55,
+        "quantile_sensitivity": {
+          "0.9": {
+            "long_axis_fraction_range": [
+              0.954498963849189,
+              1.0
+            ],
+            "polar_fraction_range": [
+              0.0,
+              0.017502781742422775
+            ]
+          },
+          "0.95": {
+            "long_axis_fraction_range": [
+              0.9452996417144,
+              1.0
+            ],
+            "polar_fraction_range": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.98": {
+            "long_axis_fraction_range": [
+              0.868077157741039,
+              1.0
+            ],
+            "polar_fraction_range": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "impsi2": {
+        "primary_mask_long_axis_fraction_range": [
+          0.0,
+          0.4323392433441319
+        ],
+        "primary_mask_polar_fraction_range": [
+          0.7302509650818183,
+          1.0
+        ],
+        "selected_area_fraction_range": [
+          0.05000122984968006,
+          0.050654683537421114
+        ],
+        "adjacent_mask_Dice_range": [
+          0.815004636300403,
+          0.9971102562392468
+        ],
+        "long_axis_frames": 53,
+        "polar_frames": 55,
+        "quantile_sensitivity": {
+          "0.9": {
+            "long_axis_fraction_range": [
+              0.03935824074157066,
+              0.4474120604866547
+            ],
+            "polar_fraction_range": [
+              0.7310013631179809,
+              1.0
+            ]
+          },
+          "0.95": {
+            "long_axis_fraction_range": [
+              0.0,
+              0.4323392433441319
+            ],
+            "polar_fraction_range": [
+              0.7302509650818183,
+              1.0
+            ]
+          },
+          "0.98": {
+            "long_axis_fraction_range": [
+              0.0,
+              0.5961055897085119
+            ],
+            "polar_fraction_range": [
+              0.6911414570153335,
+              1.0
+            ]
+          }
+        }
+      },
+      "abs_npsigma": {
+        "primary_mask_long_axis_fraction_range": [
+          0.0,
+          0.0
+        ],
+        "primary_mask_polar_fraction_range": [
+          1.0,
+          1.0
+        ],
+        "selected_area_fraction_range": [
+          0.05000040519445437,
+          0.0501748998847224
+        ],
+        "adjacent_mask_Dice_range": [
+          0.9588497192239376,
+          0.9984804003409097
+        ],
+        "long_axis_frames": 53,
+        "polar_frames": 55,
+        "quantile_sensitivity": {
+          "0.9": {
+            "long_axis_fraction_range": [
+              0.0,
+              0.07014129933314066
+            ],
+            "polar_fraction_range": [
+              0.9130974186819847,
+              1.0
+            ]
+          },
+          "0.95": {
+            "long_axis_fraction_range": [
+              0.0,
+              0.0
+            ],
+            "polar_fraction_range": [
+              1.0,
+              1.0
+            ]
+          },
+          "0.98": {
+            "long_axis_fraction_range": [
+              0.0,
+              0.0
+            ],
+            "polar_fraction_range": [
+              1.0,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "new_evolution_run": false,
+    "previous_results_recomputed": false,
+    "simulation_convergence_established": false,
+    "all_tetrad_or_slicing_independence_established": false,
+    "material_transport_established": false,
+    "HF1_identification_established": false,
+    "new_physics_established": false
+  },
+  "B4_view_checks": {
+    "viewer_common_frames": 55,
+    "viewer_time_slots": 353,
+    "empty_slots": [
+      192,
+      8608
+    ],
+    "display_mask_count": 165,
+    "common_geometry_precision_decimals": 8,
+    "individual_angular_display_subsampling_only": true,
+    "all_time_samples_included": true,
+    "intermediate_time_or_shape_interpolation": false,
+    "browser_WebGL_render_tested": false,
+    "independent_mask_comparisons": 165,
+    "frozen_B3_arrays_preserved_exactly": 72,
+    "static_figure_visually_inspected": true
+  },
+  "B4_controller_checks": {
+    "controller_states_checked": 573,
+    "render_calls": 583,
+    "all_common_fields_and_marker_indices_verified": true,
+    "missing_frames_clear_and_pause": true,
+    "former_B3_gap_traversed_with_real_frames": true,
+    "missing_individuals_do_not_hide_common": true,
+    "camera_control_dispatch": true,
+    "browser_WebGL_render_tested": false
+  },
+  "superseded_pending_items": {
+    "B3_early_same_run_area_control_pending": "RESOLVED_BY_55_SAME_RUN_COMPARISONS",
+    "B3_missing_43_common_frames": "RECEIVED_AND_ANALYZED",
+    "B3_gap_between_common_time_blocks": "FILLED_WITH_ORIGINAL_SAVED_FRAMES"
+  },
+  "remaining_limits": {
+    "simulation_convergence_established": false,
+    "arbitrary_tetrad_and_slicing_independence_established": false,
+    "HF1_structure_identified_in_QC0": false,
+    "new_physics_established": false,
+    "event_horizon_reconstructed": false,
+    "material_transport_of_mask_established": false,
+    "optical_merger_movie_complete": false,
+    "single_validated_geometry_series_0_to_105M_complete": false
+  },
+  "next_stage": "BH-HF4-B5",
+  "next_task": "Какая доля угловой вариации полей и выделенной картины описывается низкими угловыми компонентами, и где остаётся невязка?",
+  "next_protocol": "results/BH_HF4_B5_protocol.json",
+  "next_protocol_status": "saved_not_executed",
+  "next_actions": [
+    "Read this state, B4 report and B5 protocol; use saved B4 arrays.",
+    "Do not rerun B3/B4 metrics or mask construction.",
+    "Validate harmonic basis and conditioning; apply saved descriptive degree limits to all 55 frames.",
+    "Report explained variation and residual maps without a new-physics or invariant-geometry claim.",
+    "Retain separate QC0, Yitian 0389 and original HF1 0305 interpretations."
+  ],
+  "user_local_action_required_now": false,
+  "new_data_required_to_begin_next_stage": false,
+  "deliverables": {
+    "report": "results/BH_HF4_B4_report.md",
+    "viewer": "results/BH_HF4_B4_fields_3D.html",
+    "overview": "results/BH_HF4_B4_overview.png",
+    "resume": "results/BH_HF4_resume_state_B4.json",
+    "archive": "BH_HF4_B4_results.zip"
+  },
+  "hashes": {
+    "program": "a8195823c25fe7b145b3592c884e6b5e6d56292212db8e9d12c376026f611d10",
+    "summary": "9015ab23a578fdbffaafafde10e60993165c9320111c41c21ed04511633ac093",
+    "numerical_arrays": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
+    "report": "73a14aef4eb41aa8bc2a73ac5390e56a3e2a9a8d8bd85eeb0bc3cafdb9a30a8c",
+    "viewer": "1951e2e551cd960ade7cb2feb9b0a443e0c27dc2a3d299792bddb861cba91f3b",
+    "next_protocol": "2140113cbd0284e39ed23b30225343160ce150060d6b7c381f2bcb3d96d85569"
+  },
+  "resume_instruction": "B4 завершён. Для B5 достаточно сохранённых массивов. Не возвращаться к запросу архива B4 или к пересчёту 55 площадей."
+}

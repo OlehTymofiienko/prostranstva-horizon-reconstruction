@@ -1,0 +1,53 @@
+{
+  "stage": "BH-HF1R-C",
+  "classification": "BH_HF1RC_LAGGED_COHERENCE_TIME_SPECIFIC",
+  "simulation": "SXS:BBH:0305",
+  "lev": 6,
+  "horizon": "C",
+  "frozen_lags_M": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "fields_passing_lagged_coherence": 3,
+  "fields_passing_time_specificity": 3,
+  "required_fields_global": 2,
+  "field_summary": [
+    {
+      "field": "Rstar",
+      "lag_coherence_lags_passed": 3,
+      "lag_coherence_field_pass": true,
+      "time_specific_lags_passed": 3,
+      "time_specific_field_pass": true
+    },
+    {
+      "field": "Estar",
+      "lag_coherence_lags_passed": 3,
+      "lag_coherence_field_pass": true,
+      "time_specific_lags_passed": 3,
+      "time_specific_field_pass": true
+    },
+    {
+      "field": "Bstar",
+      "lag_coherence_lags_passed": 3,
+      "lag_coherence_field_pass": true,
+      "time_specific_lags_passed": 3,
+      "time_specific_field_pass": true
+    }
+  ],
+  "methodological_status": "coordinate/gauge-dependent finite-lag temporal morphology control; not intrinsic/covariant, not QNM-subtracted",
+  "interpretation": "Finite-lag morphology is coherent and more similar at nearby times than under both independent SO(3) rotation and distant-time shuffle nulls. Proceed to BH-HF2 QNM/multipole closure.",
+  "forbidden_claims": [
+    "not a physical phase measurement",
+    "not a domain wall detection",
+    "not an intrinsic/covariant horizon-gradient measurement",
+    "not gauge invariant",
+    "not slicing invariant",
+    "not numerical-resolution robust yet",
+    "not QNM-subtracted",
+    "does not establish new physics",
+    "does not establish an ether",
+    "does not establish AARFI or APK"
+  ],
+  "next": "BH-HF2 QNM/multipole closure"
+}

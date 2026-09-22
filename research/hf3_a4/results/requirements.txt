@@ -1,0 +1,6 @@
+numpy
+scipy
+h5py
+matplotlib
+# Только для --recompute-spectrum:
+# qnm==0.4.4

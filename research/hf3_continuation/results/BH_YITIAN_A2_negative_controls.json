@@ -1,0 +1,154 @@
+[
+  {
+    "moment": "I22",
+    "start_M": 10,
+    "base": "F220",
+    "expanded": "F2",
+    "base_validation_relative_L2": 0.013010366786689745,
+    "expanded_validation_relative_L2": 0.016270198006025187
+  },
+  {
+    "moment": "I22",
+    "start_M": 10,
+    "base": "F2",
+    "expanded": "F2_O1",
+    "base_validation_relative_L2": 0.016270198006025187,
+    "expanded_validation_relative_L2": 0.027079961200342326
+  },
+  {
+    "moment": "I22",
+    "start_M": 10,
+    "base": "F3",
+    "expanded": "F3_O1",
+    "base_validation_relative_L2": 0.01506600842005644,
+    "expanded_validation_relative_L2": 0.026888002332305507
+  },
+  {
+    "moment": "I22",
+    "start_M": 15,
+    "base": "F220",
+    "expanded": "F2",
+    "base_validation_relative_L2": 0.014419118485959816,
+    "expanded_validation_relative_L2": 0.016250272897333773
+  },
+  {
+    "moment": "I22",
+    "start_M": 15,
+    "base": "F2",
+    "expanded": "F3",
+    "base_validation_relative_L2": 0.016250272897333773,
+    "expanded_validation_relative_L2": 0.016843755306389232
+  },
+  {
+    "moment": "I22",
+    "start_M": 15,
+    "base": "F2",
+    "expanded": "F2_O1",
+    "base_validation_relative_L2": 0.016250272897333773,
+    "expanded_validation_relative_L2": 0.021095474512517223
+  },
+  {
+    "moment": "I22",
+    "start_M": 15,
+    "base": "F3",
+    "expanded": "F3_O1",
+    "base_validation_relative_L2": 0.016843755306389232,
+    "expanded_validation_relative_L2": 0.020990891169176535
+  },
+  {
+    "moment": "I22",
+    "start_M": 20,
+    "base": "F220",
+    "expanded": "F2",
+    "base_validation_relative_L2": 0.019390963244674302,
+    "expanded_validation_relative_L2": 0.020712102409387013
+  },
+  {
+    "moment": "I22",
+    "start_M": 50,
+    "base": "F220",
+    "expanded": "F2",
+    "base_validation_relative_L2": 0.013593519195168123,
+    "expanded_validation_relative_L2": 0.014360128338908396
+  },
+  {
+    "moment": "L32",
+    "start_M": 0,
+    "base": "F2_O2",
+    "expanded": "F2_O3",
+    "base_validation_relative_L2": 0.05547025623354474,
+    "expanded_validation_relative_L2": 0.07983573684139532
+  },
+  {
+    "moment": "L32",
+    "start_M": 0,
+    "base": "F3_O2",
+    "expanded": "F3_O3",
+    "base_validation_relative_L2": 0.042267956101691165,
+    "expanded_validation_relative_L2": 0.07315595710673474
+  },
+  {
+    "moment": "L32",
+    "start_M": 10,
+    "base": "F3",
+    "expanded": "F3_O1",
+    "base_validation_relative_L2": 0.02979090337357781,
+    "expanded_validation_relative_L2": 0.03147338093745859
+  },
+  {
+    "moment": "L32",
+    "start_M": 15,
+    "base": "F2",
+    "expanded": "F3",
+    "base_validation_relative_L2": 0.01299028675029495,
+    "expanded_validation_relative_L2": 0.015027088610722824
+  },
+  {
+    "moment": "L32",
+    "start_M": 15,
+    "base": "F2",
+    "expanded": "F2_O1",
+    "base_validation_relative_L2": 0.01299028675029495,
+    "expanded_validation_relative_L2": 0.02548110946022446
+  },
+  {
+    "moment": "L32",
+    "start_M": 15,
+    "base": "F3",
+    "expanded": "F3_O1",
+    "base_validation_relative_L2": 0.015027088610722824,
+    "expanded_validation_relative_L2": 0.024850964021981392
+  },
+  {
+    "moment": "L32",
+    "start_M": 20,
+    "base": "F2",
+    "expanded": "F3",
+    "base_validation_relative_L2": 0.018318534169820128,
+    "expanded_validation_relative_L2": 0.018708142358477897
+  },
+  {
+    "moment": "L32",
+    "start_M": 40,
+    "base": "F2_O2",
+    "expanded": "F2_O3",
+    "base_validation_relative_L2": 0.006817724046747304,
+    "expanded_validation_relative_L2": 0.0069309009072481935
+  },
+  {
+    "moment": "L32",
+    "start_M": 50,
+    "base": "F2_O2",
+    "expanded": "F2_O3",
+    "base_validation_relative_L2": 0.008474517748092901,
+    "expanded_validation_relative_L2": 0.00871686360969689
+  },
+  {
+    "moment": "L32",
+    "start_M": 60,
+    "base": "F2",
+    "expanded": "F3",
+    "base_validation_relative_L2": 0.013021720798492856,
+    "expanded_validation_relative_L2": 0.013145007762040294
+  }
+]

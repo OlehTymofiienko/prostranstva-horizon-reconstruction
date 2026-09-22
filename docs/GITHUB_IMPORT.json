@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "2f0bb29f320fce608d4ecc5e0ede5a612fbb9633bbf1d531e07c23324d02d2f1",
+  "archive_files_verified": 626,
+  "manifest_files_verified": 625,
+  "previous_scientific_analysis_recomputed": false,
+  "original_payload_verified_before_publication_metadata_update": true,
+  "workflow_run": "35726734058",
+  "source": "archive-v1.0"
+}

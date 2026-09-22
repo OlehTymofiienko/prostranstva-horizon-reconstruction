@@ -1,0 +1,2126 @@
+[
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9779420100062656,
+    "validation_relative_L2": 1.0041788770216595,
+    "validation_absolute_rms": 0.0030823569135089023,
+    "validation_signal_rms": 0.0030695297262684977,
+    "scaled_condition_number": 2.1697331013073655,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0019252313065472126,
+        "imag": -0.015721854562548786
+      },
+      "540": {
+        "real": -0.014341935309685047,
+        "imag": -0.0009840021351024703
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0025214069075676845,
+        "imag": -0.0008557085709546402
+      },
+      "540": {
+        "real": 0.002189016584867563,
+        "imag": 0.0008393117446122842
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9369777707930457,
+    "validation_relative_L2": 0.9854054233262124,
+    "validation_absolute_rms": 0.0030247312393260014,
+    "validation_signal_rms": 0.0030695297262684977,
+    "scaled_condition_number": 2.1697331013073655,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.013743705727915587,
+        "imag": -0.022966829874437843
+      },
+      "540": {
+        "real": -0.020890312829690783,
+        "imag": 0.005819094445514534
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.00330865617686454,
+        "imag": -0.0030490333747932668
+      },
+      "540": {
+        "real": 0.0035353393526797575,
+        "imag": 9.180136129915159e-05
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.6001588581357823,
+    "validation_relative_L2": 0.4589316772717552,
+    "validation_absolute_rms": 0.0014087044257119134,
+    "validation_signal_rms": 0.003069529726268498,
+    "scaled_condition_number": 2.1697331013073655,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.030049367394854146,
+        "imag": 0.04357444711735007
+      },
+      "540": {
+        "real": -0.032376936954585114,
+        "imag": -0.00605991442698845
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.006141238265679919,
+        "imag": 0.006438833651434483
+      },
+      "540": {
+        "real": 0.004758132417801123,
+        "imag": 0.002493218899247661
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I44",
+    "start_M": 0,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 3.885780586188048e-16
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.989520069428252,
+    "validation_relative_L2": 0.9895036172779632,
+    "validation_absolute_rms": 0.00048213771145899,
+    "validation_signal_rms": 0.00048725209594009173,
+    "scaled_condition_number": 2.169733101307365,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0019562457571661866,
+        "imag": 0.0009537744539395961
+      },
+      "540": {
+        "real": 0.0011119655881181778,
+        "imag": -0.0016239550090278439
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0019562457571661866,
+        "imag": 0.0009537744539395961
+      },
+      "540": {
+        "real": 0.0011119655881181778,
+        "imag": -0.0016239550090278439
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9633296635619938,
+    "validation_relative_L2": 0.9590635775660031,
+    "validation_absolute_rms": 0.00046730573830883784,
+    "validation_signal_rms": 0.00048725209594009173,
+    "scaled_condition_number": 2.169733101307365,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.003282414491444619,
+        "imag": 0.002619070685897017
+      },
+      "540": {
+        "real": 0.0017207672453652192,
+        "imag": 0.0029602188920026078
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.003282414491444619,
+        "imag": 0.002619070685897017
+      },
+      "540": {
+        "real": 0.0017207672453652192,
+        "imag": 0.0029602188920026078
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.047944390132513635,
+    "validation_relative_L2": 0.19807564658380572,
+    "validation_absolute_rms": 9.651277395264823e-05,
+    "validation_signal_rms": 0.00048725209594009173,
+    "scaled_condition_number": 2.169733101307365,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.014859689759437987,
+        "imag": 0.004512032661076294
+      },
+      "540": {
+        "real": -0.0002027893158950744,
+        "imag": 0.0007127225775283459
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.014859689759437987,
+        "imag": 0.004512032661076294
+      },
+      "540": {
+        "real": -0.0002027893158950744,
+        "imag": 0.0007127225775283459
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I44",
+    "start_M": 20,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 2.498001805406602e-16
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9898978112226897,
+    "validation_relative_L2": 0.9892752741568585,
+    "validation_absolute_rms": 3.35886028656619e-05,
+    "validation_signal_rms": 3.395273665794272e-05,
+    "scaled_condition_number": 2.1697331013073646,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.00010828583779682982,
+        "imag": 7.169346339479277e-05
+      },
+      "540": {
+        "real": 4.977375656255833e-05,
+        "imag": 0.00010622142590524775
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0016457610391872918,
+        "imag": 0.0009174991001937803
+      },
+      "540": {
+        "real": 0.0011284930139784898,
+        "imag": -0.0013780814659652848
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9640569220460294,
+    "validation_relative_L2": 0.9582758295672847,
+    "validation_absolute_rms": 3.253608688696961e-05,
+    "validation_signal_rms": 3.395273665794272e-05,
+    "scaled_condition_number": 2.1697331013073646,
+    "coefficients_at_start": {
+      "440": {
+        "real": -1.6830786949730627e-05,
+        "imag": -0.00025234665304663475
+      },
+      "540": {
+        "real": -0.00020476186390537958,
+        "imag": -1.6418055023071407e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.0031396892041426305,
+        "imag": 0.0018991341157004974
+      },
+      "540": {
+        "real": 0.0011175446138632303,
+        "imag": 0.002912050381578177
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.0017030116554405663,
+    "validation_relative_L2": 0.023369423136947332,
+    "validation_absolute_rms": 7.934558696168062e-07,
+    "validation_signal_rms": 3.395273665794272e-05,
+    "scaled_condition_number": 2.1697331013073646,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00026066964916148715,
+        "imag": -0.0008946257051599291
+      },
+      "540": {
+        "real": 1.0368418818235748e-05,
+        "imag": 2.296203669368115e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.013266408762361405,
+        "imag": 0.002604783565498884
+      },
+      "540": {
+        "real": -3.652594369418308e-05,
+        "imag": -0.00015705943700806223
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I44",
+    "start_M": 50,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 7.632783294297951e-17
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.989974985298872,
+    "validation_relative_L2": 0.9892283692866685,
+    "validation_absolute_rms": 5.5900881175152875e-06,
+    "validation_signal_rms": 5.650958151904088e-06,
+    "scaled_condition_number": 2.169733101307364,
+    "coefficients_at_start": {
+      "440": {
+        "real": 2.0001616549062534e-05,
+        "imag": -8.130471654800817e-06
+      },
+      "540": {
+        "real": -4.622622802896446e-06,
+        "imag": -1.8951390005019516e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.0014742334805906713,
+        "imag": 0.0011398180144194315
+      },
+      "540": {
+        "real": 0.0010066834365916638,
+        "imag": -0.0015117496880954658
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.9645479587781891,
+    "validation_relative_L2": 0.9582878308912971,
+    "validation_absolute_rms": 5.415244429845662e-06,
+    "validation_signal_rms": 5.650958151904088e-06,
+    "scaled_condition_number": 2.169733101307364,
+    "coefficients_at_start": {
+      "440": {
+        "real": -3.1844124433389986e-05,
+        "imag": -2.7227865940153163e-05
+      },
+      "540": {
+        "real": -2.5709845692283757e-05,
+        "imag": 2.2354797008730114e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0032788188959851894,
+        "imag": 0.0015249801890577098
+      },
+      "540": {
+        "real": -0.0031526185108355018,
+        "imag": -0.0003514351520190331
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F2",
+    "modes": [
+      "440",
+      "540"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 4,
+    "fit_relative_L2": 0.004125990268828414,
+    "validation_relative_L2": 0.027335269850760194,
+    "validation_absolute_rms": 1.5447046599765134e-07,
+    "validation_signal_rms": 5.650958151904088e-06,
+    "scaled_condition_number": 2.169733101307364,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0001574905420826668,
+        "imag": 1.4090945863042298e-05
+      },
+      "540": {
+        "real": -1.7754545535828251e-06,
+        "imag": -1.927282585885354e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.013419565521871006,
+        "imag": 0.0024812902289654787
+      },
+      "540": {
+        "real": 2.0058902633905523e-05,
+        "imag": -0.00024315708756244168
+      }
+    },
+    "moment": "I44",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I44",
+    "start_M": 70,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 2.7755575615628914e-16
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9928640924662371,
+    "validation_relative_L2": 1.0037653051592978,
+    "validation_absolute_rms": 0.001108572242349737,
+    "validation_signal_rms": 0.0011044137874179722,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0031530680528881324,
+        "imag": 3.1360184234123997e-06
+      },
+      "540": {
+        "real": -0.0021716496868490584,
+        "imag": 0.003200945355977992
+      },
+      "640": {
+        "real": 0.0008480616858471789,
+        "imag": 0.003634854884182711
+      },
+      "740": {
+        "real": 0.002650381911613906,
+        "imag": 0.0008896996149836772
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.00010858765754277721,
+        "imag": -0.0005188026880731561
+      },
+      "540": {
+        "real": 0.0004916689018376409,
+        "imag": -0.0003952070979903774
+      },
+      "640": {
+        "real": 0.0004936094946084919,
+        "imag": 0.0003340335425470786
+      },
+      "740": {
+        "real": -4.867097335811753e-05,
+        "imag": 0.0004370486764969023
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9888617482899349,
+    "validation_relative_L2": 0.9958984531709832,
+    "validation_absolute_rms": 0.0010998839825502654,
+    "validation_signal_rms": 0.0011044137874179722,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.003984796375240409,
+        "imag": -0.0009449841115692432
+      },
+      "540": {
+        "real": -0.0034119743442289747,
+        "imag": 0.004013027615111368
+      },
+      "640": {
+        "real": 0.0008689634017028734,
+        "imag": 0.0050479970244465214
+      },
+      "740": {
+        "real": 0.0035702451481627573,
+        "imag": 0.0013331279270336937
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 1.8939882099776655e-05,
+        "imag": -0.0006881796554256364
+      },
+      "540": {
+        "real": 0.0007238873963800141,
+        "imag": -0.0004625024772434636
+      },
+      "640": {
+        "real": 0.0006493205343135163,
+        "imag": 0.0004973886627902544
+      },
+      "740": {
+        "real": -8.626301137219806e-05,
+        "imag": 0.0005932105271584018
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.11869476184656357,
+    "validation_relative_L2": 0.5411139550430301,
+    "validation_absolute_rms": 0.0005976137125137911,
+    "validation_signal_rms": 0.0011044137874179722,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.010576330538750752,
+        "imag": 0.03628062022108159
+      },
+      "540": {
+        "real": -0.0015644330011723565,
+        "imag": -0.008166690984709936
+      },
+      "640": {
+        "real": 0.0038203381427000917,
+        "imag": -0.003039490957336847
+      },
+      "740": {
+        "real": 0.0011431504178850485,
+        "imag": -0.003065321959881944
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.005608309821155016,
+        "imag": 0.0029840994094366743
+      },
+      "540": {
+        "real": -0.00014665354630604663,
+        "imag": 0.0013481009351778725
+      },
+      "640": {
+        "real": 0.00011810249510916236,
+        "imag": -0.000770564162809904
+      },
+      "740": {
+        "real": 0.0005092676642669897,
+        "imag": 7.38419376231921e-05
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "L54",
+    "start_M": 0,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 1.1102230246251565e-16
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9741383441534586,
+    "validation_relative_L2": 0.9718348689060622,
+    "validation_absolute_rms": 0.00014491013671117644,
+    "validation_signal_rms": 0.00014910983475443037,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0006726891119262868,
+        "imag": 0.000705858479774945
+      },
+      "540": {
+        "real": 0.0011087460931037546,
+        "imag": -0.00019012518694056605
+      },
+      "640": {
+        "real": 0.0005582751538276511,
+        "imag": -0.0008718576439732994
+      },
+      "740": {
+        "real": -0.00032768486069677325,
+        "imag": -0.0006709035223919896
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0006726891119262868,
+        "imag": 0.000705858479774945
+      },
+      "540": {
+        "real": 0.0011087460931037546,
+        "imag": -0.00019012518694056605
+      },
+      "640": {
+        "real": 0.0005582751538276511,
+        "imag": -0.0008718576439732994
+      },
+      "740": {
+        "real": -0.00032768486069677325,
+        "imag": -0.0006709035223919896
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9212907752938373,
+    "validation_relative_L2": 0.9031057208922268,
+    "validation_absolute_rms": 0.00013466194480802067,
+    "validation_signal_rms": 0.00014910983475443037,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.0016115775531797356,
+        "imag": 0.0008281539547559323
+      },
+      "540": {
+        "real": -0.0002538323913179078,
+        "imag": 0.0018598905186371062
+      },
+      "640": {
+        "real": 0.0010119732656080746,
+        "imag": 0.0012379516294316105
+      },
+      "740": {
+        "real": 0.001077883639727175,
+        "imag": -0.00014297330571084158
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.0016115775531797356,
+        "imag": 0.0008281539547559323
+      },
+      "540": {
+        "real": -0.0002538323913179078,
+        "imag": 0.0018598905186371062
+      },
+      "640": {
+        "real": 0.0010119732656080746,
+        "imag": 0.0012379516294316105
+      },
+      "740": {
+        "real": 0.001077883639727175,
+        "imag": -0.00014297330571084158
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.05540587737734298,
+    "validation_relative_L2": 0.22503866078944043,
+    "validation_absolute_rms": 3.3555477523671775e-05,
+    "validation_signal_rms": 0.00014910983475443037,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.005565631956876718,
+        "imag": 0.0005395214196711146
+      },
+      "540": {
+        "real": -0.00026358204188491085,
+        "imag": 0.0019368625971309698
+      },
+      "640": {
+        "real": -4.052619450527943e-05,
+        "imag": 0.00032169194705037864
+      },
+      "740": {
+        "real": 0.00013572472292518086,
+        "imag": 0.00011360248515986301
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.005565631956876718,
+        "imag": 0.0005395214196711146
+      },
+      "540": {
+        "real": -0.00026358204188491085,
+        "imag": 0.0019368625971309698
+      },
+      "640": {
+        "real": -4.052619450527943e-05,
+        "imag": 0.00032169194705037864
+      },
+      "740": {
+        "real": 0.00013572472292518086,
+        "imag": 0.00011360248515986301
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "L54",
+    "start_M": 20,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 1.4710455076283324e-15
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9754885588088122,
+    "validation_relative_L2": 0.9728230046633178,
+    "validation_absolute_rms": 1.0220306477215353e-05,
+    "validation_signal_rms": 1.0505823184919928e-05,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -5.2937440655823074e-05,
+        "imag": 1.3537393728789898e-05
+      },
+      "540": {
+        "real": -2.104184155535391e-05,
+        "imag": 5.9312370133534754e-05
+      },
+      "640": {
+        "real": 2.725782804322012e-05,
+        "imag": 5.101728415612743e-05
+      },
+      "740": {
+        "real": 4.160614920278016e-05,
+        "imag": 2.3345220530120924e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0005273528544153499,
+        "imag": 0.0005919379012584178
+      },
+      "540": {
+        "real": 0.0009502901048991223,
+        "imag": -0.00010065952655840605
+      },
+      "640": {
+        "real": 0.0005335272427332513,
+        "imag": -0.0007328483439025527
+      },
+      "740": {
+        "real": -0.0002662101645547683,
+        "imag": -0.0006126571769795022
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9239351455835835,
+    "validation_relative_L2": 0.9082322306391999,
+    "validation_absolute_rms": 9.541727225940849e-06,
+    "validation_signal_rms": 1.0505823184919928e-05,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 1.0775304604586952e-05,
+        "imag": -0.00010226309627786508
+      },
+      "540": {
+        "real": -7.991513327406299e-05,
+        "imag": -6.944366020836705e-05
+      },
+      "640": {
+        "real": -8.932170460617135e-05,
+        "imag": 9.472717458504177e-06
+      },
+      "740": {
+        "real": -2.636122311050822e-05,
+        "imag": 5.491076678762669e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.0013896558546222285,
+        "imag": 0.0005428692003780172
+      },
+      "540": {
+        "real": -0.0004271804438318569,
+        "imag": 0.0015497844606243067
+      },
+      "640": {
+        "real": 0.0007435192205925992,
+        "imag": 0.0011952854320541298
+      },
+      "740": {
+        "real": 0.000976231125663344,
+        "imag": -1.7940733178927544e-05
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.0036807735953602026,
+    "validation_relative_L2": 0.030115571410027884,
+    "validation_absolute_rms": 3.163888683465826e-07,
+    "validation_signal_rms": 1.0505823184919928e-05,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00013895103729645448,
+        "imag": -0.0002930604030332624
+      },
+      "540": {
+        "real": -9.133316977640035e-05,
+        "imag": -5.064146056652423e-05
+      },
+      "640": {
+        "real": 4.995042715554162e-07,
+        "imag": -5.048407888580036e-07
+      },
+      "740": {
+        "real": 3.913132829796761e-08,
+        "imag": 3.2629962378894217e-07
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.004702854148069748,
+        "imag": 0.00016305031566194508
+      },
+      "540": {
+        "real": -9.480993706965406e-05,
+        "imag": 0.0015828996277632806
+      },
+      "640": {
+        "real": -1.0531917078261512e-05,
+        "imag": -3.5988702340606647e-06
+      },
+      "740": {
+        "real": 4.391137215034146e-06,
+        "imag": -2.9103768230421153e-06
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "L54",
+    "start_M": 50,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 5.412337245047638e-16
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9804931079690651,
+    "validation_relative_L2": 0.9775971203729373,
+    "validation_absolute_rms": 2.3489630834367923e-06,
+    "validation_signal_rms": 2.4027925558339428e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 1.01956793138954e-05,
+        "imag": 4.855901743207496e-06
+      },
+      "540": {
+        "real": 1.1124825726257002e-05,
+        "imag": -6.692188767391571e-06
+      },
+      "640": {
+        "real": 2.279988153069738e-06,
+        "imag": -1.1694645101890828e-05
+      },
+      "740": {
+        "real": -6.359064776453864e-06,
+        "imag": -5.75083592739432e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.0009602274252697074,
+        "imag": -0.00016721727627300477
+      },
+      "540": {
+        "real": 0.0011599656950090121,
+        "imag": 0.0003400461592754399
+      },
+      "640": {
+        "real": -0.0010326441633079586,
+        "imag": -0.0005486617201636325
+      },
+      "740": {
+        "real": 0.0007741259525298325,
+        "imag": 0.0004052061411825847
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9343750439150116,
+    "validation_relative_L2": 0.9219819030137277,
+    "validation_absolute_rms": 2.215331253174997e-06,
+    "validation_signal_rms": 2.4027925558339428e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -3.489336796625913e-06,
+        "imag": -2.2391559117466155e-05
+      },
+      "540": {
+        "real": -2.104032211084018e-05,
+        "imag": -9.58595809910332e-06
+      },
+      "640": {
+        "real": -1.7878883838201222e-05,
+        "imag": 7.790031056171405e-06
+      },
+      "740": {
+        "real": -1.7152365405316604e-06,
+        "imag": 1.3059471785357048e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0008094145081687064,
+        "imag": 0.0017805610272906933
+      },
+      "540": {
+        "real": -0.0006701766223649625,
+        "imag": -0.0020457859113339628
+      },
+      "640": {
+        "real": 0.00021975193419447112,
+        "imag": 0.001901347572421324
+      },
+      "740": {
+        "real": -0.00016389283548658547,
+        "imag": -0.0013322919559466263
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.003329016443346374,
+    "validation_relative_L2": 0.030322897308389513,
+    "validation_absolute_rms": 7.285963192391543e-08,
+    "validation_signal_rms": 2.4027925558339428e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 5.3791589611595225e-05,
+        "imag": 1.3453301641357152e-05
+      },
+      "540": {
+        "real": 1.1507201292802109e-05,
+        "imag": 1.2262344622228407e-05
+      },
+      "640": {
+        "real": 8.490137281423051e-08,
+        "imag": -4.4462926805464095e-07
+      },
+      "740": {
+        "real": -9.469133393681867e-08,
+        "imag": -4.660027868103499e-08
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.004783912742535259,
+        "imag": 0.00012918196890825733
+      },
+      "540": {
+        "real": -0.00011432760105412634,
+        "imag": 0.0015615324900965883
+      },
+      "640": {
+        "real": -3.931206337059819e-05,
+        "imag": -2.0692626862407944e-05
+      },
+      "740": {
+        "real": 1.053161915435217e-05,
+        "imag": 2.1824563566308434e-06
+      }
+    },
+    "moment": "L54",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "L54",
+    "start_M": 70,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 8.673617379884035e-17
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9543255579614854,
+    "validation_relative_L2": 1.1377813857406078,
+    "validation_absolute_rms": 0.00035410400316639325,
+    "validation_signal_rms": 0.000311223234625076,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.003109476336965291,
+        "imag": -0.002144321774781513
+      },
+      "540": {
+        "real": 8.088867296865048e-05,
+        "imag": -0.0045854724190572595
+      },
+      "640": {
+        "real": -0.003115585066748042,
+        "imag": -0.0030980628475974735
+      },
+      "740": {
+        "real": -0.003195215928127319,
+        "imag": 0.0007114800101327831
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0004594751211389028,
+        "imag": 0.0004382394235846786
+      },
+      "540": {
+        "real": -0.0002319089030281498,
+        "imag": 0.0007110604668801394
+      },
+      "640": {
+        "real": -0.0007011486292005732,
+        "imag": -2.5198207146330015e-05
+      },
+      "740": {
+        "real": -0.0002156079309211272,
+        "imag": -0.000467580547003238
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9289708192430526,
+    "validation_relative_L2": 1.2170300856541032,
+    "validation_absolute_rms": 0.00037876803989330337,
+    "validation_signal_rms": 0.000311223234625076,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.00332680998728574,
+        "imag": -0.0030269117668595947
+      },
+      "540": {
+        "real": -0.000585815920461178,
+        "imag": -0.005553541537581802
+      },
+      "640": {
+        "real": -0.004190066820216692,
+        "imag": -0.003361515911554029
+      },
+      "740": {
+        "real": -0.0037907411804378437,
+        "imag": 0.0012169809511340874
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0006121748106338495,
+        "imag": 0.00044375588277055516
+      },
+      "540": {
+        "real": -0.00017425915209261513,
+        "imag": 0.0008938785326834112
+      },
+      "640": {
+        "real": -0.0008556518314117426,
+        "imag": 6.0456928706893816e-05
+      },
+      "740": {
+        "real": -0.00031312202496244784,
+        "imag": -0.0005423314700240228
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 0,
+    "train_end_M": 30,
+    "validation_start_M": 30.1,
+    "validation_end_M": 50,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.3830259687919173,
+    "validation_relative_L2": 1.2491385231165941,
+    "validation_absolute_rms": 0.0003887609316591368,
+    "validation_signal_rms": 0.000311223234625076,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.002171427074670772,
+        "imag": -0.017263576374412233
+      },
+      "540": {
+        "real": -0.0028585430580124645,
+        "imag": -0.0002583248847029744
+      },
+      "640": {
+        "real": -0.006831757219767599,
+        "imag": -0.0004956527266851349
+      },
+      "740": {
+        "real": -0.0029669587874165937,
+        "imag": 0.003621487738640672
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.002766694469883447,
+        "imag": -0.0009490683574151653
+      },
+      "540": {
+        "real": 0.00043332615182066123,
+        "imag": 0.00017698394983466572
+      },
+      "640": {
+        "real": -0.0008544460353354298,
+        "imag": 0.0006828422939189008
+      },
+      "740": {
+        "real": -0.0006554051777707227,
+        "imag": -0.0003357452019594505
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I64",
+    "start_M": 0,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 6.661338147750939e-16
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9679894919677675,
+    "validation_relative_L2": 0.9645919316665542,
+    "validation_absolute_rms": 3.849575456637853e-05,
+    "validation_signal_rms": 3.9908849848938996e-05,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": -0.00024074203035692553,
+        "imag": -0.00020098624487414546
+      },
+      "540": {
+        "real": -0.00034760771634180146,
+        "imag": 9.965582110323649e-05
+      },
+      "640": {
+        "real": -0.00014873163343155743,
+        "imag": 0.0002975384076857443
+      },
+      "740": {
+        "real": 0.00012691208001791115,
+        "imag": 0.00020347738054575276
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.00024074203035692553,
+        "imag": -0.00020098624487414546
+      },
+      "540": {
+        "real": -0.00034760771634180146,
+        "imag": 9.965582110323649e-05
+      },
+      "640": {
+        "real": -0.00014873163343155743,
+        "imag": 0.0002975384076857443
+      },
+      "740": {
+        "real": 0.00012691208001791115,
+        "imag": 0.00020347738054575276
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9062220667611872,
+    "validation_relative_L2": 0.8835107475627384,
+    "validation_absolute_rms": 3.525989776440517e-05,
+    "validation_signal_rms": 3.9908849848938996e-05,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0004532100272073895,
+        "imag": -0.000328272310184433
+      },
+      "540": {
+        "real": 4.4617811446189325e-06,
+        "imag": -0.0005823713880491061
+      },
+      "640": {
+        "real": -0.00035667167567261836,
+        "imag": -0.0003461328071964088
+      },
+      "740": {
+        "real": -0.00032869174086269084,
+        "imag": 8.003717975115724e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0004532100272073895,
+        "imag": -0.000328272310184433
+      },
+      "540": {
+        "real": 4.4617811446189325e-06,
+        "imag": -0.0005823713880491061
+      },
+      "640": {
+        "real": -0.00035667167567261836,
+        "imag": -0.0003461328071964088
+      },
+      "740": {
+        "real": -0.00032869174086269084,
+        "imag": 8.003717975115724e-05
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 20,
+    "train_end_M": 50,
+    "validation_start_M": 50.1,
+    "validation_end_M": 70,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.07052704706128803,
+    "validation_relative_L2": 0.2869174778161956,
+    "validation_absolute_rms": 1.1450546541202832e-05,
+    "validation_signal_rms": 3.990884984893899e-05,
+    "scaled_condition_number": 4.406972325666723,
+    "coefficients_at_start": {
+      "440": {
+        "real": 0.0016422556149633593,
+        "imag": -1.6717412212036467e-05
+      },
+      "540": {
+        "real": 0.0002456360069271095,
+        "imag": -0.0007663069028360925
+      },
+      "640": {
+        "real": -8.543021221210286e-05,
+        "imag": -0.0002027096451690836
+      },
+      "740": {
+        "real": -4.523913475038565e-05,
+        "imag": -5.35093105365811e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0016422556149633593,
+        "imag": -1.6717412212036467e-05
+      },
+      "540": {
+        "real": 0.0002456360069271095,
+        "imag": -0.0007663069028360925
+      },
+      "640": {
+        "real": -8.543021221210286e-05,
+        "imag": -0.0002027096451690836
+      },
+      "740": {
+        "real": -4.523913475038565e-05,
+        "imag": -5.35093105365811e-05
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I64",
+    "start_M": 20,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 5.551115123125783e-17
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9701256124396302,
+    "validation_relative_L2": 0.9665193018225491,
+    "validation_absolute_rms": 2.7376545423335282e-06,
+    "validation_signal_rms": 2.8324882257096984e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 1.501078346758088e-05,
+        "imag": -6.327928314498701e-06
+      },
+      "540": {
+        "real": 3.666969356249782e-06,
+        "imag": -1.837786352304162e-05
+      },
+      "640": {
+        "real": -1.0154153253764118e-05,
+        "imag": -1.3892429528520323e-05
+      },
+      "740": {
+        "real": -1.2346283437171662e-05,
+        "imag": 1.0107081689582675e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.00018161328419686226,
+        "imag": -0.00015125346141055948
+      },
+      "540": {
+        "real": -0.0002757432953120548,
+        "imag": 7.026138169317769e-05
+      },
+      "640": {
+        "real": -0.00012663210862711913,
+        "imag": 0.0002380927428761102
+      },
+      "740": {
+        "real": 0.00010339101451318887,
+        "imag": 0.00016953286714876958
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9106069713460954,
+    "validation_relative_L2": 0.8915419862881785,
+    "validation_absolute_rms": 2.5252821788871037e-06,
+    "validation_signal_rms": 2.8324882257096984e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": 2.6867606442631064e-06,
+        "imag": 2.9301193509022397e-05
+      },
+      "540": {
+        "real": 2.592142249179356e-05,
+        "imag": 1.5799422827127355e-05
+      },
+      "640": {
+        "real": 2.4908725342251502e-05,
+        "imag": -6.605252686427285e-06
+      },
+      "740": {
+        "real": 5.213426955865317e-06,
+        "imag": -1.668081342106538e-05
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.00035968169418544544,
+        "imag": -0.00022995654171548382
+      },
+      "540": {
+        "real": 4.6449371660051444e-05,
+        "imag": -0.00045859934408477154
+      },
+      "640": {
+        "real": -0.00026325257297768484,
+        "imag": -0.0003062595095789627
+      },
+      "740": {
+        "real": -0.000276433485081305,
+        "imag": 4.547161292078421e-05
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 50,
+    "train_end_M": 80,
+    "validation_start_M": 80.10000000000001,
+    "validation_end_M": 100,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.00572913129349985,
+    "validation_relative_L2": 0.03907314805318277,
+    "validation_absolute_rms": 1.1067423180205204e-07,
+    "validation_signal_rms": 2.8324882257096984e-06,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -4.4199249606360654e-05,
+        "imag": 7.923254119047766e-05
+      },
+      "540": {
+        "real": 3.299967513384501e-05,
+        "imag": 2.754543737979414e-05
+      },
+      "640": {
+        "real": 8.678668281451176e-06,
+        "imag": -3.297531854938867e-06
+      },
+      "740": {
+        "real": -1.3582243834813179e-08,
+        "imag": -1.4646203548156516e-08
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0013156875770367915,
+        "imag": 4.138252656514762e-05
+      },
+      "540": {
+        "real": 0.0001609179840611621,
+        "imag": -0.000632549096750433
+      },
+      "640": {
+        "real": -0.0001057735984403244,
+        "imag": -9.990484287917799e-05
+      },
+      "740": {
+        "real": -1.1193131996135274e-07,
+        "imag": 2.999925202301532e-07
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I64",
+    "start_M": 50,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 1.5265566588595902e-16
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9814339247427539,
+    "validation_relative_L2": 0.9784526677002561,
+    "validation_absolute_rms": 7.493636534028112e-07,
+    "validation_signal_rms": 7.658660230996221e-07,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -2.7499076549191842e-06,
+        "imag": -2.23015968354715e-06
+      },
+      "540": {
+        "real": -3.870608459233703e-06,
+        "imag": 1.231093664509035e-06
+      },
+      "640": {
+        "real": -1.5299353770221769e-06,
+        "imag": 3.3926437827240727e-06
+      },
+      "740": {
+        "real": 1.524474181399728e-06,
+        "imag": 2.197717971539661e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0002803343276373101,
+        "imag": 0.00012162177433197203
+      },
+      "540": {
+        "real": -0.00032841598197068405,
+        "imag": -0.00018750683555435405
+      },
+      "640": {
+        "real": 0.0002747219392967423,
+        "imag": 0.00024070245993288944
+      },
+      "740": {
+        "real": -0.0002064761574124267,
+        "imag": -0.00017795483362270114
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": -1
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.9330908030095099,
+    "validation_relative_L2": 0.9204144595041984,
+    "validation_absolute_rms": 7.049141617038686e-07,
+    "validation_signal_rms": 7.658660230996221e-07,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -6.670100496497186e-07,
+        "imag": 7.442413297769128e-06
+      },
+      "540": {
+        "real": 5.956287754749099e-06,
+        "imag": 4.5855718122042675e-06
+      },
+      "640": {
+        "real": 6.178452547305534e-06,
+        "imag": -1.1927201790343614e-06
+      },
+      "740": {
+        "real": 1.4323986109591787e-06,
+        "imag": -3.979646799585688e-06
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": -0.00011716298378719848,
+        "imag": -0.0006341845029332021
+      },
+      "540": {
+        "real": 6.14931936680203e-05,
+        "imag": 0.0006971833105060909
+      },
+      "640": {
+        "real": 6.481262710762381e-05,
+        "imag": -0.000614154155662797
+      },
+      "740": {
+        "real": -3.981485152153317e-05,
+        "imag": 0.0004291983067005972
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 0
+  },
+  {
+    "model": "F4",
+    "modes": [
+      "440",
+      "540",
+      "640",
+      "740"
+    ],
+    "start_M": 70,
+    "train_end_M": 100,
+    "validation_start_M": 100.10000000000001,
+    "validation_end_M": 120,
+    "duration_M": 30,
+    "training_samples": 301,
+    "validation_samples": 200,
+    "stride": 1,
+    "weighting": "uniform",
+    "real_parameter_count": 8,
+    "fit_relative_L2": 0.0030046843385276955,
+    "validation_relative_L2": 0.03228367794503649,
+    "validation_absolute_rms": 2.4724972038794075e-08,
+    "validation_signal_rms": 7.658660230996222e-07,
+    "scaled_condition_number": 4.406972325666727,
+    "coefficients_at_start": {
+      "440": {
+        "real": -1.4870485329638806e-05,
+        "imag": -4.767112316714772e-06
+      },
+      "540": {
+        "real": -3.6929165319986728e-06,
+        "imag": -5.9037109221672995e-06
+      },
+      "640": {
+        "real": 6.874821956712948e-07,
+        "imag": -1.195644491788973e-06
+      },
+      "740": {
+        "real": -1.3801355800484968e-08,
+        "imag": 1.3894352878681974e-08
+      }
+    },
+    "coefficients_at_reference_20M": {
+      "440": {
+        "real": 0.0013468014031596653,
+        "imag": 5.141185222045018e-05
+      },
+      "540": {
+        "real": 0.00017153139440768207,
+        "imag": -0.0006252631660437946
+      },
+      "640": {
+        "real": -9.25749739731497e-05,
+        "imag": -9.875109388235908e-05
+      },
+      "740": {
+        "real": 1.0073112131702771e-06,
+        "imag": -1.7229682240899543e-06
+      }
+    },
+    "moment": "I64",
+    "control": "rotation_factor",
+    "value": 1
+  },
+  {
+    "moment": "I64",
+    "start_M": 70,
+    "control": "consistent_frame_change",
+    "validation_error_difference": 2.914335439641036e-16
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "viewer_common_frames": 55,
+  "viewer_time_slots": 353,
+  "empty_slots": [
+    192,
+    8608
+  ],
+  "display_mask_count": 165,
+  "common_geometry_precision_decimals": 8,
+  "individual_angular_display_subsampling_only": true,
+  "all_time_samples_included": true,
+  "intermediate_time_or_shape_interpolation": false,
+  "browser_WebGL_render_tested": false,
+  "independent_mask_comparisons": 165,
+  "frozen_B3_arrays_preserved_exactly": 72,
+  "static_figure_visually_inspected": true
+}

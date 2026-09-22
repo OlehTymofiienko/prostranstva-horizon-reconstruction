@@ -1,0 +1,172 @@
+{
+  "stage": "BH-HF4-B3",
+  "created_UTC": "2026-09-20T11:34:12.813057+00:00",
+  "raw_input_archives_referenced_not_duplicated": true,
+  "files": [
+    {
+      "path": "hf4_b2/results/BH_HF4_B2_fields_and_masks.npz",
+      "bytes": 1085347,
+      "sha256": "10b448a8e9f70556670d14d015a90cd2c6557bde7a61a4ac5e1fea73db4fdfa4"
+    },
+    {
+      "path": "hf4_b2/results/BH_HF4_B2_summary.json",
+      "bytes": 12444,
+      "sha256": "5f3e8e625c9bcc0576783f8d593db131f588ff64e082886e610cb5b782bb9feb"
+    },
+    {
+      "path": "hf4_b2/results/BH_HF4_B2_view_data.json",
+      "bytes": 4931370,
+      "sha256": "3e6885248dd53c9103f3867b9472d106b65b6e8a91c197cd3b2eb3bcd9b35dd3"
+    },
+    {
+      "path": "hf4_b2/results/BH_HF4_resume_state_B2.json",
+      "bytes": 12978,
+      "sha256": "3b702bf8a3981754057fa12cb7c1e65d22df32bbc39ee6236597393dde2bcf19"
+    },
+    {
+      "path": "hf4_b2/vendor/plotly-3.3.1.min.js",
+      "bytes": 4838938,
+      "sha256": "e2b0f77ee8156ff9d525852fe4acb7bfe7d85e8a2e1da0523f6d16209b848968"
+    },
+    {
+      "path": "hf4_b2/viewer_template.html",
+      "bytes": 10941,
+      "sha256": "ae0f00bb980121fcaa39c7d9f068c5679eaff8d5d2d99abf9f8b00d48d780d10"
+    },
+    {
+      "path": "hf4_b3/BH_HF4_B3.py",
+      "bytes": 18072,
+      "sha256": "f297ab75c906e9c5aa76d447548e054a671bff7fb7a1ed6d87fc11958f04fcbd"
+    },
+    {
+      "path": "hf4_b3/BH_HF4_B4_collect.py",
+      "bytes": 7696,
+      "sha256": "1cc499236141d9a7398389caf5e9cdf23f58de3db560df46757f751b9a12c07c"
+    },
+    {
+      "path": "hf4_b3/README.md",
+      "bytes": 4400,
+      "sha256": "cbcf083e8f21c26cdc03af99b981f088c97c3974eb9208d827ec6461db101d3a"
+    },
+    {
+      "path": "hf4_b3/build_B3_view.py",
+      "bytes": 7053,
+      "sha256": "b97055b1bb6fc0ddebfafafd6bf8352fc741761b17a9d1833ecbee668f32dff3"
+    },
+    {
+      "path": "hf4_b3/provenance/A3_historical_qc0_t22.par",
+      "bytes": 15118,
+      "sha256": "bb140cb0e6d366a8b80eaacb42d22edf61e0efe0563216136e3fa96c857a9589"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_boundary.F90",
+      "bytes": 3195,
+      "sha256": "bfb66a0c2325221796fcaecf5b7c46878194b7a12e74ad229d487ed674b70910"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_derivs.F90",
+      "bytes": 5476,
+      "sha256": "6fc3fe87981cc26c1b28f9467ee9eccc9c888013e4662804ac28e6b991212ed9"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_gram_schmidt.F90",
+      "bytes": 2246,
+      "sha256": "4512825ffeace950410212016aaa2d789ed938bee004a64a9241d94adfd545df"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_set_coordinates.F90",
+      "bytes": 1583,
+      "sha256": "c1cb3ca4fc692d524d2c580808961e5f4a8d5ea15eb6c9c36ddd5ef4b9818246"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_tetrad1.F90",
+      "bytes": 10098,
+      "sha256": "21dc1b770d2f37d2408b5d4d7629380cf71add0b213971d673d67fda228055e9"
+    },
+    {
+      "path": "hf4_b3/provenance/qlm_twometric.F90",
+      "bytes": 4249,
+      "sha256": "e4c225eaec7851c534b4e0d421d78ed63a1a734d15224c225c28efc8c552f36d"
+    },
+    {
+      "path": "hf4_b3/provenance/source_records.json",
+      "bytes": 803,
+      "sha256": "9ffa2ed7c73b010f329f2b59674d27d0e911ed647eabd4ccd7e428770edb73c6"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_definition.json",
+      "bytes": 993,
+      "sha256": "062e1d738a7e284c2649e6e6e4bd31fc510bffa4662488ca663e336dcb9bccf6"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_fields_3D.html",
+      "bytes": 9785437,
+      "sha256": "33d84c77ae3387cc16ddf6b1595e8be4642fb0b0b3910ec12d87df9eb4a99f09"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_geometry.csv",
+      "bytes": 4390,
+      "sha256": "bc8b922e2819e67192c37bda9b01fbd9fa04090f689486b8bffc6953bc7930ee"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_intrinsic_geometry_and_masks.npz",
+      "bytes": 908231,
+      "sha256": "dde62f017bec55b2bcb62dee37503d1ac3842366bd6c28ee60d258b5f21c1598"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_late_area_controls.json",
+      "bytes": 3510,
+      "sha256": "979796a7e43c13e0fce8feaf4e68abab3bb7a2b95f0b608f93cecd2207eb371a"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_localization.csv",
+      "bytes": 40286,
+      "sha256": "695370703d22c4b042bde4e3c6686c39b1636ee9298f89db1b4a052e9dfaf290"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_mask_comparison.csv",
+      "bytes": 4145,
+      "sha256": "2664a01f818a0617d85a86008757a655bae0da6fc39774155b51a0303d7b0707"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_overview.png",
+      "bytes": 270809,
+      "sha256": "6c5861fa080707f97aa8888915a2d95ed023cd2ee0c787fcf83f2e4b513da27d"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_report.md",
+      "bytes": 19610,
+      "sha256": "cb73e3b700aaf189f5d658096e1f83ef5b843233c7de6eafb1a787ea2264ed95"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_summary.json",
+      "bytes": 5611,
+      "sha256": "a2089efdf3875832a8a4ca5dade8c6fda343757db3787d1fbf8109f7f9fc8357"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_temporal_pairs.csv",
+      "bytes": 1765,
+      "sha256": "3db6a84c1ddb07751f4181da5ca77425db55e1de8f15feaa5bf7309e949a8d72"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_view_checks.json",
+      "bytes": 357,
+      "sha256": "ef3e00799f205affceb03f62a2eda5bbb9aa903dd5dc536dd6120115e082d366"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B3_view_data.json",
+      "bytes": 4934935,
+      "sha256": "e57a376cb11b92dd424f1c21993283b7e9594bdd6b4dce33e8679ed4fd19b5d2"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_B4_collector_checks.json",
+      "bytes": 305,
+      "sha256": "dd87433f670a8a53391f980fd233d5ab9aac69fd197bb29797c2aa381f7f5401"
+    },
+    {
+      "path": "hf4_b3/results/BH_HF4_resume_state_B3.json",
+      "bytes": 19125,
+      "sha256": "ea20ac6c3ad33b4bc130aac1668cc6c0dfc04aaf7cb881b3dbb6882066df6489"
+    }
+  ]
+}

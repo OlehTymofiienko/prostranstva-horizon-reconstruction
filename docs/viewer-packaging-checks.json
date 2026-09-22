@@ -1,0 +1,22 @@
+[
+  {
+    "viewer": "hf1",
+    "frames": 235,
+    "data_exact_after_split": true,
+    "original_data_sha256": "906ea8ac7810963cc4a0529406b8645ac664aa771b211b5f05c36a4186fa7141"
+  },
+  {
+    "viewer": "qc0",
+    "frames": 353,
+    "data_exact_after_split": true,
+    "original_data_sha256": "37494eeb002e1690ad85a4aed37167ac1caf52b4f30b66087b1aef85257b4da3"
+  },
+  {
+    "viewer": "b5",
+    "frames": 55,
+    "nodes": 2520,
+    "field_modes": 12,
+    "display_float32_max_abs_rounding_error": 1.1917620579282584e-07,
+    "full_precision_science_unchanged": true
+  }
+]

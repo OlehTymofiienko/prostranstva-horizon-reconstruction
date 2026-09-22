@@ -1,0 +1,5 @@
+numpy
+scipy
+pandas
+matplotlib
+# ffmpeg устанавливается отдельно для формирования видео.

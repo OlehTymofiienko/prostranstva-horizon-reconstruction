@@ -1,0 +1,110 @@
+[
+  {
+    "stage": "horizon_audit",
+    "title": "BH_YITIAN_A1_report",
+    "markdown": "BH_YITIAN_A1_report.md",
+    "html": "BH_YITIAN_A1_report.html"
+  },
+  {
+    "stage": "hf3_continuation",
+    "title": "BH_YITIAN_A2_report",
+    "markdown": "BH_YITIAN_A2_report.md",
+    "html": "BH_YITIAN_A2_report.html"
+  },
+  {
+    "stage": "hf3_a3",
+    "title": "BH_YITIAN_A3_report",
+    "markdown": "BH_YITIAN_A3_report.md",
+    "html": "BH_YITIAN_A3_report.html"
+  },
+  {
+    "stage": "hf3_a4",
+    "title": "BH_YITIAN_A4_report",
+    "markdown": "BH_YITIAN_A4_report.md",
+    "html": "BH_YITIAN_A4_report.html"
+  },
+  {
+    "stage": "hf3_r7b",
+    "title": "BH_HF3_R7B_report",
+    "markdown": "BH_HF3_R7B_report.md",
+    "html": "BH_HF3_R7B_report.html"
+  },
+  {
+    "stage": "hf4_a1",
+    "title": "BH_HF4_A1_report",
+    "markdown": "BH_HF4_A1_report.md",
+    "html": "BH_HF4_A1_report.html"
+  },
+  {
+    "stage": "hf4_a2",
+    "title": "BH_HF4_A2_report",
+    "markdown": "BH_HF4_A2_report.md",
+    "html": "BH_HF4_A2_report.html"
+  },
+  {
+    "stage": "hf4_a3",
+    "title": "BH_HF4_A3_report",
+    "markdown": "BH_HF4_A3_report.md",
+    "html": "BH_HF4_A3_report.html"
+  },
+  {
+    "stage": "hf4_b2",
+    "title": "BH_HF4_B1_report",
+    "markdown": "BH_HF4_B1_report.md",
+    "html": "BH_HF4_B1_report.html"
+  },
+  {
+    "stage": "hf4_b2",
+    "title": "BH_HF4_birth_geometry_report",
+    "markdown": "BH_HF4_birth_geometry_report.md",
+    "html": "BH_HF4_birth_geometry_report.html"
+  },
+  {
+    "stage": "hf4_b2",
+    "title": "BH_HF4_B2_report",
+    "markdown": "BH_HF4_B2_report.md",
+    "html": "BH_HF4_B2_report.html"
+  },
+  {
+    "stage": "hf4_b3",
+    "title": "BH_HF4_B3_report",
+    "markdown": "BH_HF4_B3_report.md",
+    "html": "BH_HF4_B3_report.html"
+  },
+  {
+    "stage": "hf4_b4",
+    "title": "BH_HF4_B4_report",
+    "markdown": "BH_HF4_B4_report.md",
+    "html": "BH_HF4_B4_report.html"
+  },
+  {
+    "stage": "hf4_b5",
+    "title": "BH_HF4_B5_report",
+    "markdown": "BH_HF4_B5_report.md",
+    "html": "BH_HF4_B5_report.html"
+  },
+  {
+    "stage": "hf1_visual_v2",
+    "title": "BH_HF1_V2_report",
+    "markdown": "BH_HF1_V2_report.md",
+    "html": "BH_HF1_V2_report.html"
+  },
+  {
+    "stage": "Итоговый выпуск",
+    "title": "PROJECT_REPORT",
+    "markdown": "PROJECT_REPORT.md",
+    "html": "PROJECT_REPORT.html"
+  },
+  {
+    "stage": "Итоговый выпуск",
+    "title": "REPRODUCIBILITY",
+    "markdown": "REPRODUCIBILITY.md",
+    "html": "REPRODUCIBILITY.html"
+  },
+  {
+    "stage": "Итоговый выпуск",
+    "title": "SOURCES",
+    "markdown": "SOURCES.md",
+    "html": "SOURCES.html"
+  }
+]

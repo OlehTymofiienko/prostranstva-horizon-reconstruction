@@ -1,0 +1,17 @@
+{
+  "QLM_code_and_historical_parameter_origin": "BH_HF4_A3_inventory.zip",
+  "archive_library_file_id": "libfile_414afe6c284081919725d43140b19043",
+  "new_early_inventory": {
+    "filename": "BH_HF4_early_geometry_t22_inventory.txt",
+    "library_file_id": "libfile_03de1fa4b6cc8191af870e81f83b2fea",
+    "read_in_full": true,
+    "actual_output_directory": "/home/alex/simulations/qc0_early_geometry_t22",
+    "parameter_file": "/mnt/c/Users/Admin/qc0-horizon-early-geometry-t22.par",
+    "reported_common_frames": 55,
+    "final_iteration": 11264,
+    "final_time_M": 22,
+    "reported_log_exit_status": 0
+  },
+  "historical_parameter_file_is_not_the_new_early_parameter_file": true,
+  "documentation": "https://einsteintoolkit.org/thornguide/EinsteinAnalysis/QuasiLocalMeasures/documentation.html"
+}

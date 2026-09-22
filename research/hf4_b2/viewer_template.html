@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HF4-B2 — области на общем горизонте</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#202b3c;font:16px/1.5 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:24px}h1{font-size:26px;font-weight:600;margin:0 0 5px}p{margin:7px 0}.sub{color:#576578}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0 10px}button,select{font:inherit;background:white;color:#202b3c;border:1px solid #bcc7d3;border-radius:5px;padding:8px 12px}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #236fa8}button[aria-pressed=true]{background:#183f63;color:white}label{display:inline-flex;gap:6px;align-items:center}#plot{width:100%;height:640px;background:white;border-radius:8px}#time{flex:1;min-width:180px;max-width:570px}#status{min-height:48px;padding:10px 0;color:#334860}.notes{max-width:1000px;font-size:14px}.notes p{margin:7px 0}#readout{font-variant-numeric:tabular-nums;font-weight:600}#error{color:#ad2525}details{margin-top:14px}summary{cursor:pointer}@media(max-width:600px){main{padding:12px}h1{font-size:21px}#plot{height:500px}.controls{gap:8px}button,select{padding:9px}#readout{display:block}}
+</style></head><body><main>
+<h1>Рождение общего горизонта: где находятся сильные отклонения полей</h1>
+<p class="sub">QC0 · HF4-B2 · реальные сохранённые поверхности · свободное вращение мышью</p>
+<div class="controls">
+<label>Поле <select id="field"><option value="repsi2">Re Ψ₂</option><option value="impsi2">Im Ψ₂</option><option value="abs_npsigma">|σ|</option></select></label>
+<label><input id="mask" type="checkbox" checked>Выделить сильные отклонения</label>
+<label><input id="inners" type="checkbox">Показать внутренние AH1/AH2</label>
+<button id="orbit" type="button" aria-pressed="false">Облёт камеры</button>
+<button id="reset" type="button">Исходный ракурс</button>
+</div>
+<div class="controls">
+<button id="previous" type="button" aria-label="Предыдущий кадр">← Кадр</button>
+<button id="play" type="button" aria-pressed="false">Смена кадров</button>
+<button id="next" type="button" aria-label="Следующий кадр">Кадр →</button>
+<input id="time" type="range" min="0" max="15" step="1" value="4" aria-label="Сохранённый момент времени">
+<span id="readout" aria-live="polite"></span>
+</div>
+<div id="plot" role="img" aria-label="Трёхмерные поверхности горизонтов с полем и выделенными областями"></div>
+<p id="status" aria-live="polite"></p><p id="error" role="alert"></p>
+<div class="notes">
+<p><strong>Жёлтые отметки</strong> — примерно 5% координатной площади сетки с наибольшим отклонением поля от медианы данного кадра. Это новое выделение B2 в QC0; маска HF1 из SXS:BBH:0305 сюда не переносилась.</p>
+<p>Перетаскивание мышью вращает сцену, колесо меняет масштаб. «Облёт камеры» меняет точку обзора при фиксированном времени. Выбор времени показывает только сохранённые кадры, без дорисовывания промежуточной эволюции.</p>
+<details><summary>Как понимать эту сцену</summary>
+<p>AH1/AH2 — внутренние отдельные поверхности, AH3 — общий кажущийся горизонт на выбранном срезе. Это координатное представление численного расчёта, а не оптический вид и не реконструкция глобального горизонта событий.</p>
+<p>Цветовая шкала каждого поля фиксирована для всех кадров. Компоненты Ψ₂ и σ зависят от используемой тетрады. Евклидова площадь показанной сетки не равна физической площади горизонта.</p>
+<p>Экспорт VTK содержит 35×72 точки и не включает две полярные вершины. Для замыкания изображения добавлены две маленькие нейтральные крышки, не участвующие в анализе.</p>
+<p>От t=18,9375M до t=20,25M в пакете нет кадров. После этой границы проигрывание останавливается; следующий кадр можно выбрать кнопкой или ползунком. τ отсчитывается от первого сохранённого AH3 при t=18,625M.</p>
+</details></div>
+</main><script id="data" type="application/json">__DATA__</script>
+<script>__PLOTLY__</script>
+<script id="controller">
+(()=>{'use strict';
+const D=JSON.parse(document.getElementById('data').textContent),el=id=>document.getElementById(id);
+const labels={repsi2:'Re Ψ₂',impsi2:'Im Ψ₂',abs_npsigma:'|σ|'};
+const faces=D.triangles,ii=faces.map(x=>x[0]),jj=faces.map(x=>x[1]),kk=faces.map(x=>x[2]);
+let index=4,playing=false,orbiting=false,timeTimer=null,orbitTimer=null,angle=.72,renderPromise=Promise.resolve();
+const defaultCamera={eye:{x:1.8,y:1.6,z:1.1},up:{x:0,y:0,z:1},projection:{type:'orthographic'}};
+const layout={paper_bgcolor:'#ffffff',plot_bgcolor:'#ffffff',margin:{l:8,r:8,t:12,b:12},uirevision:'keep-camera',showlegend:true,
+ legend:{orientation:'h',x:.02,y:.98,bgcolor:'rgba(255,255,255,.8)'},
+ scene:{aspectmode:'cube',camera:defaultCamera,
+ xaxis:{title:{text:'x / M'},range:[-1.08,1.08],backgroundcolor:'#f8fafc',gridcolor:'#dbe2ea'},
+ yaxis:{title:{text:'y / M'},range:[-1.08,1.08],backgroundcolor:'#f8fafc',gridcolor:'#dbe2ea'},
+ zaxis:{title:{text:'z / M'},range:[-1.08,1.08],backgroundcolor:'#f8fafc',gridcolor:'#dbe2ea'}}};
+function xyz(obj){const x=[],y=[],z=[];for(let i=0;i<obj.xyz.length;i+=3){x.push(obj.xyz[i]);y.push(obj.xyz[i+1]);z.push(obj.xyz[i+2]);}return{x,y,z};}
+function caps(P){const x=P.x.slice(),y=P.y.slice(),z=P.z.slice(),i=[],j=[],k=[];
+ for(const start of [0,(D.nt-1)*D.np]){const n=x.length;let ax=0,ay=0,az=0;for(let q=0;q<D.np;q++){ax+=P.x[start+q];ay+=P.y[start+q];az+=P.z[start+q];}x.push(ax/D.np);y.push(ay/D.np);z.push(az/D.np);for(let q=0;q<D.np;q++){i.push(n);j.push(start+q);k.push(start+(q+1)%D.np);}}
+ return{x,y,z,i,j,k};}
+function traces(){const F=D.frames[index],f=el('field').value,common=F.objects.some(o=>o.horizon===3),tr=[];
+ for(const o of F.objects){if(common&&o.horizon!==3&&!el('inners').checked)continue;
+  const P=xyz(o),C=caps(P),isCommon=o.horizon===3,opacity=(isCommon && el('inners').checked) ? 0.70 : 1;
+  const base={type:'mesh3d',...P,i:ii,j:jj,k:kk,name:'AH'+o.horizon,opacity,showlegend:true,
+   lighting:{ambient:.76,diffuse:.65,specular:.1,roughness:.85},flatshading:false,hoverinfo:'skip'};
+  if(isCommon){base.intensity=F.fields[f];base.cmin=D.ranges[f][0];base.cmax=D.ranges[f][1];base.colorscale=f==='abs_npsigma'?'Cividis':'RdBu';base.showscale=true;base.colorbar={title:{text:labels[f]},len:.63,thickness:15};}
+  else base.color=o.horizon===1?'#c89451':'#3b99a1';
+  tr.push(base);tr.push({type:'mesh3d',...C,color:isCommon?'#aeb9c5':base.color,opacity,showlegend:false,hoverinfo:'skip'});
+  if(isCommon&&el('mask').checked){const ids=F.masks[f];tr.push({type:'scatter3d',mode:'markers',name:'Сильные отклонения',x:ids.map(k=>P.x[k]),y:ids.map(k=>P.y[k]),z:ids.map(k=>P.z[k]),
+    text:ids.map(k=>`${labels[f]} = ${F.fields[f][k].toPrecision(5)}<br>Индекс точки: ${k}`),hovertemplate:'%{text}<br>x=%{x:.4f}, y=%{y:.4f}, z=%{z:.4f}<extra></extra>',marker:{color:'#ffcf33',size:3,opacity:1,line:{color:'#57490d',width:.4}},showlegend:true});}
+ }
+ return tr;
+}
+function update(){const F=D.frames[index];el('time').value=String(index);
+ el('readout').textContent=`t = ${F.t_M.toFixed(4)} M · τ = ${F.tau_M.toFixed(4)} M`;
+ const gap=index>0&&F.t_M-D.frames[index-1].t_M>.1;
+ el('status').textContent=(gap?'Переход через промежуток без кадров 1,3125M. ':'')+(F.fields?`Общий горизонт AH3. Поле: ${labels[el('field').value]}. Размеры из B1: отношение размахов ${F.B1_span_ratio.toFixed(3)}.`:'Общий горизонт ещё не найден. Показаны две отдельные поверхности AH1/AH2.');
+ renderPromise=renderPromise.then(()=>Plotly.react(el('plot'),traces(),layout,{responsive:true,displaylogo:false,scrollZoom:true})).catch(e=>{el('error').textContent='Ошибка отображения: '+e.message;});return renderPromise;
+}
+function stopPlay(){playing=false;if(timeTimer!==null)clearInterval(timeTimer);timeTimer=null;el('play').textContent='Смена кадров';el('play').setAttribute('aria-pressed','false');}
+function setFrame(i){index=Math.max(0,Math.min(D.frames.length-1,i));return update();}
+el('previous').onclick=()=>{stopPlay();setFrame(index-1);};el('next').onclick=()=>{stopPlay();setFrame(index+1);};
+el('time').oninput=()=>{stopPlay();setFrame(Number(el('time').value));};
+for(const id of ['field','mask','inners'])el(id).onchange=()=>update();
+el('play').onclick=()=>{if(playing){stopPlay();return;}playing=true;el('play').textContent='Пауза';el('play').setAttribute('aria-pressed','true');timeTimer=setInterval(()=>{
+ if(index>=D.frames.length-1){stopPlay();return;}if(D.frames[index+1].t_M-D.frames[index].t_M>.1){stopPlay();el('status').textContent='Дальше промежуток без кадров 1,3125M. Нажмите «Кадр →», чтобы перейти к следующему сохранённому времени.';return;}setFrame(index+1);},850);};
+el('orbit').onclick=()=>{orbiting=!orbiting;el('orbit').setAttribute('aria-pressed',String(orbiting));el('orbit').textContent=orbiting?'Остановить облёт':'Облёт камеры';
+ if(orbiting){orbitTimer=setInterval(()=>{angle+=.016;Plotly.relayout(el('plot'),{'scene.camera.eye':{x:2.4*Math.cos(angle),y:2.4*Math.sin(angle),z:1.1+.35*Math.sin(angle*.7)}});},60);}else{clearInterval(orbitTimer);orbitTimer=null;}};
+el('reset').onclick=()=>Plotly.relayout(el('plot'),{'scene.camera':defaultCamera});
+window.HF4B2={setFrame,traces,getState:()=>({index,field:el('field').value,playing,orbiting}),ready:()=>renderPromise,data:D};
+update();
+})();
+</script></body></html>

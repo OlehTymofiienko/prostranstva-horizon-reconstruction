@@ -1,0 +1,14 @@
+{
+  "codec": "h264",
+  "width": 1280,
+  "height": 960,
+  "pixel_format": "yuv420p",
+  "frame_rate": "15/1",
+  "frames": 301,
+  "duration_seconds": 20.066667,
+  "ffprobe_exit_code": 0,
+  "visually_checked_times_M": [
+    10,
+    135
+  ]
+}

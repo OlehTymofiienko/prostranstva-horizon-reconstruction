@@ -1,0 +1,254 @@
+[
+  {
+    "samples_complex": 47,
+    "first_sample_M": 92.0,
+    "last_sample_M": 103.5,
+    "omega": 0.5357300544754678,
+    "alpha": 0.08272770765496033,
+    "signed_phase_slope": -0.5342563435243743,
+    "omega_logphase": 0.5342563435243743,
+    "alpha_logamplitude": 0.0833206214248944,
+    "relative_omega_difference": 0.00072836424596745,
+    "relative_alpha_difference": 0.008662482548826844,
+    "fixed_nrmse": 0.02561922891182425,
+    "free_nrmse": 0.02549154208811131,
+    "fixed_rss": 5.172615574011723e-09,
+    "free_rss": 5.1211831952853e-09,
+    "signal_energy": 7.88094133516367e-06,
+    "fixed_amplitude_re_im": [
+      -0.0003812934193191461,
+      0.0004787223746700043
+    ],
+    "free_amplitude_re_im": [
+      -0.00038094219600698836,
+      0.000476772597092129
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -8.147250465217247,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      3.573819018498625e-11,
+      6.179741440792696e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": -0.5,
+    "subset": "all"
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 92.25,
+    "last_sample_M": 103.75,
+    "omega": 0.535898901421096,
+    "alpha": 0.08256295657410583,
+    "signed_phase_slope": -0.5343965460213184,
+    "omega_logphase": 0.5343965460213184,
+    "alpha_logamplitude": 0.08328553490349469,
+    "relative_omega_difference": 0.0010437654938435514,
+    "relative_alpha_difference": 0.010636717446920407,
+    "fixed_nrmse": 0.02609735485013953,
+    "free_nrmse": 0.025892189817286432,
+    "fixed_rss": 5.1446448321706695e-09,
+    "free_rss": 5.0640732718038615e-09,
+    "signal_energy": 7.5537466811406435e-06,
+    "fixed_amplitude_re_im": [
+      -0.000307532771138481,
+      0.0005142215670884003
+    ],
+    "free_amplitude_re_im": [
+      -0.00030758828925380897,
+      0.0005117456450107669
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -7.602782516477384,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      5.49857936960052e-11,
+      8.455190714240501e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": -0.25,
+    "subset": "all"
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 92.5,
+    "last_sample_M": 104.0,
+    "omega": 0.5359139091981882,
+    "alpha": 0.08233198918369211,
+    "signed_phase_slope": -0.5344804844685668,
+    "omega_logphase": 0.5344804844685668,
+    "alpha_logamplitude": 0.0831680003316607,
+    "relative_omega_difference": 0.00107179959067083,
+    "relative_alpha_difference": 0.013404431504463021,
+    "fixed_nrmse": 0.02660824692267391,
+    "free_nrmse": 0.026318570330291575,
+    "fixed_rss": 5.126113335758126e-09,
+    "free_rss": 5.015107742734342e-09,
+    "signal_energy": 7.240285300821815e-06,
+    "fixed_amplitude_re_im": [
+      -0.00023109665552283233,
+      0.0005391546049064702
+    ],
+    "free_amplitude_re_im": [
+      -0.00023129573731738506,
+      0.0005362558382990866
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -7.028663318951308,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      7.41233741052838e-11,
+      1.0756226465069574e-10
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": 0,
+    "subset": "all"
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 92.75,
+    "last_sample_M": 104.25,
+    "omega": 0.5357955189956998,
+    "alpha": 0.08204629262993075,
+    "signed_phase_slope": -0.5344952427150522,
+    "omega_logphase": 0.5344952427150522,
+    "alpha_logamplitude": 0.08297319339316021,
+    "relative_omega_difference": 0.0008506500906768633,
+    "relative_alpha_difference": 0.01682797266592484,
+    "fixed_nrmse": 0.0270769563770227,
+    "free_nrmse": 0.02668398100856498,
+    "fixed_rss": 5.088551238072767e-09,
+    "free_rss": 4.941919958744743e-09,
+    "signal_energy": 6.9405591749318e-06,
+    "fixed_amplitude_re_im": [
+      -0.00015351160955632924,
+      0.0005534209952188479
+    ],
+    "free_amplitude_re_im": [
+      -0.00015365398890374187,
+      0.0005500841646464411
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -6.338100094956353,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      5.010336590061115e-11,
+      1.5433168631950878e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": 0.25,
+    "subset": "all"
+  },
+  {
+    "samples_complex": 47,
+    "first_sample_M": 93.0,
+    "last_sample_M": 104.5,
+    "omega": 0.5355251305942873,
+    "alpha": 0.08171505849500435,
+    "signed_phase_slope": -0.534447448990408,
+    "omega_logphase": 0.534447448990408,
+    "alpha_logamplitude": 0.08271497261244498,
+    "relative_omega_difference": 0.00034557231802612165,
+    "relative_alpha_difference": 0.020797196935773643,
+    "fixed_nrmse": 0.027422934009545232,
+    "free_nrmse": 0.026880237535564025,
+    "fixed_rss": 5.00395774659331e-09,
+    "free_rss": 4.8078620822220265e-09,
+    "signal_energy": 6.654045966898825e-06,
+    "fixed_amplitude_re_im": [
+      -7.616715416519021e-05,
+      0.0005571508415452443
+    ],
+    "free_amplitude_re_im": [
+      -7.605186811375762e-05,
+      0.0005532873157604442
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -5.328785697508877,
+    "nominal_BIC_n_real": 94,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      8.283873587089374e-11,
+      9.889701557685981e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": 0.5,
+    "subset": "all"
+  },
+  {
+    "samples_complex": 24,
+    "first_sample_M": 92.5,
+    "last_sample_M": 104.0,
+    "omega": 0.535969896309499,
+    "alpha": 0.08245973781022488,
+    "signed_phase_slope": -0.5346107678198009,
+    "omega_logphase": 0.5346107678198009,
+    "alpha_logamplitude": 0.08318114644378825,
+    "relative_omega_difference": 0.0011763819075538695,
+    "relative_alpha_difference": 0.01187360211398858,
+    "fixed_nrmse": 0.026305641077501975,
+    "free_nrmse": 0.026041662585219994,
+    "fixed_rss": 2.5745764548724306e-09,
+    "free_rss": 2.5231637002224373e-09,
+    "signal_energy": 3.720557432027623e-06,
+    "fixed_amplitude_re_im": [
+      -0.0002308546446197602,
+      0.0005392779336204264
+    ],
+    "free_amplitude_re_im": [
+      -0.0002312826815329306,
+      0.0005366469543426458
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -6.774170678256871,
+    "nominal_BIC_n_real": 48,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      5.631795030325293e-11,
+      8.473946544462763e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": 0,
+    "subset": "even"
+  },
+  {
+    "samples_complex": 23,
+    "first_sample_M": 92.75,
+    "last_sample_M": 103.75,
+    "omega": 0.5358585529096997,
+    "alpha": 0.08218548041692857,
+    "signed_phase_slope": -0.5343324352058006,
+    "omega_logphase": 0.5343324352058006,
+    "alpha_logamplitude": 0.08315306156787952,
+    "relative_omega_difference": 0.0009683956327131149,
+    "relative_alpha_difference": 0.015160066239731762,
+    "fixed_nrmse": 0.026915768914956124,
+    "free_nrmse": 0.026589239299736018,
+    "fixed_rss": 2.5498971815204737e-09,
+    "free_rss": 2.4884041224152205e-09,
+    "signal_energy": 3.5197278687941923e-06,
+    "fixed_amplitude_re_im": [
+      -0.00015410950512356595,
+      0.0005534078809795316
+    ],
+    "free_amplitude_re_im": [
+      -0.00015445458513053427,
+      0.0005504712009953722
+    ],
+    "nominal_delta_BIC_fixed_minus_free": -6.534356227539876,
+    "nominal_BIC_n_real": 46,
+    "nominal_BIC_interpretation": "Некалиброванный описательный показатель при фиктивном предположении независимых одинаковых ошибок.",
+    "all_optimizers_successful": true,
+    "optimizer_solution_spread": [
+      6.635392235665449e-11,
+      1.6503118316357757e-11
+    ],
+    "at_parameter_boundary": false,
+    "window_shift_M": 0,
+    "subset": "odd"
+  }
+]
