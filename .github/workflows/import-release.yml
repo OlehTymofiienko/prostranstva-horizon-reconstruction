@@ -1,0 +1,116 @@
+name: Import verified research release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-release-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download the prepared archive from this repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download archive-v1.0 --repo "$GITHUB_REPOSITORY" --pattern BH_HORIZON_RESEARCH_v1_0_GitHub.zip --dir "$RUNNER_TEMP"
+      - name: Verify and import existing results without running scientific code
+        shell: python
+        run: |
+          from pathlib import Path, PurePosixPath
+          import hashlib, json, os, stat, zipfile
+
+          root = Path.cwd()
+          archive = Path(os.environ['RUNNER_TEMP']) / 'BH_HORIZON_RESEARCH_v1_0_GitHub.zip'
+          expected = '2f0bb29f320fce608d4ecc5e0ede5a612fbb9633bbf1d531e07c23324d02d2f1'
+          actual = hashlib.sha256(archive.read_bytes()).hexdigest()
+          if actual != expected:
+              raise RuntimeError('Archive SHA-256 mismatch; no import performed')
+          receipt_path = root / 'docs/GITHUB_IMPORT.json'
+          if receipt_path.exists():
+              raise RuntimeError('Import already recorded; use the existing results instead of repeating it')
+
+          prefix = 'prostranstva-horizon-reconstruction/'
+          with zipfile.ZipFile(archive) as z:
+              infos = [i for i in z.infolist() if not i.is_dir()]
+              if len(infos) != 626 or sum(i.file_size for i in infos) > 1024**3:
+                  raise RuntimeError('Unexpected archive inventory')
+              records = {}
+              for info in infos:
+                  if not info.filename.startswith(prefix):
+                      raise RuntimeError('Unexpected archive prefix')
+                  relative = info.filename[len(prefix):]
+                  parts = PurePosixPath(relative)
+                  if parts.is_absolute() or '..' in parts.parts or '.git' in parts.parts or '\\' in relative:
+                      raise RuntimeError('Unsafe archive path')
+                  if stat.S_ISLNK(info.external_attr >> 16) or relative in records:
+                      raise RuntimeError('Symlink or duplicate archive entry')
+                  records[relative] = info
+              manifest = json.loads(z.read(records['SHA256SUMS.json']))
+              if set(records) != {r['path'] for r in manifest} | {'SHA256SUMS.json'}:
+                  raise RuntimeError('Manifest inventory mismatch')
+              for record in manifest:
+                  data = z.read(records[record['path']])
+                  if len(data) != record['bytes'] or hashlib.sha256(data).hexdigest() != record['sha256']:
+                      raise RuntimeError('Manifest checksum mismatch: ' + record['path'])
+              for relative, info in records.items():
+                  data = z.read(info)
+                  target = root / relative
+                  if relative.startswith('.github/workflows/'):
+                      if not target.is_file() or target.read_bytes() != data:
+                          raise RuntimeError('Seed the original Pages workflow through the GitHub UI first')
+                      continue
+                  if target.exists() and relative != 'README.md':
+                      raise RuntimeError('Refusing to overwrite an existing file: ' + relative)
+              for relative, info in records.items():
+                  if relative.startswith('.github/workflows/'):
+                      continue
+                  target = root / relative
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(info))
+
+          for record in manifest:
+              if hashlib.sha256((root / record['path']).read_bytes()).hexdigest() != record['sha256']:
+                  raise RuntimeError('Post-import checksum mismatch: ' + record['path'])
+
+          repo_url = 'https://github.com/' + os.environ['GITHUB_REPOSITORY']
+          checkpoint_path = root / 'CHECKPOINT.json'
+          checkpoint = json.loads(checkpoint_path.read_text())
+          checkpoint['publication'].update(state='SOURCE_PUBLISHED_SITE_PENDING', source_synced_to_remote=True,
+              github_repository_url=repo_url, archive_sha256=expected,
+              resume_note='Source import verified. Publish the existing static dist with the Pages workflow. Do not rerun science.')
+          checkpoint['next_action'] = 'Publish and verify the prepared website; do not repeat scientific analysis.'
+          checkpoint_path.write_text(json.dumps(checkpoint, ensure_ascii=False, indent=2) + '\n')
+          (root / 'docs/PUBLICATION_STATUS.md').write_text(
+              '# Состояние публикации\n\n'
+              'Полный выпуск 1.0 перенесён в репозиторий: ' + repo_url + '\n\n'
+              'Все 626 файлов исходного архива проверены по SHA-256. Научные расчёты не повторялись. '
+              'После проверки обновлены только сведения о публикации и контрольные суммы.\n\n'
+              'Сайт подготовлен в `dist/`; его публикация онлайн пока не подтверждена. '
+              'Следующий шаг — запуск готового процесса Publish research website и проверка адреса.\n')
+          receipt = dict(archive_sha256=expected, archive_files_verified=626,
+              manifest_files_verified=len(manifest), previous_scientific_analysis_recomputed=False,
+              original_payload_verified_before_publication_metadata_update=True,
+              workflow_run=os.environ.get('GITHUB_RUN_ID'), source='archive-v1.0')
+          receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + '\n')
+          checksums = [dict(path=str(p.relative_to(root)), bytes=p.stat().st_size,
+              sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in sorted(root.rglob('*'))
+              if p.is_file() and '.git' not in p.relative_to(root).parts and p != root / 'SHA256SUMS.json']
+          (root / 'SHA256SUMS.json').write_text(json.dumps(checksums, ensure_ascii=False, indent=2) + '\n')
+          print(json.dumps(receipt, ensure_ascii=False))
+      - name: Commit the verified project to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Publish complete verified research v1.0 without rerunning scientific calculations"
+          git push origin HEAD:main
