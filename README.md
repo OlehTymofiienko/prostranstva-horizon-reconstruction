@@ -19,6 +19,8 @@
 
 ## Посмотреть
 
+**Сайт проекта:** https://olehtymofiienko.github.io/prostranstva-horizon-reconstruction/
+
 Откройте `dist/index.html` в современном браузере. Сайт и просмотры используют
 локальные файлы; интернет для чтения не нужен. HTML-просмотры HF1 и QC0
 нуждаются в поддержке WebGL. Если просмотр недоступен, видео и изображения
@@ -85,4 +87,3 @@ python finish_B5.py
 Для GitHub Pages подготовлен `.github/workflows/pages.yml`.
 
 Источники и авторство исходных данных см. `docs/SOURCES.md`.
-

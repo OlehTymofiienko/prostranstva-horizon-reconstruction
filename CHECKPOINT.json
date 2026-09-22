@@ -8,7 +8,7 @@
   "B5_fits": 660,
   "B5_input_sha256": "a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8",
   "new_scientific_result": "Coordinate-harmonic representation quantified; first RePsi2 residual dominated by two original nodes; no new-physics claim",
-  "next_action": "Publish and verify the prepared website; do not repeat scientific analysis.",
+  "next_action": "Use the published website and repository. Any new research starts from the confirmed HF4-B5 checkpoint.",
   "website": "dist/index.html",
   "master_report": "docs/PROJECT_REPORT.md",
   "separate_simulations": [
@@ -17,14 +17,19 @@
     "SXS:BBH:0389 / SpEC / Yitian"
   ],
   "publication": {
-    "state": "SOURCE_PUBLISHED_SITE_PENDING",
+    "state": "PUBLISHED_GITHUB_AND_PAGES",
     "github_repository_url": "https://github.com/OlehTymofiienko/prostranstva-horizon-reconstruction",
     "github_repository_id": 1381014771,
-    "live_site_url": null,
+    "live_site_url": "https://olehtymofiienko.github.io/prostranstva-horizon-reconstruction/",
     "site_project_id": null,
     "source_synced_to_remote": true,
-    "resume_note": "Source import verified. Publish the existing static dist with the Pages workflow. Do not rerun science.",
-    "archive_sha256": "2f0bb29f320fce608d4ecc5e0ede5a612fbb9633bbf1d531e07c23324d02d2f1"
+    "resume_note": "Publication complete. Continue from saved HF4-B5 results without rerunning confirmed calculations. Pages workflow retains contents: read.",
+    "archive_sha256": "2f0bb29f320fce608d4ecc5e0ede5a612fbb9633bbf1d531e07c23324d02d2f1",
+    "source_commit": "38df075a10341cc56aa970fc8956d1edc9ed3d3b",
+    "import_workflow_run": "35726734058",
+    "deployment_workflow_run": "35727381417",
+    "homepage_verified": true,
+    "b5_viewer_initial_frame_verified": true
   },
   "B5_saved_artifacts": {
     "report_library_file_id": "libfile_2494f1680ee481918d86369554d197ec",

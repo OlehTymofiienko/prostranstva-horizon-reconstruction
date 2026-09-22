@@ -21,13 +21,13 @@
   },
   {
     "path": "CHECKPOINT.json",
-    "bytes": 1990,
-    "sha256": "5264283c89e4ad599e02cf7fb904a9f40284fac18c07bfc9156993e29227d676"
+    "bytes": 2347,
+    "sha256": "fb6124fc8363fe5e1771e2135b73d34c7b348812f24c2e3c826fb68557d39509"
   },
   {
     "path": "README.md",
-    "bytes": 6396,
-    "sha256": "29bc8300407cc9a84b45beefcec379f0b49d1d3e8775d92867e1498e25f7665a"
+    "bytes": 6496,
+    "sha256": "f7c60cc3f8358d42f54db8a86ed2e9f6b9b0992fc6c4d83a54ca236324d46951"
   },
   {
     "path": "dist/assets/b5-early.png",
@@ -1601,8 +1601,8 @@
   },
   {
     "path": "docs/PUBLICATION_STATUS.md",
-    "bytes": 740,
-    "sha256": "702dd272e3270d3576eedcb6b311c6b28a71ee8f97a6e4a1f71d374af3c88c88"
+    "bytes": 1537,
+    "sha256": "b195d54cd399e35d5e66791f4a6563007eedb43dd44f0d646d66491d6d2558ba"
   },
   {
     "path": "docs/REPRODUCIBILITY.md",
