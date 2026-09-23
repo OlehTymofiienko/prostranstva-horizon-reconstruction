@@ -1,0 +1,163 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BH-HF3-R7B — final late-ringdown check through 105M — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF3_R7B_report.html"><link rel="alternate" hreflang="en" href="BH_HF3_R7B_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF3_R7B_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF3_R7B_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF3_R7B_report.html">Russian source</a>.</p><h1>BH-HF3-R7B — final late-ringdown check through 105M</h1>
+<p><strong>The planned third-period test at r=40M is complete and compatible with Kerr ringdown at three radii. HF4 can begin.</strong> This completes one control task, not all early dynamics or an independent experimental GR test. The data are numerical QC0, not the directly observed GW150914 signal.</p>
+<h2>Technical audit</h2>
+<p><code>BH_HF3_R7A_output.zip</code> confirms t=105M, it=53760, seven recovery messages from 95M, exit 0 and about 25m18s continuation. Checks covered 125 wave series, the exact 95M seam, full new time grid, three common-horizon QLM slot-2 files and program/parameter hashes. The 136 shared earlier files match R6A byte for byte. R6B propagation/1/r analysis was not repeated. Logs/inventory confirm both checkpoint parts; their gigabyte contents were not included/read here. No evolution was rerun.</p>
+<h2>Reference and fitting</h2>
+<p>The presaved <code>BH_HF3_R7B_protocol.json</code> fixes the previously computed numerical Kerr spectrum using Mf=0.977461203278627M, Jf=0.648087073319352M², χ=0.6783194994253878:</p>
+<p>ω_K=0.5353401318639867M⁻¹, α_K=0.08345059699511974M⁻¹, T=11.73680980221365M.</p>
+<p>The spectrum was not fitted to new waves; see <a href="https://qnm.readthedocs.io/en/latest/README.html">qnm</a>, <a href="https://arxiv.org/abs/1908.10377">Stein 2019</a>. Decimal length provides reproducibility, not physical accuracy.</p>
+<p>The third period is age 2T–3T after each local maximum. For 40M: 92.4736196044–104.2104294066M, comprising 47 original samples at 92.50–104.00M, without invented endpoints.</p>
+<p>Fit z=C exp[(−α−iω)(t−t₀)]. The fixed model varies complex C; the free model also varies ω,α. Both minimise equally weighted complex RSS=Σ|z−z_model|². C is projected analytically; four numerical starts solve ω,α. This corrects R6B’s separate phase/log-amplitude regressions. Only selected old reference windows were reprocessed with the common criterion.</p>
+<h2>Main result</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Radius</th>
+<th align="right">ω / M⁻¹</th>
+<th align="right">α / M⁻¹</th>
+<th align="right">ω difference</th>
+<th align="right">α difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>15M</td>
+<td align="right">0.535321949</td>
+<td align="right">0.082188152</td>
+<td align="right">0.003%</td>
+<td align="right">1.513%</td>
+</tr>
+<tr>
+<td>30M</td>
+<td align="right">0.535714470</td>
+<td align="right">0.082850136</td>
+<td align="right">0.070%</td>
+<td align="right">0.720%</td>
+</tr>
+<tr>
+<td>40M</td>
+<td align="right">0.535913909</td>
+<td align="right">0.082331989</td>
+<td align="right">0.107%</td>
+<td align="right">1.340%</td>
+</tr>
+</tbody></table></div>
+<p>All meet prior ≤1% frequency/≤5% damping targets. These point-estimate differences are not confidence intervals or total error.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Radius</th>
+<th align="right">Kerr residual</th>
+<th align="right">Free residual</th>
+<th align="right">Conditional ΔBIC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>15M</td>
+<td align="right">2.387%</td>
+<td align="right">2.355%</td>
+<td align="right">−6.524</td>
+</tr>
+<tr>
+<td>30M</td>
+<td align="right">2.594%</td>
+<td align="right">2.585%</td>
+<td align="right">−8.407</td>
+</tr>
+<tr>
+<td>40M</td>
+<td align="right">2.661%</td>
+<td align="right">2.632%</td>
+<td align="right">−7.029</td>
+</tr>
+</tbody></table></div>
+<p>Relative residual=√[RSS/Σ|z|²]. Two extra parameters improve it only slightly; roughly 2.6% remains unexplained. ΔBIC=2N log(RSS_K/RSS_free)−2log(2N), with N complex samples and 2/4 real parameters, is below the old +10 threshold. Correlated numerical residuals lack a calibrated independent-error model: no hypothesis probability or calibrated GR test follows.</p>
+<h2>Sensitivity and prediction</h2>
+<p>Shifts of −0.5,−0.25,0,+0.25,+0.5M at fixed length, plus even/odd sampling, yield frequency differences 0.035–0.118%, damping 0.866–2.080% and Kerr residuals 2.562–2.742%. This checks sampling sensitivity, not resolution convergence. Two analytical signal controls recover known parameters; all four optimisation starts agree without boundary solutions.</p>
+<p>Training on the first two thirds of the 40M third period predicts the final 15 samples with errors 2.230% (fixed Kerr) and 5.509% (free). This is one chronological control, not independent observations. Free damping on that shortened fit differs by 5.34%; full-period stability cannot be assumed on any short window.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Period at 40M</th>
+<th align="right">ω difference</th>
+<th align="right">α difference</th>
+<th align="right">Kerr residual</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td align="right">7.486%</td>
+<td align="right">67.613%</td>
+<td align="right">22.878%</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="right">1.717%</td>
+<td align="right">16.444%</td>
+<td align="right">6.351%</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="right">0.107%</td>
+<td align="right">1.340%</td>
+<td align="right">2.661%</td>
+</tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Outer window</th>
+<th align="right">ω</th>
+<th align="right">α</th>
+<th align="right">ω difference</th>
+<th align="right">α difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>50M, period 2</td>
+<td align="right">0.526038031</td>
+<td align="right">0.068636573</td>
+<td align="right">1.738%</td>
+<td align="right">17.752%</td>
+</tr>
+<tr>
+<td>60M, period 1</td>
+<td align="right">0.494300578</td>
+<td align="right">0.026086923</td>
+<td align="right">7.666%</td>
+<td align="right">68.740%</td>
+</tr>
+</tbody></table></div>
+<p>Signal age after the local peak matters: early disagreement with one late mode is not by itself disagreement with GR. Third-period waveforms agree after radius scaling and one constant phase rotation, without extra time/amplitude fitting:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Pair</th>
+<th align="right">Coherence</th>
+<th align="right">Phase-aligned difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>15–30M</td>
+<td align="right">0.999963815</td>
+<td align="right">2.521%</td>
+</tr>
+<tr>
+<td>15–40M</td>
+<td align="right">0.999969149</td>
+<td align="right">1.184%</td>
+</tr>
+<tr>
+<td>30–40M</td>
+<td align="right">0.999985125</td>
+<td align="right">1.550%</td>
+</tr>
+</tbody></table></div>
+<p>Ψ₄²,⁻²≈conjugate(Ψ₄²²) differs by &lt;8×10⁻¹⁶, checking internal imposed symmetry, not merger nature independently.</p>
+<p><img src="../../reports/BH_HF3_R7B_overview.png" alt="R7B checks"></p>
+<h2>Late state and scope</h2>
+<p>Over 100–105M: Mf=0.9774491229M, Jf=0.6481486193M², χ=0.6784006850. Relative to the fixed reference, changes are about −0.00124% in mass and +0.01197% in χ. The reference intentionally remains fixed; final digits do not measure physical-state certainty. Yitian parameters are not substituted. Its A3/A4 early dynamics/quadratic link remain unconfirmed in full.</p>
+<p><code>BH_HF3_R7B_THIRD_PERIOD_R15_R30_R40_KERR220_COMPATIBILITY_SUPPORTED_HF4_READY</code></p>
+<p>No further extension is needed for this task. Conclusions concern one configuration/resolution, finite radii and selected windows: no infinity extrapolation, grid-convergence or independent statistical GR test. Extra dimensions, wormholes and an independent physical “hyperform” are not established.</p>
+<p>The historical next step HF4-A1 compares moment definitions, angular basis/orientation/measure, separates scalar maps from metric requirements, checks ℓ≤8 truncation/display scales, then defines admissible scientific visualisations.</p>
+<p>Reproduce with <code>python BH_HF3_R7B.py</code>; format saved results with <code>python BH_HF3_R7B_finish.py</code>. The original archive contains both input ZIPs, programs, protocol, tables/checks/state. NumPy/SciPy/Matplotlib are required; no Einstein Toolkit is launched by these commands.</p>
+<hr><a href="BH_HF3_R7B_report.md" download>English Markdown</a></article></body></html>

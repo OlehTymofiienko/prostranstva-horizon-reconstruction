@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HF4-A2 — Atlas of the measured horizon scalar fields — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF4_A2_report.html"><link rel="alternate" hreflang="en" href="BH_HF4_A2_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF4_A2_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF4_A2_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF4_A2_report.html">Russian source</a>.</p><h1>HF4-A2 — Atlas of the measured horizon scalar fields</h1>
+<p>Historical stage: 16 September 2026. English reading edition. This stage continues A1 without repeating spacetime evolution.</p>
+<p><strong>Result:</strong> a reproducible atlas of the mass-curvature and spin-connection scalar maps, with explicit angular conventions and fixed display scales. It is a map on the authors&#39; angular representation, not a uniquely reconstructed three-dimensional horizon surface.</p>
+<h2>Data and representations</h2>
+<p>The same verified Yitian HDF5 file was used (SHA256 <code>9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f</code>). Full fields are K=2ΣIℓmYℓm and B=ΣLℓmYℓm. Perturbations δK and δB subtract the 400–500M mean coefficients. The stationary axisymmetric background is retained in the full fields.</p>
+<p>The analysis contains 1,501 times from 0 to 150M at 0.1M spacing; the atlas/video uses 301 frames at 0.5M spacing. The H.264 video is 1280×960, 15 fps, approximately 20.0667 seconds. Coefficients and numerical arrays are saved separately from the rendered images.</p>
+<h2>Sensitivity to angular truncation</h2>
+<p>All comparisons use fixed truncations ℓ≤4,6,8.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field at t=0</th>
+<th align="right">ℓ≤4 versus ℓ≤8</th>
+<th align="right">ℓ≤6 versus ℓ≤8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>K</td>
+<td align="right">5.20%</td>
+<td align="right">2.02%</td>
+</tr>
+<tr>
+<td>δK</td>
+<td align="right">8.81%</td>
+<td align="right">3.44%</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">7.61%</td>
+<td align="right">2.74%</td>
+</tr>
+<tr>
+<td>δB</td>
+<td align="right">36.19%</td>
+<td align="right">13.93%</td>
+</tr>
+</tbody></table></div>
+<p>Over 5–120M, maximum differences are 5.60% and 0.962% for δK, and 21.23% and 3.55% for δB, respectively. These compare available truncations; they cannot bound unmeasured moments above ℓ=8.</p>
+<p>The perturbation norm of δK peaks at 0M, whereas δB peaks near 4.6M. Early evolution is oscillatory and need not decay monotonically.</p>
+<h2>Angular rotation and background subtraction</h2>
+<p>The authors&#39; rotation is exp(−imΩt), with Ω=0.20878380853617037M⁻¹; on the sphere it corresponds to φ→φ−Ωt. The rotation preserves field norms. Relative norm changes are about 3.33×10⁻¹⁶; coefficient phase controls give discrepancies of 3.38×10⁻¹⁶ and 2.78×10⁻¹⁷.</p>
+<p>Background subtraction must be transformed consistently: U(C−C̄)=UC−UC̄. Rotating the series first and then subtracting an unrelated late average is not equivalent. That deliberately incorrect procedure gives about 31% error in K and 34% in B at 120M, and errors larger than the perturbation norm near 150M. It is not used for the atlas.</p>
+<p>Alternative backgrounds over 300–400, 400–450 and 450–500M change δK by at most 5.44×10⁻⁹, or 0.133% of its norm at 150M, and δB by 2.12×10⁻⁹, or 0.185%. These are processing sensitivities, not total physical uncertainties.</p>
+<h2>Rendering controls and interpretation</h2>
+<p>Real versus complex harmonic reconstruction agrees to 6.42×10⁻¹⁴. An independent JavaScript Legendre implementation agrees with Python to 7.22×10⁻¹⁶. Sixteen mode controls and the minimum DOM/canvas structure were checked. The original A2 report did not claim a complete browser interaction test; later publication checks are separate.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Map</th>
+<th>Fixed colour limits</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>K</td>
+<td>−0.30 to 3.10</td>
+</tr>
+<tr>
+<td>B</td>
+<td>−0.61 to 0.61</td>
+</tr>
+<tr>
+<td>δK</td>
+<td>−1.66 to 1.66</td>
+</tr>
+<tr>
+<td>δB</td>
+<td>−0.17 to 0.17</td>
+</tr>
+</tbody></table></div>
+<p>The optional asinh display uses parameter 10⁻⁵. Scales do not rescale independently per frame. A narrow sign boundary is not a physical wall. Projection distorts apparent areas; the source coefficients are the quantitative record.</p>
+<h2>Scope and next recorded step</h2>
+<p>A3 was to inventory actual surface geometry, area, metric information and angular transport. Multipoles alone do not determine a unique physical surface, event horizon or interior geometry. A direct comparison with waveforms requires data from the same simulation and consistent time/angular conventions. No new evolution or outgoing correspondence was performed here.</p>
+<p>The archived script <code>BH_HF4_A2.py</code> accepts the original moments file, the A1 resume-state file, an output directory and optional <code>--video</code>. Video generation additionally needs ffmpeg. The NPZ files retain double-precision analysis and atlas coefficients. The original input is supplied separately where it is not part of the public distribution.</p>
+<hr><a href="BH_HF4_A2_report.md" download>English Markdown</a></article></body></html>

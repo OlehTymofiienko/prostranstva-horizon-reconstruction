@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HF1 — selected regions on the original horizon surface — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF1_V2_report.html"><link rel="alternate" hreflang="en" href="BH_HF1_V2_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF1_V2_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF1_V2_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF1_V2_report.html">Russian source</a>.</p><h1>HF1 — selected regions on the original horizon surface</h1>
+<p><strong>BH-HF1-VISUAL-V2 complete.</strong> HF1/HF1R masks are placed on original common apparent-horizon C coordinates from SXS:BBH:0305, Lev6, with a one-minute video and interactive 3D scene.</p>
+<h2>Data and matching</h2>
+<p><code>BH_HF1_visual_data.zip</code> contains 1,566 snapshots: all 1,564 HF1R samples over 0–11.9070724M after the first saved common horizon, plus controls near 20/50M. The 10M control is already in the dense series. Total: 2,650,372 nodes. Coordinates, three fields and embedded reference-table checksums were verified. t₀=3685.496267868691M.</p>
+<p>Original HF1R functions recover masks through field normalisation, eight nearest direction-sphere neighbours, gradient estimation, top 5% selection and largest group. Only missing node indices and comparison diagnostics were recovered. Permutation/significance/coherence/evolution tests were not repeated; criterion decisions and p-values came from saved results.</p>
+<p><strong>All 4,698 comparisons agree.</strong> Node counts match exactly; maximum centre-direction difference is 3.33×10⁻¹⁶ and gradient-threshold difference 1.78×10⁻¹⁵, consistent with rounding. These are the same components as the original tables.</p>
+<h2>Meaning of the display</h2>
+<p>Surfaces use original <code>CoordsMeasurementFrame</code> Cartesian coordinates without displacement, radial exaggeration or smoothing. Connectivity is reconstructed on the direction sphere and transferred to the original coordinates, not via a Cartesian convex hull. All 1,566 meshes are closed: two faces per edge, Euler characteristic two.</p>
+<p>Fields/coordinates share snapshot and node indices. Original <code>CoordCenterInertial</code> defines directions, without an assumed new frame transformation. Agreement reproduces the original criterion but does not establish coordinate independence.</p>
+<p>The video shows R*. <strong>Orange marks the component satisfying the saved criterion; light dots are its original nodes.</strong> If the criterion fails, the largest computed group is grey. Colour is not temperature, energy, matter speed or time.</p>
+<p>The boundary is the 1/2 contour of a linearly interpolated binary mask, with selected nodes 1 and others 0. This displays a discrete mask, not a new physical threshold. Faces are split without changing the surface; boundary accuracy is grid-limited.</p>
+<p>Both video panels show <strong>one horizon from opposite sides</strong>, not two black holes. Coordinate scale is fixed. This is the common apparent horizon after formation, not a global event horizon or black-hole interior.</p>
+<h2>Video timeline</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>00:00–00:36</td>
+<td>Surface/region evolve over 0–11.9071M; cameras fixed</td>
+</tr>
+<tr>
+<td>00:36–00:48</td>
+<td>Snapshot 2.0004M fixed; cameras orbit</td>
+</tr>
+<tr>
+<td>00:48–01:00</td>
+<td>Separate controls near 10,20,50M; gaps not invented</td>
+</tr>
+</tbody></table></div>
+<p>Playback picks the last saved sample no later than requested time and displays its actual time. No temporal interpolation is used; not every dense sample receives a video frame. Grey does not prove field disappearance. Group motion is not a matter trajectory or proof of an independent object. No new-physics/“hyperform” claim is made.</p>
+<h2>Interactive scene</h2>
+<p>The original <code>BH_HF1_V2_surface_3D.html</code> embeds data/library. Mouse/finger rotation, wheel zoom, R*/E*/B*, time, early playback, late jumps, opposite view and fixed-time orbit are available.</p>
+<p>The viewer has 235 selected snapshots: uniform time samples, control times and states immediately before/after criterion-decision changes. All masks use original nodes; all 1,566 snapshots remain in stage data. Viewing-copy coordinates are rounded to eight decimals, with maximum error 5×10⁻⁹M. Original arrays/video are not rounded this way. QC0/Yitian data are not mixed into HF1.</p>
+<h2>Validation and reproduction</h2>
+<p>Checks cover masks/meshes, all 1,200 video-frame times, fixed cameras during evolution and fixed time during orbit. Python/JavaScript boundary builders agree on triangles/selected faces. Splitting preserves coordinate area within 2.22×10⁻¹⁶ relatively; this is a technical geometry check, not physical area.</p>
+<p>Initial/orbit/late video frames were inspected; control logic was tested separately. Independent browser WebGL rendering was not performed in that environment.</p>
+<p><code>BH_HF1_V2_results.zip</code> contains video, HTML, masks/triangles, checks, programs, reference results and checkpoint. The original coordinate archive remains separate; see <code>REPRODUCE.md</code>. This completes placing the original finding on its surface. At this historical stage, pending QC0 B5 was not run.</p>
+<hr><a href="BH_HF1_V2_report.md" download>English Markdown</a></article></body></html>
