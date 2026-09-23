@@ -10,7 +10,7 @@ main{max-width:1400px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 8px}
 input[type=range]{width:100%;accent-color:#f6a52b}label{color:#bbc9d8}.note{padding:12px 16px;background:#102236;border-radius:9px;margin:12px 0;line-height:1.5;font-size:14px}#late{color:#ffd38b;display:none}.small{font-size:13px}.err{color:#ffaca7}
 @media(max-width:650px){main{padding:14px}h1{font-size:24px}#plot{height:58vh;min-height:370px}.controls{gap:6px}button,select{font-size:14px;padding:9px}}
 </style>
-<main><p><a style="color:inherit" href="../index.html">← К проекту «Пространства»</a></p>
+<!-- reader:start --><link rel="alternate" hreflang="ru" href="hf1.html"><link rel="alternate" hreflang="en" href="../en/viewers/hf1.html"><link rel="stylesheet" href="../assets/reader.css"><script src="../assets/reader.js"></script><!-- reader:end --><!-- reader:start --><div class="reader-bar" aria-label="Настройки чтения"><nav aria-label="Язык"><a href="hf1.html" data-reader-language="ru" lang="ru" aria-current="page">Русский</a><a href="../en/viewers/hf1.html" data-reader-language="en" lang="en" >English</a></nav><label for="reader-theme">Тема <select id="reader-theme"><option value="system">Как в системе</option><option value="light">Светлая</option><option value="dark">Тёмная</option><option value="warm">Тёплая</option></select></label></div><!-- reader:end --><main><p><a style="color:inherit" href="../index.html">← К проекту «Пространства»</a></p>
 <h1>Где находится выделенная область</h1>
 <div class="muted">SXS:BBH:0305 · Lev6 · общий кажущийся горизонт C · исходная находка HF1/HF1R</div>
 <div class="controls">
@@ -78,8 +78,8 @@ function traces(f,k){
    hovertemplate:'%{text}<br>x = %{x:.6f} M<br>y = %{y:.6f} M<br>z = %{z:.6f} M<extra></extra>',showlegend:false};
  return [mesh,line,dots];
 }
-function layout(){const axis=n=>({title:{text:n+' / M'},range:[-2.5,2.5],color:'#9fb0c2',backgroundcolor:'#071421',gridcolor:'#24374a',zerolinecolor:'#385169',showbackground:false});
- return {paper_bgcolor:'#071421',plot_bgcolor:'#071421',font:{color:'#e8eff6'},margin:{l:0,r:0,t:0,b:0},showlegend:false,
+function layout(){/* reader-layout */const rp=window.HorizonReader.palette();const axis=n=>({title:{text:n+' / M'},range:[-2.5,2.5],color:rp.ink,backgroundcolor:rp.bg,gridcolor:rp.line,zerolinecolor:'#385169',showbackground:false});
+ return {paper_bgcolor:rp.bg,plot_bgcolor:rp.bg,font:{color:rp.ink},margin:{l:0,r:0,t:0,b:0},showlegend:false,
    uirevision:'HF1-V2-camera',scene:{xaxis:axis('x'),yaxis:axis('y'),zaxis:axis('z'),aspectmode:'cube',camera,dragmode:'orbit'}};}
 async function draw(){if(busy){pending=true;return;}busy=true;
  try{do{pending=false;const j=current,k=field,f=frames[j];
