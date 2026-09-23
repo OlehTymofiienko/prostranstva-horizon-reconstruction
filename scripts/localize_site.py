@@ -30,7 +30,7 @@ def rebase(s,old,new):
   target=os.path.normpath(str(Path(old).parent/u.path)).replace(os.sep,'/')
   if target in pages or target=='viewers/b5-controller.js':target='en/'+target
   return m[1]+relative(target,new)+('?' +u.query if u.query else '')+('#'+u.fragment if u.fragment else '')+m[3]
- return re.sub(r'((?:href|src)=["\'])([^"\']+)(["\'])',url,s)
+ return re.sub(r'((?:href|src|poster)=["\'])([^"\']+)(["\'])',url,s)
 for page in pages:
  p=DIST/page;s=strip(p.read_text())
  if page=='viewers/hf1.html' and '/* reader-layout */' not in s:
@@ -38,10 +38,16 @@ for page in pages:
   for a,b in [("color:'#9fb0c2'","color:rp.ink"),("backgroundcolor:'#071421'","backgroundcolor:rp.bg"),("gridcolor:'#24374a'","gridcolor:rp.line"),("paper_bgcolor:'#071421'","paper_bgcolor:rp.bg"),("plot_bgcolor:'#071421'","plot_bgcolor:rp.bg"),("font:{color:'#e8eff6'}","font:{color:rp.ink}")]:s=s.replace(a,b)
  if page=='viewers/qc0.html' and '/* reader-layout */' not in s:
   s=s.replace(' const current=traces();'," /* reader-layout */const rp=window.HorizonReader.palette();layout.paper_bgcolor=rp.bg;layout.font={color:rp.ink};layout.legend.bgcolor=rp.paper;for(const a of ['xaxis','yaxis','zaxis'])Object.assign(layout.scene[a],{color:rp.ink,backgroundcolor:rp.bg,gridcolor:rp.line});\n const current=traces();")
+ if page=='viewers/yitian.html' and '/* reader-curve */' not in s:
+  s=s.replace('function drawCurve(frame){', 'function drawCurve(frame){/* reader-curve */const rp=window.HorizonReader.palette();')
+  s=s.replace("ctx.strokeStyle='#e4ebf0'",'ctx.strokeStyle=rp.line').replace("ctx.fillStyle='#657b8d'",'ctx.fillStyle=rp.ink').replace("ctx.strokeStyle='#263d50'",'ctx.strokeStyle=rp.ink')
+  s=s.replace('frameCount:NF};render();',"frameCount:NF};document.addEventListener('reader-theme-change',()=>drawCurve(+$('time').value));render();")
  if not page.startswith('reports/'):
   chunks=re.split(r'(<script\b[^>]*type=["\']application/json["\'][^>]*>.*?</script>)',s,flags=re.S|re.I)
   e=''.join(c if re.match(r'<script\b',c,re.I) else translate(c) for c in chunks)
-  e=e.replace('lang="ru"','lang="en"').replace("toLocaleString('ru-RU'","toLocaleString('en-GB'")
+  e=e.replace(".replace('.',',')",'').replace('lang="ru"','lang="en"').replace("toLocaleString('ru-RU'","toLocaleString('en-GB'")
+  parts=re.split(r'(<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>|<[^>]+>)',e,flags=re.S|re.I)
+  e=''.join(c if c.startswith('<') else re.sub(r'(?<=\d),(?=\d)', '.', c) for c in parts)
   e=rebase(e,page,'en/'+page);target=DIST/'en'/page;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(decorate(e,'en/'+page))
  p.write_text(decorate(s,page))
 p=DIST/'en/viewers/b5-controller.js';p.write_text(translate((DIST/'viewers/b5-controller.js').read_text()))
