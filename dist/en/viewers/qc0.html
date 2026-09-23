@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c1729'/%3E%3Cellipse cx='16' cy='16' rx='11' ry='7' fill='none' stroke='%23f4a63e' stroke-width='2' transform='rotate(-30 16 16)'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23f4a63e'/%3E%3C/svg%3E"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HF4-B4 — common horizon and fields</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f9;color:#202d3b;font:16px/1.5 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:24px}h1{font-size:27px;line-height:1.2;font-weight:620;margin:0 0 10px}p{margin:7px 0}.sub{color:#526779}.tag{font-size:13px;letter-spacing:.06em;color:#346782;margin-bottom:9px}.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:15px 0 10px}button,select{font:inherit;background:white;color:#203447;border:1px solid #bac8d3;border-radius:6px;padding:8px 11px}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #337ca7}button[aria-pressed=true]{background:#194761;color:white}label{display:inline-flex;gap:6px;align-items:center}#plot{width:100%;height:650px;background:white;border-radius:10px;border:1px solid #dce4eb}#time{flex:1;min-width:170px;max-width:620px}#status{min-height:50px;padding:10px 0;color:#314b60}.notes{max-width:1080px;font-size:14px}.notes p{margin:7px 0}#readout{font-variant-numeric:tabular-nums;font-weight:600}#error{color:#b32626}details{margin-top:15px}summary{cursor:pointer;font-weight:600}.lead{padding:11px 14px;background:#e8f0f5;border-radius:6px;margin:13px 0}@media(max-width:600px){main{padding:12px}h1{font-size:22px}#plot{height:490px}.controls{gap:8px}button,select{padding:9px}#readout{display:block}}
+</style><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../viewers/qc0.html"><link rel="alternate" hreflang="en" href="qc0.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../viewers/qc0.html" data-reader-language="ru" lang="ru" >Русский</a><a href="qc0.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><main><p><a style="color:inherit" href="../index.html">← Back to Prostranstva</a></p>
+<p class="tag">QC0 · HF4-B4 · SAVED SURFACES</p>
+<h1>From two horizons to a common horizon</h1>
+<p class="sub">55 common-horizon frames from 18.625M to 22M. Physical area was checked against diagnostics from the same run.</p>
+<div class="controls">
+<button id="begin" type="button">Start of simulation</button><button id="birth" type="button">Common-horizon appearance</button>
+<label>Field <select id="field"><option value="repsi2">Re Ψ₂</option><option value="impsi2">Im Ψ₂</option><option value="abs_npsigma">|σ|</option></select></label>
+<label><input id="mask" type="checkbox" checked>Strong deviations</label>
+<label><input id="inners" type="checkbox">Inner AH1/AH2</label>
+<button id="orbit" type="button" aria-pressed="false">Orbit camera</button><button id="reset" type="button">Initial view</button>
+</div>
+<div class="controls"><button id="previous" type="button" aria-label="Previous frame">← Frame</button>
+<button id="play" type="button" aria-pressed="false">Frame playback</button><button id="next" type="button" aria-label="Next frame">Frame →</button>
+<input id="time" type="range" min="0" max="352" step="1" value="298" aria-label="Saved time"><span id="readout" aria-live="polite"></span></div>
+<div id="plot" role="img" aria-label="Horizon surfaces with the field and selected regions"></div>
+<p id="status" aria-live="polite"></p><p id="error" role="alert"></p>
+<div class="notes"><p class="lead"><strong>Yellow markers</strong> — approximately 5% of physical area with the largest deviation of the selected field from its weighted median. This describes QC0 fields; identity with the original HF1 structure has not been established.</p>
+<p>Drag to rotate; use the wheel to zoom. “Orbit camera” changes the viewpoint at fixed time. The start and common-horizon buttons also select a suitable coordinate scale.</p>
+<details><summary>How to read this reconstruction</summary>
+<p>AH1/AH2 are individual apparent horizons. After common AH3 appears, they are shown only when enabled. Visible surfaces depend on the spatial slice: this is coordinate geometry, not an optical image or a reconstruction of the global event horizon.</p>
+<p>τ is measured from the first saved AH3 at t=18.625M. No common horizon was found on the preceding saved slice, t=18.5625M. The exact time between these slices was not determined.</p>
+<p>Fields are mapped only on the common horizon, with a fixed colour scale throughout the interval. Markers were calculated on the full 35×72 grid. Ψ₂ and σ components refer to the saved tetrad; null-direction normalisation affects σ.</p>
+<p>For lightweight viewing, AH1/AH2 use a subset of nodes from the original six angular patches. Centre calculations use the full data. Two small grey caps close the AH3 display at the poles and are excluded from numerical analysis.</p>
+<p>AH3 has no gaps over the available interval. AH1/AH2 are missing at t=0.375M, 16.8125M, 20.8125M and 21M. Earlier surfaces are not substituted. Playback stops at an empty pre-merger time; it can be passed manually.</p>
+<p>Frame continuity and region overlap do not prove the motion of one material patch. A second numerical resolution and independence from arbitrary tetrad choices have not been tested here. QC0, SXS:BBH:0389 and SXS:BBH:0305 are different simulations.</p>
+</details></div></main>
+<script src="../../viewers/qc0-data/init.js"></script>
+<script src="../../viewers/qc0-data/part-00.js"></script>
+<script src="../../viewers/qc0-data/part-01.js"></script>
+<script src="../../viewers/qc0-data/part-02.js"></script>
+<script src="../../viewers/qc0-data/part-03.js"></script>
+<script src="../../viewers/qc0-data/part-04.js"></script>
+<script src="../../viewers/qc0-data/part-05.js"></script>
+<script src="../../viewers/qc0-data/part-06.js"></script>
+<script src="../../viewers/qc0-data/part-07.js"></script>
+<script src="../../viewers/qc0-data/part-08.js"></script>
+<script src="../../viewers/qc0-data/part-09.js"></script>
+<script src="../../viewers/qc0-data/part-10.js"></script>
+<script src="../../viewers/qc0-data/part-11.js"></script>
+<script src="../../viewers/qc0-data/part-12.js"></script>
+<script src="../../viewers/qc0-data/part-13.js"></script>
+<script src="../../viewers/qc0-data/part-14.js"></script><script src="../../assets/plotly.min.js"></script>
+<script id="controller">
+(()=>{'use strict';
+const D=window.QC_DATA,el=id=>document.getElementById(id);
+const labels={repsi2:'Re Ψ₂',impsi2:'Im Ψ₂',abs_npsigma:'|σ|'};
+const meshes={};for(const [key,faces] of Object.entries(D.meshes))meshes[key]={i:faces.map(t=>t[0]),j:faces.map(t=>t[1]),k:faces.map(t=>t[2])};
+let index=D.birth_index,playing=false,orbiting=false,timeTimer=null,orbitTimer=null,angle=.72,renderPromise=Promise.resolve();
+const defaultCamera={eye:{x:1.8,y:1.6,z:1.1},up:{x:0,y:0,z:1},projection:{type:'orthographic'}};
+const axis=t=>({title:{text:t+' / M'},range:[-1.1,1.1],backgroundcolor:'#f8fafc',gridcolor:'#dde4eb'});
+const layout={paper_bgcolor:'#ffffff',margin:{l:8,r:8,t:12,b:12},uirevision:'keep-camera',showlegend:true,
+ legend:{orientation:'h',x:.02,y:.98,bgcolor:'rgba(255,255,255,.8)'},scene:{aspectmode:'cube',camera:defaultCamera,xaxis:axis('x'),yaxis:axis('y'),zaxis:axis('z')}};
+function xyz(obj){const x=[],y=[],z=[];for(let i=0;i<obj.xyz.length;i+=3){x.push(obj.xyz[i]);y.push(obj.xyz[i+1]);z.push(obj.xyz[i+2]);}return{x,y,z};}
+function caps(P){const x=P.x.slice(),y=P.y.slice(),z=P.z.slice(),i=[],j=[],k=[];
+ for(const start of [0,(D.nt-1)*D.np]){const n=x.length;let ax=0,ay=0,az=0;for(let q=0;q<D.np;q++){ax+=P.x[start+q];ay+=P.y[start+q];az+=P.z[start+q];}x.push(ax/D.np);y.push(ay/D.np);z.push(az/D.np);for(let q=0;q<D.np;q++){i.push(n);j.push(start+q);k.push(start+(q+1)%D.np);}}
+ return{x,y,z,i,j,k};}
+function traces(){const F=D.frames[index],field=el('field').value,common=!!F.fields,tr=[];
+ for(const o of F.objects){if(common&&o.horizon!==3&&!el('inners').checked)continue;
+  const P=xyz(o),isCommon=o.horizon===3,opacity=isCommon&&el('inners').checked?.65:1;
+  const base={type:'mesh3d',...P,...meshes[o.mesh],name:'AH'+o.horizon,opacity,showlegend:true,hoverinfo:'skip',flatshading:false,
+    lighting:{ambient:.77,diffuse:.65,specular:.1,roughness:.85}};
+  if(isCommon){base.intensity=F.fields[field];base.cmin=D.ranges[field][0];base.cmax=D.ranges[field][1];base.colorscale=field==='abs_npsigma'?'Cividis':'RdBu';base.showscale=true;base.colorbar={title:{text:labels[field]},len:.63,thickness:15};}
+  else base.color=o.horizon===1?'#c18b46':'#3294a0';
+  tr.push(base);if(o.mesh==='qlm')tr.push({type:'mesh3d',...caps(P),color:'#aeb9c5',opacity,showlegend:false,hoverinfo:'skip'});
+  if(isCommon&&el('mask').checked){const ids=F.masks[field];tr.push({type:'scatter3d',mode:'markers',name:'Strong deviations',
+   x:ids.map(k=>P.x[k]),y:ids.map(k=>P.y[k]),z:ids.map(k=>P.z[k]),text:ids.map(k=>`${labels[field]} = ${F.fields[field][k].toPrecision(5)}<br>Index: ${k}`),
+   hovertemplate:'%{text}<br>x=%{x:.4f}, y=%{y:.4f}, z=%{z:.4f}<extra></extra>',marker:{color:'#ffcf33',size:3,opacity:1,line:{color:'#66511e',width:.4}},showlegend:true});}
+ }
+ return tr;
+}
+function update(){const F=D.frames[index];el('time').value=String(index);el('readout').textContent=`t = ${F.t_M.toFixed(4)} M · τ = ${F.tau_M.toFixed(4)} M`;
+ el('status').textContent=F.fields?`Common horizon AH3. Area ${F.area.toFixed(6)} M². Field: ${labels[el('field').value]}.`:(F.objects.length?'Individual horizons AH1/AH2 are saved; no common horizon has been found yet.':'AH1/AH2 were not saved at this time. No surfaces have been invented.');
+ if(F.fields&&F.missing_individuals.length)el('status').textContent+=' AH1/AH2 are missing in this frame; the common horizon is saved.';
+ /* reader-layout */const rp=window.HorizonReader.palette();layout.paper_bgcolor=rp.bg;layout.font={color:rp.ink};layout.legend.bgcolor=rp.paper;for(const a of ['xaxis','yaxis','zaxis'])Object.assign(layout.scene[a],{color:rp.ink,backgroundcolor:rp.bg,gridcolor:rp.line});
+ const current=traces();renderPromise=renderPromise.then(()=>Plotly.react(el('plot'),current,layout,{responsive:true,displaylogo:false,scrollZoom:true})).catch(e=>{el('error').textContent='Display error: '+e.message;});return renderPromise;
+}
+function stopPlay(){playing=false;if(timeTimer!==null)clearInterval(timeTimer);timeTimer=null;el('play').textContent='Frame playback';el('play').setAttribute('aria-pressed','false');}
+function setFrame(i){index=Math.max(0,Math.min(D.frames.length-1,i));return update();}
+function bounds(r){for(const key of ['xaxis','yaxis','zaxis'])layout.scene[key].range=[-r,r];}
+el('begin').onclick=()=>{stopPlay();bounds(D.full_bound);setFrame(0);};el('birth').onclick=()=>{stopPlay();bounds(1.1);setFrame(D.birth_index);};
+el('previous').onclick=()=>{stopPlay();setFrame(index-1);};el('next').onclick=()=>{stopPlay();setFrame(index+1);};el('time').oninput=()=>{stopPlay();setFrame(Number(el('time').value));};
+for(const id of ['field','mask','inners'])el(id).onchange=()=>update();
+el('play').onclick=()=>{if(playing){stopPlay();return;}if(index>=D.frames.length-1)return;
+ playing=true;el('play').textContent='Pause';el('play').setAttribute('aria-pressed','true');timeTimer=setInterval(()=>{
+  if(index>=D.frames.length-1){stopPlay();return;}const next=index+1;setFrame(next);if(!D.frames[next].objects.length)stopPlay();
+ },220);};
+el('orbit').onclick=()=>{orbiting=!orbiting;el('orbit').setAttribute('aria-pressed',String(orbiting));el('orbit').textContent=orbiting?'Stop orbit':'Orbit camera';
+ if(orbiting){orbitTimer=setInterval(()=>{angle+=.016;Plotly.relayout(el('plot'),{'scene.camera.eye':{x:2.4*Math.cos(angle),y:2.4*Math.sin(angle),z:1.1+.35*Math.sin(angle*.7)}});},60);}else{clearInterval(orbitTimer);orbitTimer=null;}};
+el('reset').onclick=()=>Plotly.relayout(el('plot'),{'scene.camera':defaultCamera});
+window.HF4B4={setFrame,traces,getState:()=>({index,field:el('field').value,playing,orbiting}),ready:()=>renderPromise,data:D};update();
+})();
+</script></body></html>
