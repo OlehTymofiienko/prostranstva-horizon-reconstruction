@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HF4-B5 — angular structure and residual localisation — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF4_B5_report.html"><link rel="alternate" hreflang="en" href="BH_HF4_B5_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF4_B5_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF4_B5_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF4_B5_report.html">Russian source</a>.</p><h1>HF4-B5 — angular structure and residual localisation</h1>
+<h2>Input and method</h2>
+<p>Fifty-five QC0 common-horizon frames cover 18.625–22M at 0.0625M spacing, each with 2,520 nodes (35×72). Fields, physical-area weights and original masks come from saved B4 data. Evolution, area, masks, HF3 ringdown and HF1/Yitian were not recalculated.</p>
+<p>Input SHA-256: <code>a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8</code>. Preserved protocol SHA-256: <code>2140113cbd0284e39ed23b30225343160ce150060d6b7c381f2bcb3d96d85569</code>.</p>
+<p>Independent weighted fits at each time use 0≤ℓ≤L, L=2,4,6,8, with 9,25,49,81 real coefficients respectively: 660 field fits, or 220 matrices with three right-hand sides. The basis is Yℓ0, √2 Re Yℓm and √2 Im Yℓm for m&gt;0, with standard unit-sphere normalisation and Condon–Shortley phase, implemented by <code>scipy.special.sph_harm_y(ell,m,theta,phi)</code>. Original QC0 polar θ, azimuth φ, axes and indices are preserved.</p>
+<p>Minimise Σwᵢ(Fᵢ−Fᴸᵢ)². Define R²=1−Σwᵢ(Fᵢ−Fᴸᵢ)²/Σwᵢ(Fᵢ−⟨F⟩w)². This is explained <strong>weighted angular variation on the fitted nodes</strong>, not energy, probability, simulation accuracy or independent predictive validation. Nested larger spaces cannot worsen the fit. No denominator is degenerate.</p>
+<p>Coordinate-sphere harmonics are not computed intrinsic-Laplacian eigenfunctions of the deformed horizon. These coefficients are not Yitian’s geometric multipoles. For |σ| only the real magnitude is expanded, without complex phase or a spin-weighted decomposition.</p>
+<h2>Explained variation over 55 frames</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th align="right">L≤2</th>
+<th align="right">L≤4</th>
+<th align="right">L≤6</th>
+<th align="right">L≤8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Re Ψ₂</td>
+<td align="right">88.208–91.337%</td>
+<td align="right">94.434–99.208%</td>
+<td align="right">95.754–99.904%</td>
+<td align="right">96.388–99.977%</td>
+</tr>
+<tr>
+<td>Im Ψ₂</td>
+<td align="right">72.330–92.678%</td>
+<td align="right">83.501–98.833%</td>
+<td align="right">95.765–99.829%</td>
+<td align="right">99.074–99.962%</td>
+</tr>
+<tr>
+<td>Magnitude of σ</td>
+<td align="right">93.902–97.500%</td>
+<td align="right">98.098–99.659%</td>
+<td align="right">99.520–99.854%</td>
+<td align="right">99.815–99.936%</td>
+</tr>
+</tbody></table></div>
+<p>Ranges cover times, not confidence intervals. L=2 already describes much of the broad pattern, but performance varies with field/time.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Last frame, t=22M</th>
+<th align="right">R² at L≤8</th>
+<th align="right">Residual RMS / original standard deviation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Re Ψ₂</td>
+<td align="right">99.97664%</td>
+<td align="right">1.528%</td>
+</tr>
+<tr>
+<td>Im Ψ₂</td>
+<td align="right">99.96240%</td>
+<td align="right">1.939%</td>
+</tr>
+<tr>
+<td>Magnitude of σ</td>
+<td align="right">99.81524%</td>
+<td align="right">4.298%</td>
+</tr>
+</tbody></table></div>
+<p>Relative |σ| residual increases slightly near the end, although absolute residual RMS falls from 0.00577094 to 0.00227902. All fields do not improve monotonically.</p>
+<h2>Residual location</h2>
+<p>The unchanged B4 mask selects roughly 5% of physical area with greatest deviation from the weighted median. The residual mask applies the same rule to r=F−Fᴸ: the weighted 95th percentile of |r−median_w(r)|, including ties. This was fixed in <code>BH_HF4_B5_definition.json</code> before fitting.</p>
+<p>Weighted Dice overlap and the old-mask fraction of Σwr² were measured. <strong>Σwr² is a numerical norm, not physical energy.</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field at L≤8</th>
+<th align="right">Old/residual mask Dice</th>
+<th align="right">Squared residual norm inside old mask</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Re Ψ₂</td>
+<td align="right">0.0000–0.2717</td>
+<td align="right">1.592–83.476%</td>
+</tr>
+<tr>
+<td>Im Ψ₂</td>
+<td align="right">0.0000–0.2123</td>
+<td align="right">1.087–9.268%</td>
+</tr>
+<tr>
+<td>Magnitude of σ</td>
+<td align="right">0.0000–0.0016</td>
+<td align="right">1.018–1.848%</td>
+</tr>
+</tbody></table></div>
+<p>Im Ψ₂ and |σ| residual maxima usually lie outside the old region. Re Ψ₂ varies over time; residuals cannot all be called one persistent localised entity. Zero upper-tail mask overlap does not mean zero residual in the old region.</p>
+<p><strong>First frame:</strong> at t=18.625M, Re Ψ₂ has R²=96.38844%, residual RMS=19.004% of original standard deviation, and 83.476% of squared residual norm in the old mask. Two nodes at θ=90°, φ=40° and 220° contribute <strong>83.144%</strong> of total Σwr² while occupying <strong>0.2807%</strong> of discrete physical area.</p>
+<p>High explained variation does not eliminate large local deviations. Dependence on two nodes requires checking original diagnostics/resolution before physical interpretation. Nodes were not removed, smoothed or excluded for refitting. This extra localisation measure is descriptive, without a statistical detection threshold.</p>
+<p><code>BH_HF4_B5_maps_it9536.png</code> and <code>BH_HF4_B5_maps_it11264.png</code> show field minus mean, approximation minus the same mean, and residual with one scale across each row. Orange contours are B4 masks. These are angular maps, not a new shape reconstruction. All other times are saved in NPZ.</p>
+<h2>Numerical checks</h2>
+<p>All weights are positive; maximum sum-to-one error is 2.22e−16. All 220 matrices have full column rank, with condition numbers 1.405279–3.135913. Analytical Y00, Y10 and addition-theorem error is ≤6.88e−15. Maximum relative normal-equation residual is 6.97e−15; weighted residual mean is consistent with zero. Independent SVD/QR endpoint predictions at L=8 differ by ≤7.55e−15 relative to the original-value scale. Nested fits do not increase squared residual. Input checksum remains unchanged.</p>
+<p>These checks validate linear processing, not simulation convergence.</p>
+<h2>Outcome and limits</h2>
+<p>B5 answers the planned question: how much variation selected angular spaces describe and where the residual lies relative to old masks. The main pattern is compactly represented. A nonzero residual, especially early Re Ψ₂, remains; it alone establishes neither new physics nor an independent “latent object”.</p>
+<p>Release 1.0 completes reconstruction and descriptive validation of available HF1, QC0/HF3/HF4 and Yitian data. SXS:BBH:0305, QC0 and SXS:BBH:0389 remain separate configurations.</p>
+<p>Open limits: no continuous validated QC0 geometry over 0–105M; no second-resolution/coordinate/independent-tetrad test of local residuals; no established origin of the first-frame nodal feature; no proven physical identity of HF1 gradient regions and QC0 deviation regions; no unique full geometry from finite Yitian moments; early Yitian dynamics/nonlinear identification remain open. Displays show apparent horizons or labelled scalar maps, not event horizons or ray-traced optics.</p>
+<h2>Reproduction</h2>
+<p><code>BH_HF4_B5.py</code> performs B5 only; <code>finish_B5.py</code> packages saved results. The archive includes B4 input NPZ, geometry table and protocol; README gives commands. Routine continuation needs no rerun.</p>
+<p>Tables: <code>BH_HF4_B5_metrics.csv</code>, <code>BH_HF4_B5_coefficients.csv</code>, <code>BH_HF4_B5_design_checks.csv</code>, <code>BH_HF4_B5_singular_values.csv</code>, <code>BH_HF4_B5_residual_node_concentration.csv</code>. Arrays: <code>BH_HF4_B5_fits_residuals.npz</code>. QC0 times/units are retained. <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.sph_harm_y.html">SciPy convention</a>; normalisation was also checked analytically.</p>
+<hr><a href="BH_HF4_B5_report.md" download>English Markdown</a></article></body></html>

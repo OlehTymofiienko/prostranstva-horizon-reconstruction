@@ -1,0 +1,155 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yitian A1 — Audit of the common-horizon multipoles — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_YITIAN_A1_report.html"><link rel="alternate" hreflang="en" href="BH_YITIAN_A1_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_YITIAN_A1_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_YITIAN_A1_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_YITIAN_A1_report.html">Russian source</a>.</p><h1>Yitian A1 — Audit of the common-horizon multipoles</h1>
+<p>Historical stage: 15 September 2026. English reading edition. This report records the first audit; the corrected QC0 parameters in A2 and the final project report take precedence over earlier comparisons.</p>
+<p><strong>Result:</strong> the supplied series is usable, late moments agree with the Kerr reference, and the authors&#39; angular rotation is essential when comparing frequencies. This is not a complete analysis of early-time dynamics.</p>
+<h2>Source and data integrity</h2>
+<p>The supplied archive contains <code>Moments_500M_L30.h5</code> and four plotting notebooks: I40, I44, L30 and L32. The notebooks were read as text rather than executed. Although no I22 notebook is supplied, I22 is present in the coefficient array.</p>
+<p>There are 5,001 times from 0 to 500M, spaced by 0.1M, and 81 mass plus 81 spin coefficients at each time, covering 0≤ℓ≤8. This gives 810,162 coefficient values. No missing, infinite or invalid values or duplicate times were found. The index is k=ℓ(ℓ+1)+m. The I22 phase convention at t=0 is satisfied.</p>
+<p>The accompanying letter and paper identify an equal-mass, nonspinning, quasicircular SpEC case, SXS:BBH:0389. Time zero is the first appearance of the common horizon. Mf=0.95162M and χ=0.68644 are the reported final parameters. The AMR target, approximately 5×10⁻⁸, is not an uncertainty estimate for each individual moment. The surface is a common apparent/marginally trapped horizon, not a reconstructed global event horizon.</p>
+<p>No waveforms, premerger surface grids, area history, pointwise metric or complete transport vector are included in this archive. The HDF5 file contains no parameter attributes establishing those missing quantities. Its SHA256 is <code>9cdd268e85b783d8a832b72e46945c6b43bb2b3ea0a9e6665e57a5a1b7d56f0f</code>.</p>
+<h2>Three related definitions</h2>
+<p>The processing consists of complex conjugation of the stored coefficient, subtraction of its mean over the 1,001 samples from 400 to 500M, and the rotation exp(−imΩt), where Ω=0.20878380853617037M⁻¹.</p>
+<p>Writing Z for the conjugated coefficient, the three series are Z, Z̄=Z−c and Z̃=Z̄exp(−imΩt). Under the convention exp(−αt−iωt), the rotation changes the frequency by +mΩ while preserving the modulus and damping envelope. Subtracting a constant can itself change the envelope. For m=0 the rotation is unity and the moments are real.</p>
+<p>Nonzero axisymmetric late moments describe the final geometry. They must be retained for full-geometry tests, and subtracted only when studying perturbations.</p>
+<p>For I22, c≈−4.19108266484×10⁻⁶−3.83184732336×10⁻⁶i, with magnitude 5.67875×10⁻⁶. A small late offset is not evidence of an additional structure; the dynamical analysis is limited to approximately 150M.</p>
+<h2>Symmetry controls</h2>
+<p>Expected families are I with even ℓ and even m, and L with odd ℓ and even m. Maximum coefficients in forbidden families are 8.05676×10⁻⁷ and 7.20999×10⁻⁷, respectively; their ratios to the global family scale are 4.54554×10⁻⁷ and 5.90928×10⁻⁷. Reality-condition discrepancies are at most 7.13513×10⁻¹⁴ and 4.26696×10⁻¹⁵. These are not the same statistic as the earlier HF3 symmetry diagnostic.</p>
+<p>The monopole agrees with I00=√π to 2.75532×10⁻¹⁰. These dimensionless geometric moments are not direct measurements of mass without an area scale.</p>
+<h2>Stationary Kerr comparison</h2>
+<p>The late axisymmetric moments were compared with the stationary horizon integral</p>
+<p><code>Iℓ0+iLℓ0 = π(1+b²)² ∫[−1,1] √((2ℓ+1)/(4π)) Pℓ(x)/(1−ibx)³ dx</code>,</p>
+<p>where b=χ/(1+√(1−χ²)). This stationary relation is not imposed on the early dynamical horizon. Increasing quadrature order from 256 to 512 changes the result by approximately 2.37×10⁻¹⁴.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Moment</th>
+<th align="right">Late value</th>
+<th align="right">Kerr value at reported χ</th>
+<th align="right">Relative difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I00</td>
+<td align="right">1.7724538509</td>
+<td align="right">1.7724538509</td>
+<td align="right">3.34485×10⁻¹²%</td>
+</tr>
+<tr>
+<td>L10</td>
+<td align="right">1.2201122006</td>
+<td align="right">1.2201098276</td>
+<td align="right">0.000194485%</td>
+</tr>
+<tr>
+<td>I20</td>
+<td align="right">−0.49007097717</td>
+<td align="right">−0.49006911074</td>
+<td align="right">0.000380850%</td>
+</tr>
+<tr>
+<td>L30</td>
+<td align="right">−0.15994983906</td>
+<td align="right">−0.15994893591</td>
+<td align="right">0.000564649%</td>
+</tr>
+<tr>
+<td>I40</td>
+<td align="right">0.046545899370</td>
+<td align="right">0.046545551525</td>
+<td align="right">0.000747321%</td>
+</tr>
+<tr>
+<td>L50</td>
+<td align="right">0.012584755470</td>
+<td align="right">0.012584638504</td>
+<td align="right">0.000929437%</td>
+</tr>
+<tr>
+<td>I60</td>
+<td align="right">−0.0032322980724</td>
+<td align="right">−0.0032322621643</td>
+<td align="right">0.001110930%</td>
+</tr>
+<tr>
+<td>L70</td>
+<td align="right">−0.00079927930616</td>
+<td align="right">−0.00079926898482</td>
+<td align="right">0.001291350%</td>
+</tr>
+<tr>
+<td>I80</td>
+<td align="right">0.00019195414464</td>
+<td align="right">0.00019195130926</td>
+<td align="right">0.001477140%</td>
+</tr>
+</tbody></table></div>
+<p>Using L10=√(3π)b yields χ=0.68644097081, differing from the five-decimal supplied value by about 9.71×10⁻⁷. Other moments then agree at approximately 10⁻¹¹. This is internal consistency and sensitivity to rounding, not a claim of physical accuracy at that level. Mf cannot be independently recovered from these dimensionless moments without the area.</p>
+<h2>I22 frequency and damping</h2>
+<p>Unwrapped phase and log amplitude were fitted with equal weights. The rounded paper reference is ω=0.5535M⁻¹ and α=0.08541898M⁻¹ (τ=11.707M).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Window, M</th>
+<th align="right">Frequency before rotation</th>
+<th align="right">Frequency after rotation</th>
+<th align="right">Damping α</th>
+<th align="right">Frequency difference</th>
+<th align="right">Damping difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>10–30</td>
+<td align="right">0.137759</td>
+<td align="right">0.555326</td>
+<td align="right">0.086568</td>
+<td align="right">0.330%</td>
+<td align="right">1.345%</td>
+</tr>
+<tr>
+<td>20–50</td>
+<td align="right">0.135220</td>
+<td align="right">0.552787</td>
+<td align="right">0.085251</td>
+<td align="right">0.129%</td>
+<td align="right">0.197%</td>
+</tr>
+<tr>
+<td>30–60</td>
+<td align="right">0.135140</td>
+<td align="right">0.552708</td>
+<td align="right">0.084819</td>
+<td align="right">0.143%</td>
+<td align="right">0.703%</td>
+</tr>
+<tr>
+<td>40–80</td>
+<td align="right">0.135375</td>
+<td align="right">0.552942</td>
+<td align="right">0.085080</td>
+<td align="right">0.101%</td>
+<td align="right">0.397%</td>
+</tr>
+<tr>
+<td>50–100</td>
+<td align="right">0.135434</td>
+<td align="right">0.553001</td>
+<td align="right">0.085272</td>
+<td align="right">0.090%</td>
+<td align="right">0.172%</td>
+</tr>
+<tr>
+<td>70–120</td>
+<td align="right">0.135648</td>
+<td align="right">0.553216</td>
+<td align="right">0.085299</td>
+<td align="right">0.051%</td>
+<td align="right">0.141%</td>
+</tr>
+</tbody></table></div>
+<p>Frequencies and damping are in M⁻¹. Alternative mean windows 350–500 and 450–500M were checked. This descriptive single-oscillation analysis does not establish a full multimode uncertainty budget.</p>
+<p><img src="../../reports/BH_YITIAN_A1_overview.png" alt="Audit overview"></p>
+<p><img src="../../reports/BH_YITIAN_A1_windows.png" alt="Window comparisons"></p>
+<h2>Relation to QC0 and next stage</h2>
+<p>Different final masses and spins do not invalidate the internal QC0 tests: the two initial configurations have not been established as identical. Yitian&#39;s parameters must not replace QC0&#39;s own horizon parameters. The earlier prose also misidentified QC0 angular momentum as dimensionless spin and transposed digits in its mass; A2 corrects those statements using the archived program and outputs.</p>
+<p>The next stage was an early-time, multimode analysis with explicit prediction windows. This audit does not establish new physics, reconstruct a full merger movie or identify an additional physical object.</p>
+<p>The archived <code>BH_YITIAN_A1_audit.py</code> accepts the original ZIP or HDF5 input and an output directory. The original input remains separately attributed. Methodological reference: <a href="https://arxiv.org/abs/2208.02965">Chen et al.</a>.</p>
+<hr><a href="BH_YITIAN_A1_report.md" download>English Markdown</a></article></body></html>

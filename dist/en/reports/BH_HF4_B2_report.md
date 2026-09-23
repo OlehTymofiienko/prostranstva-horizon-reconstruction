@@ -1,0 +1,57 @@
+# BH-HF4-B2 — surface-field localisation and evolution
+
+20 September 2026. QC0, following confirmed B1. **Complete:** large-deviation masks for three fields were mapped on saved 3D common apparent-horizon surfaces, with localisation, adjacent-frame overlap and an interactive viewer. This is descriptive for the given coordinates/grid/tetrad, not new physics, invariant regions or identity with HF1.
+
+## Checkpoint and data
+
+B1 reports/metrics, `BH_HF4_birth_package.tar.gz` and its viewer were recovered: the old A3 “early surfaces missing” state is superseded. HF3, Yitian, A1/A2, B1 and evolution were not rerun; B2 adds masks/comparisons.
+
+Preserved B1 values: first AH3 t=18.625M, it9536; previous selected absence t=18.5625M, it9504. Span ratio is initially 2.612335, at τ=0.3125M 2.316833, and at τ=1.9375M 1.568002; τ=t−18.625M. Detection is discrete, not an exact birth time.
+
+The received package has 44 VTK surfaces at 16 times, each 2,520 nodes (35×72) with matching connectivity. AH3 has six frames at 18.625–18.9375M and six at 20.25–20.5625M. Spacing is 0.0625M; **the intervening 1.3125M gap has no supplied frames**. A fuller manifest does not imply all files were transferred. Four earlier individual-surface frames start at 18.375M. Coordinates/values are finite, all hashes are in `BH_HF4_B2_summary.json`, and shared `birth_core` files match byte for byte.
+
+## Definition
+
+Fields are Re Ψ₂, Im Ψ₂, |σ|=√[(Reσ)²+(Imσ)²] from QC0, without replacing Ψ₂ by early Gaussian curvature. Dᵢ=|Fᵢ−median_w(F)|. Weights are Euclidean triangle coordinate areas shared among vertices and normalised — **not physical area**. Mask: weighted 95th percentile and ties, covering 5.00–5.14%; 90%/98% thresholds are controls. This post-B1 exploratory definition is not preregistered or HF1’s gradient mask.
+
+u points from AH1 to AH2 centres projected into xy, w=z, v=w×u. Centres use coordinate-area weights. Points are relative to AH3 centre and normalised by maximum absolute axis extent. Longitudinal region: |u_norm|≥0.65; polar: |w_norm|≥0.65. Regions can overlap.
+
+## Results
+
+Percentages concern selected-mask area, not the whole surface; ranges cover 12 AH3 frames.
+
+| Field | Main location | Mask fraction there | Adjacent Dice |
+|---|---|---:|---:|
+| Re Ψ₂ | Longitudinal ends | 95.19–100% | 0.838–1.000 |
+| Im Ψ₂ | Poles | 74.64–100% | 0.902–0.989 |
+| Magnitude of σ | Poles | 100% | 0.959–0.997 |
+
+Masks can have several components, not one spot. Dice uses matching angular indices and mean normalised weights. Only ten within-block pairs enter the table. The cross-gap pair remains in CSV as `contiguous=False`.
+
+Adjacent weighted correlations are 0.9915–0.9997, 0.9982–0.9999 and 0.99966–0.99993 respectively. Smooth low-mode organisation can itself produce high overlap/correlation. Matter transport, unusualness and survival through the gap are not proved; random rotations/other nulls were not studied.
+
+At percentile90, minimum corresponding localisation fractions are 97.56%,74.60%,97.75%; at percentile98, 87.90%,84.33%,100%. These test chosen thresholds, not resolution convergence.
+
+## Viewer and checks
+
+`BH_HF4_B2_fields_3D.html` embeds data/library, with rotation, zoom, saved-time slider, fixed-time orbit and optional inner horizons beneath translucent AH3. It opens on first AH3; yellow marks the main mask. Scales are fixed; playback stops at the gap and never interpolates evolution.
+
+VTK lacks exact polar vertices. Neutral caps close only the display; added nodes never enter measurements/weights. Static images show two times from one viewpoint with rear-marker culling; HTML retains full masks.
+
+Tests covered 192 time/field/control states, indices, colour ranges, gap stop and camera calls. Viewing rounding changes values by <5.01×10⁻⁹; NPZ preserves precision. The static figure was inspected; full browser WebGL was not checked then.
+
+## Scope and continuation
+
+This maps actual QC0 coordinate surfaces within two short blocks. HF1 used SXS:BBH:0305, Yitian SXS:BBH:0389; neither is mapped onto QC0 here. AH3 is apparent, not a global event horizon; NP fields use the chosen tetrad. See [AHFinderDirect](https://einsteintoolkit.org/thornguide/EinsteinAnalysis/AHFinderDirect/documentation.html), [QLM](https://einsteintoolkit.org/thornguide/EinsteinAnalysis/QuasiLocalMeasures/documentation.html).
+
+Historical next B3 checks physical-area weights from the tetrad/metric, then distinguishes tetrad/parameterisation dependence. Missing frames must be obtained, not invented. No Cactus run is needed. Showing the original HF1 structure requires its own surfaces/masks.
+
+Status: `BH_HF4_B2_QC0_SURFACE_FIELD_LOCALIZATION_AND_TWO_SHORT_TIME_BLOCKS_CHARACTERIZED`. Continue from `BH_HF4_resume_state_B2.json`; old pending A3 states are history.
+
+```bash
+python BH_HF4_B2.py --input /path/to/package --b1 provenance/BH_HF4_B1_metrics.csv --output results
+python build_B2_view.py --output results
+node check_B2_view.cjs
+```
+
+Optional reproduction needs NumPy, Matplotlib and Node; ready HTML does not. Full VTK stays in the separate birth package. The results ZIP holds programs, viewer, metrics, figure, hashes and state.

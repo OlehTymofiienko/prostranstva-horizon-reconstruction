@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HF4-A3 — Inventory of the available geometric data — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF4_A3_report.html"><link rel="alternate" hreflang="en" href="BH_HF4_A3_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF4_A3_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF4_A3_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF4_A3_report.html">Russian source</a>.</p><h1>HF4-A3 — Inventory of the available geometric data</h1>
+<p>Historical stage: 16 September 2026. English reading edition. The inventory requested here was subsequently received and analysed in B1; this report records the earlier checkpoint.</p>
+<p><strong>Status at this stage:</strong> available-data audit complete; local geometry inventory pending. A1/A2 and the numerical evolutions were not repeated.</p>
+<h2>What was available</h2>
+<p>Yitian&#39;s series supplies 5,001 times and 81 complex coefficients per moment family. It contains no pointwise metric, area history, surface coordinates or complete transport grid. QC0 R7A contains 647 files with waveforms and horizon diagnostics, but no verified pointwise geometry in that archive.</p>
+<p>Its <code>sf_radius</code> output has 161 times from 95 to 105M and one value per each of six surface slots. Grid-index columns 6–8 are all zero and coordinate columns 10–12 are all zero. Those reductions do not place a physical surface at the coordinate origin. Metric reductions are not a surface metric grid. Checkpoints were known to exist on the user&#39;s computer but had not been inspected here.</p>
+<p>Regular HDF5 field output was disabled and its variable list empty; AH surface output and one-/two-dimensional ASCII output were also disabled. Checkpoint writing was enabled. These settings motivate inspecting existing checkpoint contents before proposing another evolution.</p>
+<h2>What a checkpoint might preserve</h2>
+<p>At the inspected Einstein Toolkit revision <code>edd7fe658cb6748cd9ac8efcea314214b87bc043</code>, SphericalSurface metadata includes origins, spacing, dimensions, ghost zones and validity. Some QLM metric quantities explicitly disable checkpointing, whereas surface coordinates and tetrad-related quantities may be available. Installed source and actual datasets still require verification.</p>
+<p>A conditional route uses a spatial complex dyad m=(u+iv)/√2 with physically orthonormal u,v and vanishing time component. One can solve for the corresponding metric on the tangent span. Four hundred synthetic metric cases gave maximum relative discrepancy 7.47×10⁻¹⁴; a phase-change control gave 5.61×10⁻¹⁴. These are algebraic controls, not tests on a recovered physical grid.</p>
+<p>Before interpreting real arrays, one must check time, surface validity, MPI copies, indexing, ghost zones, tangent vectors, positive definiteness and agreement with an independent horizon area.</p>
+<h2>External geometry is not interchangeable</h2>
+<p>An SXS <code>Horizons.h5</code> file may contain centres, irreducible masses and spins, allowing A=16πMirr². Some simulations also supply surface dumps. Their existence for SXS:BBH:0389, numerical resolution and correspondence with Yitian&#39;s transported angles were not established here. Such data cannot simply be combined with a different simulation or angular convention. No email was sent at this stage.</p>
+<p>Coordinate shape, intrinsic geometry and a Euclidean embedding are different objects. Drawing a radial relief from curvature without an established metric reconstruction would misrepresent the data.</p>
+<h2>Read-only collector</h2>
+<p>The prepared collector searches likely QC0 simulation directories and opens HDF5 files read-only. It records metadata and eligible small surface arrays, capped at 2 MiB per array and 96 MiB overall. It does not read the full volume fields, copy whole checkpoints, change the simulation or infer measured time solely from an iteration in a filename.</p>
+<p>The collector requires NumPy and h5py for extraction; otherwise it marks the inventory as incomplete. Fourteen synthetic controls covered corrupt files, external HDF5 links, bounds and unchanged inputs. Existing output archives are preserved with timestamps.</p>
+<p>The historical user command was to activate <code>~/gw_env</code> and run <code>BH_HF4_A3_collect.py</code> from Downloads, producing <code>C:\Users\Admin\BH_HF4_A3_inventory.zip</code>. This is a record of the completed route, not a request to rerun it now.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Inventory result</th>
+<th>Permitted next step</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Valid coordinates and sufficient dyad information</td>
+<td>Recover the surface metric and compare the area</td>
+</tr>
+<tr>
+<td>Coordinates alone</td>
+<td>Show the coordinate surface with that limitation</td>
+</tr>
+<tr>
+<td>Only volume/checkpoint data</td>
+<td>Plan extraction from existing files before any new evolution</td>
+</tr>
+<tr>
+<td>Missing early frames</td>
+<td>Record the gap explicitly</td>
+</tr>
+</tbody></table></div>
+<p>The A2 scalar atlas remains valid within its stated scope. The next historical action was to inspect the returned inventory; B1 and the final project report give the subsequent outcome.</p>
+<hr><a href="BH_HF4_A3_report.md" download>English Markdown</a></article></body></html>

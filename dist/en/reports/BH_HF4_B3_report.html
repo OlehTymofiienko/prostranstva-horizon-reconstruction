@@ -1,0 +1,117 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BH-HF4-B3 — physical area measure and localisation — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_HF4_B3_report.html"><link rel="alternate" hreflang="en" href="BH_HF4_B3_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_HF4_B3_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_HF4_B3_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_HF4_B3_report.html">Russian source</a>.</p><h1>BH-HF4-B3 — physical area measure and localisation</h1>
+<p>20 September 2026, following B2. <strong>Broad organisation survives replacing coordinate weights by area reconstructed from the normalised tetrad:</strong> Re Ψ₂ remains longitudinal, Im Ψ₂/|σ| polar. Five late-state QLM area controls pass. Direct same-early-run area comparison is still pending at this historical stage and passes to B4.</p>
+<h2>Method and reuse</h2>
+<p>HF3, Yitian, A1/A2, B1/B2 and evolution were not rerun. B2 fields/masks/weights and axes were reused; &lt;5×10⁻⁹ axis rounding does not change diagnostic-region membership. Inputs: 12 common surfaces from the birth package and five late extracted states from <code>BH_HF4_A3_inventory.zip</code>. Late controls do not fill early gaps or establish a continuous movie.</p>
+<p>Exported lᵘ,nᵘ,mᵘ are contravariant; mᵘ comes from two physically orthonormal spatial tangents and m⁰=0. Compute Eⁱ_A=∂_A Xⁱ and solve Eⁱ_A mᴬ=mⁱ. A Euclidean pseudoinverse converts components; it is not the physical metric. Then qᴬᴮ=2Re(mᴬconjugate(mᴮ)), q_AB=(qᴬᴮ)⁻¹, dA=√det(q_AB)dθdφ. The saved <code>qlm_twometric.F90</code>, <code>qlm_tetrad1.F90</code>, <code>qlm_derivs.F90</code> confirm conventions.</p>
+<p>Interior grid: θᵢ=(i+1/2)π/35, φⱼ=j2π/72. Coordinates/saved shape verify it; see <a href="https://einsteintoolkit.org/thornguide/EinsteinAnalysis/QuasiLocalMeasures/documentation.html">QLM output documentation</a>. Fourth-order centred derivatives use polar reflection plus φ→φ+π and periodic azimuth. Reconstructed late ghost derivatives agree with actual saved ghosts to order 4×10⁻¹⁵.</p>
+<p>Positive first-kind Fejér quadrature in cosθ integrates √det(q)/sinθ, with periodic φ summation. Midpoint quadrature is a control on the same grid, not a second simulation.</p>
+<h2>Area controls</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>t / M</th>
+<th align="right">QLM area / M²</th>
+<th align="right">Reconstructed / M²</th>
+<th align="right">Relative difference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>30</td>
+<td align="right">41.5843928343</td>
+<td align="right">41.5843928385</td>
+<td align="right">9.92×10⁻¹¹</td>
+</tr>
+<tr>
+<td>50</td>
+<td align="right">41.6642194343</td>
+<td align="right">41.6642194572</td>
+<td align="right">5.49×10⁻¹⁰</td>
+</tr>
+<tr>
+<td>70</td>
+<td align="right">41.6602055236</td>
+<td align="right">41.6602055584</td>
+<td align="right">8.35×10⁻¹⁰</td>
+</tr>
+<tr>
+<td>95</td>
+<td align="right">41.6555859651</td>
+<td align="right">41.6555859793</td>
+<td align="right">3.40×10⁻¹⁰</td>
+</tr>
+<tr>
+<td>105</td>
+<td align="right">41.6527152688</td>
+<td align="right">41.6527153116</td>
+<td align="right">1.03×10⁻⁹</td>
+</tr>
+</tbody></table></div>
+<p>This validates same-simulation processing, not physical error or convergence; shared systematics remain. Midpoint differs by about 0.025–0.026%; no area-fitting factor was used.</p>
+<p>Checks: known anisotropic metric error &lt;10⁻¹⁵; analytical sphere/quadrature moments through degree34 near machine precision; all early metrics finite/positive definite and m⁰=0; early tangency residual ≤6.60×10⁻¹⁵; full-null-tetrad metric agreement order10⁻¹⁵ (internal, not independent); phase rotation preserves density within1.45×10⁻¹⁵. Deliberately using second-order derivatives worsens tangency and shifts early area by0.5–1%; this checks conventions, not simulation convergence.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th align="right">AH3 age</th>
+<th align="right">Physical area / M²</th>
+<th align="right">Coordinate area / M²</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>18.625M</td>
+<td align="right">0</td>
+<td align="right">37.305276</td>
+<td align="right">4.401483</td>
+</tr>
+<tr>
+<td>18.9375M</td>
+<td align="right">0.3125M</td>
+<td align="right">38.629463</td>
+<td align="right">4.969929</td>
+</tr>
+<tr>
+<td>20.5625M</td>
+<td align="right">1.9375M</td>
+<td align="right">40.545329</td>
+<td align="right">5.910045</td>
+</tr>
+</tbody></table></div>
+<p>Coordinate areas here use the same derivatives/quadrature with a Euclidean metric, not the earlier triangle estimate. The difference shows why image size is not physical size. Early same-run scalar area comparison remains open here.</p>
+<h2>Physical-weight masks</h2>
+<p>Keep the B2 top≈5% weighted-median-deviation rule and fields/times/axes, but recompute medians/thresholds/integrals with physical weights. Diagnostic |normalised coordinate|≥0.65 remains fixed. Fractions concern the selected mask over12frames.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Main location</th>
+<th align="right">Fraction there</th>
+<th align="right">B2/B3 Dice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Re Ψ₂</td>
+<td>Longitudinal ends</td>
+<td align="right">94.53–100%</td>
+<td align="right">0.912–0.940</td>
+</tr>
+<tr>
+<td>Im Ψ₂</td>
+<td>Poles</td>
+<td align="right">73.03–100%</td>
+<td align="right">0.943–0.961</td>
+</tr>
+<tr>
+<td>Magnitude of σ</td>
+<td>Poles</td>
+<td align="right">100%</td>
+<td align="right">0.935–0.946</td>
+</tr>
+</tbody></table></div>
+<p>Dice uses physical measure. Boundary shifts are expected under changed measure/median. Midpoint masks give Dice1,≥0.99786,≥0.99648 respectively. B2 triangle weights multiplied by local physical/Euclidean density ratio give ≥0.98378,≥0.99832,≥0.99628, separating density from quadrature effects. Percentile90/98 controls are saved, not preregistered detections.</p>
+<p>Adjacent physical masks within blocks have Dice0.838–1,0.930–0.997,0.959–0.997 respectively. The1.3125Mgap remains empty. Smooth low-mode patterns can yield correlation/overlap without matter transport or a separate object.</p>
+<h2>Limits and continuation</h2>
+<p>Physical area belongs to this horizon/slice; shape/directions remain coordinate-dependent. m-phase and l→Al,n→n/A preserve metric, but not every diagnostic. |σ| is phase-independent yet depends on null normalisation; spatially varying A may change its mask. Arbitrary tetrad/slicing transformations, second resolution, early-area checks, mask significance and HF1 identity remain untested. QC0, Yitian0389 and HF10305 stay separate; no event horizon or physical Euclidean embedding is reconstructed.</p>
+<p><code>BH_HF4_B3_fields_3D.html</code> shows previous surfaces/fields with new masks, fixed scales, optional inner horizons and fixed-time orbit. Caps never enter integrals; gaps are not interpolated. HTML masks match NPZ; static figure inspected, full WebGL unverified then.</p>
+<p>Next B4 directly checks early areas and collects ready frames. <code>BH_HF4_early_geometry_t22_inventory.txt</code> identifies <code>/home/alex/simulations/qc0_early_geometry_t22</code>, final it11264,t22M,exit0. The older <code>Cactus/qc0-horizon-multipoles-lite-t22-mpi2</code> path is not the new collection source. Prepared <code>BH_HF4_B4_collect.py</code> gathers55AH3VTK/shapes, compactAH1/AH2history and same-run diagnostics, read-only, preserving archives/recording gaps; synthetic tests do not mean it already ran on the user machine.</p>
+<p>After collection, compare matching early areas then process new frames only. Status: <code>BH_HF4_B3_INTRINSIC_MEASURE_RECOVERED_LATE_AREA_CONTROL_PASSED_LOCALIZATION_SUPPORTED_EARLY_AREA_CONTROL_PENDING</code>. Continue from <code>BH_HF4_resume_state_B3.json</code>; the results ZIP contains programs/metrics/masks/viewer/figure and savedB2inputs, with original full archives identified separately.</p>
+<hr><a href="BH_HF4_B3_report.md" download>English Markdown</a></article></body></html>

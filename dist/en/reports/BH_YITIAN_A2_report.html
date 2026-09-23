@@ -1,0 +1,193 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yitian A2 — Early complex moments and a corrected QC0 reference — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/BH_YITIAN_A2_report.html"><link rel="alternate" hreflang="en" href="BH_YITIAN_A2_report.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/BH_YITIAN_A2_report.html" data-reader-language="ru" lang="ru" >Русский</a><a href="BH_YITIAN_A2_report.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. This is a historical stage report; the <a href="PROJECT_REPORT.html">final project report</a> takes precedence for corrected parameters and release-wide conclusions. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/BH_YITIAN_A2_report.html">Russian source</a>.</p><h1>Yitian A2 — Early complex moments and a corrected QC0 reference</h1>
+<p>Historical stage: 15 September 2026. English reading edition. QC0 remained at 95M, iteration 48640, with both checkpoint files preserved. No evolution or previously completed audit was repeated.</p>
+<p><strong>Result:</strong> mode mixing matters, and a good early fit does not guarantee accurate continuation. A separate audit corrected the interpretation of QC0&#39;s final parameters without replacing them with the SpEC values.</p>
+<h2>Correction to the earlier prose</h2>
+<p>The saved R6B program and output use the following QC0 quantities:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th align="right">QC0</th>
+<th align="right">Yitian / SpEC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Final mass Mf/M</td>
+<td align="right">0.977461203279</td>
+<td align="right">0.95162</td>
+</tr>
+<tr>
+<td>Angular momentum J/M²</td>
+<td align="right">0.648087073319</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Dimensionless spin χ=J/Mf²</td>
+<td align="right">0.678319499425</td>
+<td align="right">0.68644</td>
+</tr>
+</tbody></table></div>
+<p>The number 0.648087 is J, not χ. R6B&#39;s code had used the correct dimensionless spin; the error was in the earlier explanation. A different quoted mass also contained transposed digits. The simulations remain distinct physical configurations.</p>
+<h2>Models and validation</h2>
+<p>For I22 and L32, stored moments are conjugated, their 400–500M mean is subtracted, and exp(−2iΩt) is applied, with Ω=0.20878380853617037M⁻¹. The Kerr spectrum is calculated with qnm 0.4.4 at fixed Mf=0.95162M and χ=0.68644. Only complex amplitudes are fitted by least squares with normalized columns.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th align="right">ω, M⁻¹</th>
+<th align="right">α, M⁻¹</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>220</td>
+<td align="right">0.553471331</td>
+<td align="right">0.085421831</td>
+</tr>
+<tr>
+<td>221</td>
+<td align="right">0.541024406</td>
+<td align="right">0.258312615</td>
+</tr>
+<tr>
+<td>222</td>
+<td align="right">0.518015073</td>
+<td align="right">0.436245721</td>
+</tr>
+<tr>
+<td>223</td>
+<td align="right">0.487436421</td>
+<td align="right">0.618669512</td>
+</tr>
+<tr>
+<td>320</td>
+<td align="right">0.792030127</td>
+<td align="right">0.089004353</td>
+</tr>
+<tr>
+<td>420</td>
+<td align="right">1.017167729</td>
+<td align="right">0.091425692</td>
+</tr>
+</tbody></table></div>
+<p>The 220/320 beat timescale is about 26.3381M. The spin-weight −2 QNM spectrum is used as a spectral model; the horizon moments themselves use ordinary scalar spherical harmonics.</p>
+<p>F2 denotes 220+320; F3 adds 420; O3 adds 221,222,223. Training uses [t0,t0+30]M and continuation uses (t0+30,t0+50]M, for t0/M=0,5,10,15,20,30,40,50,60,70. Reported errors are 100‖Z−Zmodel‖₂/‖Z‖₂ on each whole interval. Validation amplitudes are not refitted. The late background and final parameters use information from the full simulation; this is not a wholly blind forecast, and overlapping windows are not independent experiments.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Moment</th>
+<th align="right">t0/M</th>
+<th>Model</th>
+<th align="right">Training error</th>
+<th align="right">Continuation error</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I22</td>
+<td align="right">0</td>
+<td>220</td>
+<td align="right">22.3616%</td>
+<td align="right">41.5247%</td>
+</tr>
+<tr>
+<td>I22</td>
+<td align="right">0</td>
+<td>F2</td>
+<td align="right">16.7113%</td>
+<td align="right">33.6142%</td>
+</tr>
+<tr>
+<td>I22</td>
+<td align="right">0</td>
+<td>F2O3</td>
+<td align="right">0.1209%</td>
+<td align="right">2.0975%</td>
+</tr>
+<tr>
+<td>L32</td>
+<td align="right">20</td>
+<td>320</td>
+<td align="right">86.5950%</td>
+<td align="right">101.8891%</td>
+</tr>
+<tr>
+<td>L32</td>
+<td align="right">20</td>
+<td>220</td>
+<td align="right">13.1928%</td>
+<td align="right">15.2437%</td>
+</tr>
+<tr>
+<td>L32</td>
+<td align="right">20</td>
+<td>F2</td>
+<td align="right">0.2993%</td>
+<td align="right">1.8319%</td>
+</tr>
+<tr>
+<td>L32</td>
+<td align="right">20</td>
+<td>F3</td>
+<td align="right">0.2792%</td>
+<td align="right">1.8708%</td>
+</tr>
+<tr>
+<td>I22</td>
+<td align="right">20</td>
+<td>220</td>
+<td align="right">0.3645%</td>
+<td align="right">1.9391%</td>
+</tr>
+<tr>
+<td>I22</td>
+<td align="right">20</td>
+<td>F2</td>
+<td align="right">0.2557%</td>
+<td align="right">2.0712%</td>
+</tr>
+<tr>
+<td>I22</td>
+<td align="right">20</td>
+<td>F2O3</td>
+<td align="right">0.0458%</td>
+<td align="right">1.0563%</td>
+</tr>
+</tbody></table></div>
+<p>Nineteen of 160 nested comparisons worsened on continuation when the model was expanded. The maximum normalized matrix condition number was about 158. A synthetic three-component signal gives continuation error 4.33×10⁻¹⁶; a consistent change back to the unrotated frame changes errors by at most 4.93×10⁻¹⁶. These check the procedure, not physical accuracy.</p>
+<h2>Sensitivity and limits</h2>
+<p>Controls vary the late mean (350–500, 400–500, 450–500M), training spacing (0.1,0.2,0.4M), and the reported Mf and χ by ±0.000005.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Mean-window range</th>
+<th>Sampling range</th>
+<th>Parameter-rounding range</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I22, F2O3, t0=0</td>
+<td>2.09747–2.09747%</td>
+<td>2.09747–2.14075%</td>
+<td>2.09375–2.10119%</td>
+</tr>
+<tr>
+<td>L32, F2, t0=20</td>
+<td>1.83185–1.83185%</td>
+<td>1.82852–1.83185%</td>
+<td>1.82450–1.83921%</td>
+</tr>
+<tr>
+<td>I22, F2, t0=20</td>
+<td>2.07121–2.07121%</td>
+<td>2.07121–2.07142%</td>
+<td>2.06376–2.07867%</td>
+</tr>
+</tbody></table></div>
+<p>A sampling check is not spatial-resolution convergence. The AMR target does not define a statistical noise distribution; a residual is not automatically a new structure. Model complexity and conditioning limit component-level interpretation.</p>
+<h2>QC0 Kerr reference and the remaining control</h2>
+<p>For QC0, the earlier approximate reference ω=0.538108542 and α=0.084117941 is replaced by the numerical spectrum ω=0.535340132 and α=0.083450597, in M⁻¹. Comparing the already saved third-period estimates without refitting gives frequency/damping differences of 0.2023%/0.7398% at r=15M and 0.2097%/0.1186% at r=30M.</p>
+<p>Old BIC results cannot simply be transferred to a changed reference and objective. A consistent complex fit must be performed, with attention to correlated numerical residuals.</p>
+<p>The corrected period is 11.736810M. The third period at r=40M ends near 104.210429M; a continuation to 105M is therefore sufficient. Iteration 53760 was an expectation at this stage, not an already completed run. The original recovery-preparation file had been found; the user did not need to locate it again.</p>
+<p>The recorded route was A3 (axisymmetric moments), A4 (m=4), the final QC0 continuation/control, then HF4 geometric reconstruction. Displaying 64 or 128 angular directions does not create independent observers or new numerical evidence. Later reports record completion of the QC0 continuation.</p>
+<p>Reproduction: run the archived <code>BH_YITIAN_A2.py</code> with <code>--input</code> and <code>--output</code>. NumPy, SciPy, h5py and Matplotlib are required; qnm is required only with <code>--recompute-spectrum</code>. Saved numerical spectra can otherwise be reused.</p>
+<hr><a href="BH_YITIAN_A2_report.md" download>English Markdown</a></article></body></html>

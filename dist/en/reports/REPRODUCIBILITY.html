@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Release reproducibility — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/REPRODUCIBILITY.html"><link rel="alternate" hreflang="en" href="REPRODUCIBILITY.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/REPRODUCIBILITY.html" data-reader-language="ru" lang="ru" >Русский</a><a href="REPRODUCIBILITY.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/REPRODUCIBILITY.html">Russian source</a>.</p><h1>Release reproducibility</h1>
+<p>Do not rerun confirmed stages for routine continuation. Read <code>CHECKPOINT.json</code> and the final reports.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Included</th>
+<th>External requirements</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Website and videos</td>
+<td><code>dist/</code>, local images, JavaScript and data</td>
+<td>Modern browser; WebGL for two 3D viewers</td>
+</tr>
+<tr>
+<td>B5 from saved B4</td>
+<td>Program, B4 NPZ input, protocol, times, all results</td>
+<td>Python, NumPy, SciPy, Matplotlib</td>
+</tr>
+<tr>
+<td>Final R7B</td>
+<td>Program, two QC0 input archives, saved results</td>
+<td>Python and dependencies specified by the program</td>
+</tr>
+<tr>
+<td>B2/B3/B4 from original surfaces</td>
+<td>Programs, definitions, numerical results</td>
+<td>Original QC0 surface archives listed in reports</td>
+</tr>
+<tr>
+<td>HF1 from full grid</td>
+<td>Frozen functions, criteria, masks, checks, original programs</td>
+<td><code>BH_HF1_visual_data.zip</code> with full SXS arrays</td>
+</tr>
+<tr>
+<td>Yitian from original multipoles</td>
+<td>Programs, conventions, derived maps/results</td>
+<td>Original author-supplied multipole file</td>
+</tr>
+<tr>
+<td>New simulation</td>
+<td>Saved parameters and provenance where available</td>
+<td>Einstein Toolkit/SpEC, initial conditions, computing resources</td>
+</tr>
+</tbody></table></div>
+<p>This release is not a standalone copy of all simulations. Large source grids and the author-supplied correspondence archive are not duplicated. Historical programs may retain original paths and require separate inputs: this is an archive of the method, not a claim that the entire history runs with one command.</p>
+<p>Large HF1/QC0 HTML viewers were split into local data scripts. Frame order and values were checked for exact equality with saved JSON. B5 uses Float32 for viewing; rounding is recorded in <code>viewer-packaging-checks.json</code>. Scientific NPZ remains Float64.</p>
+<p>B5 requires SciPy ≥1.15 (<code>sph_harm_y</code>), NumPy and Matplotlib. Analytical normalisation, rank, conditioning and residual-orthogonality checks are built in. The original run used SciPy 1.17.0; other versions are in <code>BH_HF4_B5_definition.json</code>.</p>
+<p>Check the publication package without scientific recalculation:</p>
+<pre><code class="language-bash">python scripts/check_release.py
+</code></pre>
+<p><code>scripts/assemble_release.py --workspace PATH</code> repackages the original stage workspace. It is not needed to read the site and does not run science. Restoring that workspace requires the external files above.</p>
+<h2>English and reading themes</h2>
+<pre><code class="language-bash">python scripts/localize_site.py
+</code></pre>
+<p>This builds the presentation layer from <code>docs/en/</code>, <code>scripts/reading-ui.json</code> and <code>scripts/reading-dynamic.json</code>. Both languages share scientific arrays, images and videos. Original labels embedded in figures/videos and archived program comments remain in their source language. Theme selection is stored locally; no external translation service or analytics is used. Light, dark, warm and system modes change reading surfaces and plot backgrounds, not scientific colour scales.</p>
+<hr><a href="REPRODUCIBILITY.md" download>English Markdown</a></article></body></html>

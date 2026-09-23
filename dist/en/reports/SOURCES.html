@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sources and separation of datasets — Prostranstva</title><link rel="stylesheet" href="../../assets/style.css"><!-- reader:start --><link rel="alternate" hreflang="ru" href="../../reports/SOURCES.html"><link rel="alternate" hreflang="en" href="SOURCES.html"><link rel="stylesheet" href="../../assets/reader.css"><script src="../../assets/reader.js"></script><!-- reader:end --></head><body><!-- reader:start --><div class="reader-bar" aria-label="Reading preferences"><nav aria-label="Language"><a href="../../reports/SOURCES.html" data-reader-language="ru" lang="ru" >Русский</a><a href="SOURCES.html" data-reader-language="en" lang="en" aria-current="page">English</a></nav><label for="reader-theme">Theme <select id="reader-theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option></select></label></div><!-- reader:end --><article class="document"><a href="../materials.html">← Project catalogue</a><p class="translation-note">English reading edition. Original figure and video labels, numerical files and programs are retained. <a href="../../reports/SOURCES.html">Russian source</a>.</p><h1>Sources and separation of datasets</h1>
+<h2>Numerical datasets</h2>
+<ul>
+<li><strong>SXS:BBH:0305 / Lev6:</strong> common-horizon surface C, original HF1 branch. Arrays previously obtained by the user and derived masks are used. <a href="https://data.black-holes.org/">SXS catalogue</a>.</li>
+<li><strong>QC0 / Einstein Toolkit:</strong> the user’s early geometry and late waveform runs. Provenance is tied to parameters, time series and checksums, not just the name QC0. <a href="https://einsteintoolkit.org/">Einstein Toolkit</a>.</li>
+<li><strong>SXS:BBH:0389 / SpEC:</strong> mass/spin moments provided by Yitian. Mf=0.95162M, χ=0.68644, time starts at first common horizon. <a href="https://arxiv.org/abs/2208.02965">Authors’ paper</a>. Derived results/programs are included; original correspondence and author-supplied data are not redistributed.</li>
+</ul>
+<p>Equal initial conditions across datasets have not been established. Their frames are not spliced into one physical process.</p>
+<h2>Source checksums</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HF1 <code>BH_HF1_visual_data.zip</code></td>
+<td>b47bdb37aa796d281ba292c3908ed334c856360ec1e6e324c0a7406a175b0bb2</td>
+</tr>
+<tr>
+<td>QC0 <code>BH_HF3_R7A_output.zip</code></td>
+<td>d73d7bce0b88c22022ccc5e571431045370edccbf48ed9b03f86fb261afafa1b</td>
+</tr>
+<tr>
+<td>QC0 <code>BH_HF4_B4_collection(1).zip</code></td>
+<td>34d86aa53bc74f0e1b872761518a145b7612aafbb2f7e735e6993961140936fc</td>
+</tr>
+<tr>
+<td>B5 <code>BH_HF4_B4_fields_geometry_masks.npz</code></td>
+<td>a5e1c19802ded7f79da5475eb267f1228c6e26208f69c88337346faf617ee8e8</td>
+</tr>
+</tbody></table></div>
+<p>Historical manifests retain detailed inventories. <code>SHA256SUMS.json</code> covers this release.</p>
+<h2>Conventions and software</h2>
+<p>Electric/magnetic Weyl parts and tidal visualisation: <a href="https://arxiv.org/abs/1208.3034">1208.3034</a>, <a href="https://arxiv.org/abs/1012.4869">1012.4869</a>. Apparent horizons/search: <a href="https://arxiv.org/abs/gr-qc/0306056">gr-qc/0306056</a>. Spherical harmonics: <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.sph_harm_y.html">SciPy sph_harm_y</a>. These establish concept provenance; B5 numbers come from saved project data and report formulas.</p>
+<p>Plotly.js 3.3.1 provides interactive viewing, with its licence notice in <code>dist/assets/plotly.min.js</code>. Marked 17.0.5 renders Markdown, with its notice in <code>scripts/vendor/</code>. NumPy, SciPy and Matplotlib perform analysis/plotting; run versions are in B5 definitions.</p>
+<p>Cite project title, release, stage and corresponding data source. These results are not a publication by SXS, Einstein Toolkit or the authors of Yitian’s original dataset.</p>
+<hr><a href="SOURCES.md" download>English Markdown</a></article></body></html>
