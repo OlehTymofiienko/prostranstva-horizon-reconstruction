@@ -26,13 +26,13 @@
   },
   {
     "path": "README.en.md",
-    "bytes": 2954,
-    "sha256": "4cbe3788fbf3f463ad4ef6d0b3acf5a6cef49700d10633198265644eaf38845d"
+    "bytes": 3424,
+    "sha256": "4578ee8018c9aab8f4f3555406235903c45d12486b326139425cc0fad176b824"
   },
   {
     "path": "README.md",
-    "bytes": 6919,
-    "sha256": "e4d57d87308e580016a23ba56457c525d33f463baacb098837d77b72c3eda5ec"
+    "bytes": 7700,
+    "sha256": "2b63240cee3e9e0890bdfed1ddf35c1f561c238ccfcd47558cd8551830d97790"
   },
   {
     "path": "dist/assets/b5-early.png",

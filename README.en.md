@@ -32,3 +32,12 @@ python scripts/check_release.py
 ```
 
 Read `CHECKPOINT.json` before continuing research. Scientific release completion applies to the available data and registered HF4-B5 scope, not to every open physical question. It does not imply external peer review.
+
+## Acknowledgements
+
+I am grateful to **Yitian** for kindly providing the time-series data of the
+common horizon's mass and spin multipole moments through ℓ=8, together with
+plotting scripts and detailed explanations of the data. These materials helped
+clarify the definitions and conventions, check the analysis, and study the
+geometry and evolution of the common horizon. I sincerely appreciate his help
+and the time he devoted to preparing and sharing these data.
