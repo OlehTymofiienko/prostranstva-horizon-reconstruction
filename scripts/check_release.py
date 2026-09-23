@@ -44,6 +44,6 @@ result={'html_pages':len(parsed),'local_references_checked':links,'javascript_sy
         'errors':errors,'largest_static_asset':sizes[0],'static_bytes':sum(s for s,_ in sizes),
         'B5_input_sha256':digest,'previous_scientific_analysis_recomputed':False,
         'browser_WebGL_render_verified_this_release':False,
-        'browser_limitation':'Static preview is not supported by the available Sites preview; native publishing services return an access error.'}
+        'browser_limitation':'This static check does not establish browser/WebGL support. See docs/reading-validation.json for the separately recorded live-site browser check.'}
 (ROOT/'docs/release-validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(result,ensure_ascii=False,indent=2));raise SystemExit(bool(errors))
