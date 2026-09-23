@@ -42,5 +42,29 @@
     "Yitian early dynamics and unique nonlinear identification remain open",
     "Apparent horizons, not reconstructed event horizons",
     "Full browser WebGL rendering not verified in current environment"
-  ]
+  ],
+  "reading_update": {
+    "date_UTC": "2026-09-23",
+    "state": "PUBLISHED_AND_VERIFIED_WITH_DOCUMENTED_WEBGL_LIMIT",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "themes": [
+      "system",
+      "light",
+      "dark",
+      "warm"
+    ],
+    "english_reports": 18,
+    "website_pages": 48,
+    "scientific_data_unchanged": true,
+    "scientific_calculations_repeated": false,
+    "builder": "scripts/localize_site.py",
+    "validation": "docs/reading-validation.json",
+    "live_english_url": "https://olehtymofiienko.github.io/prostranstva-horizon-reconstruction/en/index.html",
+    "deployment_run": "35871902512",
+    "deployed_source_commit": "6f6bc7f",
+    "next_action": "Reading-language and theme update is complete. Continue any new research from the preserved HF4-B5 scientific checkpoint; do not rerun confirmed results."
+  }
 }
