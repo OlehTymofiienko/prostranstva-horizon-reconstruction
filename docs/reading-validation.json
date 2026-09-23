@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-23",
+  "html_pages": 48,
+  "english_reports": 18,
+  "builder_idempotent": true,
+  "untranslated_visible_prose": {},
+  "scientific_files_byte_identical": 493,
+  "standalone_data_and_media_byte_identical": 43,
+  "embedded_scientific_JSON_byte_identical": true,
+  "minimum_normal_text_contrast": {
+    "light": 5.409,
+    "dark": 7.262,
+    "warm": 4.617
+  },
+  "scientific_computations_repeated": false,
+  "browser_QA": {
+    "language_navigation": "Passed RU → EN and EN → matching RU report",
+    "themes": "Light, dark, warm and system controls checked",
+    "theme_persistence": "Dark persisted across navigation and reload; warm persisted to catalogue and report",
+    "HF1": "English controls changed to E* and saved time 5.0119M; original-index readout updated",
+    "QC0": "English controls changed to |sigma| at 18.6875M, area 37.730997 M^2",
+    "Yitian": "Canvas maps rendered; next frame 0.5M, delta K, rotated angles and asinh controls checked; built-in numerical check passed",
+    "B5": "Canvas maps rendered; time, field, degree and mask controls checked; saved RePsi2 L8 at 22M showed 99.9766% explained variation",
+    "WebGL_limitation": "Current cloud browser reports WebGL unsupported. HF1/QC0 3D rendering was not verified; controls and readouts were verified.",
+    "proof": "docs/reading-dark-preview.jpg"
+  },
+  "local_references_checked": 1064,
+  "javascript_syntax_checks": 44,
+  "live_site": "https://olehtymofiienko.github.io/prostranstva-horizon-reconstruction/en/index.html",
+  "deployment_run": "35871902512"
+}
