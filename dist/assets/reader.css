@@ -13,3 +13,5 @@ button:hover,select:hover,.button.secondary:hover{background:var(--reader-soft)!
 a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--blue)!important;outline-offset:3px}.skip:focus{z-index:1100;background:var(--reader-paper);color:var(--ink)}
 @media(max-width:600px){.reader-bar{padding:8px 12px;gap:8px;justify-content:space-between}.reader-bar nav{gap:8px}html{scroll-padding-top:115px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+.fact,.badge,.notes .lead{background:var(--reader-soft)!important;color:var(--ink)!important}.check{color:var(--muted)!important}.reader-bar select{width:auto;max-width:14rem;margin-top:0}
